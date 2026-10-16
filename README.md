@@ -1,49 +1,90 @@
 # bot-brain
 
-Working memory for the Grok Bot orchestration stack: handoffs, session logs, ticket specs and results.
-Append-only, written straight to `main`, no PRs. Long-term knowledge for the owner lives in `llm-wiki`, never here.
+The shared notebook and logbook of every agent the owner runs (Claude Code sessions, Grok bots, any MCP client). Agents record what they did and leave handoffs here, so the next session or agent continues from bot-brain instead of the owner pasting context again.
 
-Rules for every agent: [CHARTER.md](CHARTER.md).
+Rules for every agent: [CHARTER.md](CHARTER.md). This repo is not llm-wiki; it holds working memory only.
 
-## Layout
+## How it works
 
-| Path | What |
-|---|---|
-| `agents/<agent>/HANDOFF.md` | Current state of one agent. Overwritten, max one screen. |
-| `log/<agent>.md` | One line per session, append-only (format in CHARTER). |
-| `work/<slug>/` | One ticket: `SPEC.md`, `RESULT.md`, `SUMMARY.txt`, optional `WIKI-CANDIDATE.md`. |
-| `work/_archive/` | Done tickets older than 14 days (`bin/archive.sh`). |
-| `templates/` | SPEC, HANDOFF, and the prompts the scripts send to Claude Code. |
-| `bin/` | The only way agents run Claude Code. |
-
-## Scripts
-
-All scripts print usage on bad arguments and exit non-zero on failure. Paths come from
-`BRAIN_DIR` (default `~/repos/bot-brain`), `WIKI_DIR` (default `~/repos/llm-wiki`) and
-`WORKSPACES_DIR` (default `~/workspaces`).
-
-| Script | Output (what a Grok bot reads) |
-|---|---|
-| `new-ticket.sh <slug>` | Path of the new `work/<slug>/SPEC.md` |
-| `run-ticket.sh <agent> <slug> [model] [--resume]` | `<done\|blocked\|question>: <summary>` |
-| `wiki-pr.sh <slug>` | PR URL, `no-candidate`, or `no-change` |
-| `wiki-merge-batch.sh` | `<number> <decision>` per PR, then a `total=...` line |
-| `log-line.sh <agent> <slug> <status> <model>` | nothing (appends to the log and syncs) |
-| `git-sync.sh <repo-dir> <message>` | nothing; exit 2 and conflicting paths on conflict |
-| `archive.sh [--days N] [--dry-run]` | `archived N: <slugs>` |
-
-Claude Code runs with `claude -p`, a scoped permission mode (`acceptEdits`) and an explicit
-allow list per script; permissions are never skipped. Full Claude output goes to
-`~/workspaces/_logs/`, outside both repos.
-
-Optional overrides: `CLAUDE_PERMISSION_MODE`, `CLAUDE_TIMEOUT` (seconds, needs `timeout`),
-`TICKET_ALLOWED_TOOLS`, `INGEST_ALLOWED_TOOLS`, `CURATOR_ALLOWED_TOOLS`, `WIKI_MODEL`, `CURATOR_MODEL`.
-
-## Ticket flow
-
+```text
+ agent (any MCP client)
+   │  MCP over HTTPS, bearer token
+   ▼
+ Vercel: /mcp  (api/mcp.js → lib/server.mjs)
+   ├─ reads ─────────► main      generated views: agents/ log/ work/ index.json  + CHARTER.md
+   └─ writes ────────► journal   one immutable JSON event per write: events/YYYY/MM/DD/<id>.json
+                         │  repository_dispatch "brain-fold"
+                         ▼
+                GitHub Action fold.yml  → validate every event → rebuild views → commit to main
 ```
-bin/new-ticket.sh fix-login          # then fill work/fix-login/SPEC.md (max 10 lines)
-bin/run-ticket.sh dev fix-login      # -> done: ...
-bin/wiki-pr.sh fix-login             # -> PR URL or no-candidate
-bin/wiki-merge-batch.sh              # daily, Wiki curator desk
+
+- **Nobody writes main by hand.** The MCP server only appends new files to the `journal` branch, so concurrent writers never conflict. The fold Action is the only writer of the generated views on main.
+- **The fold is deterministic.** It rebuilds the views from the whole journal with [lib/brain.mjs](lib/brain.mjs), so the same events always give the same files. Missed or collapsed triggers lose nothing, because the next run folds everything. Invalid events are skipped and listed in `index.json` under `rejected`.
+- **Reads see your own writes.** `brain_bootstrap` also shows journal events the fold has not merged yet, so an agent that wrote a handoff a few seconds ago still sees it.
+- **Contract:** [schema/event.schema.json](schema/event.schema.json) documents the event format. `validateEvent` in lib/brain.mjs is the executable version, and both the server and the fold use it.
+
+## Tools
+
+| Tool | What it does |
+|---|---|
+| `brain_bootstrap(agent, topic?)` | Call first. Returns the CHARTER, your handoff, the topic's handoff and log, recent activity, and unmerged writes. |
+| `brain_read(path)` | Read one file from main (CHARTER.md, README.md, index.json, agents/, log/, work/, templates/, schema/). |
+| `brain_index()` | The index of agents and topics, plus the 30 latest log entries. |
+| `brain_log(agent, topic, status, summary, ref?)` | One session line, at the end of every session. |
+| `brain_handoff(agent, body)` | Replace `agents/<agent>/HANDOFF.md`. |
+| `brain_note(agent, text, topic?)` | Append a memo to your notes (and the topic's). |
+| `brain_write_doc(agent, topic, name, body)` | Create or replace `work/<topic>/<name>.md` (SPEC, PLAN, RESULT, HANDOFF, BUILD, ...). |
+
+## Layout on main
+
+| Path | Written by | What |
+|---|---|---|
+| `CHARTER.md`, `README.md`, `templates/`, code | owner | Rules and the system itself |
+| `agents/<agent>/HANDOFF.md`, `NOTES.md` | fold | One agent's current state and memos |
+| `log/<agent>.md` | fold | One agent's session lines, newest first |
+| `work/<topic>/*.md` | fold | Docs of one piece of work |
+| `work/<topic>/_log.md`, `_notes.md` | fold | Every agent's log lines and notes for that topic |
+| `index.json` | fold | Agents, topics, recent activity, `folded_through`, `rejected` |
+
+## Connect an agent
+
+Use the deployment URL plus `/mcp`, and send the token as `Authorization: Bearer <token>`.
+
+Claude Code:
+
+```bash
+claude mcp add --transport http --scope user bot-brain https://<deployment>/mcp \
+  --header "Authorization: Bearer $BRAIN_TOKEN"
 ```
+
+Any client that takes a JSON config:
+
+```json
+{ "bot-brain": { "type": "http", "url": "https://<deployment>/mcp", "headers": { "Authorization": "Bearer <token>" } } }
+```
+
+Then set each agent's built-in memory to the single pointer in the CHARTER: `On wake, call brain_bootstrap(agent=<you>).`
+
+## Deploy (owner, once)
+
+1. GitHub: create a fine-grained token for this repo only, with **Contents: read and write**. That also covers `repository_dispatch`. Do not grant Workflows.
+2. Vercel: import this repo (framework preset "Other", no build command), then set these environment variables:
+   - `BRAIN_REPO` = `3jar/Bot-brain`
+   - `BRAIN_GITHUB_TOKEN` = the token from step 1
+   - `BRAIN_MCP_TOKEN` = a long random string shared by all agents, and/or `BRAIN_TOKENS` = `agent:token,agent2:token2` (a bound token can only write as its agent)
+   - optional `BRAIN_TZ` (default `Asia/Seoul`)
+3. GitHub → Settings → Actions → General → Workflow permissions: **Read and write**. If main gets a ruleset, give GitHub Actions bypass, or the fold cannot push.
+
+`vercel.json` skips deployments of the `journal` branch, and of main commits that touch only data (fold commits).
+
+## Develop
+
+```bash
+npm install
+npm test                                   # fold contract, server over a local store, GitHub client
+mkdir -p /tmp/brain/main && cp CHARTER.md /tmp/brain/main/
+BRAIN_STORE=local:/tmp/brain BRAIN_MCP_TOKEN=dev-token-0123456789 npm run dev   # http://localhost:3333/mcp
+node scripts/fold.mjs <journal-checkout> <main-checkout>                         # what the Action runs
+```
+
+In local mode, `<dir>/main` and `<dir>/journal` stand in for the two branches, and every write is folded immediately.

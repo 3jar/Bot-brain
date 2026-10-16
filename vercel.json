@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "git": {
+    "deploymentEnabled": {
+      "journal": false
+    }
+  },
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- api lib package.json package-lock.json vercel.json",
+  "rewrites": [
+    { "source": "/mcp", "destination": "/api/mcp" }
+  ]
+}

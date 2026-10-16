@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/3jar/Bot-brain/schema/event.schema.json",
+  "title": "bot-brain journal event v1",
+  "description": "One immutable file per write, stored at events/YYYY/MM/DD/<id>.json on the journal branch. lib/brain.mjs validateEvent() is the executable version of this contract and also checks that id matches ts and agent, and that the file path matches id.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["v", "id", "ts", "agent", "type", "data"],
+  "properties": {
+    "v": { "const": 1 },
+    "id": {
+      "type": "string",
+      "pattern": "^\\d{8}T\\d{9}Z-[a-z0-9-]+-[a-z0-9]{6}$",
+      "description": "<ts without - : .>-<agent>-<6 random chars>; sorts chronologically."
+    },
+    "ts": { "type": "string", "format": "date-time", "description": "UTC, millisecond precision, e.g. 2026-10-17T06:48:12.345Z" },
+    "agent": { "$ref": "#/$defs/slug40" },
+    "type": { "enum": ["log", "handoff", "note", "doc"] },
+    "data": { "type": "object" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "const": "log" } } },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "required": ["topic", "status", "summary"],
+            "properties": {
+              "topic": { "$ref": "#/$defs/slug60" },
+              "status": { "enum": ["done", "blocked", "question", "cancelled"] },
+              "summary": { "type": "string", "maxLength": 300, "pattern": "^[^\\r\\n]+$" },
+              "ref": { "type": "string", "maxLength": 300, "pattern": "^[^\\r\\n]+$" }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "handoff" } } },
+      "then": {
+        "properties": {
+          "data": { "type": "object", "required": ["body"], "properties": { "body": { "type": "string", "minLength": 1, "maxLength": 4000 } } }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "note" } } },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "required": ["text"],
+            "properties": { "text": { "type": "string", "minLength": 1, "maxLength": 4000 }, "topic": { "$ref": "#/$defs/slug60" } }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "doc" } } },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "required": ["topic", "name", "body"],
+            "properties": {
+              "topic": { "$ref": "#/$defs/slug60" },
+              "name": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,79}\\.md$" },
+              "body": { "type": "string", "minLength": 1, "maxLength": 200000 }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "slug40": { "type": "string", "maxLength": 40, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "slug60": { "type": "string", "maxLength": 60, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+  }
+}

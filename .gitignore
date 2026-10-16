@@ -1,4 +1,8 @@
 .env
 *.env
+.env*.local
 botenv
 .DS_Store
+node_modules/
+.vercel/
+_journal/

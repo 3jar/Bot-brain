@@ -1,0 +1,19 @@
+{
+  "name": "bot-brain",
+  "private": true,
+  "type": "module",
+  "description": "Shared notebook and logbook for every agent the owner runs, served as an MCP server on Vercel.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "fold": "node scripts/fold.mjs",
+    "dev": "node scripts/dev-server.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.3.1",
+    "mcp-handler": "^2.3.0",
+    "zod": "^4.6.7"
+  }
+}

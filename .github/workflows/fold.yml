@@ -1,0 +1,64 @@
+# Merge journal events into main. The only writer of agents/, log/, work/ and index.json.
+# Triggered by the MCP server after every write (repository_dispatch), by hand, and daily as a
+# safety net. Each run re-folds the whole journal, so collapsed or missed triggers lose nothing.
+name: fold
+
+on:
+  repository_dispatch:
+    types: [brain-fold]
+  workflow_dispatch:
+  schedule:
+    - cron: "17 18 * * *" # 03:17 KST
+
+concurrency:
+  group: fold
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fold:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out main (code and views)
+        uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - name: Check out journal (data only, never executed)
+        uses: actions/checkout@v5
+        with:
+          ref: journal
+          path: _journal
+          persist-credentials: false
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Fold and push
+        env:
+          BRAIN_TZ: Asia/Seoul
+        run: |
+          git config user.name "bot-brain-fold"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for try in 1 2 3 4 5; do
+            node scripts/fold.mjs _journal .
+            git add -A
+            if git diff --cached --quiet; then
+              echo "views already up to date"
+              exit 0
+            fi
+            git commit -q -m "fold: through $(node -p 'require("./index.json").folded_through')"
+            if git push -q origin HEAD:main; then
+              exit 0
+            fi
+            # main moved (owner edit or another fold): start over from the new main
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            sleep $((try * 3))
+          done
+          echo "could not push after 5 tries" >&2
+          exit 1

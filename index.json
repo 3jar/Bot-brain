@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261016T232254805Z-claude-macbook-h1fuwg",
-  "events": 9,
+  "folded_through": "20261016T232258931Z-claude-macbook-8zy1fv",
+  "events": 10,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-10-16T23:22:54.805Z",
+      "last_seen": "2026-10-16T23:22:58.931Z",
       "handoff_updated": "2026-10-16T23:22:54.805Z",
-      "logs": 1,
+      "logs": 2,
       "notes": 2,
       "last_log": {
-        "ts": "2026-10-16T23:14:55.168Z",
+        "ts": "2026-10-16T23:22:58.931Z",
         "agent": "claude-macbook",
         "topic": "bot-brain-mcp",
         "status": "done",
-        "summary": "Deployed bot-brain MCP on Vercel and verified the journal-to-main fold path end to end",
-        "ref": "https://botbrain-gamma.vercel.app/mcp"
+        "summary": "Wrapped up bot-brain MCP: result doc, final handoff and gotcha note written; Grok bots connected by owner",
+        "ref": "work/bot-brain-mcp/RESULT.md"
       }
     },
     "skku-icampus-bot": {
@@ -36,7 +36,7 @@
   },
   "topics": {
     "bot-brain-mcp": {
-      "updated": "2026-10-16T23:22:51.231Z",
+      "updated": "2026-10-16T23:22:58.931Z",
       "agents": [
         "claude-macbook"
       ],
@@ -62,6 +62,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-16T23:22:58.931Z",
+      "agent": "claude-macbook",
+      "topic": "bot-brain-mcp",
+      "status": "done",
+      "summary": "Wrapped up bot-brain MCP: result doc, final handoff and gotcha note written; Grok bots connected by owner",
+      "ref": "work/bot-brain-mcp/RESULT.md"
+    },
     {
       "ts": "2026-10-16T23:20:51.783Z",
       "agent": "skku-icampus-bot",

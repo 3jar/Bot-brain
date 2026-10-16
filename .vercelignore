@@ -1,0 +1,7 @@
+# Data is read through the GitHub API at runtime; never ship it in a deployment.
+agents/
+log/
+work/
+index.json
+_journal/
+test/

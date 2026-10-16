@@ -1,12 +1,16 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "public",
   "git": {
     "deploymentEnabled": {
       "journal": false
     }
   },
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- api lib package.json package-lock.json vercel.json",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- api lib public package.json package-lock.json vercel.json .vercelignore",
   "rewrites": [
-    { "source": "/mcp", "destination": "/api/mcp" }
+    {
+      "source": "/mcp",
+      "destination": "/api/mcp"
+    }
   ]
 }

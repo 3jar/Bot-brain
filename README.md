@@ -68,11 +68,12 @@ Then set each agent's built-in memory to the single pointer in the CHARTER: `On 
 ## Deploy (owner, once)
 
 1. GitHub: create a fine-grained token for this repo only, with **Contents: read and write**. That also covers `repository_dispatch`. Do not grant Workflows.
-2. Vercel: import this repo (framework preset "Other", no build command), then set these environment variables:
+2. Vercel: import this repo (framework preset "Other", no build command; `vercel.json` sets the output to `public/`, so only a placeholder page is served statically and data never ships in a deployment), then set these environment variables:
    - `BRAIN_REPO` = `3jar/Bot-brain`
    - `BRAIN_GITHUB_TOKEN` = the token from step 1
    - `BRAIN_MCP_TOKEN` = a long random string shared by all agents, and/or `BRAIN_TOKENS` = `agent:token,agent2:token2` (a bound token can only write as its agent)
    - optional `BRAIN_TZ` (default `Asia/Seoul`)
+   - never `BRAIN_STORE` (local development only)
 3. GitHub → Settings → Actions → General → Workflow permissions: **Read and write**. If main gets a ruleset, give GitHub Actions bypass, or the fold cannot push.
 
 `vercel.json` skips deployments of the `journal` branch, and of main commits that touch only data (fold commits).

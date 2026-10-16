@@ -1,25 +1,32 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261016T231450945Z-claude-macbook-sgc71k",
-  "events": 2,
+  "folded_through": "20261016T231455168Z-claude-macbook-jmc1ao",
+  "events": 3,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-10-16T23:14:50.945Z",
+      "last_seen": "2026-10-16T23:14:55.168Z",
       "handoff_updated": null,
-      "logs": 0,
+      "logs": 1,
       "notes": 1,
-      "last_log": null
+      "last_log": {
+        "ts": "2026-10-16T23:14:55.168Z",
+        "agent": "claude-macbook",
+        "topic": "bot-brain-mcp",
+        "status": "done",
+        "summary": "Deployed bot-brain MCP on Vercel and verified the journal-to-main fold path end to end",
+        "ref": "https://botbrain-gamma.vercel.app/mcp"
+      }
     }
   },
   "topics": {
     "bot-brain-mcp": {
-      "updated": "2026-10-16T23:14:50.945Z",
+      "updated": "2026-10-16T23:14:55.168Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": null,
+      "last_status": "done",
       "docs": {
         "HANDOFF.md": {
           "updated": "2026-10-16T23:14:44.837Z",
@@ -28,5 +35,14 @@
       }
     }
   },
-  "recent": []
+  "recent": [
+    {
+      "ts": "2026-10-16T23:14:55.168Z",
+      "agent": "claude-macbook",
+      "topic": "bot-brain-mcp",
+      "status": "done",
+      "summary": "Deployed bot-brain MCP on Vercel and verified the journal-to-main fold path end to end",
+      "ref": "https://botbrain-gamma.vercel.app/mcp"
+    }
+  ]
 }

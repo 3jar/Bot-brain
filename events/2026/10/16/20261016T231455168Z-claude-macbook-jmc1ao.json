@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261016T231455168Z-claude-macbook-jmc1ao",
+  "ts": "2026-10-16T23:14:55.168Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "bot-brain-mcp",
+    "status": "done",
+    "summary": "Deployed bot-brain MCP on Vercel and verified the journal-to-main fold path end to end",
+    "ref": "https://botbrain-gamma.vercel.app/mcp"
+  }
+}

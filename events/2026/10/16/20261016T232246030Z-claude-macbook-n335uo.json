@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261016T232246030Z-claude-macbook-n335uo",
+  "ts": "2026-10-16T23:22:46.030Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "bot-brain-mcp",
+    "name": "HANDOFF.md",
+    "body": "# bot-brain-mcp handoff\nActive: none (topic complete)\nState: bot-brain MCP live at https://botbrain-gamma.vercel.app/mcp, full write path verified on the real deployment. Grok bots connected by the owner; first external writer seen: skku-icampus-bot.\nNext step: nothing required. Optional: per-agent tokens (BRAIN_TOKENS); renew the GitHub token before it expires.\nBlocked on: nothing\nPointers: work/bot-brain-mcp/RESULT.md, README.md, CHARTER.md"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "20261016T232254805Z-claude-macbook-h1fuwg",
+  "ts": "2026-10-16T23:22:54.805Z",
+  "agent": "claude-macbook",
+  "type": "handoff",
+  "data": {
+    "body": "Active: none\nState: bot-brain-mcp is complete, see work/bot-brain-mcp/RESULT.md\nNext step: wait for the owner's next request\nBlocked on: nothing"
+  }
+}

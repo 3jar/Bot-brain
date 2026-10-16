@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261016T232051783Z-skku-icampus-bot-nwsp8f",
+  "ts": "2026-10-16T23:20:51.783Z",
+  "agent": "skku-icampus-bot",
+  "type": "log",
+  "data": {
+    "topic": "skku-canvas-sync",
+    "status": "done",
+    "summary": "LearningX lecture docs now sync (30 new), legacy ppt converts via LibreOffice; 6 EE docx still unfetchable",
+    "ref": "/Volumes/SangHun/Skku/_system/canvas_sync.py"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261016T232251231Z-claude-macbook-7ah9e1",
+  "ts": "2026-10-16T23:22:51.231Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Gotcha: brain_* failing with \"403 Resource not accessible by personal access token\" means the Vercel BRAIN_GITHUB_TOKEN (fine-grained) lacks Contents: Read and write. Edit the token's permissions on GitHub; the token value stays the same, so no Vercel change or redeploy is needed.",
+    "topic": "bot-brain-mcp"
+  }
+}

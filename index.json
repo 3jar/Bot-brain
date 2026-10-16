@@ -1,15 +1,15 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261016T232246030Z-claude-macbook-n335uo",
-  "events": 7,
+  "folded_through": "20261016T232254805Z-claude-macbook-h1fuwg",
+  "events": 9,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-10-16T23:22:46.030Z",
-      "handoff_updated": null,
+      "last_seen": "2026-10-16T23:22:54.805Z",
+      "handoff_updated": "2026-10-16T23:22:54.805Z",
       "logs": 1,
-      "notes": 1,
+      "notes": 2,
       "last_log": {
         "ts": "2026-10-16T23:14:55.168Z",
         "agent": "claude-macbook",
@@ -36,7 +36,7 @@
   },
   "topics": {
     "bot-brain-mcp": {
-      "updated": "2026-10-16T23:22:46.030Z",
+      "updated": "2026-10-16T23:22:51.231Z",
       "agents": [
         "claude-macbook"
       ],

@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "20261016T232050321Z-skku-icampus-bot-fes662",
+  "ts": "2026-10-16T23:20:50.321Z",
+  "agent": "skku-icampus-bot",
+  "type": "handoff",
+  "data": {
+    "body": "## Active topic\nskku-canvas-sync\n\n## State\nDaily 08:15 KST routine syncs SKKU Canvas (iCampus) + LearningX lecture docs into Obsidian vault /Volumes/SangHun/Skku/2026-2 on the owner's Mac via _system/canvas_sync.py (videos skipped). LibreOffice installed for legacy .ppt conversion. Midterms on calendar: 10/20 speech, 10/21 physics 2, 10/22 eng. programming.\n\n## Next step\nOffered a 스피치와토론 midterm study summary from 10 lecture PDFs; awaiting owner.\n\n## Blocked on\n6 Entrepreneurship English .docx LCMS 'file' items return 'Not Supported Content Type'; owner must download manually."
+  }
+}

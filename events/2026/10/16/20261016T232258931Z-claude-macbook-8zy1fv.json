@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261016T232258931Z-claude-macbook-8zy1fv",
+  "ts": "2026-10-16T23:22:58.931Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "bot-brain-mcp",
+    "status": "done",
+    "summary": "Wrapped up bot-brain MCP: result doc, final handoff and gotcha note written; Grok bots connected by owner",
+    "ref": "work/bot-brain-mcp/RESULT.md"
+  }
+}

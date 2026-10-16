@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261016T231450945Z-claude-macbook-sgc71k",
+  "ts": "2026-10-16T23:14:50.945Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Vercel 'Other' preset serves the repo root statically unless outputDirectory is set; vercel.json pins it to public/ and .vercelignore keeps agents/, log/, work/, index.json out of deployments.",
+    "topic": "bot-brain-mcp"
+  }
+}

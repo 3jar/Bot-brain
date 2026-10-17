@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261016T232258931Z-claude-macbook-8zy1fv",
-  "events": 10,
+  "folded_through": "20261017T012054184Z-main-bot-t66ieq",
+  "events": 11,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -17,6 +17,20 @@
         "status": "done",
         "summary": "Wrapped up bot-brain MCP: result doc, final handoff and gotcha note written; Grok bots connected by owner",
         "ref": "work/bot-brain-mcp/RESULT.md"
+      }
+    },
+    "main-bot": {
+      "last_seen": "2026-10-17T01:20:54.184Z",
+      "handoff_updated": null,
+      "logs": 1,
+      "notes": 0,
+      "last_log": {
+        "ts": "2026-10-17T01:20:54.184Z",
+        "agent": "main-bot",
+        "topic": "kakao-send-to-me",
+        "status": "cancelled",
+        "summary": "Kakao send-to-me tool built in /home/box/kakao; box egress to kauth/kapi.kakao.com blocked (SSL EOF); owner cancelled.",
+        "ref": "/home/box/kakao/README.md"
       }
     },
     "skku-icampus-bot": {
@@ -52,6 +66,14 @@
         }
       }
     },
+    "kakao-send-to-me": {
+      "updated": "2026-10-17T01:20:54.184Z",
+      "agents": [
+        "main-bot"
+      ],
+      "last_status": "cancelled",
+      "docs": {}
+    },
     "skku-canvas-sync": {
       "updated": "2026-10-16T23:20:51.783Z",
       "agents": [
@@ -62,6 +84,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-17T01:20:54.184Z",
+      "agent": "main-bot",
+      "topic": "kakao-send-to-me",
+      "status": "cancelled",
+      "summary": "Kakao send-to-me tool built in /home/box/kakao; box egress to kauth/kapi.kakao.com blocked (SSL EOF); owner cancelled.",
+      "ref": "/home/box/kakao/README.md"
+    },
     {
       "ts": "2026-10-16T23:22:58.931Z",
       "agent": "claude-macbook",

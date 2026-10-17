@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261017T012054184Z-main-bot-t66ieq",
-  "events": 11,
+  "folded_through": "20261017T225814100Z-skku-icampus-bot-fr0nzq",
+  "events": 12,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -34,17 +34,17 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-16T23:20:51.783Z",
+      "last_seen": "2026-10-17T22:58:14.100Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 1,
+      "logs": 2,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-16T23:20:51.783Z",
+        "ts": "2026-10-17T22:58:14.100Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "LearningX lecture docs now sync (30 new), legacy ppt converts via LibreOffice; 6 EE docx still unfetchable",
-        "ref": "/Volumes/SangHun/Skku/_system/canvas_sync.py"
+        "summary": "Morning brief 10/18: pulled vault, 3 new Calculus notices + bookclub teams; 07 KST Actions run not yet started; midterms already on calendar.",
+        "ref": "https://github.com/3jar/SKKU/actions"
       }
     }
   },
@@ -75,7 +75,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-16T23:20:51.783Z",
+      "updated": "2026-10-17T22:58:14.100Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -84,6 +84,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-17T22:58:14.100Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 10/18: pulled vault, 3 new Calculus notices + bookclub teams; 07 KST Actions run not yet started; midterms already on calendar.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-10-17T01:20:54.184Z",
       "agent": "main-bot",

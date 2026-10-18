@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261017T225814100Z-skku-icampus-bot-fr0nzq",
-  "events": 12,
+  "folded_through": "20261018T212840300Z-skku-icampus-bot-j7zuyv",
+  "events": 13,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -34,17 +34,17 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-17T22:58:14.100Z",
+      "last_seen": "2026-10-18T21:28:40.300Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 2,
+      "logs": 3,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-17T22:58:14.100Z",
+        "ts": "2026-10-18T21:28:40.300Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 10/18: pulled vault, 3 new Calculus notices + bookclub teams; 07 KST Actions run not yet started; midterms already on calendar.",
-        "ref": "https://github.com/3jar/SKKU/actions"
+        "summary": "Quantum 2 (77520) 11 lecture videos transcribed (mlx-whisper) + Vision OCR into notes and midterm summary; videos gitignored, uncommitted",
+        "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/중간고사_영상강의_정리.md"
       }
     }
   },
@@ -75,7 +75,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-17T22:58:14.100Z",
+      "updated": "2026-10-18T21:28:40.300Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -84,6 +84,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-18T21:28:40.300Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Quantum 2 (77520) 11 lecture videos transcribed (mlx-whisper) + Vision OCR into notes and midterm summary; videos gitignored, uncommitted",
+      "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/중간고사_영상강의_정리.md"
+    },
     {
       "ts": "2026-10-17T22:58:14.100Z",
       "agent": "skku-icampus-bot",

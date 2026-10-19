@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T020410711Z-skku-reviewer-ihrpmb",
-  "events": 17,
+  "folded_through": "20261019T020926244Z-skku-reviewer-3blykz",
+  "events": 18,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -48,17 +48,17 @@
       }
     },
     "skku-reviewer": {
-      "last_seen": "2026-10-19T02:04:10.711Z",
+      "last_seen": "2026-10-19T02:09:26.244Z",
       "handoff_updated": "2026-10-19T02:04:10.711Z",
-      "logs": 1,
+      "logs": 2,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T02:03:53.001Z",
+        "ts": "2026-10-19T02:09:26.244Z",
         "agent": "skku-reviewer",
         "topic": "skku-review",
-        "status": "blocked",
-        "summary": "Surveyed 5 unreviewed outputs; wrote 스토 midterm-note review (1 error, key omissions) but push blocked: no git creds, GitHub connector lacks file-write.",
-        "ref": "/workspace/SKKU-review/2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md"
+        "status": "done",
+        "summary": "Reviewed QIE2 midterm video summary vs 11 transcripts: formulas correct; Bell 5/9 derivation missing, textbook Y sign unclear, unmarked outside additions. Box-only, not committed.",
+        "ref": "/workspace/SKKU-review/2026-2/Introduction to Quantum Information Engineering 2/산출물/검토/중간고사_영상강의_정리_검토.md"
       }
     },
     "skku-stem-tutor": {
@@ -119,15 +119,23 @@
       "docs": {}
     },
     "skku-review": {
-      "updated": "2026-10-19T02:03:53.001Z",
+      "updated": "2026-10-19T02:09:26.244Z",
       "agents": [
         "skku-reviewer"
       ],
-      "last_status": "blocked",
+      "last_status": "done",
       "docs": {}
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T02:09:26.244Z",
+      "agent": "skku-reviewer",
+      "topic": "skku-review",
+      "status": "done",
+      "summary": "Reviewed QIE2 midterm video summary vs 11 transcripts: formulas correct; Bell 5/9 derivation missing, textbook Y sign unclear, unmarked outside additions. Box-only, not committed.",
+      "ref": "/workspace/SKKU-review/2026-2/Introduction to Quantum Information Engineering 2/산출물/검토/중간고사_영상강의_정리_검토.md"
+    },
     {
       "ts": "2026-10-19T02:03:53.001Z",
       "agent": "skku-reviewer",

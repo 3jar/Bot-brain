@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T053723866Z-skku-reviewer-qz65ve",
-  "events": 29,
+  "folded_through": "20261019T054019990Z-skku-humanities-x01s1o",
+  "events": 30,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -34,16 +34,16 @@
       }
     },
     "skku-humanities": {
-      "last_seen": "2026-10-19T04:55:36.424Z",
+      "last_seen": "2026-10-19T05:40:19.990Z",
       "handoff_updated": null,
-      "logs": 3,
+      "logs": 4,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T04:55:36.424Z",
+        "ts": "2026-10-19T05:40:19.990Z",
         "agent": "skku-humanities",
-        "topic": "speech-midterm-note-2-1",
+        "topic": "speech-midterm-note-2-2",
         "status": "done",
-        "summary": "2-1 구체적 목적 reframed as checklist w/ Lucas examples, 오존층 outline-head analysis added, 검토봇 fixes applied (7eab6a8). MacBook stale note restored; GP2 deletion committed (bb69ba4). Pending: 고명북 8주차 과제."
+        "summary": "2-2: added 소재별 조직 detail + 세부내용의 조직 w/ Lucas 13e ch.9 support, fixed table; applied 검토봇 review (0ed1d1d). Example pairing: 혈액형=초두성·최신성, 렌즈=일정한 순서."
       }
     },
     "skku-icampus-bot": {
@@ -154,9 +154,24 @@
       ],
       "last_status": "done",
       "docs": {}
+    },
+    "speech-midterm-note-2-2": {
+      "updated": "2026-10-19T05:40:19.990Z",
+      "agents": [
+        "skku-humanities"
+      ],
+      "last_status": "done",
+      "docs": {}
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T05:40:19.990Z",
+      "agent": "skku-humanities",
+      "topic": "speech-midterm-note-2-2",
+      "status": "done",
+      "summary": "2-2: added 소재별 조직 detail + 세부내용의 조직 w/ Lucas 13e ch.9 support, fixed table; applied 검토봇 review (0ed1d1d). Example pairing: 혈액형=초두성·최신성, 렌즈=일정한 순서."
+    },
     {
       "ts": "2026-10-19T05:37:23.866Z",
       "agent": "skku-reviewer",

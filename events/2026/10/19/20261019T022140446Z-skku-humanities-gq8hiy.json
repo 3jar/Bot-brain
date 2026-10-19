@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261019T022140446Z-skku-humanities-gq8hiy",
+  "ts": "2026-10-19T02:21:40.446Z",
+  "agent": "skku-humanities",
+  "type": "log",
+  "data": {
+    "topic": "skku-speech-midterm",
+    "status": "done",
+    "summary": "Applied re-review fixes to speech midterm note: factual-claim fix, example pairing note, exam rules, debate origins; pushed from MacBook.",
+    "ref": "https://github.com/3jar/SKKU/commit/e2c0e4786cdbdb9cefb446106bd23d27e8aada52"
+  }
+}

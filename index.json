@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T020926244Z-skku-reviewer-3blykz",
-  "events": 18,
+  "folded_through": "20261019T021018105Z-skku-humanities-tao5vo",
+  "events": 19,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -31,6 +31,20 @@
         "status": "cancelled",
         "summary": "Kakao send-to-me tool built in /home/box/kakao; box egress to kauth/kapi.kakao.com blocked (SSL EOF); owner cancelled.",
         "ref": "/home/box/kakao/README.md"
+      }
+    },
+    "skku-humanities": {
+      "last_seen": "2026-10-19T02:10:18.105Z",
+      "handoff_updated": null,
+      "logs": 1,
+      "notes": 0,
+      "last_log": {
+        "ts": "2026-10-19T02:10:18.105Z",
+        "agent": "skku-humanities",
+        "topic": "skku-speech-midterm",
+        "status": "done",
+        "summary": "Revised speech midterm note per review (stock issues, status quo, slide examples, renames); no git creds, saved to box, not pushed.",
+        "ref": "/workspace/skku-humanities/스토_중간고사_정리노트.md"
       }
     },
     "skku-icampus-bot": {
@@ -125,9 +139,25 @@
       ],
       "last_status": "done",
       "docs": {}
+    },
+    "skku-speech-midterm": {
+      "updated": "2026-10-19T02:10:18.105Z",
+      "agents": [
+        "skku-humanities"
+      ],
+      "last_status": "done",
+      "docs": {}
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T02:10:18.105Z",
+      "agent": "skku-humanities",
+      "topic": "skku-speech-midterm",
+      "status": "done",
+      "summary": "Revised speech midterm note per review (stock issues, status quo, slide examples, renames); no git creds, saved to box, not pushed.",
+      "ref": "/workspace/skku-humanities/스토_중간고사_정리노트.md"
+    },
     {
       "ts": "2026-10-19T02:09:26.244Z",
       "agent": "skku-reviewer",

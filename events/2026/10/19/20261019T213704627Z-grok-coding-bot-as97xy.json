@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261019T213704627Z-grok-coding-bot-as97xy",
+  "ts": "2026-10-19T21:37:04.627Z",
+  "agent": "grok-coding-bot",
+  "type": "doc",
+  "data": {
+    "topic": "notch-scroll-menubar",
+    "name": "HANDOFF.md",
+    "body": "# HANDOFF: notch-scroll-menubar\n\n## State\n- Repo /Volumes/SangHun/notch-scroll, HEAD 524d39b, tree clean, Debug build succeeds (Xcode 27.1, macOS 26 min target).\n- Step 2 done: dfc3e90 + fix da09fd0 (namespace:title classification, CGS owner lookup in Bridging/, own-item filter, debug window DEBUG-only).\n- Step 3 done: c1be841 + fix 524d39b (Preferred Position + Visible snapshot to Application Support JSON, plist domain scan, overwrite confirm + backup, safe restore).\n- Step 4 not started: Claude Code hit its usage limit (resets 10:20 KST 2026-10-20).\n\n## Next step\nAfter limit reset: Step 4 (two separator NSStatusItems, left-length expand/collapse, wrong-order detection, no CGEvents), then 5-9. Driver: /tmp/ns_run.sh <tag> <prompt>, review: /tmp/ns_rev.sh <tag> on the MacBook.\n\n## Manual checks needed (docs/MANUAL_TESTS.md)\n- Step 2: hidden-behind-notch items listed, third-party vs system classification, owner PID resolution (needs Developer ID).\n- Step 3: snapshot JSON contents, restore after app relaunch.\n- App was never run headlessly.\n"
+  }
+}

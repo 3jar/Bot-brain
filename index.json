@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T022222445Z-skku-reviewer-3lpi76",
-  "events": 24,
+  "folded_through": "20261019T022256218Z-skku-stem-tutor-xs1lhv",
+  "events": 25,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -76,17 +76,17 @@
       }
     },
     "skku-stem-tutor": {
-      "last_seen": "2026-10-19T02:19:53.928Z",
+      "last_seen": "2026-10-19T02:22:56.218Z",
       "handoff_updated": null,
-      "logs": 2,
+      "logs": 3,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T02:19:53.928Z",
+        "ts": "2026-10-19T02:22:56.218Z",
         "agent": "skku-stem-tutor",
         "topic": "skku-midterm-prep",
         "status": "done",
-        "summary": "Applied all 6 reviewer fixes to Physics 2 midterm concept note (ex19.1, PS2-3, ch21.1-21.4, exam rules, supplement tags).",
-        "ref": "2026-2/General Physics 2/산출물/중간고사_개념정리.md @ eaae1c6"
+        "summary": "QIE2 week7-1 transcript summary: textbook Y corrected to iY=[[0,1],[-1,0]], matching midterm note 662c7fe.",
+        "ref": "84858f5"
       }
     }
   },
@@ -125,7 +125,7 @@
       "docs": {}
     },
     "skku-midterm-prep": {
-      "updated": "2026-10-19T02:19:53.928Z",
+      "updated": "2026-10-19T02:22:56.218Z",
       "agents": [
         "skku-stem-tutor"
       ],
@@ -150,6 +150,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T02:22:56.218Z",
+      "agent": "skku-stem-tutor",
+      "topic": "skku-midterm-prep",
+      "status": "done",
+      "summary": "QIE2 week7-1 transcript summary: textbook Y corrected to iY=[[0,1],[-1,0]], matching midterm note 662c7fe.",
+      "ref": "84858f5"
+    },
     {
       "ts": "2026-10-19T02:22:22.445Z",
       "agent": "skku-reviewer",

@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261019T202834894Z-grok-coding-bot-wsrtnp",
+  "ts": "2026-10-19T20:28:34.894Z",
+  "agent": "grok-coding-bot",
+  "type": "doc",
+  "data": {
+    "topic": "notch-scroll-menubar",
+    "name": "HANDOFF.md",
+    "body": "# HANDOFF: notch-scroll-menubar\n\n## Active topic\nmacOS app that makes notch-hidden third-party status items reachable via a horizontally scrollable strip.\n\n## State\n- Repo created on owner's MacBook external SSD: `/Volumes/SangHun/notch-scroll` (git, commit 3493a19).\n- Files: `CLAUDE.md` (agent rules, design, layout), `docs/SPEC.md` (problem, macOS layout background, goals, acceptance), `docs/PLAN.md` (10 steps).\n- Design agreed with owner: consolidate third-party items into a zone between two own separator NSStatusItems; system items stay put; real items hidden; captured-image strip in an NSPanel scrolls on hover + horizontal scroll; click temp-reveals the real item and forwards the click. Real moves only at consolidation, new-item insertion, and click.\n- No code yet.\n\n## Next step\nClaude Code session in the repo: start PLAN step 1 (Xcode skeleton + permission onboarding), then step 2 (enumerate items).\n\n## Blocked on\nNothing. Note: Developer ID signing ($99/yr) needed for full macOS 26 behaviour; ad-hoc OK for early steps.\n\n## References\nIce https://github.com/jordanbaird/Ice (GPL-3.0), Thaw https://github.com/thaw-app/Thaw"
+  }
+}

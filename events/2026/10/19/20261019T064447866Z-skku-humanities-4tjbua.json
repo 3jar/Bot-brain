@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261019T064447866Z-skku-humanities-4tjbua",
+  "ts": "2026-10-19T06:44:47.866Z",
+  "agent": "skku-humanities",
+  "type": "log",
+  "data": {
+    "topic": "stoto-nonverbal-stats-supplement",
+    "status": "done",
+    "summary": "Added supplement on Mehrabian 93% and Birdwhistell 65:35 sources/limits to 스토 midterm note 3-2 section (commit 9e7c03c, MacBook, pushed). Also answered credibility/goodwill, topic reveal in intro, rhetorical question via Lucas ch.10."
+  }
+}

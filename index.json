@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T020353001Z-skku-reviewer-5uvra0",
-  "events": 16,
+  "folded_through": "20261019T020410711Z-skku-reviewer-ihrpmb",
+  "events": 17,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -48,8 +48,8 @@
       }
     },
     "skku-reviewer": {
-      "last_seen": "2026-10-19T02:03:53.001Z",
-      "handoff_updated": null,
+      "last_seen": "2026-10-19T02:04:10.711Z",
+      "handoff_updated": "2026-10-19T02:04:10.711Z",
       "logs": 1,
       "notes": 0,
       "last_log": {

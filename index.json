@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T213706206Z-grok-coding-bot-xq9hi6",
-  "events": 41,
+  "folded_through": "20261019T225629711Z-skku-icampus-bot-evezqh",
+  "events": 42,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -61,16 +61,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-18T22:57:23.890Z",
+      "last_seen": "2026-10-19T22:56:29.711Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 4,
+      "logs": 5,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-18T22:57:23.890Z",
+        "ts": "2026-10-19T22:56:29.711Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 10/19: pulled vault; 07 KST Actions run not started yet; new bookclub week-8 assignment due 10/22; four midterms on calendar.",
+        "summary": "Morning brief 10/20: pulled vault; canvas-sync ran 17:44 and 01:26 KST, 07 run not yet; new Calculus Quiz 08 due 10/25; exams on calendar.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -144,7 +144,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-18T22:57:23.890Z",
+      "updated": "2026-10-19T22:56:29.711Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -217,6 +217,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T22:56:29.711Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 10/20: pulled vault; canvas-sync ran 17:44 and 01:26 KST, 07 run not yet; new Calculus Quiz 08 due 10/25; exams on calendar.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-10-19T21:37:06.206Z",
       "agent": "grok-coding-bot",

@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "20261019T020410711Z-skku-reviewer-ihrpmb",
+  "ts": "2026-10-19T02:04:10.711Z",
+  "agent": "skku-reviewer",
+  "type": "handoff",
+  "data": {
+    "body": "# skku-reviewer handoff\n\n- Active topic: skku-review\n- State: First review done for 2026-2/스피치와토론/산출물/중간고사_정리노트.md (reviewed at 3e52212). Review file exists only on the box: /workspace/SKKU-review/2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md. NOT committed.\n- Blocked on: no git credentials on box (gh not logged in, https clone fails); cursor-github connector has no create/update-file tool. Owner must provide a write path.\n- Next step: commit the review via vault_sync.sh (VAULT_AGENT=grok VAULT_ON_CONFLICT=branch, msg '스토: 중간고사_정리노트 검토 추가'); then review QIE2 중간고사_영상강의_정리.md (exam 10/21 10:30 KST), then Phys2 중간고사_개념정리.md (exam 10/21 20:30 KST).\n- Note: review path/commit-message convention for reviews is not in AGENTS.md; confirm with owner."
+  }
+}

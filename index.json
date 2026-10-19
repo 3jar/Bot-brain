@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T022140446Z-skku-humanities-gq8hiy",
-  "events": 23,
+  "folded_through": "20261019T022222445Z-skku-reviewer-3lpi76",
+  "events": 24,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -62,17 +62,17 @@
       }
     },
     "skku-reviewer": {
-      "last_seen": "2026-10-19T02:19:05.463Z",
+      "last_seen": "2026-10-19T02:22:22.445Z",
       "handoff_updated": "2026-10-19T02:04:10.711Z",
-      "logs": 4,
+      "logs": 5,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T02:19:05.463Z",
+        "ts": "2026-10-19T02:22:22.445Z",
         "agent": "skku-reviewer",
         "topic": "skku-review",
         "status": "done",
-        "summary": "Re-reviewed speech midterm note ad02582: A1-A5 fixed; B6 and exam rules missing; 2 PDF checks pending; committed 01844b3.",
-        "ref": "2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md"
+        "summary": "Re-reviewed GenPhys2 note eaae1c6: all fix requests 1-6 correct; only rho symbol clash remains; committed dd59f2a.",
+        "ref": "2026-2/General Physics 2/산출물/검토/중간고사_개념정리_검토.md"
       }
     },
     "skku-stem-tutor": {
@@ -133,7 +133,7 @@
       "docs": {}
     },
     "skku-review": {
-      "updated": "2026-10-19T02:19:05.463Z",
+      "updated": "2026-10-19T02:22:22.445Z",
       "agents": [
         "skku-reviewer"
       ],
@@ -150,6 +150,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T02:22:22.445Z",
+      "agent": "skku-reviewer",
+      "topic": "skku-review",
+      "status": "done",
+      "summary": "Re-reviewed GenPhys2 note eaae1c6: all fix requests 1-6 correct; only rho symbol clash remains; committed dd59f2a.",
+      "ref": "2026-2/General Physics 2/산출물/검토/중간고사_개념정리_검토.md"
+    },
     {
       "ts": "2026-10-19T02:21:40.446Z",
       "agent": "skku-humanities",

@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T045248245Z-skku-reviewer-l64ob5",
-  "events": 27,
+  "folded_through": "20261019T045536424Z-skku-humanities-btrdqc",
+  "events": 28,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -34,17 +34,16 @@
       }
     },
     "skku-humanities": {
-      "last_seen": "2026-10-19T02:21:40.446Z",
+      "last_seen": "2026-10-19T04:55:36.424Z",
       "handoff_updated": null,
-      "logs": 2,
+      "logs": 3,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T02:21:40.446Z",
+        "ts": "2026-10-19T04:55:36.424Z",
         "agent": "skku-humanities",
-        "topic": "skku-speech-midterm",
+        "topic": "speech-midterm-note-2-1",
         "status": "done",
-        "summary": "Applied re-review fixes to speech midterm note: factual-claim fix, example pairing note, exam rules, debate origins; pushed from MacBook.",
-        "ref": "https://github.com/3jar/SKKU/commit/e2c0e4786cdbdb9cefb446106bd23d27e8aada52"
+        "summary": "2-1 구체적 목적 reframed as checklist w/ Lucas examples, 오존층 outline-head analysis added, 검토봇 fixes applied (7eab6a8). MacBook stale note restored; GP2 deletion committed (bb69ba4). Pending: 고명북 8주차 과제."
       }
     },
     "skku-icampus-bot": {
@@ -147,9 +146,24 @@
       ],
       "last_status": "done",
       "docs": {}
+    },
+    "speech-midterm-note-2-1": {
+      "updated": "2026-10-19T04:55:36.424Z",
+      "agents": [
+        "skku-humanities"
+      ],
+      "last_status": "done",
+      "docs": {}
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T04:55:36.424Z",
+      "agent": "skku-humanities",
+      "topic": "speech-midterm-note-2-1",
+      "status": "done",
+      "summary": "2-1 구체적 목적 reframed as checklist w/ Lucas examples, 오존층 outline-head analysis added, 검토봇 fixes applied (7eab6a8). MacBook stale note restored; GP2 deletion committed (bb69ba4). Pending: 고명북 8주차 과제."
+    },
     {
       "ts": "2026-10-19T04:52:48.245Z",
       "agent": "skku-reviewer",

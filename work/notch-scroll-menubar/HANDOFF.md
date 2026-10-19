@@ -1,19 +1,16 @@
 # HANDOFF: notch-scroll-menubar
 
-## Active topic
-macOS app that makes notch-hidden third-party status items reachable via a horizontally scrollable strip.
-
 ## State
-- Repo created on owner's MacBook external SSD: `/Volumes/SangHun/notch-scroll` (git, commit 3493a19).
-- Files: `CLAUDE.md` (agent rules, design, layout), `docs/SPEC.md` (problem, macOS layout background, goals, acceptance), `docs/PLAN.md` (10 steps).
-- Design agreed with owner: consolidate third-party items into a zone between two own separator NSStatusItems; system items stay put; real items hidden; captured-image strip in an NSPanel scrolls on hover + horizontal scroll; click temp-reveals the real item and forwards the click. Real moves only at consolidation, new-item insertion, and click.
-- No code yet.
+- Repo /Volumes/SangHun/notch-scroll, HEAD 060b1af (Step 1). Working tree clean.
+- Xcode 27.1 (27A9275) installed via mas at 05:57 KST 2026-10-20; xcode-select points to it.
+- xcodebuild blocked: Xcode license not accepted (exit 69).
 
 ## Next step
-Claude Code session in the repo: start PLAN step 1 (Xcode skeleton + permission onboarding), then step 2 (enumerate items).
+Owner runs `sudo xcodebuild -license accept` (and `xcodebuild -runFirstLaunch`), then an agent drives PLAN steps 2-9 via `claude -p --continue` with per-step build+review.
 
 ## Blocked on
-Nothing. Note: Developer ID signing ($99/yr) needed for full macOS 26 behaviour; ad-hoc OK for early steps.
+Owner accepting the Xcode license (needs sudo, and is a legal agreement).
 
-## References
-Ice https://github.com/jordanbaird/Ice (GPL-3.0), Thaw https://github.com/thaw-app/Thaw
+## Manual checks needed
+- Step 1 full xcodebuild build not yet verified with Xcode.app.
+- Xcode 27.1 ships the macOS 27 SDK; CLAUDE.md targets macOS 26 first, check deployment target.

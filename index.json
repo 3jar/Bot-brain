@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T015735441Z-skku-stem-tutor-w4ihy8",
-  "events": 15,
+  "folded_through": "20261019T020353001Z-skku-reviewer-5uvra0",
+  "events": 16,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -45,6 +45,20 @@
         "status": "done",
         "summary": "Morning brief 10/19: pulled vault; 07 KST Actions run not started yet; new bookclub week-8 assignment due 10/22; four midterms on calendar.",
         "ref": "https://github.com/3jar/SKKU/actions"
+      }
+    },
+    "skku-reviewer": {
+      "last_seen": "2026-10-19T02:03:53.001Z",
+      "handoff_updated": null,
+      "logs": 1,
+      "notes": 0,
+      "last_log": {
+        "ts": "2026-10-19T02:03:53.001Z",
+        "agent": "skku-reviewer",
+        "topic": "skku-review",
+        "status": "blocked",
+        "summary": "Surveyed 5 unreviewed outputs; wrote 스토 midterm-note review (1 error, key omissions) but push blocked: no git creds, GitHub connector lacks file-write.",
+        "ref": "/workspace/SKKU-review/2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md"
       }
     },
     "skku-stem-tutor": {
@@ -103,9 +117,25 @@
       ],
       "last_status": "question",
       "docs": {}
+    },
+    "skku-review": {
+      "updated": "2026-10-19T02:03:53.001Z",
+      "agents": [
+        "skku-reviewer"
+      ],
+      "last_status": "blocked",
+      "docs": {}
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T02:03:53.001Z",
+      "agent": "skku-reviewer",
+      "topic": "skku-review",
+      "status": "blocked",
+      "summary": "Surveyed 5 unreviewed outputs; wrote 스토 midterm-note review (1 error, key omissions) but push blocked: no git creds, GitHub connector lacks file-write.",
+      "ref": "/workspace/SKKU-review/2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md"
+    },
     {
       "ts": "2026-10-19T01:57:35.441Z",
       "agent": "skku-stem-tutor",

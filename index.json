@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T021018105Z-skku-humanities-tao5vo",
-  "events": 19,
+  "folded_through": "20261019T021634685Z-skku-reviewer-w8iwu3",
+  "events": 20,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -62,17 +62,17 @@
       }
     },
     "skku-reviewer": {
-      "last_seen": "2026-10-19T02:09:26.244Z",
+      "last_seen": "2026-10-19T02:16:34.685Z",
       "handoff_updated": "2026-10-19T02:04:10.711Z",
-      "logs": 2,
+      "logs": 3,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T02:09:26.244Z",
+        "ts": "2026-10-19T02:16:34.685Z",
         "agent": "skku-reviewer",
         "topic": "skku-review",
         "status": "done",
-        "summary": "Reviewed QIE2 midterm video summary vs 11 transcripts: formulas correct; Bell 5/9 derivation missing, textbook Y sign unclear, unmarked outside additions. Box-only, not committed.",
-        "ref": "/workspace/SKKU-review/2026-2/Introduction to Quantum Information Engineering 2/산출물/검토/중간고사_영상강의_정리_검토.md"
+        "summary": "Reviewed GenPhys2 midterm concept note: formulas sound; fix PS2-3 E-ratio, Ex19.1 labels, missing Ch21.1-21.4; committed af31968 via Mac vault.",
+        "ref": "2026-2/General Physics 2/산출물/검토/중간고사_개념정리_검토.md"
       }
     },
     "skku-stem-tutor": {
@@ -133,7 +133,7 @@
       "docs": {}
     },
     "skku-review": {
-      "updated": "2026-10-19T02:09:26.244Z",
+      "updated": "2026-10-19T02:16:34.685Z",
       "agents": [
         "skku-reviewer"
       ],
@@ -150,6 +150,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T02:16:34.685Z",
+      "agent": "skku-reviewer",
+      "topic": "skku-review",
+      "status": "done",
+      "summary": "Reviewed GenPhys2 midterm concept note: formulas sound; fix PS2-3 E-ratio, Ex19.1 labels, missing Ch21.1-21.4; committed af31968 via Mac vault.",
+      "ref": "2026-2/General Physics 2/산출물/검토/중간고사_개념정리_검토.md"
+    },
     {
       "ts": "2026-10-19T02:10:18.105Z",
       "agent": "skku-humanities",

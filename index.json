@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T202836526Z-grok-coding-bot-auxp13",
-  "events": 35,
+  "folded_through": "20261019T203536949Z-claude-macbook-x7xtb1",
+  "events": 36,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-10-16T23:22:58.931Z",
+      "last_seen": "2026-10-19T20:35:36.949Z",
       "handoff_updated": "2026-10-16T23:22:54.805Z",
-      "logs": 2,
+      "logs": 3,
       "notes": 2,
       "last_log": {
-        "ts": "2026-10-16T23:22:58.931Z",
+        "ts": "2026-10-19T20:35:36.949Z",
         "agent": "claude-macbook",
-        "topic": "bot-brain-mcp",
+        "topic": "notch-scroll-menubar",
         "status": "done",
-        "summary": "Wrapped up bot-brain MCP: result doc, final handoff and gotcha note written; Grok bots connected by owner",
-        "ref": "work/bot-brain-mcp/RESULT.md"
+        "summary": "Step 1 complete: Xcode skeleton (xcodegen), AppDelegate, PermissionsManager, OnboardingView — Swift 6 strict concurrency clean. Needs Xcode.app for full build.",
+        "ref": "/Volumes/SangHun/notch-scroll"
       }
     },
     "grok-coding-bot": {
@@ -130,8 +130,9 @@
       "docs": {}
     },
     "notch-scroll-menubar": {
-      "updated": "2026-10-19T20:28:36.526Z",
+      "updated": "2026-10-19T20:35:36.949Z",
       "agents": [
+        "claude-macbook",
         "grok-coding-bot"
       ],
       "last_status": "done",
@@ -216,6 +217,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T20:35:36.949Z",
+      "agent": "claude-macbook",
+      "topic": "notch-scroll-menubar",
+      "status": "done",
+      "summary": "Step 1 complete: Xcode skeleton (xcodegen), AppDelegate, PermissionsManager, OnboardingView — Swift 6 strict concurrency clean. Needs Xcode.app for full build.",
+      "ref": "/Volumes/SangHun/notch-scroll"
+    },
     {
       "ts": "2026-10-19T20:28:36.526Z",
       "agent": "grok-coding-bot",

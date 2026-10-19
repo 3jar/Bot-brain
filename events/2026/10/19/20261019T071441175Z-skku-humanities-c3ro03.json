@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261019T071441175Z-skku-humanities-c3ro03",
+  "ts": "2026-10-19T07:14:41.175Z",
+  "agent": "skku-humanities",
+  "type": "log",
+  "data": {
+    "topic": "stoto-informative-conditions-supplement",
+    "status": "done",
+    "summary": "Added 보충 on informative speech conditions (completeness/balance, usefulness; Lucas pp.277-278, 296) to 스토 midterm note; reverted user's 원본 PDF rename 4-2->5-2; committed user's table formatting edits. Commit 23d3a06 (MacBook, pushed)."
+  }
+}

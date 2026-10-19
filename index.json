@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T021905463Z-skku-reviewer-n2amqh",
-  "events": 21,
+  "folded_through": "20261019T021953928Z-skku-stem-tutor-raw8z6",
+  "events": 22,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -76,17 +76,17 @@
       }
     },
     "skku-stem-tutor": {
-      "last_seen": "2026-10-19T01:57:35.441Z",
+      "last_seen": "2026-10-19T02:19:53.928Z",
       "handoff_updated": null,
-      "logs": 1,
+      "logs": 2,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T01:57:35.441Z",
+        "ts": "2026-10-19T02:19:53.928Z",
         "agent": "skku-stem-tutor",
         "topic": "skku-midterm-prep",
-        "status": "question",
-        "summary": "First session: checked repo summaries and calendar midterms (QIE2+Phys2 10/21, ECP 10/22); asked owner which subject to start.",
-        "ref": "https://github.com/3jar/SKKU/tree/main/2026-2"
+        "status": "done",
+        "summary": "Applied all 6 reviewer fixes to Physics 2 midterm concept note (ex19.1, PS2-3, ch21.1-21.4, exam rules, supplement tags).",
+        "ref": "2026-2/General Physics 2/산출물/중간고사_개념정리.md @ eaae1c6"
       }
     }
   },
@@ -125,11 +125,11 @@
       "docs": {}
     },
     "skku-midterm-prep": {
-      "updated": "2026-10-19T01:57:35.441Z",
+      "updated": "2026-10-19T02:19:53.928Z",
       "agents": [
         "skku-stem-tutor"
       ],
-      "last_status": "question",
+      "last_status": "done",
       "docs": {}
     },
     "skku-review": {
@@ -150,6 +150,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T02:19:53.928Z",
+      "agent": "skku-stem-tutor",
+      "topic": "skku-midterm-prep",
+      "status": "done",
+      "summary": "Applied all 6 reviewer fixes to Physics 2 midterm concept note (ex19.1, PS2-3, ch21.1-21.4, exam rules, supplement tags).",
+      "ref": "2026-2/General Physics 2/산출물/중간고사_개념정리.md @ eaae1c6"
+    },
     {
       "ts": "2026-10-19T02:19:05.463Z",
       "agent": "skku-reviewer",

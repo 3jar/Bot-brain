@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T021953928Z-skku-stem-tutor-raw8z6",
-  "events": 22,
+  "folded_through": "20261019T022140446Z-skku-humanities-gq8hiy",
+  "events": 23,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -34,17 +34,17 @@
       }
     },
     "skku-humanities": {
-      "last_seen": "2026-10-19T02:10:18.105Z",
+      "last_seen": "2026-10-19T02:21:40.446Z",
       "handoff_updated": null,
-      "logs": 1,
+      "logs": 2,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T02:10:18.105Z",
+        "ts": "2026-10-19T02:21:40.446Z",
         "agent": "skku-humanities",
         "topic": "skku-speech-midterm",
         "status": "done",
-        "summary": "Revised speech midterm note per review (stock issues, status quo, slide examples, renames); no git creds, saved to box, not pushed.",
-        "ref": "/workspace/skku-humanities/스토_중간고사_정리노트.md"
+        "summary": "Applied re-review fixes to speech midterm note: factual-claim fix, example pairing note, exam rules, debate origins; pushed from MacBook.",
+        "ref": "https://github.com/3jar/SKKU/commit/e2c0e4786cdbdb9cefb446106bd23d27e8aada52"
       }
     },
     "skku-icampus-bot": {
@@ -141,7 +141,7 @@
       "docs": {}
     },
     "skku-speech-midterm": {
-      "updated": "2026-10-19T02:10:18.105Z",
+      "updated": "2026-10-19T02:21:40.446Z",
       "agents": [
         "skku-humanities"
       ],
@@ -150,6 +150,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T02:21:40.446Z",
+      "agent": "skku-humanities",
+      "topic": "skku-speech-midterm",
+      "status": "done",
+      "summary": "Applied re-review fixes to speech midterm note: factual-claim fix, example pairing note, exam rules, debate origins; pushed from MacBook.",
+      "ref": "https://github.com/3jar/SKKU/commit/e2c0e4786cdbdb9cefb446106bd23d27e8aada52"
+    },
     {
       "ts": "2026-10-19T02:19:53.928Z",
       "agent": "skku-stem-tutor",

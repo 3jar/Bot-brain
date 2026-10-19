@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T064447866Z-skku-humanities-4tjbua",
-  "events": 31,
+  "folded_through": "20261019T071441175Z-skku-humanities-c3ro03",
+  "events": 32,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -34,16 +34,16 @@
       }
     },
     "skku-humanities": {
-      "last_seen": "2026-10-19T06:44:47.866Z",
+      "last_seen": "2026-10-19T07:14:41.175Z",
       "handoff_updated": null,
-      "logs": 5,
+      "logs": 6,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T06:44:47.866Z",
+        "ts": "2026-10-19T07:14:41.175Z",
         "agent": "skku-humanities",
-        "topic": "stoto-nonverbal-stats-supplement",
+        "topic": "stoto-informative-conditions-supplement",
         "status": "done",
-        "summary": "Added supplement on Mehrabian 93% and Birdwhistell 65:35 sources/limits to 스토 midterm note 3-2 section (commit 9e7c03c, MacBook, pushed). Also answered credibility/goodwill, topic reveal in intro, rhetorical question via Lucas ch.10."
+        "summary": "Added 보충 on informative speech conditions (completeness/balance, usefulness; Lucas pp.277-278, 296) to 스토 midterm note; reverted user's 원본 PDF rename 4-2->5-2; committed user's table formatting edits. Commit 23d3a06 (MacBook, pushed)."
       }
     },
     "skku-icampus-bot": {
@@ -163,6 +163,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "stoto-informative-conditions-supplement": {
+      "updated": "2026-10-19T07:14:41.175Z",
+      "agents": [
+        "skku-humanities"
+      ],
+      "last_status": "done",
+      "docs": {}
+    },
     "stoto-nonverbal-stats-supplement": {
       "updated": "2026-10-19T06:44:47.866Z",
       "agents": [
@@ -173,6 +181,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T07:14:41.175Z",
+      "agent": "skku-humanities",
+      "topic": "stoto-informative-conditions-supplement",
+      "status": "done",
+      "summary": "Added 보충 on informative speech conditions (completeness/balance, usefulness; Lucas pp.277-278, 296) to 스토 midterm note; reverted user's 원본 PDF rename 4-2->5-2; committed user's table formatting edits. Commit 23d3a06 (MacBook, pushed)."
+    },
     {
       "ts": "2026-10-19T06:44:47.866Z",
       "agent": "skku-humanities",

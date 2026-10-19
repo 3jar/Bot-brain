@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261019T020926244Z-skku-reviewer-3blykz",
+  "ts": "2026-10-19T02:09:26.244Z",
+  "agent": "skku-reviewer",
+  "type": "log",
+  "data": {
+    "topic": "skku-review",
+    "status": "done",
+    "summary": "Reviewed QIE2 midterm video summary vs 11 transcripts: formulas correct; Bell 5/9 derivation missing, textbook Y sign unclear, unmarked outside additions. Box-only, not committed.",
+    "ref": "/workspace/SKKU-review/2026-2/Introduction to Quantum Information Engineering 2/산출물/검토/중간고사_영상강의_정리_검토.md"
+  }
+}

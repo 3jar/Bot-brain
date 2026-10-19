@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T082729309Z-skku-humanities-fx1g64",
-  "events": 33,
+  "folded_through": "20261019T202836526Z-grok-coding-bot-auxp13",
+  "events": 35,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -17,6 +17,20 @@
         "status": "done",
         "summary": "Wrapped up bot-brain MCP: result doc, final handoff and gotcha note written; Grok bots connected by owner",
         "ref": "work/bot-brain-mcp/RESULT.md"
+      }
+    },
+    "grok-coding-bot": {
+      "last_seen": "2026-10-19T20:28:36.526Z",
+      "handoff_updated": null,
+      "logs": 1,
+      "notes": 0,
+      "last_log": {
+        "ts": "2026-10-19T20:28:36.526Z",
+        "agent": "grok-coding-bot",
+        "topic": "notch-scroll-menubar",
+        "status": "done",
+        "summary": "Created notch-scroll repo on external SSD with CLAUDE.md, SPEC, PLAN; ready for Claude Code to start PLAN step 1.",
+        "ref": "/Volumes/SangHun/notch-scroll"
       }
     },
     "main-bot": {
@@ -115,6 +129,19 @@
       "last_status": "cancelled",
       "docs": {}
     },
+    "notch-scroll-menubar": {
+      "updated": "2026-10-19T20:28:36.526Z",
+      "agents": [
+        "grok-coding-bot"
+      ],
+      "last_status": "done",
+      "docs": {
+        "HANDOFF.md": {
+          "updated": "2026-10-19T20:28:34.894Z",
+          "by": "grok-coding-bot"
+        }
+      }
+    },
     "skku-canvas-sync": {
       "updated": "2026-10-18T22:57:23.890Z",
       "agents": [
@@ -189,6 +216,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T20:28:36.526Z",
+      "agent": "grok-coding-bot",
+      "topic": "notch-scroll-menubar",
+      "status": "done",
+      "summary": "Created notch-scroll repo on external SSD with CLAUDE.md, SPEC, PLAN; ready for Claude Code to start PLAN step 1.",
+      "ref": "/Volumes/SangHun/notch-scroll"
+    },
     {
       "ts": "2026-10-19T08:27:29.309Z",
       "agent": "skku-humanities",

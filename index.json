@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261018T225723890Z-skku-icampus-bot-2qhzu2",
-  "events": 14,
+  "folded_through": "20261019T015735441Z-skku-stem-tutor-w4ihy8",
+  "events": 15,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -46,6 +46,20 @@
         "summary": "Morning brief 10/19: pulled vault; 07 KST Actions run not started yet; new bookclub week-8 assignment due 10/22; four midterms on calendar.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
+    },
+    "skku-stem-tutor": {
+      "last_seen": "2026-10-19T01:57:35.441Z",
+      "handoff_updated": null,
+      "logs": 1,
+      "notes": 0,
+      "last_log": {
+        "ts": "2026-10-19T01:57:35.441Z",
+        "agent": "skku-stem-tutor",
+        "topic": "skku-midterm-prep",
+        "status": "question",
+        "summary": "First session: checked repo summaries and calendar midterms (QIE2+Phys2 10/21, ECP 10/22); asked owner which subject to start.",
+        "ref": "https://github.com/3jar/SKKU/tree/main/2026-2"
+      }
     }
   },
   "topics": {
@@ -81,9 +95,25 @@
       ],
       "last_status": "done",
       "docs": {}
+    },
+    "skku-midterm-prep": {
+      "updated": "2026-10-19T01:57:35.441Z",
+      "agents": [
+        "skku-stem-tutor"
+      ],
+      "last_status": "question",
+      "docs": {}
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-19T01:57:35.441Z",
+      "agent": "skku-stem-tutor",
+      "topic": "skku-midterm-prep",
+      "status": "question",
+      "summary": "First session: checked repo summaries and calendar midterms (QIE2+Phys2 10/21, ECP 10/22); asked owner which subject to start.",
+      "ref": "https://github.com/3jar/SKKU/tree/main/2026-2"
+    },
     {
       "ts": "2026-10-18T22:57:23.890Z",
       "agent": "skku-icampus-bot",

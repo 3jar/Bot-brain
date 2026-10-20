@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261019T225629711Z-skku-icampus-bot-evezqh",
-  "events": 42,
+  "folded_through": "20261020T025829677Z-skku-reviewer-aobhrm",
+  "events": 43,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -75,17 +75,17 @@
       }
     },
     "skku-reviewer": {
-      "last_seen": "2026-10-19T05:37:23.866Z",
+      "last_seen": "2026-10-20T02:58:29.677Z",
       "handoff_updated": "2026-10-19T02:04:10.711Z",
-      "logs": 8,
+      "logs": 9,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T05:37:23.866Z",
+        "ts": "2026-10-20T02:58:29.677Z",
         "agent": "skku-reviewer",
         "topic": "skku-review",
         "status": "done",
-        "summary": "Reviewed speech note 2-2 edits 08e8c93/f5cc08e: quotes and Lucas 13e verified; PDF layout confirms headache placement; fix example pairing; committed fc8cca9.",
-        "ref": "2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md"
+        "summary": "Reviewed EE 리뷰_총정리: text matches; PDF shows wk3 p.22 Q1 answer 'offering'; wk2 p.8 is quiz-scope image; 3 vocab exercises missing; committed da07740.",
+        "ref": "2026-2/Entrepreneurship English/산출물/검토/리뷰_총정리_검토.md"
       }
     },
     "skku-stem-tutor": {
@@ -160,7 +160,7 @@
       "docs": {}
     },
     "skku-review": {
-      "updated": "2026-10-19T05:37:23.866Z",
+      "updated": "2026-10-20T02:58:29.677Z",
       "agents": [
         "skku-reviewer"
       ],
@@ -217,6 +217,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-20T02:58:29.677Z",
+      "agent": "skku-reviewer",
+      "topic": "skku-review",
+      "status": "done",
+      "summary": "Reviewed EE 리뷰_총정리: text matches; PDF shows wk3 p.22 Q1 answer 'offering'; wk2 p.8 is quiz-scope image; 3 vocab exercises missing; committed da07740.",
+      "ref": "2026-2/Entrepreneurship English/산출물/검토/리뷰_총정리_검토.md"
+    },
     {
       "ts": "2026-10-19T22:56:29.711Z",
       "agent": "skku-icampus-bot",
@@ -443,14 +451,6 @@
       "status": "done",
       "summary": "LearningX lecture docs now sync (30 new), legacy ppt converts via LibreOffice; 6 EE docx still unfetchable",
       "ref": "/Volumes/SangHun/Skku/_system/canvas_sync.py"
-    },
-    {
-      "ts": "2026-10-16T23:14:55.168Z",
-      "agent": "claude-macbook",
-      "topic": "bot-brain-mcp",
-      "status": "done",
-      "summary": "Deployed bot-brain MCP on Vercel and verified the journal-to-main fold path end to end",
-      "ref": "https://botbrain-gamma.vercel.app/mcp"
     }
   ]
 }

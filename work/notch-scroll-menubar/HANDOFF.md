@@ -1,12 +1,12 @@
 # HANDOFF: notch-scroll-menubar
 
 ## State
-- Design pivot (2026-10-20): one fixed-width NSStatusItem widget right of the notch that draws captured icons of user-chosen apps and scrolls them horizontally; click opens the real menu via AXPress, fallback ClickForwarder moving only that item temporarily. No separators/zone/consolidation.
-- Docs rewritten: CLAUDE.md, docs/SPEC.md, docs/PLAN.md (PLAN v2, 9 steps). Commit 3ed558d. No code changed yet; HEAD code still v1 (8c2b71f fix included).
-- Reused v1: Bridging, MenuBarItems, Capture, EventPoster, ClickForwarder, Permissions, control window + hotkey. Deprecated (removed in v2 step 7): Zone/, UI/ScrollStrip/, global snapshot/restore.
+- HEAD 67063f3: docs record AX spike result (AXPress opened menus for all tested items incl. notch-hidden); PLAN/SPEC note AXPress primary, ClickForwarder rare fallback. This commit also carries the v1-zone menu gating (NSMenuItemValidation) because commit c4183a1 vanished from the branch (reset outside this agent) while its change stayed in the tree.
+- v2 Step 2 (widget shell) PARTIAL and uncommitted: NotchScroll/AppDelegate.swift modified + new NotchScroll/Widget/WidgetView.swift (not added to Xcode project); build currently FAILS (cannot find WidgetView, type inference errors). Claude Code hit usage limit, resets 21:00 KST 2026-10-20.
+- Decided: control icon merged into widget; left-click = icons, right-click/Option-click = menu (Settings, Control Window, Quit).
 
 ## Next step
-PLAN v2 step 1: AXPress spike (docs/AX_SPIKE.md), needs owner to run it with Accessibility granted.
+After 21:00 KST: fresh claude -p to finish v2 Step 2 from the partial tree (add WidgetView to project, fix errors, commit), then Steps 3-6. Driver: /tmp/ns_v2.sh "<tag>" "<prompt>".
 
 ## Blocked on
-Owner runtime testing; Developer ID signing (paid account).
+Claude Code usage limit.

@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261020T072838884Z-grok-coding-bot-edi9kc",
+  "ts": "2026-10-20T07:28:38.884Z",
+  "agent": "grok-coding-bot",
+  "type": "doc",
+  "data": {
+    "topic": "notch-scroll-menubar",
+    "name": "HANDOFF.md",
+    "body": "# HANDOFF: notch-scroll-menubar\n\n## State\n- Repo /Volumes/SangHun/notch-scroll, HEAD 6b5d46c, tree clean, Debug build succeeds. Local commits only.\n- PLAN steps 1-9 implemented (step 10 skipped). Step 4: 84b8ada+1499d3a (right separator expands). Step 5: caab27a+4706e69. Step 6: a36e78a. Step 7: f3ad92d. Step 8: 808d6ac+c57a35c (notch-obscured nudge, CGWindowList menu-close polling). Step 9: 6b5d46c (signing placeholder + docs/SIGNING.md, multi-display, sleep/wake, detector gated on consolidation).\n- App never run; nothing verified at runtime.\n\n## Next step\nOwner runs docs/MANUAL_TESTS.md end to end (grant Accessibility + Screen Recording, Snapshot positions, Consolidate Zone, strip hover/scroll, click forwarding). Then Developer ID signing per docs/SIGNING.md.\n\n## Blocked on\nHuman: permission grants, runtime testing, paid Developer ID for owner PID resolution on macOS 26.\n\n## Risks to check at runtime\nCmd-drag timing (50 ms steps), menu-close detection by popUpMenu level, temp nudge-back of items behind notch, CGS owner lookup failing ad-hoc.\n"
+  }
+}

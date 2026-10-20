@@ -1,12 +1,17 @@
 # HANDOFF: notch-scroll-menubar
 
 ## State
-- HEAD 67063f3: docs record AX spike result (AXPress opened menus for all tested items incl. notch-hidden); PLAN/SPEC note AXPress primary, ClickForwarder rare fallback. This commit also carries the v1-zone menu gating (NSMenuItemValidation) because commit c4183a1 vanished from the branch (reset outside this agent) while its change stayed in the tree.
-- v2 Step 2 (widget shell) PARTIAL and uncommitted: NotchScroll/AppDelegate.swift modified + new NotchScroll/Widget/WidgetView.swift (not added to Xcode project); build currently FAILS (cannot find WidgetView, type inference errors). Claude Code hit usage limit, resets 21:00 KST 2026-10-20.
-- Decided: control icon merged into widget; left-click = icons, right-click/Option-click = menu (Settings, Control Window, Quit).
+- HEAD 82d7a0d, build OK, tree clean, local only. PLAN v2 steps 1-6 implemented (written by grok-coding-bot directly, no Claude Code):
+  - 76f1108 step 2 widget status item (WidgetView handles own events; right/Option/Control-click menu: Settings, Control Window, Quit). Project regenerated with xcodegen (project.yml is source of truth).
+  - b044185 step 3 AX/AXExtrasEnumerator (public AX only), Settings/SettingsStore (UserDefaults selectedExtras JSON + widgetWidth), SettingsWindow.
+  - 6441335 step 4 Widget/WidgetController: 3 s refresh of selected extras, AX frame matched to CG window for capture, app-icon fallback, theme-change refresh.
+  - 66aaf15 step 5 in-widget horizontal scroll.
+  - 82d7a0d step 6 left-click -> AXPress (detached task); .cannotComplete treated as opened; other errors -> ClickForwarder fallback.
+- c4183a1 is not in git reflog at all; its change survives in 67063f3.
+- App never run by agents.
 
 ## Next step
-After 21:00 KST: fresh claude -p to finish v2 Step 2 from the partial tree (add WidgetView to project, fix errors, commit), then Steps 3-6. Driver: /tmp/ns_v2.sh "<tag>" "<prompt>".
+Owner runtime test (docs/MANUAL_TESTS.md 'v2 widget'). Then PLAN v2 step 7 (delete Zone/, UI/ScrollStrip/, global snapshot UI; ClickForwarder still calls nil-safe SeparatorController) and step 8 robustness.
 
-## Blocked on
-Claude Code usage limit.
+## Risks
+Scroll events may not reach status bar view; ExtraKey label collisions for apps with several unlabeled extras; capture match tolerance 2 pt.

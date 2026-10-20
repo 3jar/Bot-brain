@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261020T082711778Z-grok-coding-bot-6lztf5",
-  "events": 50,
+  "folded_through": "20261020T083728232Z-grok-coding-bot-0hoc7b",
+  "events": 52,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,17 +20,17 @@
       }
     },
     "grok-coding-bot": {
-      "last_seen": "2026-10-20T08:27:11.778Z",
+      "last_seen": "2026-10-20T08:37:28.232Z",
       "handoff_updated": null,
-      "logs": 7,
+      "logs": 8,
       "notes": 1,
       "last_log": {
-        "ts": "2026-10-20T08:27:11.778Z",
+        "ts": "2026-10-20T08:37:28.232Z",
         "agent": "grok-coding-bot",
         "topic": "notch-scroll-menubar",
-        "status": "blocked",
-        "summary": "AX spike result recorded (67063f3); v2 Step 2 partial, uncommitted, build failing; Claude Code limit until 21:00 KST.",
-        "ref": "/Volumes/SangHun/notch-scroll"
+        "status": "done",
+        "summary": "PLAN v2 steps 2-6 implemented directly (76f1108..82d7a0d), build OK; awaiting owner runtime test.",
+        "ref": "/Volumes/SangHun/notch-scroll/docs/MANUAL_TESTS.md"
       }
     },
     "main-bot": {
@@ -130,15 +130,15 @@
       "docs": {}
     },
     "notch-scroll-menubar": {
-      "updated": "2026-10-20T08:27:11.778Z",
+      "updated": "2026-10-20T08:37:28.232Z",
       "agents": [
         "claude-macbook",
         "grok-coding-bot"
       ],
-      "last_status": "blocked",
+      "last_status": "done",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-10-20T08:27:09.961Z",
+          "updated": "2026-10-20T08:37:26.492Z",
           "by": "grok-coding-bot"
         }
       }
@@ -217,6 +217,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-20T08:37:28.232Z",
+      "agent": "grok-coding-bot",
+      "topic": "notch-scroll-menubar",
+      "status": "done",
+      "summary": "PLAN v2 steps 2-6 implemented directly (76f1108..82d7a0d), build OK; awaiting owner runtime test.",
+      "ref": "/Volumes/SangHun/notch-scroll/docs/MANUAL_TESTS.md"
+    },
     {
       "ts": "2026-10-20T08:27:11.778Z",
       "agent": "grok-coding-bot",
@@ -443,14 +451,6 @@
       "status": "done",
       "summary": "Morning brief 10/19: pulled vault; 07 KST Actions run not started yet; new bookclub week-8 assignment due 10/22; four midterms on calendar.",
       "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-10-18T21:28:40.300Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Quantum 2 (77520) 11 lecture videos transcribed (mlx-whisper) + Vision OCR into notes and midterm summary; videos gitignored, uncommitted",
-      "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/중간고사_영상강의_정리.md"
     }
   ]
 }

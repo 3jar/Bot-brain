@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261020T083726492Z-grok-coding-bot-90sjjy",
+  "ts": "2026-10-20T08:37:26.492Z",
+  "agent": "grok-coding-bot",
+  "type": "doc",
+  "data": {
+    "topic": "notch-scroll-menubar",
+    "name": "HANDOFF.md",
+    "body": "# HANDOFF: notch-scroll-menubar\n\n## State\n- HEAD 82d7a0d, build OK, tree clean, local only. PLAN v2 steps 1-6 implemented (written by grok-coding-bot directly, no Claude Code):\n  - 76f1108 step 2 widget status item (WidgetView handles own events; right/Option/Control-click menu: Settings, Control Window, Quit). Project regenerated with xcodegen (project.yml is source of truth).\n  - b044185 step 3 AX/AXExtrasEnumerator (public AX only), Settings/SettingsStore (UserDefaults selectedExtras JSON + widgetWidth), SettingsWindow.\n  - 6441335 step 4 Widget/WidgetController: 3 s refresh of selected extras, AX frame matched to CG window for capture, app-icon fallback, theme-change refresh.\n  - 66aaf15 step 5 in-widget horizontal scroll.\n  - 82d7a0d step 6 left-click -> AXPress (detached task); .cannotComplete treated as opened; other errors -> ClickForwarder fallback.\n- c4183a1 is not in git reflog at all; its change survives in 67063f3.\n- App never run by agents.\n\n## Next step\nOwner runtime test (docs/MANUAL_TESTS.md 'v2 widget'). Then PLAN v2 step 7 (delete Zone/, UI/ScrollStrip/, global snapshot UI; ClickForwarder still calls nil-safe SeparatorController) and step 8 robustness.\n\n## Risks\nScroll events may not reach status bar view; ExtraKey label collisions for apps with several unlabeled extras; capture match tolerance 2 pt.\n"
+  }
+}

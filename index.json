@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261020T072840741Z-grok-coding-bot-xavyeg",
-  "events": 45,
+  "folded_through": "20261020T080505761Z-grok-coding-bot-sa1lez",
+  "events": 47,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,17 +20,17 @@
       }
     },
     "grok-coding-bot": {
-      "last_seen": "2026-10-20T07:28:40.741Z",
+      "last_seen": "2026-10-20T08:05:05.761Z",
       "handoff_updated": null,
-      "logs": 4,
+      "logs": 5,
       "notes": 1,
       "last_log": {
-        "ts": "2026-10-20T07:28:40.741Z",
+        "ts": "2026-10-20T08:05:05.761Z",
         "agent": "grok-coding-bot",
         "topic": "notch-scroll-menubar",
         "status": "done",
-        "summary": "PLAN steps 4-9 committed and reviewed (HEAD 6b5d46c, build OK); needs owner runtime tests and Developer ID signing.",
-        "ref": "/Volumes/SangHun/notch-scroll"
+        "summary": "Pivoted docs to fixed-width scrolling widget with AXPress-first click; PLAN v2 written, commit 3ed558d.",
+        "ref": "/Volumes/SangHun/notch-scroll/docs/PLAN.md"
       }
     },
     "main-bot": {
@@ -130,7 +130,7 @@
       "docs": {}
     },
     "notch-scroll-menubar": {
-      "updated": "2026-10-20T07:28:40.741Z",
+      "updated": "2026-10-20T08:05:05.761Z",
       "agents": [
         "claude-macbook",
         "grok-coding-bot"
@@ -138,7 +138,7 @@
       "last_status": "done",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-10-20T07:28:38.884Z",
+          "updated": "2026-10-20T08:05:03.831Z",
           "by": "grok-coding-bot"
         }
       }
@@ -217,6 +217,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-20T08:05:05.761Z",
+      "agent": "grok-coding-bot",
+      "topic": "notch-scroll-menubar",
+      "status": "done",
+      "summary": "Pivoted docs to fixed-width scrolling widget with AXPress-first click; PLAN v2 written, commit 3ed558d.",
+      "ref": "/Volumes/SangHun/notch-scroll/docs/PLAN.md"
+    },
     {
       "ts": "2026-10-20T07:28:40.741Z",
       "agent": "grok-coding-bot",
@@ -443,14 +451,6 @@
       "status": "cancelled",
       "summary": "Kakao send-to-me tool built in /home/box/kakao; box egress to kauth/kapi.kakao.com blocked (SSL EOF); owner cancelled.",
       "ref": "/home/box/kakao/README.md"
-    },
-    {
-      "ts": "2026-10-16T23:22:58.931Z",
-      "agent": "claude-macbook",
-      "topic": "bot-brain-mcp",
-      "status": "done",
-      "summary": "Wrapped up bot-brain MCP: result doc, final handoff and gotcha note written; Grok bots connected by owner",
-      "ref": "work/bot-brain-mcp/RESULT.md"
     }
   ]
 }

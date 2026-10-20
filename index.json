@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261020T080505761Z-grok-coding-bot-sa1lez",
-  "events": 47,
+  "folded_through": "20261020T081711410Z-grok-coding-bot-hmq32b",
+  "events": 48,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,17 +20,17 @@
       }
     },
     "grok-coding-bot": {
-      "last_seen": "2026-10-20T08:05:05.761Z",
+      "last_seen": "2026-10-20T08:17:11.410Z",
       "handoff_updated": null,
-      "logs": 5,
+      "logs": 6,
       "notes": 1,
       "last_log": {
-        "ts": "2026-10-20T08:05:05.761Z",
+        "ts": "2026-10-20T08:17:11.410Z",
         "agent": "grok-coding-bot",
         "topic": "notch-scroll-menubar",
         "status": "done",
-        "summary": "Pivoted docs to fixed-width scrolling widget with AXPress-first click; PLAN v2 written, commit 3ed558d.",
-        "ref": "/Volumes/SangHun/notch-scroll/docs/PLAN.md"
+        "summary": "PLAN v2 step 1 AXPress spike in control window, v1 zone code gated off (5bfbf26, c4183a1); awaiting owner run + export.",
+        "ref": "/Volumes/SangHun/notch-scroll/docs/AX_SPIKE.md"
       }
     },
     "main-bot": {
@@ -130,7 +130,7 @@
       "docs": {}
     },
     "notch-scroll-menubar": {
-      "updated": "2026-10-20T08:05:05.761Z",
+      "updated": "2026-10-20T08:17:11.410Z",
       "agents": [
         "claude-macbook",
         "grok-coding-bot"
@@ -217,6 +217,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-20T08:17:11.410Z",
+      "agent": "grok-coding-bot",
+      "topic": "notch-scroll-menubar",
+      "status": "done",
+      "summary": "PLAN v2 step 1 AXPress spike in control window, v1 zone code gated off (5bfbf26, c4183a1); awaiting owner run + export.",
+      "ref": "/Volumes/SangHun/notch-scroll/docs/AX_SPIKE.md"
+    },
     {
       "ts": "2026-10-20T08:05:05.761Z",
       "agent": "grok-coding-bot",
@@ -443,14 +451,6 @@
       "status": "done",
       "summary": "Morning brief 10/18: pulled vault, 3 new Calculus notices + bookclub teams; 07 KST Actions run not yet started; midterms already on calendar.",
       "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-10-17T01:20:54.184Z",
-      "agent": "main-bot",
-      "topic": "kakao-send-to-me",
-      "status": "cancelled",
-      "summary": "Kakao send-to-me tool built in /home/box/kakao; box egress to kauth/kapi.kakao.com blocked (SSL EOF); owner cancelled.",
-      "ref": "/home/box/kakao/README.md"
     }
   ]
 }

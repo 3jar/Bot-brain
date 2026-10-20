@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261020T025829677Z-skku-reviewer-aobhrm",
-  "events": 43,
+  "folded_through": "20261020T072840741Z-grok-coding-bot-xavyeg",
+  "events": 45,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-coding-bot": {
-      "last_seen": "2026-10-19T21:37:06.206Z",
+      "last_seen": "2026-10-20T07:28:40.741Z",
       "handoff_updated": null,
-      "logs": 3,
+      "logs": 4,
       "notes": 1,
       "last_log": {
-        "ts": "2026-10-19T21:37:06.206Z",
+        "ts": "2026-10-20T07:28:40.741Z",
         "agent": "grok-coding-bot",
         "topic": "notch-scroll-menubar",
-        "status": "blocked",
-        "summary": "Steps 2-3 done and reviewed (HEAD 524d39b, build OK); Step 4 blocked by Claude Code usage limit until 10:20 KST.",
+        "status": "done",
+        "summary": "PLAN steps 4-9 committed and reviewed (HEAD 6b5d46c, build OK); needs owner runtime tests and Developer ID signing.",
         "ref": "/Volumes/SangHun/notch-scroll"
       }
     },
@@ -130,15 +130,15 @@
       "docs": {}
     },
     "notch-scroll-menubar": {
-      "updated": "2026-10-19T21:37:06.206Z",
+      "updated": "2026-10-20T07:28:40.741Z",
       "agents": [
         "claude-macbook",
         "grok-coding-bot"
       ],
-      "last_status": "blocked",
+      "last_status": "done",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-10-19T21:37:04.627Z",
+          "updated": "2026-10-20T07:28:38.884Z",
           "by": "grok-coding-bot"
         }
       }
@@ -217,6 +217,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-20T07:28:40.741Z",
+      "agent": "grok-coding-bot",
+      "topic": "notch-scroll-menubar",
+      "status": "done",
+      "summary": "PLAN steps 4-9 committed and reviewed (HEAD 6b5d46c, build OK); needs owner runtime tests and Developer ID signing.",
+      "ref": "/Volumes/SangHun/notch-scroll"
+    },
     {
       "ts": "2026-10-20T02:58:29.677Z",
       "agent": "skku-reviewer",
@@ -443,14 +451,6 @@
       "status": "done",
       "summary": "Wrapped up bot-brain MCP: result doc, final handoff and gotcha note written; Grok bots connected by owner",
       "ref": "work/bot-brain-mcp/RESULT.md"
-    },
-    {
-      "ts": "2026-10-16T23:20:51.783Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "LearningX lecture docs now sync (30 new), legacy ppt converts via LibreOffice; 6 EE docx still unfetchable",
-      "ref": "/Volumes/SangHun/Skku/_system/canvas_sync.py"
     }
   ]
 }

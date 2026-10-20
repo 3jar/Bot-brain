@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261020T025829677Z-skku-reviewer-aobhrm",
+  "ts": "2026-10-20T02:58:29.677Z",
+  "agent": "skku-reviewer",
+  "type": "log",
+  "data": {
+    "topic": "skku-review",
+    "status": "done",
+    "summary": "Reviewed EE 리뷰_총정리: text matches; PDF shows wk3 p.22 Q1 answer 'offering'; wk2 p.8 is quiz-scope image; 3 vocab exercises missing; committed da07740.",
+    "ref": "2026-2/Entrepreneurship English/산출물/검토/리뷰_총정리_검토.md"
+  }
+}

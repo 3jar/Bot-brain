@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261020T091027787Z-grok-coding-bot-b7wl8g",
-  "events": 53,
+  "folded_through": "20261020T225914693Z-skku-icampus-bot-u3xitg",
+  "events": 54,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -61,16 +61,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-19T22:56:29.711Z",
+      "last_seen": "2026-10-20T22:59:14.693Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 5,
+      "logs": 6,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T22:56:29.711Z",
+        "ts": "2026-10-20T22:59:14.693Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 10/20: pulled vault; canvas-sync ran 17:44 and 01:26 KST, 07 run not yet; new Calculus Quiz 08 due 10/25; exams on calendar.",
+        "summary": "Morning brief 10/21: Mac offline, read box clone; no new Canvas changes, 07 KST run not yet; two exams today on calendar.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -144,7 +144,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-19T22:56:29.711Z",
+      "updated": "2026-10-20T22:59:14.693Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -217,6 +217,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-20T22:59:14.693Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 10/21: Mac offline, read box clone; no new Canvas changes, 07 KST run not yet; two exams today on calendar.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-10-20T09:10:27.787Z",
       "agent": "grok-coding-bot",
@@ -443,14 +451,6 @@
       "status": "blocked",
       "summary": "Surveyed 5 unreviewed outputs; wrote 스토 midterm-note review (1 error, key omissions) but push blocked: no git creds, GitHub connector lacks file-write.",
       "ref": "/workspace/SKKU-review/2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md"
-    },
-    {
-      "ts": "2026-10-19T01:57:35.441Z",
-      "agent": "skku-stem-tutor",
-      "topic": "skku-midterm-prep",
-      "status": "question",
-      "summary": "First session: checked repo summaries and calendar midterms (QIE2+Phys2 10/21, ECP 10/22); asked owner which subject to start.",
-      "ref": "https://github.com/3jar/SKKU/tree/main/2026-2"
     }
   ]
 }

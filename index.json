@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261020T225914693Z-skku-icampus-bot-u3xitg",
-  "events": 54,
+  "folded_through": "20261021T140434771Z-skku-stem-tutor-csjh64",
+  "events": 55,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -89,17 +89,17 @@
       }
     },
     "skku-stem-tutor": {
-      "last_seen": "2026-10-19T02:22:56.218Z",
+      "last_seen": "2026-10-21T14:04:34.771Z",
       "handoff_updated": null,
-      "logs": 3,
+      "logs": 4,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-19T02:22:56.218Z",
+        "ts": "2026-10-21T14:04:34.771Z",
         "agent": "skku-stem-tutor",
-        "topic": "skku-midterm-prep",
+        "topic": "skku-gongcomp-python-review",
         "status": "done",
-        "summary": "QIE2 week7-1 transcript summary: textbook Y corrected to iY=[[0,1],[-1,0]], matching midterm note 662c7fe.",
-        "ref": "84858f5"
+        "summary": "Added Korean Python refresher note (Jump to Python ch1 to 4-1 functions) with gotchas and self-check; commit 6a5fdb0.",
+        "ref": "2026-2/공학컴퓨터프로그래밍/산출물/파이썬_복습_함수까지.md"
       }
     }
   },
@@ -147,6 +147,14 @@
       "updated": "2026-10-20T22:59:14.693Z",
       "agents": [
         "skku-icampus-bot"
+      ],
+      "last_status": "done",
+      "docs": {}
+    },
+    "skku-gongcomp-python-review": {
+      "updated": "2026-10-21T14:04:34.771Z",
+      "agents": [
+        "skku-stem-tutor"
       ],
       "last_status": "done",
       "docs": {}
@@ -217,6 +225,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-21T14:04:34.771Z",
+      "agent": "skku-stem-tutor",
+      "topic": "skku-gongcomp-python-review",
+      "status": "done",
+      "summary": "Added Korean Python refresher note (Jump to Python ch1 to 4-1 functions) with gotchas and self-check; commit 6a5fdb0.",
+      "ref": "2026-2/공학컴퓨터프로그래밍/산출물/파이썬_복습_함수까지.md"
+    },
     {
       "ts": "2026-10-20T22:59:14.693Z",
       "agent": "skku-icampus-bot",
@@ -443,14 +459,6 @@
       "status": "done",
       "summary": "Reviewed QIE2 midterm video summary vs 11 transcripts: formulas correct; Bell 5/9 derivation missing, textbook Y sign unclear, unmarked outside additions. Box-only, not committed.",
       "ref": "/workspace/SKKU-review/2026-2/Introduction to Quantum Information Engineering 2/산출물/검토/중간고사_영상강의_정리_검토.md"
-    },
-    {
-      "ts": "2026-10-19T02:03:53.001Z",
-      "agent": "skku-reviewer",
-      "topic": "skku-review",
-      "status": "blocked",
-      "summary": "Surveyed 5 unreviewed outputs; wrote 스토 midterm-note review (1 error, key omissions) but push blocked: no git creds, GitHub connector lacks file-write.",
-      "ref": "/workspace/SKKU-review/2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261021T140434771Z-skku-stem-tutor-csjh64",
-  "events": 55,
+  "folded_through": "20261021T230330032Z-skku-icampus-bot-qnw4ug",
+  "events": 56,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -61,16 +61,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-20T22:59:14.693Z",
+      "last_seen": "2026-10-21T23:03:30.032Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 6,
+      "logs": 7,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-20T22:59:14.693Z",
+        "ts": "2026-10-21T23:03:30.032Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 10/21: Mac offline, read box clone; no new Canvas changes, 07 KST run not yet; two exams today on calendar.",
+        "summary": "Morning brief 10/22: Mac offline, read box clone; no new Canvas items since 10/21, 07 KST run not yet; programming midterm today on calendar.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -144,7 +144,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-20T22:59:14.693Z",
+      "updated": "2026-10-21T23:03:30.032Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -225,6 +225,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-21T23:03:30.032Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 10/22: Mac offline, read box clone; no new Canvas items since 10/21, 07 KST run not yet; programming midterm today on calendar.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-10-21T14:04:34.771Z",
       "agent": "skku-stem-tutor",
@@ -451,14 +459,6 @@
       "status": "done",
       "summary": "Revised speech midterm note per review (stock issues, status quo, slide examples, renames); no git creds, saved to box, not pushed.",
       "ref": "/workspace/skku-humanities/스토_중간고사_정리노트.md"
-    },
-    {
-      "ts": "2026-10-19T02:09:26.244Z",
-      "agent": "skku-reviewer",
-      "topic": "skku-review",
-      "status": "done",
-      "summary": "Reviewed QIE2 midterm video summary vs 11 transcripts: formulas correct; Bell 5/9 derivation missing, textbook Y sign unclear, unmarked outside additions. Box-only, not committed.",
-      "ref": "/workspace/SKKU-review/2026-2/Introduction to Quantum Information Engineering 2/산출물/검토/중간고사_영상강의_정리_검토.md"
     }
   ]
 }

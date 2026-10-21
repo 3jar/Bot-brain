@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261021T140434771Z-skku-stem-tutor-csjh64",
+  "ts": "2026-10-21T14:04:34.771Z",
+  "agent": "skku-stem-tutor",
+  "type": "log",
+  "data": {
+    "topic": "skku-gongcomp-python-review",
+    "status": "done",
+    "summary": "Added Korean Python refresher note (Jump to Python ch1 to 4-1 functions) with gotchas and self-check; commit 6a5fdb0.",
+    "ref": "2026-2/공학컴퓨터프로그래밍/산출물/파이썬_복습_함수까지.md"
+  }
+}

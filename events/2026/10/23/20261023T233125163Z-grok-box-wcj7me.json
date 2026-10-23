@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T233125163Z-grok-box-wcj7me",
+  "ts": "2026-10-23T23:31:25.163Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Final: clean build OK, 105 tests green, jar build/libs/fullbodymotion-0.1.0.jar. Added /fbm reset + Reset button, soak test, README drift test, mmClamps in status, smoke config reset. Alloc MM 4.8/proc 5.7 KB per solve. 126 local commits, not pushed."
+  }
+}

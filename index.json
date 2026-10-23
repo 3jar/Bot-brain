@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T225451813Z-skku-icampus-bot-e68toh",
-  "events": 76,
+  "folded_through": "20261023T225808564Z-grok-box-eabsqo",
+  "events": 77,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T22:39:41.523Z",
+      "last_seen": "2026-10-23T22:58:08.564Z",
       "handoff_updated": null,
-      "logs": 18,
+      "logs": 19,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T22:39:41.523Z",
+        "ts": "2026-10-23T22:58:08.564Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Alloc pass 6 committed (9a893a8): allocation-free slerp in Pose.setLerp; MM alloc 9.1->8.2 KB/solve, procedural 7.1 KB. Added QuatScratchTest parity test. Build green."
+        "summary": "Alloc passes 7-8 + in-place support hull: MM 8.2->4.8 KB/solve, procedural 7.1->5.7 KB; core bench slightly faster (MM 6.2->5.9 us). In-game regression smoke OK. Strafe->forward lock slip not reproducible in core; left open."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T22:39:41.523Z",
+      "updated": "2026-10-23T22:58:08.564Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T22:58:08.564Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Alloc passes 7-8 + in-place support hull: MM 8.2->4.8 KB/solve, procedural 7.1->5.7 KB; core bench slightly faster (MM 6.2->5.9 us). In-game regression smoke OK. Strafe->forward lock slip not reproducible in core; left open."
+    },
     {
       "ts": "2026-10-23T22:54:51.813Z",
       "agent": "skku-icampus-bot",
@@ -459,14 +466,6 @@
       "status": "done",
       "summary": "PLAN steps 4-9 committed and reviewed (HEAD 6b5d46c, build OK); needs owner runtime tests and Developer ID signing.",
       "ref": "/Volumes/SangHun/notch-scroll"
-    },
-    {
-      "ts": "2026-10-20T02:58:29.677Z",
-      "agent": "skku-reviewer",
-      "topic": "skku-review",
-      "status": "done",
-      "summary": "Reviewed EE 리뷰_총정리: text matches; PDF shows wk3 p.22 Q1 answer 'offering'; wk2 p.8 is quiz-scope image; 3 vocab exercises missing; committed da07740.",
-      "ref": "2026-2/Entrepreneurship English/산출물/검토/리뷰_총정리_검토.md"
     }
   ]
 }

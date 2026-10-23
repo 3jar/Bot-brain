@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T212403559Z-grok-box-e23rh2",
-  "events": 69,
+  "folded_through": "20261023T215102371Z-grok-box-c7no3e",
+  "events": 70,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T21:24:03.559Z",
+      "last_seen": "2026-10-23T21:51:02.371Z",
       "handoff_updated": null,
-      "logs": 12,
+      "logs": 13,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T21:24:03.559Z",
+        "ts": "2026-10-23T21:51:02.371Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Idle breathing/weight shift + config sliders (screen now fits). SUMMARY_KO.md written. Strafe kick root cause: vanilla 45deg body turn kept latFrac at 0.64, tidy under-engaged; new band + lift/x caps cut foot z 10.9->4.3, lift 7->0.9 px in game."
+        "summary": "Resumed after 06:36. Strafe: lock release + 22deg splay cap; alloc 8 KB/solve; pelvis bob measured 0.27px -> default 1.5; MP smoke and in-game idle check OK. Continuing self-chosen items until 09:45."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T21:24:03.559Z",
+      "updated": "2026-10-23T21:51:02.371Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T21:51:02.371Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Resumed after 06:36. Strafe: lock release + 22deg splay cap; alloc 8 KB/solve; pelvis bob measured 0.27px -> default 1.5; MP smoke and in-game idle check OK. Continuing self-chosen items until 09:45."
+    },
     {
       "ts": "2026-10-23T21:24:03.559Z",
       "agent": "grok-box",
@@ -464,13 +471,6 @@
       "topic": "stoto-warrant-methods-label",
       "status": "done",
       "summary": "Unified '논증 방법' to slide term '보장·논거의 방법' (4 places) in 스토 midterm note and restored 4주차 보충 lost by stale editor save. Commit 23798e7 (MacBook, pushed). Explained Toulmin rebuttal/qualifier, claim 'merits', policy claims."
-    },
-    {
-      "ts": "2026-10-19T07:14:41.175Z",
-      "agent": "skku-humanities",
-      "topic": "stoto-informative-conditions-supplement",
-      "status": "done",
-      "summary": "Added 보충 on informative speech conditions (completeness/balance, usefulness; Lucas pp.277-278, 296) to 스토 midterm note; reverted user's 원본 PDF rename 4-2->5-2; committed user's table formatting edits. Commit 23d3a06 (MacBook, pushed)."
     }
   ]
 }

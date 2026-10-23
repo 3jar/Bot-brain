@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T185429525Z-grok-box-y2yod0",
-  "events": 64,
+  "folded_through": "20261023T190643757Z-grok-box-y32hpk",
+  "events": 65,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T18:54:29.525Z",
+      "last_seen": "2026-10-23T19:06:43.757Z",
       "handoff_updated": null,
-      "logs": 7,
+      "logs": 8,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T18:54:29.525Z",
+        "ts": "2026-10-23T19:06:43.757Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Perf: 6x6 dual NNLS and closed-form Mat3; idle solve 9.7->6.9us, CMU MM 15.8->13.4us; build green"
+        "summary": "Terrain raycast foot placement + MM foot lock (slide 15->5 px/s); NN pose on 29 CMU clips (run err 3.97->1.22px); QP fast path, MM solve ~10us"
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T18:54:29.525Z",
+      "updated": "2026-10-23T19:06:43.757Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T19:06:43.757Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Terrain raycast foot placement + MM foot lock (slide 15->5 px/s); NN pose on 29 CMU clips (run err 3.97->1.22px); QP fast path, MM solve ~10us"
+    },
     {
       "ts": "2026-10-23T18:54:29.525Z",
       "agent": "grok-box",
@@ -465,14 +472,6 @@
       "topic": "speech-midterm-note-2-1",
       "status": "done",
       "summary": "2-1 구체적 목적 reframed as checklist w/ Lucas examples, 오존층 outline-head analysis added, 검토봇 fixes applied (7eab6a8). MacBook stale note restored; GP2 deletion committed (bb69ba4). Pending: 고명북 8주차 과제."
-    },
-    {
-      "ts": "2026-10-19T04:52:48.245Z",
-      "agent": "skku-reviewer",
-      "topic": "skku-review",
-      "status": "done",
-      "summary": "Reviewed speech note 2-1 edits 619b074/a938342: slide text matches; Lucas verified; unmarked interpretations, weak informative-purpose evidence, quote fix; committed ddc45c5.",
-      "ref": "2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md"
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T184646579Z-grok-box-yderhw",
+  "ts": "2026-10-23T18:46:46.579Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Done: remote turn via /rotate verified; MM pelvis bob; MM search skipping; screenshots refreshed+verified; PLAN 5b learned 3-point pose MLP (holdout foot err 0.68px vs 3.39 baseline), wired as solver.learnedPose, verified in game."
+  }
+}

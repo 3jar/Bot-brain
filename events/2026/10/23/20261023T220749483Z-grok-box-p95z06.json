@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T220749483Z-grok-box-p95z06",
+  "ts": "2026-10-23T22:07:49.483Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Landing squash added (one-shot impact -> damped pelvis dip, cap 1.5 px, sliders, test). Splay cap verified honoured (14.0 deg in game); 14 vs 22 look nearly identical, default 22 kept. Build green, local commits only."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T223322899Z-grok-box-uc6cyr",
+  "ts": "2026-10-23T22:33:22.899Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "LandingDetector moved to core + tests (stairs ignored). Alloc passes 4-5: procedural 9.1->7.1 KB/solve, MM ~9.1 KB. Docs updated. In-game regression smoke running. Local commits only."
+  }
+}

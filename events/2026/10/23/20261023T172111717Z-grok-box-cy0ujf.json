@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T172111717Z-grok-box-cy0ujf",
+  "ts": "2026-10-23T17:21:11.717Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Overnight: slim arms+crouch, linear momentum/capture steps (4c), 1st-person vanilla hands, budget+2-tier LOD, MM wired behind flag (off) with synthetic DB + exact AABB search, Xvfb smoke fixed, screenshots in docs/screenshots. Build green, local commits only."
+  }
+}

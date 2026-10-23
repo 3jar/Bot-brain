@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T163715599Z-grok-box-ugpale",
+  "ts": "2026-10-23T16:37:15.599Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Milestone: Fabric 26.1.2 (Mojang names) mod builds on box w/ JDK25. Core solver stages 1-4 + 15 JUnit tests pass; setupAnim TAIL mixin, /fbm cmd, gizmo debug; headless runClient reaches title. Docs in docs/."
+  }
+}

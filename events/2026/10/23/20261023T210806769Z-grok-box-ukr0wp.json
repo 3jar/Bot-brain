@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T210806769Z-grok-box-ukr0wp",
+  "ts": "2026-10-23T21:08:06.769Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Added CMU jump/stealth/stairs clips locally (40 clips; jumps stay procedural, no crouch-walk mocap). Alloc pass: 15.2->11.9 KB/solve. In-game JFR 25-crowd: 20us/solve, young GC <7ms. Next: idle breathing, SUMMARY_KO."
+  }
+}

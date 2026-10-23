@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T215654243Z-grok-box-nzypjj",
-  "events": 71,
+  "folded_through": "20261023T220749483Z-grok-box-p95z06",
+  "events": 72,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T21:56:54.243Z",
+      "last_seen": "2026-10-23T22:07:49.483Z",
       "handoff_updated": null,
-      "logs": 14,
+      "logs": 15,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T21:56:54.243Z",
+        "ts": "2026-10-23T22:07:49.483Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Strafe lock release extended to x-tidy drag; MM strafe turnaround slip 10-19 -> <=1 px/s. Build green (~88 tests), committed locally, not pushed."
+        "summary": "Landing squash added (one-shot impact -> damped pelvis dip, cap 1.5 px, sliders, test). Splay cap verified honoured (14.0 deg in game); 14 vs 22 look nearly identical, default 22 kept. Build green, local commits only."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T21:56:54.243Z",
+      "updated": "2026-10-23T22:07:49.483Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T22:07:49.483Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Landing squash added (one-shot impact -> damped pelvis dip, cap 1.5 px, sliders, test). Splay cap verified honoured (14.0 deg in game); 14 vs 22 look nearly identical, default 22 kept. Build green, local commits only."
+    },
     {
       "ts": "2026-10-23T21:56:54.243Z",
       "agent": "grok-box",
@@ -462,14 +469,6 @@
       "topic": "notch-scroll-menubar",
       "status": "done",
       "summary": "Step 1 complete: Xcode skeleton (xcodegen), AppDelegate, PermissionsManager, OnboardingView — Swift 6 strict concurrency clean. Needs Xcode.app for full build.",
-      "ref": "/Volumes/SangHun/notch-scroll"
-    },
-    {
-      "ts": "2026-10-19T20:28:36.526Z",
-      "agent": "grok-coding-bot",
-      "topic": "notch-scroll-menubar",
-      "status": "done",
-      "summary": "Created notch-scroll repo on external SSD with CLAUDE.md, SPEC, PLAN; ready for Claude Code to start PLAN step 1.",
       "ref": "/Volumes/SangHun/notch-scroll"
     }
   ]

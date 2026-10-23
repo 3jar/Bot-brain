@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T232103114Z-grok-box-o0riul",
+  "ts": "2026-10-23T23:21:03.114Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Smoke scripts now reset solver.* config to defaults (FBM_KEEP_CFG opt-out); re-captured MM/NN strafe, turn settle, crowd with defaults (315us/frame). README robustness section, SUMMARY_KO updated, README-defaults drift test. 103 tests green."
+  }
+}

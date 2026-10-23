@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T215654243Z-grok-box-nzypjj",
+  "ts": "2026-10-23T21:56:54.243Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Strafe lock release extended to x-tidy drag; MM strafe turnaround slip 10-19 -> <=1 px/s. Build green (~88 tests), committed locally, not pushed."
+  }
+}

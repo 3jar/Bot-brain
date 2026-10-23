@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T195639066Z-grok-box-can81h",
+  "ts": "2026-10-23T19:56:39.066Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Verified elytra/horse/swim fallbacks in-game; fixed MM crouch bug (legs ignored vanilla sneak offset); added sidestep CMU clips (34), maxFootLateral clamp, in-game foot-lock slip trace (<=1.9 px/s), config screen toggles. Build green."
+  }
+}

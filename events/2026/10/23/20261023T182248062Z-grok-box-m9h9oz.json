@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T182248062Z-grok-box-m9h9oz",
+  "ts": "2026-10-23T18:22:48.062Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Two-player dedicated server test passed: remote player punch/walk/sneak driven by solver, ~124us/solve, 0 budget skips. Screenshots committed. Turn capture limited by Xvfb mouse grab."
+  }
+}

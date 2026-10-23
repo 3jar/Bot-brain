@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T192836192Z-grok-box-lw7asb",
+  "ts": "2026-10-23T19:28:36.192Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Verified in-game stairs climb and sprint-swim vanilla fallback on a local superflat save; added MANUAL_TESTS/REVIEW sections for terrain, lock, gaze, aim; debug gizmos hidden during fallback. Build green, local commits only."
+  }
+}

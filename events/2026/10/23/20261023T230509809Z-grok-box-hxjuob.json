@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T230509809Z-grok-box-hxjuob",
+  "ts": "2026-10-23T23:05:09.809Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Fuzzing all 5 back-ends: OOD learned poser (forward-only, strafing) put legs 12000px away. Added leg-pivot clamp (8px) + bob cap for DB/NN poses, inertializer velocity cap. Real CMU/shipped model unaffected (0 clamps). 101 tests green."
+  }
+}

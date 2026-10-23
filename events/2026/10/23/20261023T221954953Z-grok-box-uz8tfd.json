@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T221954953Z-grok-box-uz8tfd",
+  "ts": "2026-10-23T22:19:54.953Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Alloc pass 3 (proc 10.3->9.1 KB/solve, MM 11.1->9.7). Turn-in-place settle step: stance ends square (90deg turn residual 9->0 deg), no fidget when still; TurnInPlaceTest; in-game check OK. Local commits only."
+  }
+}

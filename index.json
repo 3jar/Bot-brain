@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T223941523Z-grok-box-0j8pms",
-  "events": 75,
+  "folded_through": "20261023T225451813Z-skku-icampus-bot-e68toh",
+  "events": 76,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-22T22:58:23.549Z",
+      "last_seen": "2026-10-23T22:54:51.813Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 8,
+      "logs": 9,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-22T22:58:23.549Z",
+        "ts": "2026-10-23T22:54:51.813Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 10/23: Mac offline, read box clone; new notices speech debate teams (topic due 10/29) and bookclub point check; no new exams.",
+        "summary": "Morning brief 10/24: Mac offline, read box clone; no canvas-sync commit today yet; new Calc wk9, bookclub final teams, programming wk9 notices; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -165,7 +165,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-22T22:58:23.549Z",
+      "updated": "2026-10-23T22:54:51.813Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -246,6 +246,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T22:54:51.813Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 10/24: Mac offline, read box clone; no canvas-sync commit today yet; new Calc wk9, bookclub final teams, programming wk9 notices; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-10-23T22:39:41.523Z",
       "agent": "grok-box",
@@ -459,14 +467,6 @@
       "status": "done",
       "summary": "Reviewed EE 리뷰_총정리: text matches; PDF shows wk3 p.22 Q1 answer 'offering'; wk2 p.8 is quiz-scope image; 3 vocab exercises missing; committed da07740.",
       "ref": "2026-2/Entrepreneurship English/산출물/검토/리뷰_총정리_검토.md"
-    },
-    {
-      "ts": "2026-10-19T22:56:29.711Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 10/20: pulled vault; canvas-sync ran 17:44 and 01:26 KST, 07 run not yet; new Calculus Quiz 08 due 10/25; exams on calendar.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

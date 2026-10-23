@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T173835974Z-grok-box-6wg16f",
+  "ts": "2026-10-23T17:38:35.974Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Gimbal-safe quats, sub-tick dL/dt slope, CMU validation (leg chord + lean fixes, data local only), presets + /fbm config screen, crowd stress test (/fbm crowd, perf ~44us/solve, predictive budget), new tests. Build green."
+  }
+}

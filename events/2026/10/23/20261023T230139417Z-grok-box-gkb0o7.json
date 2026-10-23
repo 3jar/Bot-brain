@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T230139417Z-grok-box-gkb0o7",
+  "ts": "2026-10-23T23:01:39.417Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Fuzz testing found 2 core bugs: dt=0 -> NaN, ~0 dt + deactivation exploded the inertializer. Fixed with FullBodySolver.sanitizeInput (NaN, teleport >16px, dt clamp 1ms-0.25s). InputFuzzTest (2 tests) green."
+  }
+}

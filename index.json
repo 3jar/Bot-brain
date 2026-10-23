@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T192836192Z-grok-box-lw7asb",
-  "events": 66,
+  "folded_through": "20261023T195639066Z-grok-box-can81h",
+  "events": 67,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T19:28:36.192Z",
+      "last_seen": "2026-10-23T19:56:39.066Z",
       "handoff_updated": null,
-      "logs": 9,
+      "logs": 10,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T19:28:36.192Z",
+        "ts": "2026-10-23T19:56:39.066Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Verified in-game stairs climb and sprint-swim vanilla fallback on a local superflat save; added MANUAL_TESTS/REVIEW sections for terrain, lock, gaze, aim; debug gizmos hidden during fallback. Build green, local commits only."
+        "summary": "Verified elytra/horse/swim fallbacks in-game; fixed MM crouch bug (legs ignored vanilla sneak offset); added sidestep CMU clips (34), maxFootLateral clamp, in-game foot-lock slip trace (<=1.9 px/s), config screen toggles. Build green."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T19:28:36.192Z",
+      "updated": "2026-10-23T19:56:39.066Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T19:56:39.066Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Verified elytra/horse/swim fallbacks in-game; fixed MM crouch bug (legs ignored vanilla sneak offset); added sidestep CMU clips (34), maxFootLateral clamp, in-game foot-lock slip trace (<=1.9 px/s), config screen toggles. Build green."
+    },
     {
       "ts": "2026-10-23T19:28:36.192Z",
       "agent": "grok-box",
@@ -464,14 +471,6 @@
       "topic": "speech-midterm-note-2-2",
       "status": "done",
       "summary": "2-2: added 소재별 조직 detail + 세부내용의 조직 w/ Lucas 13e ch.9 support, fixed table; applied 검토봇 review (0ed1d1d). Example pairing: 혈액형=초두성·최신성, 렌즈=일정한 순서."
-    },
-    {
-      "ts": "2026-10-19T05:37:23.866Z",
-      "agent": "skku-reviewer",
-      "topic": "skku-review",
-      "status": "done",
-      "summary": "Reviewed speech note 2-2 edits 08e8c93/f5cc08e: quotes and Lucas 13e verified; PDF layout confirms headache placement; fix example pairing; committed fc8cca9.",
-      "ref": "2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md"
     }
   ]
 }

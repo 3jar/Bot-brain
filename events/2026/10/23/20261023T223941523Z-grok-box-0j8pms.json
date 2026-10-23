@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T223941523Z-grok-box-0j8pms",
+  "ts": "2026-10-23T22:39:41.523Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Alloc pass 6 committed (9a893a8): allocation-free slerp in Pose.setLerp; MM alloc 9.1->8.2 KB/solve, procedural 7.1 KB. Added QuatScratchTest parity test. Build green."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T185429525Z-grok-box-y2yod0",
+  "ts": "2026-10-23T18:54:29.525Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Perf: 6x6 dual NNLS and closed-form Mat3; idle solve 9.7->6.9us, CMU MM 15.8->13.4us; build green"
+  }
+}

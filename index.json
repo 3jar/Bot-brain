@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T220749483Z-grok-box-p95z06",
-  "events": 72,
+  "folded_through": "20261023T221954953Z-grok-box-uz8tfd",
+  "events": 73,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T22:07:49.483Z",
+      "last_seen": "2026-10-23T22:19:54.953Z",
       "handoff_updated": null,
-      "logs": 15,
+      "logs": 16,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T22:07:49.483Z",
+        "ts": "2026-10-23T22:19:54.953Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Landing squash added (one-shot impact -> damped pelvis dip, cap 1.5 px, sliders, test). Splay cap verified honoured (14.0 deg in game); 14 vs 22 look nearly identical, default 22 kept. Build green, local commits only."
+        "summary": "Alloc pass 3 (proc 10.3->9.1 KB/solve, MM 11.1->9.7). Turn-in-place settle step: stance ends square (90deg turn residual 9->0 deg), no fidget when still; TurnInPlaceTest; in-game check OK. Local commits only."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T22:07:49.483Z",
+      "updated": "2026-10-23T22:19:54.953Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T22:19:54.953Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Alloc pass 3 (proc 10.3->9.1 KB/solve, MM 11.1->9.7). Turn-in-place settle step: stance ends square (90deg turn residual 9->0 deg), no fidget when still; TurnInPlaceTest; in-game check OK. Local commits only."
+    },
     {
       "ts": "2026-10-23T22:07:49.483Z",
       "agent": "grok-box",
@@ -461,14 +468,6 @@
       "topic": "notch-scroll-menubar",
       "status": "blocked",
       "summary": "Xcode 27.1 installed but license not accepted; xcodebuild blocked (needs sudo xcodebuild -license by owner). Steps 2-9 not started.",
-      "ref": "/Volumes/SangHun/notch-scroll"
-    },
-    {
-      "ts": "2026-10-19T20:35:36.949Z",
-      "agent": "claude-macbook",
-      "topic": "notch-scroll-menubar",
-      "status": "done",
-      "summary": "Step 1 complete: Xcode skeleton (xcodegen), AppDelegate, PermissionsManager, OnboardingView — Swift 6 strict concurrency clean. Needs Xcode.app for full build.",
       "ref": "/Volumes/SangHun/notch-scroll"
     }
   ]

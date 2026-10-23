@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T212403559Z-grok-box-e23rh2",
+  "ts": "2026-10-23T21:24:03.559Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Idle breathing/weight shift + config sliders (screen now fits). SUMMARY_KO.md written. Strafe kick root cause: vanilla 45deg body turn kept latFrac at 0.64, tidy under-engaged; new band + lift/x caps cut foot z 10.9->4.3, lift 7->0.9 px in game."
+  }
+}

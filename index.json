@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T225808564Z-grok-box-eabsqo",
-  "events": 77,
+  "folded_through": "20261023T230139417Z-grok-box-gkb0o7",
+  "events": 78,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T22:58:08.564Z",
+      "last_seen": "2026-10-23T23:01:39.417Z",
       "handoff_updated": null,
-      "logs": 19,
+      "logs": 20,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T22:58:08.564Z",
+        "ts": "2026-10-23T23:01:39.417Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Alloc passes 7-8 + in-place support hull: MM 8.2->4.8 KB/solve, procedural 7.1->5.7 KB; core bench slightly faster (MM 6.2->5.9 us). In-game regression smoke OK. Strafe->forward lock slip not reproducible in core; left open."
+        "summary": "Fuzz testing found 2 core bugs: dt=0 -> NaN, ~0 dt + deactivation exploded the inertializer. Fixed with FullBodySolver.sanitizeInput (NaN, teleport >16px, dt clamp 1ms-0.25s). InputFuzzTest (2 tests) green."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T22:58:08.564Z",
+      "updated": "2026-10-23T23:01:39.417Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T23:01:39.417Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Fuzz testing found 2 core bugs: dt=0 -> NaN, ~0 dt + deactivation exploded the inertializer. Fixed with FullBodySolver.sanitizeInput (NaN, teleport >16px, dt clamp 1ms-0.25s). InputFuzzTest (2 tests) green."
+    },
     {
       "ts": "2026-10-23T22:58:08.564Z",
       "agent": "grok-box",
@@ -458,14 +465,6 @@
       "status": "done",
       "summary": "Pivoted docs to fixed-width scrolling widget with AXPress-first click; PLAN v2 written, commit 3ed558d.",
       "ref": "/Volumes/SangHun/notch-scroll/docs/PLAN.md"
-    },
-    {
-      "ts": "2026-10-20T07:28:40.741Z",
-      "agent": "grok-coding-bot",
-      "topic": "notch-scroll-menubar",
-      "status": "done",
-      "summary": "PLAN steps 4-9 committed and reviewed (HEAD 6b5d46c, build OK); needs owner runtime tests and Developer ID signing.",
-      "ref": "/Volumes/SangHun/notch-scroll"
     }
   ]
 }

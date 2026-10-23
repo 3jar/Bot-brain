@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T230139417Z-grok-box-gkb0o7",
-  "events": 78,
+  "folded_through": "20261023T230509809Z-grok-box-hxjuob",
+  "events": 79,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T23:01:39.417Z",
+      "last_seen": "2026-10-23T23:05:09.809Z",
       "handoff_updated": null,
-      "logs": 20,
+      "logs": 21,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T23:01:39.417Z",
+        "ts": "2026-10-23T23:05:09.809Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Fuzz testing found 2 core bugs: dt=0 -> NaN, ~0 dt + deactivation exploded the inertializer. Fixed with FullBodySolver.sanitizeInput (NaN, teleport >16px, dt clamp 1ms-0.25s). InputFuzzTest (2 tests) green."
+        "summary": "Fuzzing all 5 back-ends: OOD learned poser (forward-only, strafing) put legs 12000px away. Added leg-pivot clamp (8px) + bob cap for DB/NN poses, inertializer velocity cap. Real CMU/shipped model unaffected (0 clamps). 101 tests green."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T23:01:39.417Z",
+      "updated": "2026-10-23T23:05:09.809Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T23:05:09.809Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Fuzzing all 5 back-ends: OOD learned poser (forward-only, strafing) put legs 12000px away. Added leg-pivot clamp (8px) + bob cap for DB/NN poses, inertializer velocity cap. Real CMU/shipped model unaffected (0 clamps). 101 tests green."
+    },
     {
       "ts": "2026-10-23T23:01:39.417Z",
       "agent": "grok-box",
@@ -457,14 +464,6 @@
       "status": "done",
       "summary": "PLAN v2 step 1 AXPress spike in control window, v1 zone code gated off (5bfbf26, c4183a1); awaiting owner run + export.",
       "ref": "/Volumes/SangHun/notch-scroll/docs/AX_SPIKE.md"
-    },
-    {
-      "ts": "2026-10-20T08:05:05.761Z",
-      "agent": "grok-coding-bot",
-      "topic": "notch-scroll-menubar",
-      "status": "done",
-      "summary": "Pivoted docs to fixed-width scrolling widget with AXPress-first click; PLAN v2 written, commit 3ed558d.",
-      "ref": "/Volumes/SangHun/notch-scroll/docs/PLAN.md"
     }
   ]
 }

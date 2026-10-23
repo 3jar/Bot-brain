@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T230509809Z-grok-box-hxjuob",
-  "events": 79,
+  "folded_through": "20261023T232103114Z-grok-box-o0riul",
+  "events": 80,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T23:05:09.809Z",
+      "last_seen": "2026-10-23T23:21:03.114Z",
       "handoff_updated": null,
-      "logs": 21,
+      "logs": 22,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T23:05:09.809Z",
+        "ts": "2026-10-23T23:21:03.114Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Fuzzing all 5 back-ends: OOD learned poser (forward-only, strafing) put legs 12000px away. Added leg-pivot clamp (8px) + bob cap for DB/NN poses, inertializer velocity cap. Real CMU/shipped model unaffected (0 clamps). 101 tests green."
+        "summary": "Smoke scripts now reset solver.* config to defaults (FBM_KEEP_CFG opt-out); re-captured MM/NN strafe, turn settle, crowd with defaults (315us/frame). README robustness section, SUMMARY_KO updated, README-defaults drift test. 103 tests green."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T23:05:09.809Z",
+      "updated": "2026-10-23T23:21:03.114Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T23:21:03.114Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Smoke scripts now reset solver.* config to defaults (FBM_KEEP_CFG opt-out); re-captured MM/NN strafe, turn settle, crowd with defaults (315us/frame). README robustness section, SUMMARY_KO updated, README-defaults drift test. 103 tests green."
+    },
     {
       "ts": "2026-10-23T23:05:09.809Z",
       "agent": "grok-box",
@@ -456,14 +463,6 @@
       "status": "blocked",
       "summary": "AX spike result recorded (67063f3); v2 Step 2 partial, uncommitted, build failing; Claude Code limit until 21:00 KST.",
       "ref": "/Volumes/SangHun/notch-scroll"
-    },
-    {
-      "ts": "2026-10-20T08:17:11.410Z",
-      "agent": "grok-coding-bot",
-      "topic": "notch-scroll-menubar",
-      "status": "done",
-      "summary": "PLAN v2 step 1 AXPress spike in control window, v1 zone code gated off (5bfbf26, c4183a1); awaiting owner run + export.",
-      "ref": "/Volumes/SangHun/notch-scroll/docs/AX_SPIKE.md"
     }
   ]
 }

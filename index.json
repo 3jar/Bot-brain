@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T182248062Z-grok-box-m9h9oz",
-  "events": 62,
+  "folded_through": "20261023T184646579Z-grok-box-yderhw",
+  "events": 63,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T18:22:48.062Z",
+      "last_seen": "2026-10-23T18:46:46.579Z",
       "handoff_updated": null,
-      "logs": 5,
+      "logs": 6,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T18:22:48.062Z",
+        "ts": "2026-10-23T18:46:46.579Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Two-player dedicated server test passed: remote player punch/walk/sneak driven by solver, ~124us/solve, 0 budget skips. Screenshots committed. Turn capture limited by Xvfb mouse grab."
+        "summary": "Done: remote turn via /rotate verified; MM pelvis bob; MM search skipping; screenshots refreshed+verified; PLAN 5b learned 3-point pose MLP (holdout foot err 0.68px vs 3.39 baseline), wired as solver.learnedPose, verified in game."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T18:22:48.062Z",
+      "updated": "2026-10-23T18:46:46.579Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T18:46:46.579Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Done: remote turn via /rotate verified; MM pelvis bob; MM search skipping; screenshots refreshed+verified; PLAN 5b learned 3-point pose MLP (holdout foot err 0.68px vs 3.39 baseline), wired as solver.learnedPose, verified in game."
+    },
     {
       "ts": "2026-10-23T18:22:48.062Z",
       "agent": "grok-box",
@@ -467,14 +474,6 @@
       "status": "done",
       "summary": "Re-review 2 of speech note e2c0e47: all remaining items fixed and source-verified; only CEDA numbering stays unconfirmed; committed 1537728.",
       "ref": "2026-2/스피치와토론/산출물/검토/중간고사_정리노트_검토.md"
-    },
-    {
-      "ts": "2026-10-19T02:22:56.218Z",
-      "agent": "skku-stem-tutor",
-      "topic": "skku-midterm-prep",
-      "status": "done",
-      "summary": "QIE2 week7-1 transcript summary: textbook Y corrected to iY=[[0,1],[-1,0]], matching midterm note 662c7fe.",
-      "ref": "84858f5"
     }
   ]
 }

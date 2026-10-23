@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T225808564Z-grok-box-eabsqo",
+  "ts": "2026-10-23T22:58:08.564Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Alloc passes 7-8 + in-place support hull: MM 8.2->4.8 KB/solve, procedural 7.1->5.7 KB; core bench slightly faster (MM 6.2->5.9 us). In-game regression smoke OK. Strafe->forward lock slip not reproducible in core; left open."
+  }
+}

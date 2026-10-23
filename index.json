@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T215102371Z-grok-box-c7no3e",
-  "events": 70,
+  "folded_through": "20261023T215654243Z-grok-box-nzypjj",
+  "events": 71,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T21:51:02.371Z",
+      "last_seen": "2026-10-23T21:56:54.243Z",
       "handoff_updated": null,
-      "logs": 13,
+      "logs": 14,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T21:51:02.371Z",
+        "ts": "2026-10-23T21:56:54.243Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Resumed after 06:36. Strafe: lock release + 22deg splay cap; alloc 8 KB/solve; pelvis bob measured 0.27px -> default 1.5; MP smoke and in-game idle check OK. Continuing self-chosen items until 09:45."
+        "summary": "Strafe lock release extended to x-tidy drag; MM strafe turnaround slip 10-19 -> <=1 px/s. Build green (~88 tests), committed locally, not pushed."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T21:51:02.371Z",
+      "updated": "2026-10-23T21:56:54.243Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T21:56:54.243Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Strafe lock release extended to x-tidy drag; MM strafe turnaround slip 10-19 -> <=1 px/s. Build green (~88 tests), committed locally, not pushed."
+    },
     {
       "ts": "2026-10-23T21:51:02.371Z",
       "agent": "grok-box",
@@ -464,13 +471,6 @@
       "status": "done",
       "summary": "Created notch-scroll repo on external SSD with CLAUDE.md, SPEC, PLAN; ready for Claude Code to start PLAN step 1.",
       "ref": "/Volumes/SangHun/notch-scroll"
-    },
-    {
-      "ts": "2026-10-19T08:27:29.309Z",
-      "agent": "skku-humanities",
-      "topic": "stoto-warrant-methods-label",
-      "status": "done",
-      "summary": "Unified '논증 방법' to slide term '보장·논거의 방법' (4 places) in 스토 midterm note and restored 4주차 보충 lost by stale editor save. Commit 23798e7 (MacBook, pushed). Explained Toulmin rebuttal/qualifier, claim 'merits', policy claims."
     }
   ]
 }

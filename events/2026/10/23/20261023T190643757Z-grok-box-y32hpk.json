@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261023T190643757Z-grok-box-y32hpk",
+  "ts": "2026-10-23T19:06:43.757Z",
+  "agent": "grok-box",
+  "type": "log",
+  "data": {
+    "topic": "mc-fullbody-motion",
+    "status": "done",
+    "summary": "Terrain raycast foot placement + MM foot lock (slide 15->5 px/s); NN pose on 29 CMU clips (run err 3.97->1.22px); QP fast path, MM solve ~10us"
+  }
+}

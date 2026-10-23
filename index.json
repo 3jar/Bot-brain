@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T210806769Z-grok-box-ukr0wp",
-  "events": 68,
+  "folded_through": "20261023T212403559Z-grok-box-e23rh2",
+  "events": 69,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -20,16 +20,16 @@
       }
     },
     "grok-box": {
-      "last_seen": "2026-10-23T21:08:06.769Z",
+      "last_seen": "2026-10-23T21:24:03.559Z",
       "handoff_updated": null,
-      "logs": 11,
+      "logs": 12,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T21:08:06.769Z",
+        "ts": "2026-10-23T21:24:03.559Z",
         "agent": "grok-box",
         "topic": "mc-fullbody-motion",
         "status": "done",
-        "summary": "Added CMU jump/stealth/stairs clips locally (40 clips; jumps stay procedural, no crouch-walk mocap). Alloc pass: 15.2->11.9 KB/solve. In-game JFR 25-crowd: 20us/solve, young GC <7ms. Next: idle breathing, SUMMARY_KO."
+        "summary": "Idle breathing/weight shift + config sliders (screen now fits). SUMMARY_KO.md written. Strafe kick root cause: vanilla 45deg body turn kept latFrac at 0.64, tidy under-engaged; new band + lift/x caps cut foot z 10.9->4.3, lift 7->0.9 px in game."
       }
     },
     "grok-coding-bot": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "mc-fullbody-motion": {
-      "updated": "2026-10-23T21:08:06.769Z",
+      "updated": "2026-10-23T21:24:03.559Z",
       "agents": [
         "grok-box"
       ],
@@ -246,6 +246,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-23T21:24:03.559Z",
+      "agent": "grok-box",
+      "topic": "mc-fullbody-motion",
+      "status": "done",
+      "summary": "Idle breathing/weight shift + config sliders (screen now fits). SUMMARY_KO.md written. Strafe kick root cause: vanilla 45deg body turn kept latFrac at 0.64, tidy under-engaged; new band + lift/x caps cut foot z 10.9->4.3, lift 7->0.9 px in game."
+    },
     {
       "ts": "2026-10-23T21:08:06.769Z",
       "agent": "grok-box",
@@ -464,13 +471,6 @@
       "topic": "stoto-informative-conditions-supplement",
       "status": "done",
       "summary": "Added 보충 on informative speech conditions (completeness/balance, usefulness; Lucas pp.277-278, 296) to 스토 midterm note; reverted user's 원본 PDF rename 4-2->5-2; committed user's table formatting edits. Commit 23d3a06 (MacBook, pushed)."
-    },
-    {
-      "ts": "2026-10-19T06:44:47.866Z",
-      "agent": "skku-humanities",
-      "topic": "stoto-nonverbal-stats-supplement",
-      "status": "done",
-      "summary": "Added supplement on Mehrabian 93% and Birdwhistell 65:35 sources/limits to 스토 midterm note 3-2 section (commit 9e7c03c, MacBook, pushed). Also answered credibility/goodwill, topic reveal in intro, rhetorical question via Lucas ch.10."
     }
   ]
 }

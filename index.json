@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261023T233125163Z-grok-box-wcj7me",
-  "events": 81,
+  "folded_through": "20261024T225452218Z-skku-icampus-bot-r40ny6",
+  "events": 82,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-23T22:54:51.813Z",
+      "last_seen": "2026-10-24T22:54:52.218Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 9,
+      "logs": 10,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-23T22:54:51.813Z",
+        "ts": "2026-10-24T22:54:52.218Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 10/24: Mac offline, read box clone; no canvas-sync commit today yet; new Calc wk9, bookclub final teams, programming wk9 notices; no new exams.",
+        "summary": "Morning brief 10/25: Mac offline, read box clone; 3 syncs since yesterday, dashboard only; speech outline due today, physics HW3 due 10/26; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -165,7 +165,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-23T22:54:51.813Z",
+      "updated": "2026-10-24T22:54:52.218Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -246,6 +246,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-24T22:54:52.218Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 10/25: Mac offline, read box clone; 3 syncs since yesterday, dashboard only; speech outline due today, physics HW3 due 10/26; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-10-23T23:31:25.163Z",
       "agent": "grok-box",
@@ -454,14 +462,6 @@
       "status": "done",
       "summary": "Icon capture fix b43c7fa: likely TCC loss on ad-hoc rebuilds; SCK capture with failure reasons, last-good disk cache, notch-hidden fallback.",
       "ref": "/Volumes/SangHun/notch-scroll/docs/SIGNING.md"
-    },
-    {
-      "ts": "2026-10-20T08:37:28.232Z",
-      "agent": "grok-coding-bot",
-      "topic": "notch-scroll-menubar",
-      "status": "done",
-      "summary": "PLAN v2 steps 2-6 implemented directly (76f1108..82d7a0d), build OK; awaiting owner runtime test.",
-      "ref": "/Volumes/SangHun/notch-scroll/docs/MANUAL_TESTS.md"
     }
   ]
 }

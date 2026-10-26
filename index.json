@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261026T040052490Z-skku-stem-tutor-4w8vba",
-  "events": 86,
+  "folded_through": "20261026T225534403Z-skku-icampus-bot-tjq3mz",
+  "events": 87,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-25T23:03:38.988Z",
+      "last_seen": "2026-10-26T22:55:34.403Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 11,
+      "logs": 12,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-25T23:03:38.988Z",
+        "ts": "2026-10-26T22:55:34.403Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 10/26: Mac offline, read box clone; 10/25 22:42 sync added physics midterm solution+scores, bookclub wk9 due 10/29; physics HW3 due today; no new exams.",
+        "summary": "Morning brief 10/27: Mac offline, read origin/main; no 07 KST sync yet; new bookclub wk9 lecture PDF, physics HW3 submitted; bookclub wk9 due 10/29; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -165,7 +165,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-25T23:03:38.988Z",
+      "updated": "2026-10-26T22:55:34.403Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -254,6 +254,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-26T22:55:34.403Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 10/27: Mac offline, read origin/main; no 07 KST sync yet; new bookclub wk9 lecture PDF, physics HW3 submitted; bookclub wk9 due 10/29; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-10-26T04:00:52.490Z",
       "agent": "skku-stem-tutor",
@@ -462,14 +470,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Milestone: Fabric 26.1.2 (Mojang names) mod builds on box w/ JDK25. Core solver stages 1-4 + 15 JUnit tests pass; setupAnim TAIL mixin, /fbm cmd, gizmo debug; headless runClient reaches title. Docs in docs/."
-    },
-    {
-      "ts": "2026-10-22T22:58:23.549Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 10/23: Mac offline, read box clone; new notices speech debate teams (topic due 10/29) and bookclub point check; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

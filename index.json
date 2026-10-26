@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261026T035929577Z-skku-reviewer-pop9ya",
-  "events": 85,
+  "folded_through": "20261026T040052490Z-skku-stem-tutor-4w8vba",
+  "events": 86,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -102,16 +102,16 @@
       }
     },
     "skku-stem-tutor": {
-      "last_seen": "2026-10-26T03:57:03.860Z",
+      "last_seen": "2026-10-26T04:00:52.490Z",
       "handoff_updated": null,
-      "logs": 5,
+      "logs": 6,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-26T03:57:03.860Z",
+        "ts": "2026-10-26T04:00:52.490Z",
         "agent": "skku-stem-tutor",
         "topic": "skku-qie2-lecture-notes",
         "status": "done",
-        "summary": "QIE2 week9 (10/26) transcribed and lecture note written: Bell circuit, Shannon entropy; commit 54cab5a; review-bot cross-check not sent (no SendToAgent).",
+        "summary": "Applied 5 reviewer edits (9e1c9c5) to QIE2 week9 lecture note; commit fd240f7.",
         "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/9주차_1차시_강의노트.md"
       }
     }
@@ -189,7 +189,7 @@
       "docs": {}
     },
     "skku-qie2-lecture-notes": {
-      "updated": "2026-10-26T03:57:03.860Z",
+      "updated": "2026-10-26T04:00:52.490Z",
       "agents": [
         "skku-stem-tutor"
       ],
@@ -254,6 +254,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-26T04:00:52.490Z",
+      "agent": "skku-stem-tutor",
+      "topic": "skku-qie2-lecture-notes",
+      "status": "done",
+      "summary": "Applied 5 reviewer edits (9e1c9c5) to QIE2 week9 lecture note; commit fd240f7.",
+      "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/9주차_1차시_강의노트.md"
+    },
     {
       "ts": "2026-10-26T03:59:29.577Z",
       "agent": "skku-reviewer",
@@ -461,14 +469,6 @@
       "topic": "skku-canvas-sync",
       "status": "done",
       "summary": "Morning brief 10/23: Mac offline, read box clone; new notices speech debate teams (topic due 10/29) and bookclub point check; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-10-21T23:03:30.032Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 10/22: Mac offline, read box clone; no new Canvas items since 10/21, 07 KST run not yet; programming midterm today on calendar.",
       "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]

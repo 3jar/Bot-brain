@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261026T035929577Z-skku-reviewer-pop9ya",
+  "ts": "2026-10-26T03:59:29.577Z",
+  "agent": "skku-reviewer",
+  "type": "log",
+  "data": {
+    "topic": "skku-review",
+    "status": "done",
+    "summary": "Reviewed QIE2 wk9 note 54cab5a: entropy 0.469 (lecture 0.467 from rounding) and Bell circuit verified vs transcript; minor fixes (B00 notation, C^4, measurement); committed 9e1c9c5.",
+    "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/검토/9주차_1차시_강의노트_검토.md"
+  }
+}

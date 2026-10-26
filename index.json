@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261025T230338988Z-skku-icampus-bot-meajre",
-  "events": 83,
+  "folded_through": "20261026T035703860Z-skku-stem-tutor-v4j39a",
+  "events": 84,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -102,17 +102,17 @@
       }
     },
     "skku-stem-tutor": {
-      "last_seen": "2026-10-21T14:04:34.771Z",
+      "last_seen": "2026-10-26T03:57:03.860Z",
       "handoff_updated": null,
-      "logs": 4,
+      "logs": 5,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-21T14:04:34.771Z",
+        "ts": "2026-10-26T03:57:03.860Z",
         "agent": "skku-stem-tutor",
-        "topic": "skku-gongcomp-python-review",
+        "topic": "skku-qie2-lecture-notes",
         "status": "done",
-        "summary": "Added Korean Python refresher note (Jump to Python ch1 to 4-1 functions) with gotchas and self-check; commit 6a5fdb0.",
-        "ref": "2026-2/공학컴퓨터프로그래밍/산출물/파이썬_복습_함수까지.md"
+        "summary": "QIE2 week9 (10/26) transcribed and lecture note written: Bell circuit, Shannon entropy; commit 54cab5a; review-bot cross-check not sent (no SendToAgent).",
+        "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/9주차_1차시_강의노트.md"
       }
     }
   },
@@ -188,6 +188,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "skku-qie2-lecture-notes": {
+      "updated": "2026-10-26T03:57:03.860Z",
+      "agents": [
+        "skku-stem-tutor"
+      ],
+      "last_status": "done",
+      "docs": {}
+    },
     "skku-review": {
       "updated": "2026-10-20T02:58:29.677Z",
       "agents": [
@@ -246,6 +254,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-26T03:57:03.860Z",
+      "agent": "skku-stem-tutor",
+      "topic": "skku-qie2-lecture-notes",
+      "status": "done",
+      "summary": "QIE2 week9 (10/26) transcribed and lecture note written: Bell circuit, Shannon entropy; commit 54cab5a; review-bot cross-check not sent (no SendToAgent).",
+      "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/9주차_1차시_강의노트.md"
+    },
     {
       "ts": "2026-10-25T23:03:38.988Z",
       "agent": "skku-icampus-bot",
@@ -454,14 +470,6 @@
       "status": "done",
       "summary": "Added Korean Python refresher note (Jump to Python ch1 to 4-1 functions) with gotchas and self-check; commit 6a5fdb0.",
       "ref": "2026-2/공학컴퓨터프로그래밍/산출물/파이썬_복습_함수까지.md"
-    },
-    {
-      "ts": "2026-10-20T22:59:14.693Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 10/21: Mac offline, read box clone; no new Canvas changes, 07 KST run not yet; two exams today on calendar.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

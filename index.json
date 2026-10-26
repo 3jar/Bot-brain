@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261026T035703860Z-skku-stem-tutor-v4j39a",
-  "events": 84,
+  "folded_through": "20261026T035929577Z-skku-reviewer-pop9ya",
+  "events": 85,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,17 +88,17 @@
       }
     },
     "skku-reviewer": {
-      "last_seen": "2026-10-20T02:58:29.677Z",
+      "last_seen": "2026-10-26T03:59:29.577Z",
       "handoff_updated": "2026-10-19T02:04:10.711Z",
-      "logs": 9,
+      "logs": 10,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-20T02:58:29.677Z",
+        "ts": "2026-10-26T03:59:29.577Z",
         "agent": "skku-reviewer",
         "topic": "skku-review",
         "status": "done",
-        "summary": "Reviewed EE 리뷰_총정리: text matches; PDF shows wk3 p.22 Q1 answer 'offering'; wk2 p.8 is quiz-scope image; 3 vocab exercises missing; committed da07740.",
-        "ref": "2026-2/Entrepreneurship English/산출물/검토/리뷰_총정리_검토.md"
+        "summary": "Reviewed QIE2 wk9 note 54cab5a: entropy 0.469 (lecture 0.467 from rounding) and Bell circuit verified vs transcript; minor fixes (B00 notation, C^4, measurement); committed 9e1c9c5.",
+        "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/검토/9주차_1차시_강의노트_검토.md"
       }
     },
     "skku-stem-tutor": {
@@ -197,7 +197,7 @@
       "docs": {}
     },
     "skku-review": {
-      "updated": "2026-10-20T02:58:29.677Z",
+      "updated": "2026-10-26T03:59:29.577Z",
       "agents": [
         "skku-reviewer"
       ],
@@ -254,6 +254,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-26T03:59:29.577Z",
+      "agent": "skku-reviewer",
+      "topic": "skku-review",
+      "status": "done",
+      "summary": "Reviewed QIE2 wk9 note 54cab5a: entropy 0.469 (lecture 0.467 from rounding) and Bell circuit verified vs transcript; minor fixes (B00 notation, C^4, measurement); committed 9e1c9c5.",
+      "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/검토/9주차_1차시_강의노트_검토.md"
+    },
     {
       "ts": "2026-10-26T03:57:03.860Z",
       "agent": "skku-stem-tutor",
@@ -462,14 +470,6 @@
       "status": "done",
       "summary": "Morning brief 10/22: Mac offline, read box clone; no new Canvas items since 10/21, 07 KST run not yet; programming midterm today on calendar.",
       "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-10-21T14:04:34.771Z",
-      "agent": "skku-stem-tutor",
-      "topic": "skku-gongcomp-python-review",
-      "status": "done",
-      "summary": "Added Korean Python refresher note (Jump to Python ch1 to 4-1 functions) with gotchas and self-check; commit 6a5fdb0.",
-      "ref": "2026-2/공학컴퓨터프로그래밍/산출물/파이썬_복습_함수까지.md"
     }
   ]
 }

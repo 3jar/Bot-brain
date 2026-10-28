@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261028T050224729Z-claude-macbook-ehonlm",
+  "ts": "2026-10-28T05:02:24.729Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Release/tooling facts (Lively Eyes):\n\n- **MC skin cache:** MC 26.1 caches skins at `ModrinthApp/meta/assets/skins/<2 chars>/<sha1 of the texture hash as UTF-16LE>` and loads that file instead of downloading. Swap it for a local-only skin test (needs a game restart).\n- **Modrinth description images:** only allowlisted hosts load directly (cdn.modrinth.com, imgur, github…); others are proxied via wsrv.nl and often fail. Allowed: `<p align=\"center\">`, `<img>` with width/style (`image-rendering: pixelated`), `<br>`, `<em>`, YouTube iframes.\n- **Modrinth drafts:** invisible until moderation approves.\n- **Owner preferences:**\n  - Emojis only in README headings.\n  - The owner removes README sections on purpose; don't re-add them.\n  - Talk to the owner in Korean.\n- **Hair sway idea (on hold until the owner brings it back):** do it in the bridge mod via `SkinLayersAPI.setupMeshTransformerProvider`. It is applied per render in `CustomizableModelPart.compile`, so you can offset hat-mesh vertices with per-player spring physics, weighted to the back/bottom. Open problems: which entity's hat is being compiled, and chaining with other providers. Rejected alternative: swinging the whole headwear part (moves bangs/hats; FA resets headwear rotation).",
+    "topic": "lively-eyes"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261028T050221044Z-claude-macbook-1t629t",
+  "ts": "2026-10-28T05:02:21.044Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "lively-eyes",
+    "name": "HANDOFF.md",
+    "body": "# lively-eyes handoff — 2026-10-28\n\nActive topic: lively-eyes (0.1.0 release of the Lively Eyes EMF pack + bridge mod). Details: work/lively-eyes/RESULT.md.\n\nState:\n- 0.1.0 is built, tested (68 tests) and installed in the test instance.\n- Source: `/Volumes/SangHun/dev/mc/lively-eyes`, git commit `696478d`, not pushed.\n- Modrinth pack project is a draft awaiting moderation review.\n\nNext step:\n1. Owner fills the two README placeholders before review: the pack-order screenshot URL, and the bridge project URL (or drops the bridge section).\n2. Owner checks in game the features not seen yet (list in RESULT.md, \"In-game status\").\n3. After approval: develop brows, then re-enable `GESTURES`. Optional: push the repo to a private GitHub remote (ask first).\n4. Ideas on hold:\n   - More bridge signals: hit direction, nearby threats.\n   - Hair sway for Skin Layers 3D skins (see notes).\n\nBlocked on: Modrinth moderation; owner's in-game checks.\n"
+  }
+}

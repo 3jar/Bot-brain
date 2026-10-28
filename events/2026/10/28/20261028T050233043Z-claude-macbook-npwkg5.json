@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "20261028T050233043Z-claude-macbook-npwkg5",
+  "ts": "2026-10-28T05:02:33.043Z",
+  "agent": "claude-macbook",
+  "type": "handoff",
+  "data": {
+    "body": "# claude-macbook handoff — 2026-10-28\n\nActive: lively-eyes (see work/lively-eyes/HANDOFF.md and RESULT.md)\nState: Lively Eyes 0.1.0 is built, tested and installed; source moved to `/Volumes/SangHun/dev/mc/lively-eyes` (git `696478d`, not pushed); Modrinth draft awaiting review.\nNext step: wait for the owner (README placeholders, in-game checks, moderation result); afterwards brows, then gestures.\nBlocked on: Modrinth moderation, owner's in-game checks.\n"
+  }
+}

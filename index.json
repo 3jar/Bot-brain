@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261028T050235042Z-claude-macbook-ewq80x",
-  "events": 94,
+  "folded_through": "20261028T230416755Z-skku-icampus-bot-npo7k5",
+  "events": 95,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-27T23:04:49.340Z",
+      "last_seen": "2026-10-28T23:04:16.755Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 13,
+      "logs": 14,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-27T23:04:49.340Z",
+        "ts": "2026-10-28T23:04:16.755Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 10/28: Mac vault unmounted, read box clone origin/main; no sync today yet (last 10/27 17:52); new EE wk9 Operations PDF; bookclub wk9 due 10/29; no new exams.",
+        "summary": "Morning brief 10/29: Mac offline, read box clone; syncs 10/28 10:08, 18:33, 10/29 03:48 ok; QIE2 midterm graded item only; bookclub wk9 due today; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -182,7 +182,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-27T23:04:49.340Z",
+      "updated": "2026-10-28T23:04:16.755Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -271,6 +271,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-28T23:04:16.755Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 10/29: Mac offline, read box clone; syncs 10/28 10:08, 18:33, 10/29 03:48 ok; QIE2 midterm graded item only; bookclub wk9 due today; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-10-28T05:02:35.042Z",
       "agent": "claude-macbook",
@@ -482,13 +490,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Gimbal-safe quats, sub-tick dL/dt slope, CMU validation (leg chord + lean fixes, data local only), presets + /fbm config screen, crowd stress test (/fbm crowd, perf ~44us/solve, predictive budget), new tests. Build green."
-    },
-    {
-      "ts": "2026-10-23T17:21:11.717Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Overnight: slim arms+crouch, linear momentum/capture steps (4c), 1st-person vanilla hands, budget+2-tier LOD, MM wired behind flag (off) with synthetic DB + exact AABB search, Xvfb smoke fixed, screenshots in docs/screenshots. Build green, local commits only."
     }
   ]
 }

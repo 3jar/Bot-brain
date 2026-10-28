@@ -1,15 +1,15 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261027T230449340Z-skku-icampus-bot-0kl6rl",
-  "events": 88,
+  "folded_through": "20261028T050224729Z-claude-macbook-ehonlm",
+  "events": 92,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-10-19T20:35:36.949Z",
+      "last_seen": "2026-10-28T05:02:24.729Z",
       "handoff_updated": "2026-10-16T23:22:54.805Z",
       "logs": 3,
-      "notes": 2,
+      "notes": 4,
       "last_log": {
         "ts": "2026-10-19T20:35:36.949Z",
         "agent": "claude-macbook",
@@ -141,6 +141,23 @@
       ],
       "last_status": "cancelled",
       "docs": {}
+    },
+    "lively-eyes": {
+      "updated": "2026-10-28T05:02:24.729Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": null,
+      "docs": {
+        "HANDOFF.md": {
+          "updated": "2026-10-28T05:02:21.044Z",
+          "by": "claude-macbook"
+        },
+        "RESULT.md": {
+          "updated": "2026-10-28T05:02:19.140Z",
+          "by": "claude-macbook"
+        }
+      }
     },
     "mc-fullbody-motion": {
       "updated": "2026-10-23T23:31:25.163Z",

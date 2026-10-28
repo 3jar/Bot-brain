@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261028T050222935Z-claude-macbook-4v8i4w",
+  "ts": "2026-10-28T05:02:22.935Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "EMF 3.3.11 / MC 26.1.2 gotchas found while building Lively Eyes:\n\n- **invertAxis:** not inherited by submodels. The shared `player_face.jpm` (loaded by player.jem and player_slim.jem) came out un-inverted. Author parts in plain model space with no invertAxis.\n- **frame_counter:** stuck in this setup. Time with `age` (ticks + partial tick) instead; skip repeat render passes and GUI previews (`is_in_gui`, `is_first_person_hand`).\n- **Parse errors:** one bad expression makes EMF drop the whole model's animations.\n- **fluid_depth_up:** an integer count of fluid blocks from the feet block up, not head depth. Head under water = `floor(pos_y) + fluid_depth_up - pos_y - eyeHeight > 0`.\n- **nbt():** `nbt(SleepingX,exists:true)` is accepted.\n- **pos_y:** interpolated, while blockPos (ETF) is the feet block.\n- **FA Player interface:**\n  - Inputs, recomputed each frame: `var.idl_headry/rx/rz`.\n  - Rendered head readback: `var.head_ry/rx`.\n  - FA zeroes headwear rotation each frame.\n- **Zoomify:** don't initialize its class from your entrypoint. A lazy `Class.forName(..., false, ...)` on first render avoided a launch crash.\n- **Skin Layers 3D:** builds hat voxels inside the head and scales them 1.18x around the head center, so bangs reach z≈-4.72.",
+    "topic": "lively-eyes"
+  }
+}

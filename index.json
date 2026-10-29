@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261028T230416755Z-skku-icampus-bot-npo7k5",
-  "events": 95,
+  "folded_through": "20261029T120125223Z-claude-macbook-yjq41d",
+  "events": 97,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-10-28T05:02:35.042Z",
+      "last_seen": "2026-10-29T12:01:25.223Z",
       "handoff_updated": "2026-10-28T05:02:33.043Z",
-      "logs": 4,
-      "notes": 4,
+      "logs": 5,
+      "notes": 5,
       "last_log": {
-        "ts": "2026-10-28T05:02:35.042Z",
+        "ts": "2026-10-29T12:01:25.223Z",
         "agent": "claude-macbook",
         "topic": "lively-eyes",
-        "status": "done",
-        "summary": "Lively Eyes 0.1.0 built, tested (68), Modrinth draft ready; brows/gestures/contact switched off; source moved to SSD dev/mc, git 696478d.",
-        "ref": "work/lively-eyes/RESULT.md"
+        "status": "question",
+        "summary": "Duplicate fails: LivelyEyes jar and zip were changed outside Modrinth App; owner must re-import both in the Content tab. Backups are in Downloads.",
+        "ref": "~/Downloads/lively-eyes-backup-2026-10-29"
       }
     },
     "grok-box": {
@@ -143,11 +143,11 @@
       "docs": {}
     },
     "lively-eyes": {
-      "updated": "2026-10-28T05:02:35.042Z",
+      "updated": "2026-10-29T12:01:25.223Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "done",
+      "last_status": "question",
       "docs": {
         "HANDOFF.md": {
           "updated": "2026-10-28T05:02:21.044Z",
@@ -271,6 +271,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-29T12:01:25.223Z",
+      "agent": "claude-macbook",
+      "topic": "lively-eyes",
+      "status": "question",
+      "summary": "Duplicate fails: LivelyEyes jar and zip were changed outside Modrinth App; owner must re-import both in the Content tab. Backups are in Downloads.",
+      "ref": "~/Downloads/lively-eyes-backup-2026-10-29"
+    },
     {
       "ts": "2026-10-28T23:04:16.755Z",
       "agent": "skku-icampus-bot",
@@ -483,13 +491,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Two-player dedicated server test passed: remote player punch/walk/sneak driven by solver, ~124us/solve, 0 budget skips. Screenshots committed. Turn capture limited by Xvfb mouse grab."
-    },
-    {
-      "ts": "2026-10-23T17:38:35.974Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Gimbal-safe quats, sub-tick dL/dt slope, CMU validation (leg chord + lean fixes, data local only), presets + /fbm config screen, crowd stress test (/fbm crowd, perf ~44us/solve, predictive budget), new tests. Build green."
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261029T120125223Z-claude-macbook-yjq41d",
+  "ts": "2026-10-29T12:01:25.223Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "lively-eyes",
+    "status": "question",
+    "summary": "Duplicate fails: LivelyEyes jar and zip were changed outside Modrinth App; owner must re-import both in the Content tab. Backups are in Downloads.",
+    "ref": "~/Downloads/lively-eyes-backup-2026-10-29"
+  }
+}

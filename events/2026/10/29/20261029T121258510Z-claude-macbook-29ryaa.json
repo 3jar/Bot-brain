@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261029T121258510Z-claude-macbook-29ryaa",
+  "ts": "2026-10-29T12:12:58.510Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "lively-eyes",
+    "status": "done",
+    "summary": "Removed LivelyEyes jar+zip from 26.1.2 instance and 20 stale app.db records; all 170 records match disk. app.db backup kept.",
+    "ref": "~/Library/Application Support/ModrinthApp/app.db-backup-2026-10-29-before-cleanup"
+  }
+}

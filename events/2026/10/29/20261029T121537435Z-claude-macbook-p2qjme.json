@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261029T121537435Z-claude-macbook-p2qjme",
+  "ts": "2026-10-29T12:15:37.435Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "lively-eyes",
+    "status": "done",
+    "summary": "Second duplicate failure: regular hotbar.nbt vs synced symlink. Removed empty file (backed up); app recreated symlink. Stray 2.3G profile folder left untouched.",
+    "ref": "~/Downloads/lively-eyes-backup-2026-10-29/hotbar.nbt.from-26.1.2-instance"
+  }
+}

@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261029T121258510Z-claude-macbook-29ryaa",
-  "events": 98,
+  "folded_through": "20261029T121537435Z-claude-macbook-p2qjme",
+  "events": 99,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-10-29T12:12:58.510Z",
+      "last_seen": "2026-10-29T12:15:37.435Z",
       "handoff_updated": "2026-10-28T05:02:33.043Z",
-      "logs": 6,
+      "logs": 7,
       "notes": 5,
       "last_log": {
-        "ts": "2026-10-29T12:12:58.510Z",
+        "ts": "2026-10-29T12:15:37.435Z",
         "agent": "claude-macbook",
         "topic": "lively-eyes",
         "status": "done",
-        "summary": "Removed LivelyEyes jar+zip from 26.1.2 instance and 20 stale app.db records; all 170 records match disk. app.db backup kept.",
-        "ref": "~/Library/Application Support/ModrinthApp/app.db-backup-2026-10-29-before-cleanup"
+        "summary": "Second duplicate failure: regular hotbar.nbt vs synced symlink. Removed empty file (backed up); app recreated symlink. Stray 2.3G profile folder left untouched.",
+        "ref": "~/Downloads/lively-eyes-backup-2026-10-29/hotbar.nbt.from-26.1.2-instance"
       }
     },
     "grok-box": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "lively-eyes": {
-      "updated": "2026-10-29T12:12:58.510Z",
+      "updated": "2026-10-29T12:15:37.435Z",
       "agents": [
         "claude-macbook"
       ],
@@ -271,6 +271,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-29T12:15:37.435Z",
+      "agent": "claude-macbook",
+      "topic": "lively-eyes",
+      "status": "done",
+      "summary": "Second duplicate failure: regular hotbar.nbt vs synced symlink. Removed empty file (backed up); app recreated symlink. Stray 2.3G profile folder left untouched.",
+      "ref": "~/Downloads/lively-eyes-backup-2026-10-29/hotbar.nbt.from-26.1.2-instance"
+    },
     {
       "ts": "2026-10-29T12:12:58.510Z",
       "agent": "claude-macbook",
@@ -485,13 +493,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Perf: 6x6 dual NNLS and closed-form Mat3; idle solve 9.7->6.9us, CMU MM 15.8->13.4us; build green"
-    },
-    {
-      "ts": "2026-10-23T18:46:46.579Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Done: remote turn via /rotate verified; MM pelvis bob; MM search skipping; screenshots refreshed+verified; PLAN 5b learned 3-point pose MLP (holdout foot err 0.68px vs 3.39 baseline), wired as solver.learnedPose, verified in game."
     }
   ]
 }

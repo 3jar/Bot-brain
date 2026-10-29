@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261029T120125223Z-claude-macbook-yjq41d",
-  "events": 97,
+  "folded_through": "20261029T121258510Z-claude-macbook-29ryaa",
+  "events": 98,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-10-29T12:01:25.223Z",
+      "last_seen": "2026-10-29T12:12:58.510Z",
       "handoff_updated": "2026-10-28T05:02:33.043Z",
-      "logs": 5,
+      "logs": 6,
       "notes": 5,
       "last_log": {
-        "ts": "2026-10-29T12:01:25.223Z",
+        "ts": "2026-10-29T12:12:58.510Z",
         "agent": "claude-macbook",
         "topic": "lively-eyes",
-        "status": "question",
-        "summary": "Duplicate fails: LivelyEyes jar and zip were changed outside Modrinth App; owner must re-import both in the Content tab. Backups are in Downloads.",
-        "ref": "~/Downloads/lively-eyes-backup-2026-10-29"
+        "status": "done",
+        "summary": "Removed LivelyEyes jar+zip from 26.1.2 instance and 20 stale app.db records; all 170 records match disk. app.db backup kept.",
+        "ref": "~/Library/Application Support/ModrinthApp/app.db-backup-2026-10-29-before-cleanup"
       }
     },
     "grok-box": {
@@ -143,11 +143,11 @@
       "docs": {}
     },
     "lively-eyes": {
-      "updated": "2026-10-29T12:01:25.223Z",
+      "updated": "2026-10-29T12:12:58.510Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "question",
+      "last_status": "done",
       "docs": {
         "HANDOFF.md": {
           "updated": "2026-10-28T05:02:21.044Z",
@@ -271,6 +271,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-29T12:12:58.510Z",
+      "agent": "claude-macbook",
+      "topic": "lively-eyes",
+      "status": "done",
+      "summary": "Removed LivelyEyes jar+zip from 26.1.2 instance and 20 stale app.db records; all 170 records match disk. app.db backup kept.",
+      "ref": "~/Library/Application Support/ModrinthApp/app.db-backup-2026-10-29-before-cleanup"
+    },
     {
       "ts": "2026-10-29T12:01:25.223Z",
       "agent": "claude-macbook",
@@ -484,13 +492,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Done: remote turn via /rotate verified; MM pelvis bob; MM search skipping; screenshots refreshed+verified; PLAN 5b learned 3-point pose MLP (holdout foot err 0.68px vs 3.39 baseline), wired as solver.learnedPose, verified in game."
-    },
-    {
-      "ts": "2026-10-23T18:22:48.062Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Two-player dedicated server test passed: remote player punch/walk/sneak driven by solver, ~124us/solve, 0 budget skips. Screenshots committed. Turn capture limited by Xvfb mouse grab."
     }
   ]
 }

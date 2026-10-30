@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261029T230117607Z-skku-icampus-bot-ff98uv",
-  "events": 100,
+  "folded_through": "20261030T225944897Z-skku-icampus-bot-b5owgj",
+  "events": 101,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-29T23:01:17.607Z",
+      "last_seen": "2026-10-30T22:59:44.897Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 15,
+      "logs": 16,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-29T23:01:17.607Z",
+        "ts": "2026-10-30T22:59:44.897Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 10/30: Mac offline, read origin/main; syncs 10/29 10:43, 18:46, 10/30 03:56 ok; Calc Quiz 09 due 11/1, prog API hw due 11/4; no new exams.",
+        "summary": "Morning brief 10/31: Mac offline, read origin/main; syncs 10/30 10:49, 18:52, 10/31 03:34 ok; Calc wk10 offline 11/2, Quiz 09 due 11/1; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -182,7 +182,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-29T23:01:17.607Z",
+      "updated": "2026-10-30T22:59:44.897Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -271,6 +271,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-30T22:59:44.897Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 10/31: Mac offline, read origin/main; syncs 10/30 10:49, 18:52, 10/31 03:34 ok; Calc wk10 offline 11/2, Quiz 09 due 11/1; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-10-29T23:01:17.607Z",
       "agent": "skku-icampus-bot",
@@ -487,13 +495,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Verified in-game stairs climb and sprint-swim vanilla fallback on a local superflat save; added MANUAL_TESTS/REVIEW sections for terrain, lock, gaze, aim; debug gizmos hidden during fallback. Build green, local commits only."
-    },
-    {
-      "ts": "2026-10-23T19:06:43.757Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Terrain raycast foot placement + MM foot lock (slide 15->5 px/s); NN pose on 29 CMU clips (run err 3.97->1.22px); QP fast path, MM solve ~10us"
     }
   ]
 }

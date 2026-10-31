@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261030T225944897Z-skku-icampus-bot-b5owgj",
-  "events": 101,
+  "folded_through": "20261031T230051817Z-skku-icampus-bot-i3vrmt",
+  "events": 102,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-30T22:59:44.897Z",
+      "last_seen": "2026-10-31T23:00:51.817Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 16,
+      "logs": 17,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-30T22:59:44.897Z",
+        "ts": "2026-10-31T23:00:51.817Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 10/31: Mac offline, read origin/main; syncs 10/30 10:49, 18:52, 10/31 03:34 ok; Calc wk10 offline 11/2, Quiz 09 due 11/1; no new exams.",
+        "summary": "Morning brief 11/1: Mac offline, read origin/main; syncs 10/31 10:31, 18:32, 11/1 02:39 ok; bookclub wk10 due 11/5, Calc Quiz 09 due today; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -182,7 +182,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-30T22:59:44.897Z",
+      "updated": "2026-10-31T23:00:51.817Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -271,6 +271,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-10-31T23:00:51.817Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/1: Mac offline, read origin/main; syncs 10/31 10:31, 18:32, 11/1 02:39 ok; bookclub wk10 due 11/5, Calc Quiz 09 due today; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-10-30T22:59:44.897Z",
       "agent": "skku-icampus-bot",
@@ -488,13 +496,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Verified elytra/horse/swim fallbacks in-game; fixed MM crouch bug (legs ignored vanilla sneak offset); added sidestep CMU clips (34), maxFootLateral clamp, in-game foot-lock slip trace (<=1.9 px/s), config screen toggles. Build green."
-    },
-    {
-      "ts": "2026-10-23T19:28:36.192Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Verified in-game stairs climb and sprint-swim vanilla fallback on a local superflat save; added MANUAL_TESTS/REVIEW sections for terrain, lock, gaze, aim; debug gizmos hidden during fallback. Build green, local commits only."
     }
   ]
 }

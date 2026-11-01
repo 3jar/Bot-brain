@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T081417721Z-claude-macbook-0wq5g8",
+  "ts": "2026-11-01T08:14:17.721Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "Rig redone per owner: 6 whole vanilla boxes on short boxless connectors, split removed; 10 tests pass, installed; awaiting in-game look.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
+  }
+}

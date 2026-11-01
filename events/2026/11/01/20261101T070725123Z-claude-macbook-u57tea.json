@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T070725123Z-claude-macbook-u57tea",
+  "ts": "2026-11-01T07:07:25.123Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "done",
+    "summary": "Researched motion synthesis (IK+prior, motion matching, generative, procedural, exaggeration) for MC 6-box rig; recommended Java solver feeding EMF vars.",
+    "ref": "/Volumes/SangHun/dev/mc/research/motion-synthesis.md"
+  }
+}

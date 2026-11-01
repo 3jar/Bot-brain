@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T184246039Z-claude-macbook-jjmhw9",
-  "events": 136,
+  "folded_through": "20261101T185311139Z-claude-macbook-xcwkfu",
+  "events": 138,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T18:42:46.039Z",
+      "last_seen": "2026-11-01T18:53:11.139Z",
       "handoff_updated": "2026-11-01T07:32:33.552Z",
-      "logs": 28,
+      "logs": 29,
       "notes": 8,
       "last_log": {
-        "ts": "2026-11-01T18:18:38.420Z",
+        "ts": "2026-11-01T18:53:11.139Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
         "status": "done",
-        "summary": "Anticipation: local player's live keys + MC movement rules predict next-tick accel; lean reaches half 27 ms sooner. 36 tests pass, installed.",
-        "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
+        "summary": "Terrain-aware gait: stairs hop between pillars, feet on treads (0.03 px at game fps), ground wired in client, 39 tests; not run in-game.",
+        "ref": "work/mc-motion/HANDOFF.md"
       }
     },
     "grok-box": {
@@ -168,14 +168,14 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T18:42:46.039Z",
+      "updated": "2026-11-01T18:53:11.139Z",
       "agents": [
         "claude-macbook"
       ],
       "last_status": "done",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-11-01T18:42:46.039Z",
+          "updated": "2026-11-01T18:53:09.359Z",
           "by": "claude-macbook"
         }
       }
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T18:53:11.139Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "done",
+      "summary": "Terrain-aware gait: stairs hop between pillars, feet on treads (0.03 px at game fps), ground wired in client, 39 tests; not run in-game.",
+      "ref": "work/mc-motion/HANDOFF.md"
+    },
     {
       "ts": "2026-11-01T18:18:38.420Z",
       "agent": "claude-macbook",
@@ -515,14 +523,6 @@
       "status": "done",
       "summary": "Lively Eyes 0.1.0 built, tested (68), Modrinth draft ready; brows/gestures/contact switched off; source moved to SSD dev/mc, git 696478d.",
       "ref": "work/lively-eyes/RESULT.md"
-    },
-    {
-      "ts": "2026-10-27T23:04:49.340Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 10/28: Mac vault unmounted, read box clone origin/main; no sync today yet (last 10/27 17:52); new EE wk9 Operations PDF; bookclub wk9 due 10/29; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

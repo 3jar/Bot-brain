@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T142048331Z-claude-macbook-rvryja",
-  "events": 123,
+  "folded_through": "20261101T142518933Z-claude-macbook-xgwezq",
+  "events": 124,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T14:20:48.331Z",
+      "last_seen": "2026-11-01T14:25:18.933Z",
       "handoff_updated": "2026-11-01T07:32:33.552Z",
-      "logs": 18,
+      "logs": 19,
       "notes": 8,
       "last_log": {
-        "ts": "2026-11-01T14:20:48.331Z",
+        "ts": "2026-11-01T14:25:18.933Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
-        "status": "question",
-        "summary": "Proposed data route: 100STYLE, two-stage retarget, playback tuning, then motion matching; legs stay on C2 contact solver. 5 owner decisions.",
-        "ref": "/Volumes/SangHun/dev/notamovie/docs/research/data-driven.md"
+        "status": "done",
+        "summary": "Explained gait core to owner: planted-foot inverted pendulum; landing angle sets wave L(1-cos θ); all hidden joints exist to shrink θ.",
+        "ref": "/Volumes/SangHun/dev/notamovie/src/main/java/notamovie/core/Gait.java"
       }
     },
     "grok-box": {
@@ -168,11 +168,11 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T14:20:48.331Z",
+      "updated": "2026-11-01T14:25:18.933Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "question",
+      "last_status": "done",
       "docs": {
         "HANDOFF.md": {
           "updated": "2026-11-01T14:20:46.514Z",
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T14:25:18.933Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "done",
+      "summary": "Explained gait core to owner: planted-foot inverted pendulum; landing angle sets wave L(1-cos θ); all hidden joints exist to shrink θ.",
+      "ref": "/Volumes/SangHun/dev/notamovie/src/main/java/notamovie/core/Gait.java"
+    },
     {
       "ts": "2026-11-01T14:20:48.331Z",
       "agent": "claude-macbook",
@@ -512,13 +520,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Fuzzing all 5 back-ends: OOD learned poser (forward-only, strafing) put legs 12000px away. Added leg-pivot clamp (8px) + bob cap for DB/NN poses, inertializer velocity cap. Real CMU/shipped model unaffected (0 clamps). 101 tests green."
-    },
-    {
-      "ts": "2026-10-23T23:01:39.417Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Fuzz testing found 2 core bugs: dt=0 -> NaN, ~0 dt + deactivation exploded the inertializer. Fixed with FullBodySolver.sanitizeInput (NaN, teleport >16px, dt clamp 1ms-0.25s). InputFuzzTest (2 tests) green."
     }
   ]
 }

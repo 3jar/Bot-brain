@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "20261101T185320021Z-claude-macbook-ksn3if",
+  "ts": "2026-11-01T18:53:20.021Z",
+  "agent": "claude-macbook",
+  "type": "handoff",
+  "data": {
+    "body": "# claude-macbook handoff — 2026-11-02 night\n\nActive topics:\n- mc-motion: see work/mc-motion/HANDOFF.md (project /Volumes/SangHun/dev/notamovie).\n- lively-eyes: see work/lively-eyes/HANDOFF.md.\n\nState:\n- mc-motion: walking gait (Fabric 26.1.2, client) has turning prep, flight duty and terrain/stairs. 39 core tests pass; installed in Fabulously Optimized; not run in-game.\n- lively-eyes: unchanged (Modrinth moderation, owner checks).\n\nNext step: owner in-game check of docs/M0.md items 18-24; then L1 (whole-body objective).\n\nBlocked on: owner in-game check (mc-motion); Modrinth moderation (lively-eyes).\n"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T181534582Z-claude-macbook-kvfiwe",
+  "ts": "2026-11-01T18:15:34.582Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "done",
+    "summary": "Duty factor: brief flight (walk 0.46, sprint 0.42) cuts landing 47->42 deg, wave 2.1->1.6 px, and nearly removes hand-over float; 35 tests pass; installed.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
+  }
+}

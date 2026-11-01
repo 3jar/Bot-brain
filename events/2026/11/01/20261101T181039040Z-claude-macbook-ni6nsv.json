@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261101T181039040Z-claude-macbook-ni6nsv",
+  "ts": "2026-11-01T18:10:39.040Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "mc-motion",
+    "name": "HANDOFF.md",
+    "body": "# mc-motion handoff — 2026-11-02 (overnight autonomous run, owner asleep)\n\nProject: /Volumes/SangHun/dev/notamovie. Design: docs/research/walking.md sec. 9, 9.1 (turning), 9.2 (short legs).\n\n## State\n- Owner diagnosis: walk looked bad because there is no preparatory motion for direction changes; MC turns in ~0.1-0.15 s (90 deg cut peaks 30 m/s2). Also asked for a non-stretching fix for legs short for MC speed (Fresh Animations stretches ~20%).\n- Researched: Overgrowth source (Apache-2.0, Data/Scripts/aschar.as: tilt = 0.5 deg/(m/s)*v + 1 deg/(m/s2)*smoothed accel; foot stance targets lead by velocity), cutting biomechanics (penultimate braking step, plant foot opposite side, trunk lean), capture point/DCM stepping, UE Lyra (distance matching, orientation warping).\n- Implemented in core/Gait: world-space straight swing paths (target = body at landing + landing pose), lean from smoothed accel atan(a/g_MC) capped 12 deg + speed lean (pelvis shifted level, torso tips), orientation warp (feet+hips toward movement, torso counter), DCM cut offset on landings, per-foot parallel tracks, no landing past the other foot, swing path bows around the other foot, release of pillars out of reach (early lift), landing height matching (predicted hand-over height; 0.5 level, 1.0 stairs), exact swing contact depth.\n- 34 core tests pass (incl. MC-style 90 deg cut and 180 reversal: no slide, lean 6-12 deg toward turn, legs >2 px apart). 1.4 us/frame. Installed in FO; not run in-game.\n\n## Next (in order)\n1. Duty factor (brief flight) + speed-dependent duty (walk 0.5 -> sprint ~0.4); cadence knob already via step.\n2. Double support (W5) to remove hand-over float (straight <0.05, curve <=0.45, diagonal <=0.85 px) and leg contact in cuts.\n3. 90-deg-to-facing sidestep pattern; L1 split (upper body objective with seam budget).\n\n## Blocked on\nOwner in-game check (docs/M0.md).\n"
+  }
+}

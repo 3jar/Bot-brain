@@ -1,19 +1,17 @@
-# mc-motion handoff — 2026-11-02
+# mc-motion handoff — 2026-11-02 (overnight autonomous run, owner asleep)
 
-Project: /Volumes/SangHun/dev/notamovie. Design: docs/research/walking.md sec. 9 (three layers, status, next). Scope: own avatar, 3rd person, walking.
+Project: /Volumes/SangHun/dev/notamovie. Design: docs/research/walking.md sec. 9, 9.1 (turning), 9.2 (short legs).
 
 ## State
-- Adopted the three-layer design from the other session (L0 root contact / L1 Fourier cycle baked offline / L2 event-driven segments), with one change: L0 pillars are fixed in world 3D, not by 1D distance phase.
-- L0 done in core/Gait: world anchors, closed-form 3-axis rigid-leg solve (pitch/twist/roll), steps along actual movement direction, stair step-up by meeting the new pillar at current body height (only when ground rose >1 px above the holding pillar; doing it every step locks a long/short limp, and inferring stairs from height gaps ran away on diagonals), inertialized hand-over.
-- L2 done: modes WALK/STOP/STAND/AIR. Standing = mid-stride, so starts begin at phase 0.25/0.75 (half first step). Standing re-step rule (>2 px off hip or >30° twist) gives closing steps and turn-on-the-spot steps. Planned stop for the local player: rest point = tick pos + v/(1 - friction*0.91), swing foot progress matched to distance left.
-- Fixed earlier: 6.25% foot drag from world-vs-model pixel units (model drawn at 15/16).
-- 31 core tests pass (slide <0.05 px in world for straight/back/curve/diagonal/sneak/stops/turn-in-place/start; stair pelvis jump <0.5 px). ~1.0 us/frame. Installed in FO; not yet run in-game.
+- Owner diagnosis: walk looked bad because there is no preparatory motion for direction changes; MC turns in ~0.1-0.15 s (90 deg cut peaks 30 m/s2). Also asked for a non-stretching fix for legs short for MC speed (Fresh Animations stretches ~20%).
+- Researched: Overgrowth source (Apache-2.0, Data/Scripts/aschar.as: tilt = 0.5 deg/(m/s)*v + 1 deg/(m/s2)*smoothed accel; foot stance targets lead by velocity), cutting biomechanics (penultimate braking step, plant foot opposite side, trunk lean), capture point/DCM stepping, UE Lyra (distance matching, orientation warping).
+- Implemented in core/Gait: world-space straight swing paths (target = body at landing + landing pose), lean from smoothed accel atan(a/g_MC) capped 12 deg + speed lean (pelvis shifted level, torso tips), orientation warp (feet+hips toward movement, torso counter), DCM cut offset on landings, per-foot parallel tracks, no landing past the other foot, swing path bows around the other foot, release of pillars out of reach (early lift), landing height matching (predicted hand-over height; 0.5 level, 1.0 stairs), exact swing contact depth.
+- 34 core tests pass (incl. MC-style 90 deg cut and 180 reversal: no slide, lean 6-12 deg toward turn, legs >2 px apart). 1.4 us/frame. Installed in FO; not run in-game.
 
-## Next
-1. Split L1 out of Gait (hidden-joint generators -> phase/speed/direction -> channels interface; current sin formulas as default).
-2. Define the offline objective (vertical angular momentum balance, head stability, vanilla budgets, smoothness, rest prior; masses = box volumes).
-3. Optimizer + harmonic-order bench (target <0.1 px).
-4. Double support (removes 0.03-0.25 px hand-over float), Ground terrain queries.
+## Next (in order)
+1. Duty factor (brief flight) + speed-dependent duty (walk 0.5 -> sprint ~0.4); cadence knob already via step.
+2. Double support (W5) to remove hand-over float (straight <0.05, curve <=0.45, diagonal <=0.85 px) and leg contact in cuts.
+3. 90-deg-to-facing sidestep pattern; L1 split (upper body objective with seam budget).
 
 ## Blocked on
-Owner in-game check (docs/M0.md items 10-14).
+Owner in-game check (docs/M0.md).

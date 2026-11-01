@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T185311139Z-claude-macbook-xcwkfu",
+  "ts": "2026-11-01T18:53:11.139Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "done",
+    "summary": "Terrain-aware gait: stairs hop between pillars, feet on treads (0.03 px at game fps), ground wired in client, 39 tests; not run in-game.",
+    "ref": "work/mc-motion/HANDOFF.md"
+  }
+}

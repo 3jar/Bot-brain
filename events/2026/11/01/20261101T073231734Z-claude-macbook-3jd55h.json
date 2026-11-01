@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261101T073231734Z-claude-macbook-3jd55h",
+  "ts": "2026-11-01T07:32:31.734Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "mc-motion",
+    "name": "HANDOFF.md",
+    "body": "# mc-motion handoff — 2026-11-01\n\nActive topic: mc-motion. This is a new Fabric mod for Minecraft 26.1.x that generates third-person player motion. Inputs are body state, partial intent (e.g. a hand target) and game-style exaggeration; the rest of the body is solved by optimization.\n\n## Decisions (owner, 2026-11-01)\n\n- EMF is dropped. The mod computes and applies the pose itself.\n- The algorithm is the product. Per-joint motions (arms etc.) come later as add-ons via resource packs.\n- Ecosystem work (formats, API, sync, tools) goes last (M5).\n- During development, ignore the ecosystem and optimize as much as possible.\n- Rig: only the 6 vanilla boxes. Arms and legs split into halves for elbows and knees. Intermediate joints (neck, clavicles, pelvis, hips, waist) exist only in the solver skeleton.\n\n## Docs (Korean, local)\n\n- `/Volumes/SangHun/dev/mc/research/direction.md`: decisions, 26.1.2 hook points, optimization rules, milestones M0–M5.\n- `/Volumes/SangHun/dev/mc/research/motion-synthesis.md`: research survey, algorithms, licenses, open-source list.\n\n## Open decisions\n\n- Relationship with Lively Eyes (absorb / mutually exclusive / yield head only).\n- v0 render backend: vanilla ModelPart, or custom geometry if M0 fails.\n\n## Next step\n\nM0 spike, after the owner says go:\n- solver FK\n- in-game joint debug render\n- mesh split via `PlayerModel.createMesh`\n- joint sliders\n- check that held items (`translateToHand`), armor, cape, head items and parrots attach correctly\n- measure the cost per player\n\nUse a Mannequin to test the remote-player path. Check whether plain-javac builds with mixins work on unobfuscated 26.1 (no refmap expected).\n\nBlocked on: owner go-ahead for M0."
+  }
+}

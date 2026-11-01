@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T075452388Z-claude-macbook-x8oi1g",
+  "ts": "2026-11-01T07:54:52.388Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "notamovie M0 built (14 core tests pass), installed in clean FO profile; awaiting owner's in-game checklist run.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
+  }
+}

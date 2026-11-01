@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T140537692Z-claude-macbook-sw9wjo",
-  "events": 121,
+  "folded_through": "20261101T142048331Z-claude-macbook-rvryja",
+  "events": 123,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T14:05:37.692Z",
+      "last_seen": "2026-11-01T14:20:48.331Z",
       "handoff_updated": "2026-11-01T07:32:33.552Z",
-      "logs": 17,
+      "logs": 18,
       "notes": 8,
       "last_log": {
-        "ts": "2026-11-01T14:05:37.692Z",
+        "ts": "2026-11-01T14:20:48.331Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
         "status": "question",
-        "summary": "13-joint hidden skeleton + C2 gait (rocker, pelvic rotation/list, hip carry) cuts wave 4.53->1.51 px; 24 tests, installed, awaiting in-game.",
-        "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
+        "summary": "Proposed data route: 100STYLE, two-stage retarget, playback tuning, then motion matching; legs stay on C2 contact solver. 5 owner decisions.",
+        "ref": "/Volumes/SangHun/dev/notamovie/docs/research/data-driven.md"
       }
     },
     "grok-box": {
@@ -168,14 +168,14 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T14:05:37.692Z",
+      "updated": "2026-11-01T14:20:48.331Z",
       "agents": [
         "claude-macbook"
       ],
       "last_status": "question",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-11-01T14:05:35.655Z",
+          "updated": "2026-11-01T14:20:46.514Z",
           "by": "claude-macbook"
         }
       }
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T14:20:48.331Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "question",
+      "summary": "Proposed data route: 100STYLE, two-stage retarget, playback tuning, then motion matching; legs stay on C2 contact solver. 5 owner decisions.",
+      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/data-driven.md"
+    },
     {
       "ts": "2026-11-01T14:05:37.692Z",
       "agent": "claude-macbook",
@@ -511,13 +519,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Fuzz testing found 2 core bugs: dt=0 -> NaN, ~0 dt + deactivation exploded the inertializer. Fixed with FullBodySolver.sanitizeInput (NaN, teleport >16px, dt clamp 1ms-0.25s). InputFuzzTest (2 tests) green."
-    },
-    {
-      "ts": "2026-10-23T22:58:08.564Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Alloc passes 7-8 + in-place support hull: MM 8.2->4.8 KB/solve, procedural 7.1->5.7 KB; core bench slightly faster (MM 6.2->5.9 us). In-game regression smoke OK. Strafe->forward lock slip not reproducible in core; left open."
     }
   ]
 }

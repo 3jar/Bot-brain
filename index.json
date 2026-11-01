@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261031T230051817Z-skku-icampus-bot-i3vrmt",
-  "events": 102,
+  "folded_through": "20261101T070725123Z-claude-macbook-u57tea",
+  "events": 104,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-10-29T12:15:37.435Z",
+      "last_seen": "2026-11-01T07:07:25.123Z",
       "handoff_updated": "2026-10-28T05:02:33.043Z",
-      "logs": 7,
-      "notes": 5,
+      "logs": 8,
+      "notes": 6,
       "last_log": {
-        "ts": "2026-10-29T12:15:37.435Z",
+        "ts": "2026-11-01T07:07:25.123Z",
         "agent": "claude-macbook",
-        "topic": "lively-eyes",
+        "topic": "mc-motion",
         "status": "done",
-        "summary": "Second duplicate failure: regular hotbar.nbt vs synced symlink. Removed empty file (backed up); app recreated symlink. Stray 2.3G profile folder left untouched.",
-        "ref": "~/Downloads/lively-eyes-backup-2026-10-29/hotbar.nbt.from-26.1.2-instance"
+        "summary": "Researched motion synthesis (IK+prior, motion matching, generative, procedural, exaggeration) for MC 6-box rig; recommended Java solver feeding EMF vars.",
+        "ref": "/Volumes/SangHun/dev/mc/research/motion-synthesis.md"
       }
     },
     "grok-box": {
@@ -167,6 +167,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "mc-motion": {
+      "updated": "2026-11-01T07:07:25.123Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "done",
+      "docs": {}
+    },
     "notch-scroll-menubar": {
       "updated": "2026-10-20T09:10:27.787Z",
       "agents": [
@@ -271,6 +279,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T07:07:25.123Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "done",
+      "summary": "Researched motion synthesis (IK+prior, motion matching, generative, procedural, exaggeration) for MC 6-box rig; recommended Java solver feeding EMF vars.",
+      "ref": "/Volumes/SangHun/dev/mc/research/motion-synthesis.md"
+    },
     {
       "ts": "2026-10-31T23:00:51.817Z",
       "agent": "skku-icampus-bot",
@@ -489,13 +505,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Added CMU jump/stealth/stairs clips locally (40 clips; jumps stay procedural, no crouch-walk mocap). Alloc pass: 15.2->11.9 KB/solve. In-game JFR 25-crowd: 20us/solve, young GC <7ms. Next: idle breathing, SUMMARY_KO."
-    },
-    {
-      "ts": "2026-10-23T19:56:39.066Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Verified elytra/horse/swim fallbacks in-game; fixed MM crouch bug (legs ignored vanilla sneak offset); added sidestep CMU clips (34), maxFootLateral clamp, in-game foot-lock slip trace (<=1.9 px/s), config screen toggles. Build green."
     }
   ]
 }

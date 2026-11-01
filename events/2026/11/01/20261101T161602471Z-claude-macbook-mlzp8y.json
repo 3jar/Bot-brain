@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T161602471Z-claude-macbook-mlzp8y",
+  "ts": "2026-11-01T16:16:02.471Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "done",
+    "summary": "L0 world-fixed pillars and L2 stop/stand/start/turn-in-place/stairs implemented in Gait; 31 tests pass, installed; L1 split and objective next.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
+  }
+}

@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T075452388Z-claude-macbook-x8oi1g",
-  "events": 111,
+  "folded_through": "20261101T081417721Z-claude-macbook-0wq5g8",
+  "events": 113,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T07:54:52.388Z",
+      "last_seen": "2026-11-01T08:14:17.721Z",
       "handoff_updated": "2026-11-01T07:32:33.552Z",
-      "logs": 11,
-      "notes": 7,
+      "logs": 12,
+      "notes": 8,
       "last_log": {
-        "ts": "2026-11-01T07:54:52.388Z",
+        "ts": "2026-11-01T08:14:17.721Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
         "status": "question",
-        "summary": "notamovie M0 built (14 core tests pass), installed in clean FO profile; awaiting owner's in-game checklist run.",
+        "summary": "Rig redone per owner: 6 whole vanilla boxes on short boxless connectors, split removed; 10 tests pass, installed; awaiting in-game look.",
         "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
       }
     },
@@ -168,7 +168,7 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T07:54:52.388Z",
+      "updated": "2026-11-01T08:14:17.721Z",
       "agents": [
         "claude-macbook"
       ],
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T08:14:17.721Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "question",
+      "summary": "Rig redone per owner: 6 whole vanilla boxes on short boxless connectors, split removed; 10 tests pass, installed; awaiting in-game look.",
+      "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
+    },
     {
       "ts": "2026-11-01T07:54:52.388Z",
       "agent": "claude-macbook",
@@ -506,13 +514,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Landing squash added (one-shot impact -> damped pelvis dip, cap 1.5 px, sliders, test). Splay cap verified honoured (14.0 deg in game); 14 vs 22 look nearly identical, default 22 kept. Build green, local commits only."
-    },
-    {
-      "ts": "2026-10-23T21:56:54.243Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Strafe lock release extended to x-tidy drag; MM strafe turnaround slip 10-19 -> <=1 px/s. Build green (~88 tests), committed locally, not pushed."
     }
   ]
 }

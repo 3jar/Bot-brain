@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T144103341Z-claude-macbook-jr1zpk",
+  "ts": "2026-11-01T14:41:03.341Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "Walking = fall over a fixed pushable pillar; MC gravity 32 m/s2 makes MC walk a real walk (Fr 0.83). Pillar algorithm doc; fixed 6.25% foot-slide unit bug.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
+  }
+}

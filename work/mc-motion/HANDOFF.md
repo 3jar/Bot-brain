@@ -1,35 +1,46 @@
 # mc-motion handoff — 2026-11-01
 
-Active topic: mc-motion. This is a new Fabric mod for Minecraft 26.1.x that generates third-person player motion. Inputs are body state, partial intent (e.g. a hand target) and game-style exaggeration; the rest of the body is solved by optimization.
+## Mod
 
-## Decisions (owner, 2026-11-01)
+- Name: "This Is Not a Movie", mod id `notamovie`.
+- Project: `/Volumes/SangHun/dev/notamovie`. Git is initialized; nothing is committed.
+- Owner decisions:
+  - EMF is dropped.
+  - The algorithm is the product; add-ons come via resource packs later.
+  - Ecosystem work goes last (M5). Optimize first.
+  - Lively Eyes is dropped from the plan.
 
-- EMF is dropped. The mod computes and applies the pose itself.
-- The algorithm is the product. Per-joint motions (arms etc.) come later as add-ons via resource packs.
-- Ecosystem work (formats, API, sync, tools) goes last (M5).
-- During development, ignore the ecosystem and optimize as much as possible.
-- Rig: only the 6 vanilla boxes. Arms and legs split into halves for elbows and knees. Intermediate joints (neck, clavicles, pelvis, hips, waist) exist only in the solver skeleton.
+## State: M0 built and installed, awaiting the owner's in-game check
 
-## Docs (Korean, local)
+- Core (pure Java, tests `python3 build.py test`, 14 passing):
+  - Skeleton: 15 joints including pelvis, spine, neck and clavicles.
+  - Pose (3x3 local rotations), Fk, Parts (6 top-level parts plus forearm and shin children).
+  - Euler: ZYX decomposition, verified against JOML rotationZYX.
+  - LimbSplit (box split math).
+- Adapter mixins:
+  - `AvatarRenderer.extractRenderState` TAIL: solve, then store the parts in the render state (`RenderStateDataKey`).
+  - `PlayerModel.setupAnim` TAIL: apply the parts.
+  - `createMesh` / `createArmorMeshSet` RETURN: split the limbs.
+  - `translateToHand` HEAD: add the forearm transform.
+  - `renderHand` HEAD: straighten the lower limbs.
+- Debug client commands: `/nam on|off|demo on|off|set|reset|stats`.
+- Installed into the clean Modrinth profile "Fabulously Optimized" (folder `profiles/Fabulously Optimized`). `instance.txt` points there.
+- Note: folder "Fabulously Optimized (2)" is the full 109-mod instance, shown in the app as "26.1.2 MC optimized".
 
-- `/Volumes/SangHun/dev/mc/research/direction.md`: decisions, 26.1.2 hook points, optimization rules, milestones M0–M5.
-- `/Volumes/SangHun/dev/mc/research/motion-synthesis.md`: research survey, algorithms, licenses, open-source list.
+## Gotchas
 
-## Open decisions
+- `setupAnim` runs several times per frame (body, then each armor model at deferred render time). Solve only in extract; `setupAnim` only copies.
+- FO bundles EMF and ETF. If the split doesn't show, test with them disabled.
+- The first-person `renderHand` draws the shared model's arm without `setupAnim`.
 
-- Relationship with Lively Eyes (absorb / mutually exclusive / yield head only).
-- v0 render backend: vanilla ModelPart, or custom geometry if M0 fails.
+## Docs
 
-## Next step
+- `docs/M0.md`: in-game checklist (Korean).
+- `docs/research/{direction,motion-synthesis}.md`
 
-M0 spike, after the owner says go:
-- solver FK
-- in-game joint debug render
-- mesh split via `PlayerModel.createMesh`
-- joint sliders
-- check that held items (`translateToHand`), armor, cape, head items and parrots attach correctly
-- measure the cost per player
+## Next
 
-Use a Mannequin to test the remote-player path. Check whether plain-javac builds with mixins work on unobfuscated 26.1 (no refmap expected).
-
-Blocked on: owner go-ahead for M0.
+1. The owner runs the `docs/M0.md` checklist.
+2. Fix whatever breaks.
+3. Decide the render backend.
+4. M1 locomotion: phase from real distance, foot locking, two-bone IK.

@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T070725123Z-claude-macbook-u57tea",
-  "events": 104,
+  "folded_through": "20261101T071655356Z-claude-macbook-dgmnsg",
+  "events": 106,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T07:07:25.123Z",
+      "last_seen": "2026-11-01T07:16:55.356Z",
       "handoff_updated": "2026-10-28T05:02:33.043Z",
-      "logs": 8,
-      "notes": 6,
+      "logs": 9,
+      "notes": 7,
       "last_log": {
-        "ts": "2026-11-01T07:07:25.123Z",
+        "ts": "2026-11-01T07:16:55.356Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
-        "status": "done",
-        "summary": "Researched motion synthesis (IK+prior, motion matching, generative, procedural, exaggeration) for MC 6-box rig; recommended Java solver feeding EMF vars.",
-        "ref": "/Volumes/SangHun/dev/mc/research/motion-synthesis.md"
+        "status": "question",
+        "summary": "Recommended EMF-free own-mod ecosystem (pure Java core, intent/style formats); 26.1.2 hook points verified; 8 decisions await owner.",
+        "ref": "/Volumes/SangHun/dev/mc/research/direction.md"
       }
     },
     "grok-box": {
@@ -168,11 +168,11 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T07:07:25.123Z",
+      "updated": "2026-11-01T07:16:55.356Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "done",
+      "last_status": "question",
       "docs": {}
     },
     "notch-scroll-menubar": {
@@ -279,6 +279,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T07:16:55.356Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "question",
+      "summary": "Recommended EMF-free own-mod ecosystem (pure Java core, intent/style formats); 26.1.2 hook points verified; 8 decisions await owner.",
+      "ref": "/Volumes/SangHun/dev/mc/research/direction.md"
+    },
     {
       "ts": "2026-11-01T07:07:25.123Z",
       "agent": "claude-macbook",
@@ -498,13 +506,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Idle breathing/weight shift + config sliders (screen now fits). SUMMARY_KO.md written. Strafe kick root cause: vanilla 45deg body turn kept latFrac at 0.64, tidy under-engaged; new band + lift/x caps cut foot z 10.9->4.3, lift 7->0.9 px in game."
-    },
-    {
-      "ts": "2026-10-23T21:08:06.769Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Added CMU jump/stealth/stairs clips locally (40 clips; jumps stay procedural, no crouch-walk mocap). Alloc pass: 15.2->11.9 KB/solve. In-game JFR 25-crowd: 20us/solve, young GC <7ms. Next: idle breathing, SUMMARY_KO."
     }
   ]
 }

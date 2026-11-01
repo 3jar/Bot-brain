@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T073235227Z-claude-macbook-9y98ge",
+  "ts": "2026-11-01T07:32:35.227Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "done",
+    "summary": "Direction fixed: EMF dropped, algorithm-first optimized Fabric mod, ecosystem last (M5); handoff written, M0 spike next.",
+    "ref": "work/mc-motion/HANDOFF.md"
+  }
+}

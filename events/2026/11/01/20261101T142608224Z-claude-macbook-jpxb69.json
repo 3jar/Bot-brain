@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T142608224Z-claude-macbook-jpxb69",
+  "ts": "2026-11-01T14:26:08.224Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "Walking plausibility = rules + measured shapes + our exaggeration; proposed adding lean, start/stop, double support, variation to C2 alongside D1.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/research/data-driven.md"
+  }
+}

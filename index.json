@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T092725048Z-claude-macbook-kykzdb",
-  "events": 115,
+  "folded_through": "20261101T133153724Z-claude-macbook-v0vqvk",
+  "events": 117,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T09:27:25.048Z",
+      "last_seen": "2026-11-01T13:31:53.724Z",
       "handoff_updated": "2026-11-01T07:32:33.552Z",
-      "logs": 14,
+      "logs": 15,
       "notes": 8,
       "last_log": {
-        "ts": "2026-11-01T09:27:25.048Z",
+        "ts": "2026-11-01T13:31:53.724Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
         "status": "question",
-        "summary": "Benchmarked solvers (procedural 0.5us, hybrid DLS 4us/avatar); found rigid-leg foot lock bobs 4.6px; proposed offline-baked LUT; 3 owner decisions.",
+        "summary": "Gait B/C experiment built and installed (/nam walk), 21 tests pass; pose cache measured: 4D grid 6.5 MB, 2.7 s bake.",
         "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
       }
     },
@@ -168,14 +168,14 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T09:27:25.048Z",
+      "updated": "2026-11-01T13:31:53.724Z",
       "agents": [
         "claude-macbook"
       ],
       "last_status": "question",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-11-01T07:54:50.591Z",
+          "updated": "2026-11-01T13:31:51.907Z",
           "by": "claude-macbook"
         }
       }
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T13:31:53.724Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "question",
+      "summary": "Gait B/C experiment built and installed (/nam walk), 21 tests pass; pose cache measured: 4D grid 6.5 MB, 2.7 s bake.",
+      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
+    },
     {
       "ts": "2026-11-01T09:27:25.048Z",
       "agent": "claude-macbook",
@@ -509,13 +517,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Alloc pass 6 committed (9a893a8): allocation-free slerp in Pose.setLerp; MM alloc 9.1->8.2 KB/solve, procedural 7.1 KB. Added QuatScratchTest parity test. Build green."
-    },
-    {
-      "ts": "2026-10-23T22:33:22.899Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "LandingDetector moved to core + tests (stairs ignored). Alloc passes 4-5: procedural 9.1->7.1 KB/solve, MM ~9.1 KB. Docs updated. In-game regression smoke running. Local commits only."
     }
   ]
 }

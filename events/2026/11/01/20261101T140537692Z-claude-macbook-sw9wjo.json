@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T140537692Z-claude-macbook-sw9wjo",
+  "ts": "2026-11-01T14:05:37.692Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "13-joint hidden skeleton + C2 gait (rocker, pelvic rotation/list, hip carry) cuts wave 4.53->1.51 px; 24 tests, installed, awaiting in-game.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T181838420Z-claude-macbook-g0bpm2",
+  "ts": "2026-11-01T18:18:38.420Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "done",
+    "summary": "Anticipation: local player's live keys + MC movement rules predict next-tick accel; lean reaches half 27 ms sooner. 36 tests pass, installed.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
+  }
+}

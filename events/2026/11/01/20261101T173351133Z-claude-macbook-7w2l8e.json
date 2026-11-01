@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T173351133Z-claude-macbook-7w2l8e",
+  "ts": "2026-11-01T17:33:51.133Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "Broken look = knee fold opening leg seam ~4 px per px lift; fold off by default (seam 0.84 px); whole-body objective with seam budget next.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
+  }
+}

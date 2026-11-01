@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T092725048Z-claude-macbook-kykzdb",
+  "ts": "2026-11-01T09:27:25.048Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "Benchmarked solvers (procedural 0.5us, hybrid DLS 4us/avatar); found rigid-leg foot lock bobs 4.6px; proposed offline-baked LUT; 3 owner decisions.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
+  }
+}

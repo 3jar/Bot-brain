@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261101T142046514Z-claude-macbook-kee093",
+  "ts": "2026-11-01T14:20:46.514Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "mc-motion",
+    "name": "HANDOFF.md",
+    "body": "# mc-motion handoff — 2026-11-01 (night)\n\nProject: /Volumes/SangHun/dev/notamovie. Docs: docs/skeleton.md (rig, C2), docs/research/data-driven.md (new direction proposal).\n\n## State\n- C2 gait (13-joint hidden skeleton, contact solver) built, 24 tests pass, installed in FO, not yet run in-game.\n- Owner does not want to hand-author motions; goal is partial-motion optimization + motion matching. Proposal written (data-driven.md): 100STYLE (CC BY 4.0, XSens 60 fps, 23 joints, FW/BW/SW/FR/BR/SR/ID/TR) -> two-stage retarget (offline normalize in Python tools/, runtime map in Java core so skeleton tweaks re-map instantly) -> playback viewer (/nam play) for skeleton tuning -> warping + blend space -> motion matching; legs always from C2 contact solver; actions via partial optimization with MM pose as prior.\n- Key numbers: in leg-length units MC sneak ~= human walk (time x1.01), MC walk ~= human run (time x1.14) or human walk x1.75; MM brute search ~13 us/player/frame for 20k frames.\n\n## Next\n- Owner decisions in data-driven.md sec. 11 (adopt route, download permission + location, runtime retarget, first scope Neutral ID/FW/FR).\n- Then D0 download, D1 BVH tools + human reference sheet.\n\n## Blocked on\nOwner decisions; in-game check of C2 still pending.\n"
+  }
+}

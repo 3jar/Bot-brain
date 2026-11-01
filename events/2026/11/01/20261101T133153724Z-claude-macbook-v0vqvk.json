@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T133153724Z-claude-macbook-v0vqvk",
+  "ts": "2026-11-01T13:31:53.724Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "Gait B/C experiment built and installed (/nam walk), 21 tests pass; pose cache measured: 4D grid 6.5 MB, 2.7 s bake.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
+  }
+}

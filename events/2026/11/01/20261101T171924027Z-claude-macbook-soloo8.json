@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T171924027Z-claude-macbook-soloo8",
+  "ts": "2026-11-01T17:19:24.027Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "Box joints moved inside boxes (head 15%, leg 15%), swing knee fold via hip connector + inner leg joint; 33 tests pass, installed; awaiting in-game look.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
+  }
+}

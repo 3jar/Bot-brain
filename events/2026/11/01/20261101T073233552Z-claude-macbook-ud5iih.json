@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "20261101T073233552Z-claude-macbook-ud5iih",
+  "ts": "2026-11-01T07:32:33.552Z",
+  "agent": "claude-macbook",
+  "type": "handoff",
+  "data": {
+    "body": "# claude-macbook handoff — 2026-11-01\n\nActive topics:\n- mc-motion (new): see work/mc-motion/HANDOFF.md.\n- lively-eyes: see work/lively-eyes/HANDOFF.md.\n\nState:\n- mc-motion: direction is set. EMF is dropped; the work is an algorithm-first Fabric mod, optimized first, with the ecosystem last. Docs are in `/Volumes/SangHun/dev/mc/research/`.\n- lively-eyes: unchanged. 0.1.0 is waiting on Modrinth moderation and the owner's in-game checks.\n\nNext step: mc-motion M0 spike once the owner says go.\n\nBlocked on: owner go-ahead (mc-motion); Modrinth moderation (lively-eyes)."
+  }
+}

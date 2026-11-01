@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T142608224Z-claude-macbook-jpxb69",
-  "events": 125,
+  "folded_through": "20261101T144103341Z-claude-macbook-jr1zpk",
+  "events": 126,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T14:26:08.224Z",
+      "last_seen": "2026-11-01T14:41:03.341Z",
       "handoff_updated": "2026-11-01T07:32:33.552Z",
-      "logs": 20,
+      "logs": 21,
       "notes": 8,
       "last_log": {
-        "ts": "2026-11-01T14:26:08.224Z",
+        "ts": "2026-11-01T14:41:03.341Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
         "status": "question",
-        "summary": "Walking plausibility = rules + measured shapes + our exaggeration; proposed adding lean, start/stop, double support, variation to C2 alongside D1.",
-        "ref": "/Volumes/SangHun/dev/notamovie/docs/research/data-driven.md"
+        "summary": "Walking = fall over a fixed pushable pillar; MC gravity 32 m/s2 makes MC walk a real walk (Fr 0.83). Pillar algorithm doc; fixed 6.25% foot-slide unit bug.",
+        "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
       }
     },
     "grok-box": {
@@ -168,7 +168,7 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T14:26:08.224Z",
+      "updated": "2026-11-01T14:41:03.341Z",
       "agents": [
         "claude-macbook"
       ],
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T14:41:03.341Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "question",
+      "summary": "Walking = fall over a fixed pushable pillar; MC gravity 32 m/s2 makes MC walk a real walk (Fr 0.83). Pillar algorithm doc; fixed 6.25% foot-slide unit bug.",
+      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
+    },
     {
       "ts": "2026-11-01T14:26:08.224Z",
       "agent": "claude-macbook",
@@ -514,13 +522,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Final: clean build OK, 105 tests green, jar build/libs/fullbodymotion-0.1.0.jar. Added /fbm reset + Reset button, soak test, README drift test, mmClamps in status, smoke config reset. Alloc MM 4.8/proc 5.7 KB per solve. 126 local commits, not pushed."
-    },
-    {
-      "ts": "2026-10-23T23:21:03.114Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Smoke scripts now reset solver.* config to defaults (FBM_KEEP_CFG opt-out); re-captured MM/NN strafe, turn settle, crowd with defaults (315us/frame). README robustness section, SUMMARY_KO updated, README-defaults drift test. 103 tests green."
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261101T071653690Z-claude-macbook-oafbz7",
+  "ts": "2026-11-01T07:16:53.690Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Direction (pending owner decisions): drop EMF as runtime. Own Fabric mod: pure-Java core (no MC imports) plus a thin 26.1 adapter. Ecosystem formats are rig, style and intent JSON. Doc: /Volumes/SangHun/dev/mc/research/direction.md\nHook points verified in the 26.1.2 jar:\n- AvatarRenderer.extractRenderState(Avatar, AvatarRenderState, float)\n- PlayerModel.setupAnim(AvatarRenderState)\n- PlayerModel.createMesh(CubeDeformation, boolean)\n- PlayerModel.translateToHand (single choke point for held items)\n- HumanoidArmorLayer.getArmorModel\n- SubmitNodeCollector$CustomGeometryRenderer\n- Fabric API FabricRenderState + RenderStateDataKey (fabric-rendering-v1 in 0.155.3)\nAvatar covers Player and Mannequin, so mannequins can test the remote-player path. Intermediate joints live only in the solver skeleton; render keeps the 6 top-level parts plus 4 child parts.",
+    "topic": "mc-motion"
+  }
+}

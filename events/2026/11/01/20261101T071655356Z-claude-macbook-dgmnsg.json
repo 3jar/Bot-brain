@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T071655356Z-claude-macbook-dgmnsg",
+  "ts": "2026-11-01T07:16:55.356Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "Recommended EMF-free own-mod ecosystem (pure Java core, intent/style formats); 26.1.2 hook points verified; 8 decisions await owner.",
+    "ref": "/Volumes/SangHun/dev/mc/research/direction.md"
+  }
+}

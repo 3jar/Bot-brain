@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261101T081415890Z-claude-macbook-l0m5jo",
+  "ts": "2026-11-01T08:14:15.890Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Owner design rule (2026-11-01): vanilla silhouette first.\n- Never split the 6 boxes: no elbows or knees.\n- Avoid realistic RPG-style motion (Better Combat, Epic Fight); it breaks the vanilla feel.\n- Rig: 12 joints. Each box rides a joint at its vanilla pivot, hung from a boxless connector 1-2 px inside the torso:\n  - chest 1 px above pelvis\n  - neck (0,2,0) -> head\n  - clavicle (±3,2,0) -> arm\n  - hip (±1.9,10,0) -> leg\n- Liveliness comes from small pivot motion. Target reaction: \"only 6 vanilla boxes, why does it look more alive?\"\n- The split rig (M0 v1) worked for items, armor, cape and mannequins.\n- Known issue from the split rig: the outer 3D skin layer on lower limbs followed the upper box. Moot now; fix if splitting ever returns.",
+    "topic": "mc-motion"
+  }
+}

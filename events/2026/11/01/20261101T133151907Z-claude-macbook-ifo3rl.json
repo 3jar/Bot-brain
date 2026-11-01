@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261101T133151907Z-claude-macbook-ifo3rl",
+  "ts": "2026-11-01T13:31:51.907Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "mc-motion",
+    "name": "HANDOFF.md",
+    "body": "# mc-motion handoff — 2026-11-01\n\nProject: /Volumes/SangHun/dev/notamovie (Fabric 26.1.2, plain javac via build.py, no git commits yet).\n\n## State\n- Cost research done: docs/research/realtime.md (procedural 0.53 us, hybrid DLS 4.2 us per avatar per frame; benches in docs/research/bench/).\n- Owner decisions: compare gait B vs C in-game (A dropped); M0.5 on hold; whole-body optimization via shared state-keyed pose cache (sec. 11).\n- Implemented gait experiment: core/Gait.java (+GaitTest, 21 tests pass), client/Walk.java layered over vanilla setupAnim, ElytraModelMixin, `/nam walk b|c|off|angle|bob|full`. Built and installed in FO profile; NOT yet run in-game (mixins unverified at runtime).\n- Cache bench: 4D grid 41k cells, 6.5 MB, full bake 2.7 s on 6 threads, lookup 0.28 us. Recommendation: bake all at load in background + disk cache; lazy fill only for 5D+.\n\n## Next\n- Owner runs M0.md \"걸음 실험 B vs C\" checklist, picks style/params.\n- Then: define the real offline objective to bake (balance, prior, style), cache infra (worker threads, disk, hash invalidation).\n\n## Blocked on\nOwner in-game check.\n"
+  }
+}

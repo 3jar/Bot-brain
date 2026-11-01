@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T144103341Z-claude-macbook-jr1zpk",
-  "events": 126,
+  "folded_through": "20261101T144349333Z-claude-macbook-nlh0ly",
+  "events": 127,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T14:41:03.341Z",
+      "last_seen": "2026-11-01T14:43:49.333Z",
       "handoff_updated": "2026-11-01T07:32:33.552Z",
-      "logs": 21,
+      "logs": 22,
       "notes": 8,
       "last_log": {
-        "ts": "2026-11-01T14:41:03.341Z",
+        "ts": "2026-11-01T14:43:49.333Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
         "status": "question",
-        "summary": "Walking = fall over a fixed pushable pillar; MC gravity 32 m/s2 makes MC walk a real walk (Fr 0.83). Pillar algorithm doc; fixed 6.25% foot-slide unit bug.",
-        "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
+        "summary": "Proposed equation route: Gait root + baked harmonic coefficients per state + event-driven segment plans; runtime motion matching dropped for walking, data used offline.",
+        "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
       }
     },
     "grok-box": {
@@ -168,7 +168,7 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T14:41:03.341Z",
+      "updated": "2026-11-01T14:43:49.333Z",
       "agents": [
         "claude-macbook"
       ],
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T14:43:49.333Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "question",
+      "summary": "Proposed equation route: Gait root + baked harmonic coefficients per state + event-driven segment plans; runtime motion matching dropped for walking, data used offline.",
+      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
+    },
     {
       "ts": "2026-11-01T14:41:03.341Z",
       "agent": "claude-macbook",
@@ -515,13 +523,6 @@
       "status": "done",
       "summary": "Morning brief 10/25: Mac offline, read box clone; 3 syncs since yesterday, dashboard only; speech outline due today, physics HW3 due 10/26; no new exams.",
       "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-10-23T23:31:25.163Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Final: clean build OK, 105 tests green, jar build/libs/fullbodymotion-0.1.0.jar. Added /fbm reset + Reset button, soak test, README drift test, mmClamps in status, smoke config reset. Alloc MM 4.8/proc 5.7 KB per solve. 126 local commits, not pushed."
     }
   ]
 }

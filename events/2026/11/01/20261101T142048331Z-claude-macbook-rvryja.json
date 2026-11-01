@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T142048331Z-claude-macbook-rvryja",
+  "ts": "2026-11-01T14:20:48.331Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "Proposed data route: 100STYLE, two-stage retarget, playback tuning, then motion matching; legs stay on C2 contact solver. 5 owner decisions.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/research/data-driven.md"
+  }
+}

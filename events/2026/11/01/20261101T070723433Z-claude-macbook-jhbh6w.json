@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261101T070723433Z-claude-macbook-jhbh6w",
+  "ts": "2026-11-01T07:07:23.433Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Research for owner's next MC project: third-person body motion generated from state + partial intent (e.g. hand target) + game exaggeration, rest of body solved by optimization. Report (Korean): /Volumes/SangHun/dev/mc/research/motion-synthesis.md\nConstraints from owner: mod or EMF pack; only the 6 vanilla boxes, split arm/leg into halves for elbow/knee, add empty pivot joints (neck, clavicles, pelvis/hips, waist) so joint count matches a human skeleton.\nFacts checked:\n- EMFAnimationApi has registerSingletonAnimationVariable, registerCustomFunctionFromStaticMethod, registerAnimationHook, getCurrentEntity.\n- EMF has keyframe/keyframeloop (Catmull-Rom), ease*, catmullrom, cubicbezier.\n- Installed FA Player v1.1 has 1 box per part (no bending).\n- HY-Motion license excludes South Korea.\n- LaFAN1 is NC-ND; Bandai Namco is CC BY-NC; usable data: CMU (credit), 100STYLE (CC BY 4.0).\n- orangeduck/Motion-Matching code is MIT; Caliko (Java FABRIK) is MIT; MotionBricks code is Apache-2.0 but needs an NVIDIA GPU.\nOpen risk: held items and armor follow only the vanilla upper-arm/leg transform (needs a mixin); Skin Layers 3D with split boxes.",
+    "topic": "mc-motion"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T083152238Z-claude-macbook-m352dw",
+  "ts": "2026-11-01T08:31:52.238Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "done",
+    "summary": "Added /nam length (live connector tuning, defaults 3/3/3/2 px) and /nam bones x-ray layer; 16 tests pass; installed in FO.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
+  }
+}

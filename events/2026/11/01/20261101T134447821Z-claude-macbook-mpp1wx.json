@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T134447821Z-claude-macbook-mpp1wx",
+  "ts": "2026-11-01T13:44:47.821Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "done",
+    "summary": "Wrote docs/skeleton.md: rig, signs, pipeline, optimization rules, open items for the animation session; refreshed direction.md rig values and README.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T142518933Z-claude-macbook-xgwezq",
+  "ts": "2026-11-01T14:25:18.933Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "done",
+    "summary": "Explained gait core to owner: planted-foot inverted pendulum; landing angle sets wave L(1-cos θ); all hidden joints exist to shrink θ.",
+    "ref": "/Volumes/SangHun/dev/notamovie/src/main/java/notamovie/core/Gait.java"
+  }
+}

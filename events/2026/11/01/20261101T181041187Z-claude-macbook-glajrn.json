@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T181041187Z-claude-macbook-glajrn",
+  "ts": "2026-11-01T18:10:41.187Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "done",
+    "summary": "Turning: world-space swings, accel lean (MC g, cap 12), hip warp, DCM cut steps, out-of-reach release; 34 tests pass incl. 90/180 cuts; installed.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
+  }
+}

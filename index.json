@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T071655356Z-claude-macbook-dgmnsg",
-  "events": 106,
+  "folded_through": "20261101T073235227Z-claude-macbook-9y98ge",
+  "events": 109,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T07:16:55.356Z",
-      "handoff_updated": "2026-10-28T05:02:33.043Z",
-      "logs": 9,
+      "last_seen": "2026-11-01T07:32:35.227Z",
+      "handoff_updated": "2026-11-01T07:32:33.552Z",
+      "logs": 10,
       "notes": 7,
       "last_log": {
-        "ts": "2026-11-01T07:16:55.356Z",
+        "ts": "2026-11-01T07:32:35.227Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
-        "status": "question",
-        "summary": "Recommended EMF-free own-mod ecosystem (pure Java core, intent/style formats); 26.1.2 hook points verified; 8 decisions await owner.",
-        "ref": "/Volumes/SangHun/dev/mc/research/direction.md"
+        "status": "done",
+        "summary": "Direction fixed: EMF dropped, algorithm-first optimized Fabric mod, ecosystem last (M5); handoff written, M0 spike next.",
+        "ref": "work/mc-motion/HANDOFF.md"
       }
     },
     "grok-box": {
@@ -168,12 +168,17 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T07:16:55.356Z",
+      "updated": "2026-11-01T07:32:35.227Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "question",
-      "docs": {}
+      "last_status": "done",
+      "docs": {
+        "HANDOFF.md": {
+          "updated": "2026-11-01T07:32:31.734Z",
+          "by": "claude-macbook"
+        }
+      }
     },
     "notch-scroll-menubar": {
       "updated": "2026-10-20T09:10:27.787Z",
@@ -279,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T07:32:35.227Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "done",
+      "summary": "Direction fixed: EMF dropped, algorithm-first optimized Fabric mod, ecosystem last (M5); handoff written, M0 spike next.",
+      "ref": "work/mc-motion/HANDOFF.md"
+    },
     {
       "ts": "2026-11-01T07:16:55.356Z",
       "agent": "claude-macbook",
@@ -499,13 +512,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Resumed after 06:36. Strafe: lock release + 22deg splay cap; alloc 8 KB/solve; pelvis bob measured 0.27px -> default 1.5; MP smoke and in-game idle check OK. Continuing self-chosen items until 09:45."
-    },
-    {
-      "ts": "2026-10-23T21:24:03.559Z",
-      "agent": "grok-box",
-      "topic": "mc-fullbody-motion",
-      "status": "done",
-      "summary": "Idle breathing/weight shift + config sliders (screen now fits). SUMMARY_KO.md written. Strafe kick root cause: vanilla 45deg body turn kept latFrac at 0.64, tidy under-engaged; new band + lift/x caps cut foot z 10.9->4.3, lift 7->0.9 px in game."
     }
   ]
 }

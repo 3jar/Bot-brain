@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261101T144349333Z-claude-macbook-nlh0ly",
+  "ts": "2026-11-01T14:43:49.333Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-motion",
+    "status": "question",
+    "summary": "Proposed equation route: Gait root + baked harmonic coefficients per state + event-driven segment plans; runtime motion matching dropped for walking, data used offline.",
+    "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T185320021Z-claude-macbook-ksn3if",
-  "events": 139,
+  "folded_through": "20261101T225737238Z-skku-icampus-bot-4x9r8j",
+  "events": 140,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-10-31T23:00:51.817Z",
+      "last_seen": "2026-11-01T22:57:37.238Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 17,
+      "logs": 18,
       "notes": 0,
       "last_log": {
-        "ts": "2026-10-31T23:00:51.817Z",
+        "ts": "2026-11-01T22:57:37.238Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/1: Mac offline, read origin/main; syncs 10/31 10:31, 18:32, 11/1 02:39 ok; bookclub wk10 due 11/5, Calc Quiz 09 due today; no new exams.",
+        "summary": "Morning brief 11/2: Mac offline, read box clone; sync 11/2 03:23 added physics ch23 ppt, bookclub wk10 PDF; prog API due 11/4, bookclub wk10 11/5; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -195,7 +195,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-10-31T23:00:51.817Z",
+      "updated": "2026-11-01T22:57:37.238Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T22:57:37.238Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/2: Mac offline, read box clone; sync 11/2 03:23 added physics ch23 ppt, bookclub wk10 PDF; prog API due 11/4, bookclub wk10 11/5; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-01T18:53:11.139Z",
       "agent": "claude-macbook",
@@ -515,14 +523,6 @@
       "status": "done",
       "summary": "Morning brief 10/29: Mac offline, read box clone; syncs 10/28 10:08, 18:33, 10/29 03:48 ok; QIE2 midterm graded item only; bookclub wk9 due today; no new exams.",
       "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-10-28T05:02:35.042Z",
-      "agent": "claude-macbook",
-      "topic": "lively-eyes",
-      "status": "done",
-      "summary": "Lively Eyes 0.1.0 built, tested (68), Modrinth draft ready; brows/gestures/contact switched off; source moved to SSD dev/mc, git 696478d.",
-      "ref": "work/lively-eyes/RESULT.md"
     }
   ]
 }

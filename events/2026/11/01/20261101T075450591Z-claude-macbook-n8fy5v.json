@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261101T075450591Z-claude-macbook-n8fy5v",
+  "ts": "2026-11-01T07:54:50.591Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "mc-motion",
+    "name": "HANDOFF.md",
+    "body": "# mc-motion handoff — 2026-11-01\n\n## Mod\n\n- Name: \"This Is Not a Movie\", mod id `notamovie`.\n- Project: `/Volumes/SangHun/dev/notamovie`. Git is initialized; nothing is committed.\n- Owner decisions:\n  - EMF is dropped.\n  - The algorithm is the product; add-ons come via resource packs later.\n  - Ecosystem work goes last (M5). Optimize first.\n  - Lively Eyes is dropped from the plan.\n\n## State: M0 built and installed, awaiting the owner's in-game check\n\n- Core (pure Java, tests `python3 build.py test`, 14 passing):\n  - Skeleton: 15 joints including pelvis, spine, neck and clavicles.\n  - Pose (3x3 local rotations), Fk, Parts (6 top-level parts plus forearm and shin children).\n  - Euler: ZYX decomposition, verified against JOML rotationZYX.\n  - LimbSplit (box split math).\n- Adapter mixins:\n  - `AvatarRenderer.extractRenderState` TAIL: solve, then store the parts in the render state (`RenderStateDataKey`).\n  - `PlayerModel.setupAnim` TAIL: apply the parts.\n  - `createMesh` / `createArmorMeshSet` RETURN: split the limbs.\n  - `translateToHand` HEAD: add the forearm transform.\n  - `renderHand` HEAD: straighten the lower limbs.\n- Debug client commands: `/nam on|off|demo on|off|set|reset|stats`.\n- Installed into the clean Modrinth profile \"Fabulously Optimized\" (folder `profiles/Fabulously Optimized`). `instance.txt` points there.\n- Note: folder \"Fabulously Optimized (2)\" is the full 109-mod instance, shown in the app as \"26.1.2 MC optimized\".\n\n## Gotchas\n\n- `setupAnim` runs several times per frame (body, then each armor model at deferred render time). Solve only in extract; `setupAnim` only copies.\n- FO bundles EMF and ETF. If the split doesn't show, test with them disabled.\n- The first-person `renderHand` draws the shared model's arm without `setupAnim`.\n\n## Docs\n\n- `docs/M0.md`: in-game checklist (Korean).\n- `docs/research/{direction,motion-synthesis}.md`\n\n## Next\n\n1. The owner runs the `docs/M0.md` checklist.\n2. Fix whatever breaks.\n3. Decide the render backend.\n4. M1 locomotion: phase from real distance, foot locking, two-bone IK."
+  }
+}

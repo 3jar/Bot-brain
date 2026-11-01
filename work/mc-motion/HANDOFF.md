@@ -1,22 +1,18 @@
-# mc-motion handoff — 2026-11-01 (to the animation session)
+# mc-motion handoff — 2026-11-01 (late)
 
-Project: /Volumes/SangHun/dev/notamovie (Fabric 26.1.2, plain javac via build.py, no git commits yet).
-
-## Read first
-- docs/skeleton.md: the rig in one place. 12 joints, 6 whole vanilla boxes on short boxless connectors (neck/clavicle/hip 3 px, spine 2 px, not final). Covers coordinates and signs (measured pivot shifts), render pipeline, closed-form task solutions, gait facts, optimization rules, decided/open items, code map.
-- Background: docs/research/direction.md (decisions), realtime.md (costs, gait geometry, pose cache), motion-synthesis.md (survey). In-game checklist: docs/M0.md.
+Project: /Volumes/SangHun/dev/notamovie. Main design doc: docs/skeleton.md (sec. 2, 2.1, 5).
 
 ## State
-- Core: Skeleton/Pose/Fk/Parts/Euler + Gait; 21 tests pass (`python3 build.py test`).
-- Two render paths today: skeleton path (replaces all 6 parts, vanilla arm poses are lost) and the gait overlay (`/nam walk b|c`, keeps the vanilla pose). Unifying them is open.
-- Not yet run in game: the connector rig, gait B/C, bones view.
-
-## Owner rules for animation
-- Do not split boxes; no elbows or knees; avoid realistic RPG-style motion (Better Combat, Epic Fight). Liveliness comes from 1-2 px pivot motion of connectors.
-- Optimize first; no ecosystem generalization until M5.
+- Owner direction: B too fast, dropped. Go with C cadence (vanilla step 18.85 px, 3.66 steps/s) and minimize the pelvis wave with the hidden skeleton. Hidden skeleton follows human joint layout; its lengths, participation ratios and strengths must be fully controlled (named params, hard ranges, measured output in px).
+- Skeleton now 13 joints (waist = lumbar added; spine = lumbar 1 px + thoracic 1 px) + virtual sole-corner contacts.
+- core/Gait rewritten: sole-corner rocker (heel->toe), pelvic rotation + hip connector carry, pelvic list, sway, torso steady (waist/chest), straight feet, clavicle swing. Style = 13 clamped params, presets b/c/c2. Meter per stride.
+- Measured (144 fps walk): C wave 4.53 px -> C2 1.51 px, feet planted (slide <0.05 px), 0.75 us/frame. 24 tests pass.
+- client/Walk now lays hidden-skeleton FK deltas over vanilla setupAnim (keeps attack/items/crouch). Commands: /nam walk b|c|c2|off, /nam walk set|help NAME, /nam meter; bones works over walk. Installed in FO; NOT run in-game yet.
+- Pose cache (decision 3) parked by owner.
 
 ## Next
-- Owner: pick connector lengths and gait B or C in game. Then bake the lengths as defaults; start M1 locomotion.
+- Owner in-game check per docs/M0.md "걸음 실험 (C2 중심)", tune via /nam meter.
+- Then: side-stepping, slopes/stairs foot planning (discussed, feasible, analytic), neck nod.
 
 ## Blocked on
 Owner in-game check.

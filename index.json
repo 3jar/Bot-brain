@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T134447821Z-claude-macbook-mpp1wx",
-  "events": 119,
+  "folded_through": "20261101T140537692Z-claude-macbook-sw9wjo",
+  "events": 121,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T13:44:47.821Z",
+      "last_seen": "2026-11-01T14:05:37.692Z",
       "handoff_updated": "2026-11-01T07:32:33.552Z",
-      "logs": 16,
+      "logs": 17,
       "notes": 8,
       "last_log": {
-        "ts": "2026-11-01T13:44:47.821Z",
+        "ts": "2026-11-01T14:05:37.692Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
-        "status": "done",
-        "summary": "Wrote docs/skeleton.md: rig, signs, pipeline, optimization rules, open items for the animation session; refreshed direction.md rig values and README.",
+        "status": "question",
+        "summary": "13-joint hidden skeleton + C2 gait (rocker, pelvic rotation/list, hip carry) cuts wave 4.53->1.51 px; 24 tests, installed, awaiting in-game.",
         "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
       }
     },
@@ -168,14 +168,14 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T13:44:47.821Z",
+      "updated": "2026-11-01T14:05:37.692Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "done",
+      "last_status": "question",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-11-01T13:44:46.043Z",
+          "updated": "2026-11-01T14:05:35.655Z",
           "by": "claude-macbook"
         }
       }
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T14:05:37.692Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "question",
+      "summary": "13-joint hidden skeleton + C2 gait (rocker, pelvic rotation/list, hip carry) cuts wave 4.53->1.51 px; 24 tests, installed, awaiting in-game.",
+      "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
+    },
     {
       "ts": "2026-11-01T13:44:47.821Z",
       "agent": "claude-macbook",
@@ -510,14 +518,6 @@
       "topic": "mc-fullbody-motion",
       "status": "done",
       "summary": "Alloc passes 7-8 + in-place support hull: MM 8.2->4.8 KB/solve, procedural 7.1->5.7 KB; core bench slightly faster (MM 6.2->5.9 us). In-game regression smoke OK. Strafe->forward lock slip not reproducible in core; left open."
-    },
-    {
-      "ts": "2026-10-23T22:54:51.813Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 10/24: Mac offline, read box clone; no canvas-sync commit today yet; new Calc wk9, bookclub final teams, programming wk9 notices; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

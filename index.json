@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261101T171924027Z-claude-macbook-soloo8",
-  "events": 130,
+  "folded_through": "20261101T173351133Z-claude-macbook-7w2l8e",
+  "events": 131,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-01T17:19:24.027Z",
+      "last_seen": "2026-11-01T17:33:51.133Z",
       "handoff_updated": "2026-11-01T07:32:33.552Z",
-      "logs": 24,
+      "logs": 25,
       "notes": 8,
       "last_log": {
-        "ts": "2026-11-01T17:19:24.027Z",
+        "ts": "2026-11-01T17:33:51.133Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
         "status": "question",
-        "summary": "Box joints moved inside boxes (head 15%, leg 15%), swing knee fold via hip connector + inner leg joint; 33 tests pass, installed; awaiting in-game look.",
+        "summary": "Broken look = knee fold opening leg seam ~4 px per px lift; fold off by default (seam 0.84 px); whole-body objective with seam budget next.",
         "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
       }
     },
@@ -168,7 +168,7 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-01T17:19:24.027Z",
+      "updated": "2026-11-01T17:33:51.133Z",
       "agents": [
         "claude-macbook"
       ],
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-01T17:33:51.133Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "question",
+      "summary": "Broken look = knee fold opening leg seam ~4 px per px lift; fold off by default (seam 0.84 px); whole-body objective with seam budget next.",
+      "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
+    },
     {
       "ts": "2026-11-01T17:19:24.027Z",
       "agent": "claude-macbook",
@@ -515,14 +523,6 @@
       "status": "done",
       "summary": "Reviewed QIE2 wk9 note 54cab5a: entropy 0.469 (lecture 0.467 from rounding) and Bell circuit verified vs transcript; minor fixes (B00 notation, C^4, measurement); committed 9e1c9c5.",
       "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/검토/9주차_1차시_강의노트_검토.md"
-    },
-    {
-      "ts": "2026-10-26T03:57:03.860Z",
-      "agent": "skku-stem-tutor",
-      "topic": "skku-qie2-lecture-notes",
-      "status": "done",
-      "summary": "QIE2 week9 (10/26) transcribed and lecture note written: Bell circuit, Shannon entropy; commit 54cab5a; review-bot cross-check not sent (no SendToAgent).",
-      "ref": "2026-2/Introduction to Quantum Information Engineering 2/산출물/9주차_1차시_강의노트.md"
     }
   ]
 }

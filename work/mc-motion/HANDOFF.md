@@ -1,31 +1,35 @@
-# mc-motion handoff — 2026-11-02 late night
+# mc-motion handoff — 2026-11-02 late night (step 3 done)
 
-Project: /Volumes/SangHun/dev/notamovie. Design: docs/skeleton.md "관절은 사람 위치로" (new direction), docs/research/walking.md 9.1 (turning), 9.2 (short legs), 9.3 (terrain), 9.4 (MC walk = light jog). Owner checklist: docs/M0.md items 18-26.
+Project: /Volumes/SangHun/dev/notamovie. Design: docs/skeleton.md "관절은 사람 위치로"; docs/research/walking.md 9.1 (turning), 9.2 (short legs), 9.3 (terrain), 9.4 (MC walk = light jog, steps 1-3). Owner checklist: docs/M0.md items 18-28.
 
-## Owner decisions tonight
-- Joints go to human positions; boxes follow the bone after the middle joint (leg box = shin). Vanilla look no longer constrains joint placement.
-- MC walk is already running speed for these proportions (Fr 0.83 > the ~0.5 human walk-run switch; vanilla step = 1.44 leg lengths, a running step). So the base walk becomes a light jog and sprint a faster run. Running = bounce on a spring pillar (knee compresses mid-stance).
+## Owner decisions
+- Joints at human positions; boxes follow the bone after the middle joint (leg box = shin).
+- MC walk is a light jog; sprint a faster run; sneak stays a walk.
 - Stairs later; direction change and walking first.
 
-## State (all core tests pass: 41; built + installed in FO; NOT run in-game)
-- Step 1 done: hip 2 px above the leg box top (HIP_LENGTH 2), knee 4.5 px into the box (LEG_DEPTH 4.5, 37.5%). The stance leg turns at the hip with the knee straight (pendulum 14 px).
-  - Old hip-connector carry removed (no anatomical counterpart); carry is pelvis-only (CARRY 0.6, pelvis yaw 18.4 deg). CARRY_PELVIS knob removed (Style reindexed).
-- Step 2 done: the swing knee bends only as much as keeps the foot off the ground (LIFT 0, FOLD 60 deg cap).
-  - It bends after the final drop is known (no frame lag); the clearance rule lifts the body only past a fully bent knee.
-  - Exact two-bone solve in the leg plane, bisection on the bend.
-- Results: landing 41.6 -> 36.3 deg walk, 36.7 -> 32.7 sprint. Wave about unchanged (1.60 straight). Knee up to 43 deg in swing.
-  - Seam 1.03 -> 3.95 px: the main visual risk (box top above the knee moves with the shin). Owner to judge in-game.
-  - 30 fps cut stance-foot float 1.11 -> 0.31 px. Cost 1.40 -> 1.86 us/frame.
-- Also fixed tonight:
-  - a foot left in the air forever after some stops (5/61 positions), with a new test stopping at 40 points;
-  - standing on stairs no longer releases pillars;
-  - /nam depth range widened to 0-8.
-- Stairs (deferred): standing on stairs still has cases with the closing step not landing (26/61, stairs only).
+## State (43 core tests pass; built + installed in FO; NOT run in-game)
+- Steps 1-2 (knee): hip 2 px above the leg box, knee 4.5 px in (37.5%). The stance leg turns at the hip. The swing knee bends only to keep the foot off the ground, solved after the final drop.
+- Step 3 (jog):
+  - Gait chosen by Froude (walk below 0.3, jog above 0.5, blended). Walking duty 0.5 with a straight stance knee.
+  - The jog: duty 0.38 (sprint 0.30), with the stance knee giving spring·sin(pi·u/duty), 30 deg (sprint 40). New knobs spring, spring_sprint.
+  - A bent stance leg is solved as a shorter stick (solveLeg); the heel-to-toe roll follows the shin.
+  - Fixes:
+    - the landing prediction includes the landing frame's knee give;
+    - the matched landing pitch is kept after the other foot pushes off;
+    - push-off is decided with a one-frame lookahead (fixed the start-of-walk pelvis spike);
+    - world continuity holds in flight over unknown ground.
+- Results vs session start:
+  - landing 41.6/36.7 -> 29.1/22.3 deg (walk/sprint);
+  - bounce 1.58/2.13/1.89 -> 0.99/1.34/1.59 px (straight/curve/diagonal);
+  - 30 fps cut float 1.11 -> 0.17 px;
+  - seam 1.03 -> 4.20 px;
+  - cost 1.40 -> 2.01 us/frame.
+- Known limit: the bounce is still walk-shaped (highest at mid-stance). The long MC stance (+/-29 deg) outweighs a 30 deg knee, and a box with no ankle tilts toe-down when the knee bends, so the toe corner lifts the body back. Inverting it needs about 60 deg of knee (seam over 5 px) or duty under 0.3. Owner's call.
 
 ## Next
-1. Owner in-game check of M0.md 25-26 (knee look, seam) and 18-21 (direction change).
-2. Step 3: stance knee compression = light jog as the base walk (spring pillar), blended by Froude (walk below ~0.5).
-3. Step 4: sprint as a faster run; step 5: cut = plant, sink, push.
+1. Owner in-game check: M0.md 25-28 (knee look/seam, jog feel), 18-21 (direction change).
+2. Step 4: sprint as a faster run (tune); step 5: the cut as plant, sink, push (uses the stance knee).
+3. Later: stairs (deferred), L1 upper body.
 
 ## Blocked on
-Owner in-game check of the knee look before building step 3 on it.
+Owner in-game check.

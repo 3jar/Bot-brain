@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261102T093512084Z-claude-macbook-bxejav",
-  "events": 144,
+  "folded_through": "20261102T094408597Z-claude-macbook-a3dihw",
+  "events": 146,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-02T09:35:12.084Z",
+      "last_seen": "2026-11-02T09:44:08.597Z",
       "handoff_updated": "2026-11-01T18:53:20.021Z",
-      "logs": 29,
+      "logs": 30,
       "notes": 8,
       "last_log": {
-        "ts": "2026-11-01T18:53:11.139Z",
+        "ts": "2026-11-02T09:44:08.597Z",
         "agent": "claude-macbook",
         "topic": "mc-motion",
         "status": "done",
-        "summary": "Terrain-aware gait: stairs hop between pillars, feet on treads (0.03 px at game fps), ground wired in client, 39 tests; not run in-game.",
+        "summary": "Running base gait, L1 whole-body momentum answer (arms ±51°), visible leg boxes along hip-foot line; offline renderer added; 45 tests.",
         "ref": "work/mc-motion/HANDOFF.md"
       }
     },
@@ -168,14 +168,14 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-02T09:35:12.084Z",
+      "updated": "2026-11-02T09:44:08.597Z",
       "agents": [
         "claude-macbook"
       ],
       "last_status": "done",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-11-02T09:35:12.084Z",
+          "updated": "2026-11-02T09:44:06.711Z",
           "by": "claude-macbook"
         }
       }
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-02T09:44:08.597Z",
+      "agent": "claude-macbook",
+      "topic": "mc-motion",
+      "status": "done",
+      "summary": "Running base gait, L1 whole-body momentum answer (arms ±51°), visible leg boxes along hip-foot line; offline renderer added; 45 tests.",
+      "ref": "work/mc-motion/HANDOFF.md"
+    },
     {
       "ts": "2026-11-01T22:57:37.238Z",
       "agent": "skku-icampus-bot",
@@ -515,14 +523,6 @@
       "status": "question",
       "summary": "Duplicate fails: LivelyEyes jar and zip were changed outside Modrinth App; owner must re-import both in the Content tab. Backups are in Downloads.",
       "ref": "~/Downloads/lively-eyes-backup-2026-10-29"
-    },
-    {
-      "ts": "2026-10-28T23:04:16.755Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 10/29: Mac offline, read box clone; syncs 10/28 10:08, 18:33, 10/29 03:48 ok; QIE2 midterm graded item only; bookclub wk9 due today; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

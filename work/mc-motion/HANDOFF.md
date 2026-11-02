@@ -1,38 +1,30 @@
-# mc-motion handoff — 2026-11-02 late night (L1 whole-body started)
+# mc-motion handoff — 2026-11-02 late night (L1 + visible leg line)
 
-Project: /Volumes/SangHun/dev/notamovie. Design: docs/research/walking.md 9.4 (running is the base), 9.5 (L1 whole-body); docs/skeleton.md "관절은 사람 위치로". Owner checklist: docs/M0.md items 18-29.
+Project: /Volumes/SangHun/dev/notamovie. Design: docs/research/walking.md 9.4 (running base), 9.5 (L1 whole body), 9.6 (visible leg box along the leg line). Owner checklist: docs/M0.md 18-30.
 
 ## Owner direction
-- In-game verdict on the run: "just looks weird; nothing visibly changes between your edits".
-- Get the whole-body optimization in place first; the owner will tune on the finished version.
-- Optimize away the legs' velocity/force so the body covers the legs' oddness.
+- Get the whole-body optimization to a finished version first; the owner tunes after looking.
+- The body should absorb the legs' momentum so the legs' oddness is covered.
 
-## State (44 core tests pass; built + installed in FO; not yet seen by owner)
-- Visual tool: docs/research/bench/Render.java draws the six boxes side/front over one stride to PNG. Use it to check every visual change. It showed:
-  - the upper body was inert;
-  - the heel-kicking leg box went nearly horizontal (the knee is 4.5 px inside the box).
-- L1 = core/WholeBody, called at the end of Gait.advance when style `whole` > 0 (C2: 1).
-  - 10 offset DOFs on top of the gait's pose: waist and chest pitch/yaw/roll, clavicle yaw x2, arm swing x2.
-  - Damped Gauss-Newton, 2 iterations per frame, numeric Jacobian, warm start.
-  - Residuals:
-    - vertical-axis angular momentum about the COM, minus its 0.4 s running mean (weight 0.3);
-    - lateral-axis momentum, also mean-free (0.05);
-    - per-joint stiffness prior (spine 5/5/2.5, clavicles 2, arms 0.4; scale 0.15);
-    - smoothness 0.6.
-  - Masses from Winter 2009, as boxes with their own rotational inertia.
-- Lessons:
-  - point masses make torso twist free, so segment spin inertia is needed;
-  - equal stiffness lets the chest win, so joints need their own stiffness;
-  - full cancellation spins the arms to ±159 deg, so cancel only partly;
-  - running legs carry a steady lateral-axis momentum (like a wheel), so cancel only the changing part.
-- Results: vertical momentum 11.6 -> 2.4 (-79%); arm swing ±19.7 -> ±50.8 deg; chest yaw ±4 deg; torso within 5 deg of the gait's lean. Cost 3.2 -> 14.9 us/frame.
-- Also: lean_speed 1.5 deg/(m/s) for running; lift 1.8/2.6; fold 85.
+## State (45 core tests pass; built + installed in FO; not yet seen by owner)
+- Visual tool: docs/research/bench/Render.java draws side and front views over one stride to PNG; it calls gait.placeLegs. Use it for every visual change.
+- L1 (core/WholeBody):
+  - per frame, 10 offset DOFs (waist and chest p/y/r, clavicle yaw, arm swing), damped Gauss-Newton, numeric Jacobian;
+  - aims: mean-free vertical and lateral angular momentum (weights 0.3 / 0.05), per-joint stiffness prior, smoothness;
+  - Winter masses as boxes with spin inertia;
+  - results: momentum -79%, arms ±51 deg, chest ±4 deg; lean_speed 1.5. Cost 14.9 us.
+- Visible leg box (Gait.placeLegBoxes / placeLegs, style leg_line, C2 = 1):
+  - a 12 px stick along the socket (torso box bottom) to foot line, turned from the shin by the least rotation;
+  - standing: the sole corner on the pillar, the top hidden in the torso if short;
+  - hanging from the socket while swinging (lifted off the ground), blended over the first and last 15% of the swing;
+  - the hidden skeleton keeps the human knee for physics.
+  - Remaining: a gap of up to 1 px (0.7 running) under the socket around landings (straight leg line slightly > 12). A RUN_KNEE 18 deg landing floor was tried and reverted: it made the backward float worse and weakened the run shape.
+- Renders: the legs now read as Minecraft legs (scissor, back kick); upper body answers.
 
-## Next (L1 extension, walking.md 9.5)
-1. Seam budget plus pelvis into L1 (legs re-solved by L0).
-2. COM path smoothing (linear momentum from the leg kick).
-3. Upper-body inertia on direction changes.
-4. Analytic Jacobian for cost.
+## Next
+1. Owner look (M0.md 29-30).
+2. COM path smoothing; upper-body inertia on direction changes; analytic Jacobian (cost).
+3. Later: stairs (deferred), cut as plant-sink-push.
 
 ## Blocked on
-Owner's look at the "finished" version (M0.md 29), or continue the L1 extension first per the owner's "finish, then I tune".
+Owner in-game look at this version.

@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261102T094408597Z-claude-macbook-a3dihw",
-  "events": 146,
+  "folded_through": "20261102T230230221Z-skku-icampus-bot-5eadl3",
+  "events": 147,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-01T22:57:37.238Z",
+      "last_seen": "2026-11-02T23:02:30.221Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 18,
+      "logs": 19,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-01T22:57:37.238Z",
+        "ts": "2026-11-02T23:02:30.221Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/2: Mac offline, read box clone; sync 11/2 03:23 added physics ch23 ppt, bookclub wk10 PDF; prog API due 11/4, bookclub wk10 11/5; no new exams.",
+        "summary": "Morning brief 11/3: Mac offline, read box clone; syncs 11/2 10:27, 19:52, 11/3 07:17 dashboard only; prog API due 11/4, bookclub wk10 11/5; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -195,7 +195,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-01T22:57:37.238Z",
+      "updated": "2026-11-02T23:02:30.221Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-02T23:02:30.221Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/3: Mac offline, read box clone; syncs 11/2 10:27, 19:52, 11/3 07:17 dashboard only; prog API due 11/4, bookclub wk10 11/5; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-02T09:44:08.597Z",
       "agent": "claude-macbook",
@@ -515,14 +523,6 @@
       "status": "done",
       "summary": "Removed LivelyEyes jar+zip from 26.1.2 instance and 20 stale app.db records; all 170 records match disk. app.db backup kept.",
       "ref": "~/Library/Application Support/ModrinthApp/app.db-backup-2026-10-29-before-cleanup"
-    },
-    {
-      "ts": "2026-10-29T12:01:25.223Z",
-      "agent": "claude-macbook",
-      "topic": "lively-eyes",
-      "status": "question",
-      "summary": "Duplicate fails: LivelyEyes jar and zip were changed outside Modrinth App; owner must re-import both in the Content tab. Backups are in Downloads.",
-      "ref": "~/Downloads/lively-eyes-backup-2026-10-29"
     }
   ]
 }

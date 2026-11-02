@@ -1,34 +1,38 @@
-# mc-motion handoff — 2026-11-02 late night (running is the base gait)
+# mc-motion handoff — 2026-11-02 late night (L1 whole-body started)
 
-Project: /Volumes/SangHun/dev/notamovie. Design: docs/skeleton.md "관절은 사람 위치로"; docs/research/walking.md 9.4 (step 3: running is the base). Owner checklist: docs/M0.md items 18-28.
+Project: /Volumes/SangHun/dev/notamovie. Design: docs/research/walking.md 9.4 (running is the base), 9.5 (L1 whole-body); docs/skeleton.md "관절은 사람 위치로". Owner checklist: docs/M0.md items 18-29.
 
-## Owner decisions
-- Joints at human positions; boxes follow the bone after the middle joint (leg box = shin).
-- Labelled walking, but the gait used is running ("뛰어다니는 것"); sprint runs bigger; sneak stays a walk.
-- In-game verdict on the light-jog version: "no running feel, looks like very fast walking, a support always on the ground". That led to the rewrite below.
-- Stairs later.
+## Owner direction
+- In-game verdict on the run: "just looks weird; nothing visibly changes between your edits".
+- Get the whole-body optimization in place first; the owner will tune on the finished version.
+- Optimize away the legs' velocity/force so the body covers the legs' oddness.
 
-## State (43 core tests pass; built + installed in FO; owner testing in-game)
-- Running = spring pillar.
-  - Stance: the body targets a line from its landing height to the straight leg's push-off height, minus `spring` px (sin, mid-stance). The planted knee bends exactly for it (bisection, cap 50 deg). The body is never above what the straight leg holds.
-  - Flight: lands exactly on the next pillar's predicted ask, rising `air` px on the way (back to 0 on the last frame aloft).
-  - Swing: heel kick, foot up `lift` px early (sin(pi s^0.6)), knee cap `fold` 110. The kick fades with acceleration (0 at 20 b/s^2) and with motion askew to facing (0 at 45 deg).
-  - Sprint knobs: duty_sprint, spring_sprint, air_sprint, lift_sprint.
-  - C2: duty 0.36/0.30, spring 0.3/0.4, air 0.6/0.9, lift 2.5/3.5.
-- No-ankle handling:
-  - on the toe, the knee is solved only from the length-maximizing bend (atan(2/7.5) = 15 deg) up;
-  - the swing knee starts from that push-off bend;
-  - the heel-to-toe roll happens once per stance while moving (it used to flip-flop).
-- Results vs session start:
-  - landing 41.6/36.7 -> 27.4/22.3 deg; both feet up 29%/38%; foot kick 2.5/3.5 px; bounce now running-shaped (lowest on the leg, highest aloft);
-  - slide 0, landing float 0, stairs and stops intact;
-  - cost 1.40 -> 3.2 us/frame.
-- Main risk: the seam reaches 7.9/8.6 px. The ~100 deg heel-kick knee swings the 4.5 px of box above the knee. Cut leg spacing is down to 2.2 px (test threshold lowered 2.4 -> 2.0 with that reason).
+## State (44 core tests pass; built + installed in FO; not yet seen by owner)
+- Visual tool: docs/research/bench/Render.java draws the six boxes side/front over one stride to PNG. Use it to check every visual change. It showed:
+  - the upper body was inert;
+  - the heel-kicking leg box went nearly horizontal (the knee is 4.5 px inside the box).
+- L1 = core/WholeBody, called at the end of Gait.advance when style `whole` > 0 (C2: 1).
+  - 10 offset DOFs on top of the gait's pose: waist and chest pitch/yaw/roll, clavicle yaw x2, arm swing x2.
+  - Damped Gauss-Newton, 2 iterations per frame, numeric Jacobian, warm start.
+  - Residuals:
+    - vertical-axis angular momentum about the COM, minus its 0.4 s running mean (weight 0.3);
+    - lateral-axis momentum, also mean-free (0.05);
+    - per-joint stiffness prior (spine 5/5/2.5, clavicles 2, arms 0.4; scale 0.15);
+    - smoothness 0.6.
+  - Masses from Winter 2009, as boxes with their own rotational inertia.
+- Lessons:
+  - point masses make torso twist free, so segment spin inertia is needed;
+  - equal stiffness lets the chest win, so joints need their own stiffness;
+  - full cancellation spins the arms to ±159 deg, so cancel only partly;
+  - running legs carry a steady lateral-axis momentum (like a wheel), so cancel only the changing part.
+- Results: vertical momentum 11.6 -> 2.4 (-79%); arm swing ±19.7 -> ±50.8 deg; chest yaw ±4 deg; torso within 5 deg of the gait's lean. Cost 3.2 -> 14.9 us/frame.
+- Also: lean_speed 1.5 deg/(m/s) for running; lift 1.8/2.6; fold 85.
 
-## Next
-1. Owner in-game verdict on the run feel and the seam (M0.md 27-28). Knobs: lift, fold, spring, air, duty, depth leg.
-2. If the seam reads broken: lower the kick, or move the knee up (depth leg), or split the trade into the L1 whole-body objective.
-3. Then step 5: the cut as plant, sink, push.
+## Next (L1 extension, walking.md 9.5)
+1. Seam budget plus pelvis into L1 (legs re-solved by L0).
+2. COM path smoothing (linear momentum from the leg kick).
+3. Upper-body inertia on direction changes.
+4. Analytic Jacobian for cost.
 
 ## Blocked on
-Owner in-game check.
+Owner's look at the "finished" version (M0.md 29), or continue the L1 extension first per the owner's "finish, then I tune".

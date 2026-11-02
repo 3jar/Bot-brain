@@ -1,12 +1,12 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261102T074334010Z-claude-macbook-3huwnh",
-  "events": 142,
+  "folded_through": "20261102T085713211Z-claude-macbook-lsvvjm",
+  "events": 143,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-02T07:43:34.010Z",
+      "last_seen": "2026-11-02T08:57:13.211Z",
       "handoff_updated": "2026-11-01T18:53:20.021Z",
       "logs": 29,
       "notes": 8,
@@ -168,14 +168,14 @@
       "docs": {}
     },
     "mc-motion": {
-      "updated": "2026-11-02T07:43:34.010Z",
+      "updated": "2026-11-02T08:57:13.211Z",
       "agents": [
         "claude-macbook"
       ],
       "last_status": "done",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-11-02T07:43:34.010Z",
+          "updated": "2026-11-02T08:57:13.211Z",
           "by": "claude-macbook"
         }
       }

@@ -1,34 +1,31 @@
-# mc-motion handoff — 2026-11-02 night (overnight autonomous run, owner asleep)
+# mc-motion handoff — 2026-11-02 late night
 
-Project: /Volumes/SangHun/dev/notamovie. Design: docs/research/walking.md sec. 9, 9.1 (turning), 9.2 (short legs), 9.3 (terrain). Owner checklist: docs/M0.md items 10-24 plus a slow-motion tip (/tick rate 5).
+Project: /Volumes/SangHun/dev/notamovie. Design: docs/skeleton.md "관절은 사람 위치로" (new direction), docs/research/walking.md 9.1 (turning), 9.2 (short legs), 9.3 (terrain), 9.4 (MC walk = light jog). Owner checklist: docs/M0.md items 18-26.
 
-## State
-- Turning (9.1): world-space swing paths, lean atan(a/g_MC) capped 12 deg, orientation warp, DCM cut step, per-foot tracks, no crossing, early release of out-of-reach pillars. Lead accel from live keys (own player) starts the lean before the body turns.
-- Short legs (9.2): duty factor with flight (walk 0.46, sprint 0.42), no stretching. Heel-to-toe rocker gives the honest ~20%.
-- Terrain (9.3):
-  - client/LevelGround reads collision tops (VoxelShape.max(Y, z, x), +/-0.6 block), wired in Walk.solve.
-  - Rigid legs change body height only in flight. The flight is driven by a cubic to the next pillar's predicted ask, predicted for the actual landing frame at the current pace and dt.
-  - Early push-off keeps height changes <= HOP_RATE 100 px/s.
-  - A short walking fall onto ground <= 0.6 below stays a walk.
-  - Hand-over continuity is kept in world terms.
-  - The heel-to-toe roll only happens onto ground level with the pillar, so a foot tips over a step edge or ledge.
-  - bob scales only the leg part of the drop, not the terrain.
-  - Fixed stale swingFrom (a foot never landing after a push-off right after a landing).
-- Results:
-  - Stairs carrying foot off its tread: 5.0 -> 0.002 px at 1000 fps; <= 0.03 px at 30/60/144/240 fps with 20 Hz ticks and render interpolation.
-  - Pelvis speed <= 0.19 px/ms (60 fps).
-  - Level-ground hand-over float is 0. Game-rate 90/180 cuts: no slide, float <= 0.14 px at 60/144 fps.
-  - 39/39 core tests, including the new game-frame-rate stairs and cuts tests.
-  - Cost 1.30 -> 1.40 us/frame.
-  - Built and installed in FO; NOT run in-game.
-- Known gaps:
-  - The swinging foot clips steps (up lead 6.2 px, down trail 10 px), like vanilla. The hip-connector fold maxes ~4 px vs 8.5 needed, so this needs an L1 whole-body trade or an owner call.
-  - At 30 fps, the 90 deg cut floats the stance foot 1.1 px (swing-clearance rule).
+## Owner decisions tonight
+- Joints go to human positions; boxes follow the bone after the middle joint (leg box = shin). Vanilla look no longer constrains joint placement.
+- MC walk is already running speed for these proportions (Fr 0.83 > the ~0.5 human walk-run switch; vanilla step = 1.44 leg lengths, a running step). So the base walk becomes a light jog and sprint a faster run. Running = bounce on a spring pillar (knee compresses mid-stance).
+- Stairs later; direction change and walking first.
 
-## Next (in order)
-1. Owner in-game check of M0.md 18-24.
-2. L1: interface split + objective (seam budget measure, angular momentum, clearance trade).
-3. Remote-player lead from InterpolationHandler target (needs an accessor for interpolationSteps); out of current scope (own avatar).
+## State (all core tests pass: 41; built + installed in FO; NOT run in-game)
+- Step 1 done: hip 2 px above the leg box top (HIP_LENGTH 2), knee 4.5 px into the box (LEG_DEPTH 4.5, 37.5%). The stance leg turns at the hip with the knee straight (pendulum 14 px).
+  - Old hip-connector carry removed (no anatomical counterpart); carry is pelvis-only (CARRY 0.6, pelvis yaw 18.4 deg). CARRY_PELVIS knob removed (Style reindexed).
+- Step 2 done: the swing knee bends only as much as keeps the foot off the ground (LIFT 0, FOLD 60 deg cap).
+  - It bends after the final drop is known (no frame lag); the clearance rule lifts the body only past a fully bent knee.
+  - Exact two-bone solve in the leg plane, bisection on the bend.
+- Results: landing 41.6 -> 36.3 deg walk, 36.7 -> 32.7 sprint. Wave about unchanged (1.60 straight). Knee up to 43 deg in swing.
+  - Seam 1.03 -> 3.95 px: the main visual risk (box top above the knee moves with the shin). Owner to judge in-game.
+  - 30 fps cut stance-foot float 1.11 -> 0.31 px. Cost 1.40 -> 1.86 us/frame.
+- Also fixed tonight:
+  - a foot left in the air forever after some stops (5/61 positions), with a new test stopping at 40 points;
+  - standing on stairs no longer releases pillars;
+  - /nam depth range widened to 0-8.
+- Stairs (deferred): standing on stairs still has cases with the closing step not landing (26/61, stairs only).
+
+## Next
+1. Owner in-game check of M0.md 25-26 (knee look, seam) and 18-21 (direction change).
+2. Step 3: stance knee compression = light jog as the base walk (spring pillar), blended by Froude (walk below ~0.5).
+3. Step 4: sprint as a faster run; step 5: cut = plant, sink, push.
 
 ## Blocked on
-Owner in-game check.
+Owner in-game check of the knee look before building step 3 on it.

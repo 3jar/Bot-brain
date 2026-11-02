@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261102T094406711Z-claude-macbook-f1dz64",
+  "ts": "2026-11-02T09:44:06.711Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "mc-motion",
+    "name": "HANDOFF.md",
+    "body": "# mc-motion handoff — 2026-11-02 late night (L1 + visible leg line)\n\nProject: /Volumes/SangHun/dev/notamovie. Design: docs/research/walking.md 9.4 (running base), 9.5 (L1 whole body), 9.6 (visible leg box along the leg line). Owner checklist: docs/M0.md 18-30.\n\n## Owner direction\n- Get the whole-body optimization to a finished version first; the owner tunes after looking.\n- The body should absorb the legs' momentum so the legs' oddness is covered.\n\n## State (45 core tests pass; built + installed in FO; not yet seen by owner)\n- Visual tool: docs/research/bench/Render.java draws side and front views over one stride to PNG; it calls gait.placeLegs. Use it for every visual change.\n- L1 (core/WholeBody):\n  - per frame, 10 offset DOFs (waist and chest p/y/r, clavicle yaw, arm swing), damped Gauss-Newton, numeric Jacobian;\n  - aims: mean-free vertical and lateral angular momentum (weights 0.3 / 0.05), per-joint stiffness prior, smoothness;\n  - Winter masses as boxes with spin inertia;\n  - results: momentum -79%, arms ±51 deg, chest ±4 deg; lean_speed 1.5. Cost 14.9 us.\n- Visible leg box (Gait.placeLegBoxes / placeLegs, style leg_line, C2 = 1):\n  - a 12 px stick along the socket (torso box bottom) to foot line, turned from the shin by the least rotation;\n  - standing: the sole corner on the pillar, the top hidden in the torso if short;\n  - hanging from the socket while swinging (lifted off the ground), blended over the first and last 15% of the swing;\n  - the hidden skeleton keeps the human knee for physics.\n  - Remaining: a gap of up to 1 px (0.7 running) under the socket around landings (straight leg line slightly > 12). A RUN_KNEE 18 deg landing floor was tried and reverted: it made the backward float worse and weakened the run shape.\n- Renders: the legs now read as Minecraft legs (scissor, back kick); upper body answers.\n\n## Next\n1. Owner look (M0.md 29-30).\n2. COM path smoothing; upper-body inertia on direction changes; analytic Jacobian (cost).\n3. Later: stairs (deferred), cut as plant-sink-push.\n\n## Blocked on\nOwner in-game look at this version.\n"
+  }
+}

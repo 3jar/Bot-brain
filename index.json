@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261102T230230221Z-skku-icampus-bot-5eadl3",
-  "events": 147,
+  "folded_through": "20261103T230014992Z-skku-icampus-bot-fasdfj",
+  "events": 148,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-02T23:02:30.221Z",
+      "last_seen": "2026-11-03T23:00:14.992Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 19,
+      "logs": 20,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-02T23:02:30.221Z",
+        "ts": "2026-11-03T23:00:14.992Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/3: Mac offline, read box clone; syncs 11/2 10:27, 19:52, 11/3 07:17 dashboard only; prog API due 11/4, bookclub wk10 11/5; no new exams.",
+        "summary": "Morning brief 11/4: Mac offline, read box clone; 11/3 19:44 sync added EE wk10 Launch PDF, prog midterm grades; 11/4 05:05 dashboard only; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -195,7 +195,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-02T23:02:30.221Z",
+      "updated": "2026-11-03T23:00:14.992Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-03T23:00:14.992Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/4: Mac offline, read box clone; 11/3 19:44 sync added EE wk10 Launch PDF, prog midterm grades; 11/4 05:05 dashboard only; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-02T23:02:30.221Z",
       "agent": "skku-icampus-bot",
@@ -515,14 +523,6 @@
       "status": "done",
       "summary": "Second duplicate failure: regular hotbar.nbt vs synced symlink. Removed empty file (backed up); app recreated symlink. Stray 2.3G profile folder left untouched.",
       "ref": "~/Downloads/lively-eyes-backup-2026-10-29/hotbar.nbt.from-26.1.2-instance"
-    },
-    {
-      "ts": "2026-10-29T12:12:58.510Z",
-      "agent": "claude-macbook",
-      "topic": "lively-eyes",
-      "status": "done",
-      "summary": "Removed LivelyEyes jar+zip from 26.1.2 instance and 20 stale app.db records; all 170 records match disk. app.db backup kept.",
-      "ref": "~/Library/Application Support/ModrinthApp/app.db-backup-2026-10-29-before-cleanup"
     }
   ]
 }

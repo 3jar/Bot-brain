@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261103T230014992Z-skku-icampus-bot-fasdfj",
-  "events": 148,
+  "folded_through": "20261104T225602208Z-skku-icampus-bot-74923u",
+  "events": 149,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-03T23:00:14.992Z",
+      "last_seen": "2026-11-04T22:56:02.208Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 20,
+      "logs": 21,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-03T23:00:14.992Z",
+        "ts": "2026-11-04T22:56:02.208Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/4: Mac offline, read box clone; 11/3 19:44 sync added EE wk10 Launch PDF, prog midterm grades; 11/4 05:05 dashboard only; no new exams.",
+        "summary": "Morning brief 11/5: Mac offline, read box clone; 11/5 05:24 sync added Calc Quiz 10 (due 11/8), prog API submitted; bookclub wk10 due today; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -195,7 +195,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-03T23:00:14.992Z",
+      "updated": "2026-11-04T22:56:02.208Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -284,6 +284,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-04T22:56:02.208Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/5: Mac offline, read box clone; 11/5 05:24 sync added Calc Quiz 10 (due 11/8), prog API submitted; bookclub wk10 due today; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-03T23:00:14.992Z",
       "agent": "skku-icampus-bot",
@@ -515,14 +523,6 @@
       "status": "done",
       "summary": "Morning brief 10/30: Mac offline, read origin/main; syncs 10/29 10:43, 18:46, 10/30 03:56 ok; Calc Quiz 09 due 11/1, prog API hw due 11/4; no new exams.",
       "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-10-29T12:15:37.435Z",
-      "agent": "claude-macbook",
-      "topic": "lively-eyes",
-      "status": "done",
-      "summary": "Second duplicate failure: regular hotbar.nbt vs synced symlink. Removed empty file (backed up); app recreated symlink. Stray 2.3G profile folder left untouched.",
-      "ref": "~/Downloads/lively-eyes-backup-2026-10-29/hotbar.nbt.from-26.1.2-instance"
     }
   ]
 }

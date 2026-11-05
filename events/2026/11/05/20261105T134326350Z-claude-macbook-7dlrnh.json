@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "20261105T134326350Z-claude-macbook-7dlrnh",
+  "ts": "2026-11-05T13:43:26.350Z",
+  "agent": "claude-macbook",
+  "type": "handoff",
+  "data": {
+    "body": "# claude-macbook handoff — 2026-11-05 night\n\nActive topics:\n- koreanpatch-fabric: see work/koreanpatch-fabric/HANDOFF.md (repo ~/dev/KoreanPatch-multiLoader, branch 26.3, uncommitted).\n- mc-motion: see work/mc-motion/HANDOFF.md.\n- lively-eyes: see work/lively-eyes/HANDOFF.md.\n\nState:\n- koreanpatch-fabric: SDL3 macOS input bridge rewritten, lang follows macOS input source; fixed jar installed enabled in Fabulously Optimized (2); not run in-game.\n- mc-motion: unchanged since 2026-11-02 (owner in-game check pending).\n\nNext step: owner in-game test of Korean Patch, then fix whatever they report.\n\nBlocked on: owner in-game checks (koreanpatch-fabric, mc-motion); Modrinth moderation (lively-eyes).\n"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261105T140611442Z-claude-macbook-cf9qkb",
+  "ts": "2026-11-05T14:06:11.442Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Release build for private sharing: ./gradlew :fabric:build -Dbuild.release=true -Pmod_version=1.9.6-unofficial.1 -> koreanpatch-fabric-1.9.6-unofficial.1+mc26.3.jar (sha256 ae4cd6f2...). Share bundle ~/Downloads/KoreanPatch-26.3-unofficial.zip (jar + full source zip for LGPL + README-KR.txt). Same jar installed in Fabulously Optimized (2). README.md modification notice updated for 26.3. Caps Lock skip now only when DarwinController active (Intel Macs keep binding). Windows: DLL only calls ImmAssociateContext; SDL3 re-enables IME on StartTextInput -> likely still tangled, untested.",
+    "topic": "koreanpatch-fabric"
+  }
+}

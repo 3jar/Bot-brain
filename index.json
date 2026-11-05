@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261105T134328233Z-claude-macbook-oncijc",
-  "events": 153,
+  "folded_through": "20261105T140613351Z-claude-macbook-o842bu",
+  "events": 155,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-05T13:43:28.233Z",
+      "last_seen": "2026-11-05T14:06:13.351Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 31,
-      "notes": 9,
+      "logs": 32,
+      "notes": 10,
       "last_log": {
-        "ts": "2026-11-05T13:43:28.233Z",
+        "ts": "2026-11-05T14:06:13.351Z",
         "agent": "claude-macbook",
         "topic": "koreanpatch-fabric",
         "status": "question",
-        "summary": "26.3 SDL3 breakage fixed: new macOS dylib hook, lang follows input source, GC-safe callbacks; jar installed, awaiting owner in-game test.",
-        "ref": "work/koreanpatch-fabric/HANDOFF.md"
+        "summary": "Built unofficial release 1.9.6-unofficial.1+mc26.3 with source bundle for private sharing; untested in-game; Windows likely still broken.",
+        "ref": "~/Downloads/KoreanPatch-26.3-unofficial.zip"
       }
     },
     "grok-box": {
@@ -143,7 +143,7 @@
       "docs": {}
     },
     "koreanpatch-fabric": {
-      "updated": "2026-11-05T13:43:28.233Z",
+      "updated": "2026-11-05T14:06:13.351Z",
       "agents": [
         "claude-macbook"
       ],
@@ -297,6 +297,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-05T14:06:13.351Z",
+      "agent": "claude-macbook",
+      "topic": "koreanpatch-fabric",
+      "status": "question",
+      "summary": "Built unofficial release 1.9.6-unofficial.1+mc26.3 with source bundle for private sharing; untested in-game; Windows likely still broken.",
+      "ref": "~/Downloads/KoreanPatch-26.3-unofficial.zip"
+    },
     {
       "ts": "2026-11-05T13:43:28.233Z",
       "agent": "claude-macbook",
@@ -527,14 +535,6 @@
       "topic": "skku-canvas-sync",
       "status": "done",
       "summary": "Morning brief 11/1: Mac offline, read origin/main; syncs 10/31 10:31, 18:32, 11/1 02:39 ok; bookclub wk10 due 11/5, Calc Quiz 09 due today; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-10-30T22:59:44.897Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 10/31: Mac offline, read origin/main; syncs 10/30 10:49, 18:52, 10/31 03:34 ok; Calc wk10 offline 11/2, Quiz 09 due 11/1; no new exams.",
       "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]

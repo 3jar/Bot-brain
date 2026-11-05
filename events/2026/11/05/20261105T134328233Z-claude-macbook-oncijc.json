@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261105T134328233Z-claude-macbook-oncijc",
+  "ts": "2026-11-05T13:43:28.233Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "koreanpatch-fabric",
+    "status": "question",
+    "summary": "26.3 SDL3 breakage fixed: new macOS dylib hook, lang follows input source, GC-safe callbacks; jar installed, awaiting owner in-game test.",
+    "ref": "work/koreanpatch-fabric/HANDOFF.md"
+  }
+}

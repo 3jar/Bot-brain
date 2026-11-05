@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261105T134324424Z-claude-macbook-stmxsr",
+  "ts": "2026-11-05T13:43:24.424Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Gotcha: MC 26.3 uses SDL3. KeyEvent(key=SDL scancode, keycode=SDL keycode, modifiers=SDL_Keymod raw: shift=3, ctrl=192, alt=768, caps=8192); repeat action is -1 (not 2); CharacterEvent has no modifiers; vanilla has IME preedit (PreeditEvent). On macOS SDL3 never sends Caps Lock from Cocoa_HandleKeyEvent; only SDL3View flagsChanged emits press+release when caps state flips.",
+    "topic": "koreanpatch-fabric"
+  }
+}

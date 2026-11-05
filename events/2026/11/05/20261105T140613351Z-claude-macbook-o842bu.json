@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261105T140613351Z-claude-macbook-o842bu",
+  "ts": "2026-11-05T14:06:13.351Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "koreanpatch-fabric",
+    "status": "question",
+    "summary": "Built unofficial release 1.9.6-unofficial.1+mc26.3 with source bundle for private sharing; untested in-game; Windows likely still broken.",
+    "ref": "~/Downloads/KoreanPatch-26.3-unofficial.zip"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261105T140613351Z-claude-macbook-o842bu",
-  "events": 155,
+  "folded_through": "20261105T230547426Z-skku-icampus-bot-eoin06",
+  "events": 156,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -74,16 +74,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-04T22:56:02.208Z",
+      "last_seen": "2026-11-05T23:05:47.426Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 21,
+      "logs": 22,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-04T22:56:02.208Z",
+        "ts": "2026-11-05T23:05:47.426Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/5: Mac offline, read box clone; 11/5 05:24 sync added Calc Quiz 10 (due 11/8), prog API submitted; bookclub wk10 due today; no new exams.",
+        "summary": "Morning brief 11/6: Mac offline, box clone; 11/5 19:42 sync added EE Launch PDF, prog final Step1 (due 11/11); Quiz10 due 11/8; cal +기획/기말발표.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -208,7 +208,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-04T22:56:02.208Z",
+      "updated": "2026-11-05T23:05:47.426Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -297,6 +297,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-05T23:05:47.426Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/6: Mac offline, box clone; 11/5 19:42 sync added EE Launch PDF, prog final Step1 (due 11/11); Quiz10 due 11/8; cal +기획/기말발표.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-05T14:06:13.351Z",
       "agent": "claude-macbook",
@@ -528,14 +536,6 @@
       "status": "done",
       "summary": "Researched motion synthesis (IK+prior, motion matching, generative, procedural, exaggeration) for MC 6-box rig; recommended Java solver feeding EMF vars.",
       "ref": "/Volumes/SangHun/dev/mc/research/motion-synthesis.md"
-    },
-    {
-      "ts": "2026-10-31T23:00:51.817Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 11/1: Mac offline, read origin/main; syncs 10/31 10:31, 18:32, 11/1 02:39 ok; bookclub wk10 due 11/5, Calc Quiz 09 due today; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

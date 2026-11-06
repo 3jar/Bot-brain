@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261106T120919863Z-claude-macbook-05i9cd",
+  "ts": "2026-11-06T12:09:19.863Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "litematica-printer",
+    "status": "done",
+    "summary": "Easy Place ignores vanilla toggle-use (checks own easyPlaceUseKey held); workaround: empty key + malilib allowEmpty = always held, toggle via easyPlaceToggle."
+  }
+}

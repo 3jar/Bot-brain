@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261106T102732415Z-claude-macbook-ze36i4",
+  "ts": "2026-11-06T10:27:32.415Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-oneblock-leak",
+    "status": "done",
+    "summary": "simply_oneblock mod jar in Fabulously Optimized (2) auto-enabled itself in every world, moved spawn, changed gamerules; disabled jar. Other instances clean.",
+    "ref": "Fabulously Optimized (2)/mods/simply_oneblock_26.3.jar.disabled"
+  }
+}

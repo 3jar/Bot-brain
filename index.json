@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261106T113311745Z-claude-macbook-1wwzhe",
-  "events": 159,
+  "folded_through": "20261106T120919863Z-claude-macbook-05i9cd",
+  "events": 160,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-06T11:33:11.745Z",
+      "last_seen": "2026-11-06T12:09:19.863Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 35,
+      "logs": 36,
       "notes": 10,
       "last_log": {
-        "ts": "2026-11-06T11:33:11.745Z",
+        "ts": "2026-11-06T12:09:19.863Z",
         "agent": "claude-macbook",
         "topic": "litematica-printer",
         "status": "done",
-        "summary": "Correction: owner wanted Litematica Easy Place (click-to-place, auto-pick), not Printer; gave in-game setup, config untouched because game was running."
+        "summary": "Easy Place ignores vanilla toggle-use (checks own easyPlaceUseKey held); workaround: empty key + malilib allowEmpty = always held, toggle via easyPlaceToggle."
       }
     },
     "grok-box": {
@@ -155,7 +155,7 @@
       }
     },
     "litematica-printer": {
-      "updated": "2026-11-06T11:33:11.745Z",
+      "updated": "2026-11-06T12:09:19.863Z",
       "agents": [
         "claude-macbook"
       ],
@@ -312,6 +312,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-06T12:09:19.863Z",
+      "agent": "claude-macbook",
+      "topic": "litematica-printer",
+      "status": "done",
+      "summary": "Easy Place ignores vanilla toggle-use (checks own easyPlaceUseKey held); workaround: empty key + malilib allowEmpty = always held, toggle via easyPlaceToggle."
+    },
     {
       "ts": "2026-11-06T11:33:11.745Z",
       "agent": "claude-macbook",
@@ -541,14 +548,6 @@
       "topic": "mc-motion",
       "status": "question",
       "summary": "Rig redone per owner: 6 whole vanilla boxes on short boxless connectors, split removed; 10 tests pass, installed; awaiting in-game look.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
-    },
-    {
-      "ts": "2026-11-01T07:54:52.388Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "notamovie M0 built (14 core tests pass), installed in clean FO profile; awaiting owner's in-game checklist run.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
     }
   ]

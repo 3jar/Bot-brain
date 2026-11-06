@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261106T113311745Z-claude-macbook-1wwzhe",
+  "ts": "2026-11-06T11:33:11.745Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "litematica-printer",
+    "status": "done",
+    "summary": "Correction: owner wanted Litematica Easy Place (click-to-place, auto-pick), not Printer; gave in-game setup, config untouched because game was running."
+  }
+}

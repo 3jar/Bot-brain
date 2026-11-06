@@ -1,22 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261106T112826212Z-claude-macbook-bd71dm",
-  "events": 158,
+  "folded_through": "20261106T113311745Z-claude-macbook-1wwzhe",
+  "events": 159,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-06T11:28:26.212Z",
+      "last_seen": "2026-11-06T11:33:11.745Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 34,
+      "logs": 35,
       "notes": 10,
       "last_log": {
-        "ts": "2026-11-06T11:28:26.212Z",
+        "ts": "2026-11-06T11:33:11.745Z",
         "agent": "claude-macbook",
         "topic": "litematica-printer",
-        "status": "question",
-        "summary": "Litematica Printer 3.2.3 (26.3) is compatible with installed Litematica 0.29.1/MaLiLib 0.30.2; gave setup steps; not installed, awaiting owner.",
-        "ref": "https://modrinth.com/mod/litematica-printer"
+        "status": "done",
+        "summary": "Correction: owner wanted Litematica Easy Place (click-to-place, auto-pick), not Printer; gave in-game setup, config untouched because game was running."
       }
     },
     "grok-box": {
@@ -156,11 +155,11 @@
       }
     },
     "litematica-printer": {
-      "updated": "2026-11-06T11:28:26.212Z",
+      "updated": "2026-11-06T11:33:11.745Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "question",
+      "last_status": "done",
       "docs": {}
     },
     "lively-eyes": {
@@ -313,6 +312,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-06T11:33:11.745Z",
+      "agent": "claude-macbook",
+      "topic": "litematica-printer",
+      "status": "done",
+      "summary": "Correction: owner wanted Litematica Easy Place (click-to-place, auto-pick), not Printer; gave in-game setup, config untouched because game was running."
+    },
     {
       "ts": "2026-11-06T11:28:26.212Z",
       "agent": "claude-macbook",
@@ -544,14 +550,6 @@
       "status": "question",
       "summary": "notamovie M0 built (14 core tests pass), installed in clean FO profile; awaiting owner's in-game checklist run.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
-    },
-    {
-      "ts": "2026-11-01T07:32:35.227Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "done",
-      "summary": "Direction fixed: EMF dropped, algorithm-first optimized Fabric mod, ecosystem last (M5); handoff written, M0 spike next.",
-      "ref": "work/mc-motion/HANDOFF.md"
     }
   ]
 }

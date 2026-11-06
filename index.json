@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261106T120919863Z-claude-macbook-05i9cd",
-  "events": 160,
+  "folded_through": "20261106T225945037Z-skku-icampus-bot-rpguzm",
+  "events": 161,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -73,16 +73,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-05T23:05:47.426Z",
+      "last_seen": "2026-11-06T22:59:45.037Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 22,
+      "logs": 23,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-05T23:05:47.426Z",
+        "ts": "2026-11-06T22:59:45.037Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/6: Mac offline, box clone; 11/5 19:42 sync added EE Launch PDF, prog final Step1 (due 11/11); Quiz10 due 11/8; cal +기획/기말발표.",
+        "summary": "Morning brief 11/7: Mac offline, box clone; syncs dashboard-only; 11/6 11:12 added Calc wk11 offline 11/9 + bookclub topic; Quiz10 due 11/8; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -223,7 +223,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-05T23:05:47.426Z",
+      "updated": "2026-11-06T22:59:45.037Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -312,6 +312,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-06T22:59:45.037Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/7: Mac offline, box clone; syncs dashboard-only; 11/6 11:12 added Calc wk11 offline 11/9 + bookclub topic; Quiz10 due 11/8; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-06T12:09:19.863Z",
       "agent": "claude-macbook",
@@ -540,14 +548,6 @@
       "topic": "mc-motion",
       "status": "done",
       "summary": "Added /nam length (live connector tuning, defaults 3/3/3/2 px) and /nam bones x-ray layer; 16 tests pass; installed in FO.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
-    },
-    {
-      "ts": "2026-11-01T08:14:17.721Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "Rig redone per owner: 6 whole vanilla boxes on short boxless connectors, split removed; 10 tests pass, installed; awaiting in-game look.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
     }
   ]

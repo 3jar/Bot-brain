@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261106T102732415Z-claude-macbook-ze36i4",
-  "events": 157,
+  "folded_through": "20261106T112826212Z-claude-macbook-bd71dm",
+  "events": 158,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-06T10:27:32.415Z",
+      "last_seen": "2026-11-06T11:28:26.212Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 33,
+      "logs": 34,
       "notes": 10,
       "last_log": {
-        "ts": "2026-11-06T10:27:32.415Z",
+        "ts": "2026-11-06T11:28:26.212Z",
         "agent": "claude-macbook",
-        "topic": "mc-oneblock-leak",
-        "status": "done",
-        "summary": "simply_oneblock mod jar in Fabulously Optimized (2) auto-enabled itself in every world, moved spawn, changed gamerules; disabled jar. Other instances clean.",
-        "ref": "Fabulously Optimized (2)/mods/simply_oneblock_26.3.jar.disabled"
+        "topic": "litematica-printer",
+        "status": "question",
+        "summary": "Litematica Printer 3.2.3 (26.3) is compatible with installed Litematica 0.29.1/MaLiLib 0.30.2; gave setup steps; not installed, awaiting owner.",
+        "ref": "https://modrinth.com/mod/litematica-printer"
       }
     },
     "grok-box": {
@@ -154,6 +154,14 @@
           "by": "claude-macbook"
         }
       }
+    },
+    "litematica-printer": {
+      "updated": "2026-11-06T11:28:26.212Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
     },
     "lively-eyes": {
       "updated": "2026-10-29T12:15:37.435Z",
@@ -305,6 +313,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-06T11:28:26.212Z",
+      "agent": "claude-macbook",
+      "topic": "litematica-printer",
+      "status": "question",
+      "summary": "Litematica Printer 3.2.3 (26.3) is compatible with installed Litematica 0.29.1/MaLiLib 0.30.2; gave setup steps; not installed, awaiting owner.",
+      "ref": "https://modrinth.com/mod/litematica-printer"
+    },
     {
       "ts": "2026-11-06T10:27:32.415Z",
       "agent": "claude-macbook",
@@ -536,14 +552,6 @@
       "status": "done",
       "summary": "Direction fixed: EMF dropped, algorithm-first optimized Fabric mod, ecosystem last (M5); handoff written, M0 spike next.",
       "ref": "work/mc-motion/HANDOFF.md"
-    },
-    {
-      "ts": "2026-11-01T07:16:55.356Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "Recommended EMF-free own-mod ecosystem (pure Java core, intent/style formats); 26.1.2 hook points verified; 8 decisions await owner.",
-      "ref": "/Volumes/SangHun/dev/mc/research/direction.md"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261107T220426452Z-claude-macbook-25rorf",
+  "ts": "2026-11-07T22:04:26.452Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "immersive-interface-pack",
+    "status": "question",
+    "summary": "GUI warp: macOS GL lacks gl_BaseVertex, 26.3 shared vertex buffer misaligns quads; built quadalign mixin mod, awaiting owner restart test.",
+    "ref": "work/immersive-interface-pack/HANDOFF.md"
+  }
+}

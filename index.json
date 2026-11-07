@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261107T225621058Z-claude-macbook-ezkmlb",
-  "events": 167,
+  "folded_through": "20261107T225751989Z-claude-macbook-lefqmu",
+  "events": 168,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-07T22:56:21.058Z",
+      "last_seen": "2026-11-07T22:57:51.989Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 38,
+      "logs": 39,
       "notes": 12,
       "last_log": {
-        "ts": "2026-11-07T22:04:26.452Z",
+        "ts": "2026-11-07T22:57:51.989Z",
         "agent": "claude-macbook",
         "topic": "immersive-interface-pack",
-        "status": "question",
-        "summary": "GUI warp: macOS GL lacks gl_BaseVertex, 26.3 shared vertex buffer misaligns quads; built quadalign mixin mod, awaiting owner restart test.",
+        "status": "done",
+        "summary": "Fresh Textures clouds.vsh clashed with Atmospherics clouds.fsh and the reload wiped all packs; removed the vsh from Fresh; restored 55-pack list after game exit.",
         "ref": "work/immersive-interface-pack/HANDOFF.md"
       }
     },
@@ -135,11 +135,11 @@
       }
     },
     "immersive-interface-pack": {
-      "updated": "2026-11-07T22:56:21.058Z",
+      "updated": "2026-11-07T22:57:51.989Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "question",
+      "last_status": "done",
       "docs": {
         "HANDOFF.md": {
           "updated": "2026-11-07T22:04:24.475Z",
@@ -326,6 +326,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-07T22:57:51.989Z",
+      "agent": "claude-macbook",
+      "topic": "immersive-interface-pack",
+      "status": "done",
+      "summary": "Fresh Textures clouds.vsh clashed with Atmospherics clouds.fsh and the reload wiped all packs; removed the vsh from Fresh; restored 55-pack list after game exit.",
+      "ref": "work/immersive-interface-pack/HANDOFF.md"
+    },
     {
       "ts": "2026-11-07T22:04:26.452Z",
       "agent": "claude-macbook",
@@ -555,14 +563,6 @@
       "status": "done",
       "summary": "Wrote docs/skeleton.md: rig, signs, pipeline, optimization rules, open items for the animation session; refreshed direction.md rig values and README.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
-    },
-    {
-      "ts": "2026-11-01T13:31:53.724Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "Gait B/C experiment built and installed (/nam walk), 21 tests pass; pose cache measured: 4D grid 6.5 MB, 2.7 s bake.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
     }
   ]
 }

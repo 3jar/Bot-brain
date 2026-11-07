@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261107T233006065Z-claude-macbook-6vval3",
+  "ts": "2026-11-07T23:30:06.065Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Bow: Fresh Textures items/bow.json and crossbow.json route the in-hand display contexts to Fresh's own 3D models (textures bow_model, arrow_bow_model, ...). The higher Stylus's Bow Retexture only replaces item/bow*.png, so the held bow showed Fresh's look. Fix: built resourcepacks/Fresh Bow Compat.zip with vanilla 26.3 items/bow.json, items/crossbow.json and models/item/bow*, crossbow* (min 97, max 200), and inserted it right above Fresh in options.txt (backup options.txt.pre-bowcompat). Owner to verify in game.",
+    "topic": "immersive-interface-pack"
+  }
+}

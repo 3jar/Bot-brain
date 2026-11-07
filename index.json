@@ -1,21 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261106T225945037Z-skku-icampus-bot-rpguzm",
-  "events": 161,
+  "folded_through": "20261107T204217989Z-claude-macbook-zlm1h4",
+  "events": 163,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-06T12:09:19.863Z",
+      "last_seen": "2026-11-07T20:42:17.989Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 36,
+      "logs": 37,
       "notes": 10,
       "last_log": {
-        "ts": "2026-11-06T12:09:19.863Z",
+        "ts": "2026-11-07T20:42:17.989Z",
         "agent": "claude-macbook",
-        "topic": "litematica-printer",
-        "status": "done",
-        "summary": "Easy Place ignores vanilla toggle-use (checks own easyPlaceUseKey held); workaround: empty key + malilib allowEmpty = always held, toggle via easyPlaceToggle."
+        "topic": "immersive-interface-pack",
+        "status": "question",
+        "summary": "Missing lang files and Redstone Tweaks title overrides broke II backgrounds; installed upstream main + generated 26.3 lang; owner must reorder packs in-game.",
+        "ref": "work/immersive-interface-pack/HANDOFF.md"
       }
     },
     "grok-box": {
@@ -129,6 +130,19 @@
         },
         "RESULT.md": {
           "updated": "2026-10-16T23:22:37.196Z",
+          "by": "claude-macbook"
+        }
+      }
+    },
+    "immersive-interface-pack": {
+      "updated": "2026-11-07T20:42:17.989Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {
+        "HANDOFF.md": {
+          "updated": "2026-11-07T20:42:16.243Z",
           "by": "claude-macbook"
         }
       }
@@ -312,6 +326,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-07T20:42:17.989Z",
+      "agent": "claude-macbook",
+      "topic": "immersive-interface-pack",
+      "status": "question",
+      "summary": "Missing lang files and Redstone Tweaks title overrides broke II backgrounds; installed upstream main + generated 26.3 lang; owner must reorder packs in-game.",
+      "ref": "work/immersive-interface-pack/HANDOFF.md"
+    },
     {
       "ts": "2026-11-06T22:59:45.037Z",
       "agent": "skku-icampus-bot",
@@ -541,14 +563,6 @@
       "status": "question",
       "summary": "Benchmarked solvers (procedural 0.5us, hybrid DLS 4us/avatar); found rigid-leg foot lock bobs 4.6px; proposed offline-baked LUT; 3 owner decisions.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
-    },
-    {
-      "ts": "2026-11-01T08:31:52.238Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "done",
-      "summary": "Added /nam length (live connector tuning, defaults 3/3/3/2 px) and /nam bones x-ray layer; 16 tests pass; installed in FO.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/M0.md"
     }
   ]
 }

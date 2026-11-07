@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261107T230946008Z-claude-macbook-ajl2k6",
+  "ts": "2026-11-07T23:09:46.008Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "immersive-interface-pack",
+    "name": "SPEC-rainbow-xp.md",
+    "body": "# II Rainbow XP add-on — spec (approved 2026-11-08)\n\nGoal: give Immersive Interfaces' own XP bar a flowing rainbow fill. It replaces the owner's old \"Animated Rainbow XP Bar\" pack, which only fits the vanilla 182x5 bar.\n\n- Resource pack \"II Rainbow XP\". It contains only textures/gui/sprites/hud/experience_bar_progress.png and its .mcmeta. No shaders. It goes directly above II in the pack list; the II background bar is untouched.\n- Frames are generated from II's 182x9 progress sprite. Rows 0-7 keep their tone hierarchy: brightness is mapped from the source luminance and only the hue is replaced. The hue depends on x (one full rainbow across the bar) and shifts each frame, so the colors flow left. Transparent pixels are unchanged. Row 8 holds II's shader markers (1,7,0,2) and is copied verbatim into every frame.\n- Animation: 24 frames, interpolate true, frametime 4, about a 4.8 s loop. 26.3 interpolates on the GPU with mix(a, b, t), so identical marker rows stay exact.\n- The generator script lives in ~/dev/ii-rainbow-xp so the pack can be rebuilt if II's sprite changes.\n- Verification: frame size, marker rows identical to the source, mcmeta valid, a visual preview strip. The in-game check is up to the owner.\n"
+  }
+}

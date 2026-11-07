@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261107T234324690Z-claude-macbook-qj1lcd",
+  "ts": "2026-11-07T23:43:24.690Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "immersive-interface-pack",
+    "status": "done",
+    "summary": "Owner confirmed Fresh Bow Compat works (Stylus bow shows in hand); Shadow Drop vs ImmediatelyFast fix applied; all pack issues resolved this session.",
+    "ref": "work/immersive-interface-pack/HANDOFF.md"
+  }
+}

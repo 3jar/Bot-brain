@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261107T232843506Z-claude-macbook-6qpjch",
+  "ts": "2026-11-07T23:28:43.506Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Animated items looked darker in GUI. The owner traced it to Shadow Drop 3.0.4, whose shadows draw over animated items. Mechanism: ImmediatelyFast batch_animated_item_updates sends animated items to its own AnimatedItemAtlas texture, while Shadow Drop (inject before GuiRenderState.forEachItem in prepareItemElements) blits shadows from the vanilla itemAtlas. Different textures likely get re-batched, putting the shadow above the item. Set immediatelyfast.json batch_animated_item_updates=false (backup immediatelyfast.json.bak); needs a restart; owner to verify.",
+    "topic": "immersive-interface-pack"
+  }
+}

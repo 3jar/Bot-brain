@@ -1,12 +1,12 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261107T230143064Z-skku-icampus-bot-22msxe",
-  "events": 170,
+  "folded_through": "20261107T230946008Z-claude-macbook-ajl2k6",
+  "events": 171,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-07T22:57:51.989Z",
+      "last_seen": "2026-11-07T23:09:46.008Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
       "logs": 39,
       "notes": 12,
@@ -149,7 +149,7 @@
       }
     },
     "immersive-interface-pack": {
-      "updated": "2026-11-07T22:57:51.989Z",
+      "updated": "2026-11-07T23:09:46.008Z",
       "agents": [
         "claude-macbook"
       ],
@@ -157,6 +157,10 @@
       "docs": {
         "HANDOFF.md": {
           "updated": "2026-11-07T22:04:24.475Z",
+          "by": "claude-macbook"
+        },
+        "SPEC-rainbow-xp.md": {
+          "updated": "2026-11-07T23:09:46.008Z",
           "by": "claude-macbook"
         }
       }

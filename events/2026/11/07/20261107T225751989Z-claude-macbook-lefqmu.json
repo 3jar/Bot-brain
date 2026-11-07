@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261107T225751989Z-claude-macbook-lefqmu",
+  "ts": "2026-11-07T22:57:51.989Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "immersive-interface-pack",
+    "status": "done",
+    "summary": "Fresh Textures clouds.vsh clashed with Atmospherics clouds.fsh and the reload wiped all packs; removed the vsh from Fresh; restored 55-pack list after game exit.",
+    "ref": "work/immersive-interface-pack/HANDOFF.md"
+  }
+}

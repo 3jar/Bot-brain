@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261107T231057503Z-claude-macbook-lo3pbt",
+  "ts": "2026-11-07T23:10:57.503Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "immersive-interface-pack",
+    "status": "done",
+    "summary": "Built II Rainbow XP add-on (24-frame flowing rainbow, II markers preserved); installed and enabled above Immersive; generator in ~/dev/ii-rainbow-xp.",
+    "ref": "work/immersive-interface-pack/SPEC-rainbow-xp.md"
+  }
+}

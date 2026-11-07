@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261107T230946008Z-claude-macbook-ajl2k6",
-  "events": 171,
+  "folded_through": "20261107T231057503Z-claude-macbook-lo3pbt",
+  "events": 172,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-07T23:09:46.008Z",
+      "last_seen": "2026-11-07T23:10:57.503Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 39,
+      "logs": 40,
       "notes": 12,
       "last_log": {
-        "ts": "2026-11-07T22:57:51.989Z",
+        "ts": "2026-11-07T23:10:57.503Z",
         "agent": "claude-macbook",
         "topic": "immersive-interface-pack",
         "status": "done",
-        "summary": "Fresh Textures clouds.vsh clashed with Atmospherics clouds.fsh and the reload wiped all packs; removed the vsh from Fresh; restored 55-pack list after game exit.",
-        "ref": "work/immersive-interface-pack/HANDOFF.md"
+        "summary": "Built II Rainbow XP add-on (24-frame flowing rainbow, II markers preserved); installed and enabled above Immersive; generator in ~/dev/ii-rainbow-xp.",
+        "ref": "work/immersive-interface-pack/SPEC-rainbow-xp.md"
       }
     },
     "grok-bot": {
@@ -149,7 +149,7 @@
       }
     },
     "immersive-interface-pack": {
-      "updated": "2026-11-07T23:09:46.008Z",
+      "updated": "2026-11-07T23:10:57.503Z",
       "agents": [
         "claude-macbook"
       ],
@@ -352,6 +352,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-07T23:10:57.503Z",
+      "agent": "claude-macbook",
+      "topic": "immersive-interface-pack",
+      "status": "done",
+      "summary": "Built II Rainbow XP add-on (24-frame flowing rainbow, II markers preserved); installed and enabled above Immersive; generator in ~/dev/ii-rainbow-xp.",
+      "ref": "work/immersive-interface-pack/SPEC-rainbow-xp.md"
+    },
     {
       "ts": "2026-11-07T23:01:43.064Z",
       "agent": "skku-icampus-bot",
@@ -581,14 +589,6 @@
       "status": "done",
       "summary": "Explained gait core to owner: planted-foot inverted pendulum; landing angle sets wave L(1-cos θ); all hidden joints exist to shrink θ.",
       "ref": "/Volumes/SangHun/dev/notamovie/src/main/java/notamovie/core/Gait.java"
-    },
-    {
-      "ts": "2026-11-01T14:20:48.331Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "Proposed data route: 100STYLE, two-stage retarget, playback tuning, then motion matching; legs stay on C2 contact solver. 5 owner decisions.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/data-driven.md"
     }
   ]
 }

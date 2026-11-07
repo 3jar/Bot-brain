@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261107T221314376Z-claude-macbook-878tyk",
+  "ts": "2026-11-07T22:13:14.376Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Owner confirmed the quadalign mod fixed the II GUIs. uku's Armor HUD style HOTBAR (and ROUNDED_CORNERS) draws partial slices of hud/hotbar. II's hotbar.png is 364x44 with markers only at its 4 corners, and the shader expands the quad assuming the full 182x22 hotbar, so slices warp. Style ROUNDED uses only hud/hotbar_offhand_left slices (II retextures that sprite without markers), so it renders cleanly. Advised: Mod Menu > uku's Armor HUD > Style = Rounded.",
+    "topic": "immersive-interface-pack"
+  }
+}

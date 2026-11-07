@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261107T220424475Z-claude-macbook-oa0954",
+  "ts": "2026-11-07T22:04:24.475Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "immersive-interface-pack",
+    "name": "HANDOFF.md",
+    "body": "# immersive-interface-pack — HANDOFF (2026-11-08, round 2)\n\nProfile: ModrinthApp/profiles/Fabulously Optimized (2), MC 26.3, Apple M2, OpenGL 4.1 Metal backend.\n\n## State after round 1\nII (GitHub main as of 11-07, plus generated lang files) is installed. The owner reports the hotbar is fixed, but every other GUI is still warped.\n\n## Root cause (round 2)\n- The II shaders get the quad corner from `(gl_VertexIndex - gl_BaseVertex) % 4`.\n- MC 26.3 (renderpearl) compiles shaders to SPIR-V, then uses SPIRV-Cross to emit GLSL 330 for OpenGL. macOS GL 4.1 has no GL_ARB_shader_draw_parameters, and MC never sets the SPIRV_Cross_BaseVertex uniform, so gl_BaseVertex is 0.\n- GuiRenderer puts every vertex format into one StagedVertexBuffer, with baseVertex = Mth.roundToward(byteOffset, stride) / stride, so it is often not a multiple of 4. The corners rotate and the GUI warps. The HUD hotbar happens to land aligned.\n- Upstream issue #96 has the same symptom, caused by batching mods.\n- The owner's new zip, resourcepacks/§6Immersive§8_§6Interfaces§8.zip, is official 0.8.2 (max_format 84). It is not 26.3-compatible; do not use it.\n\n## Fix applied (untested in game)\n- Built the local mod mods/quadalign-1.0.0+26.3.jar. Source is in ~/dev/quadalign.\n- It is one @ModifyArg on StagedVertexBuffer.upload, at the first Mth.roundToward call: vertexSize -> vertexSize*4. Every draw then gets baseVertex % 4 == 0.\n- Sodium's StagedVertexBufferMixin only wraps decodeSortingPoints, so no conflict.\n\n## Pending (owner)\n- Restart the game.\n- Keep II above Redstone Tweaks; it is still below (II is #11, RT is #18).\n- If the GUI is still warped after the restart, the alternative is Video Settings > Graphics API > Prefer Vulkan (Experimental), which loses Iris shaders. Next suspects after that: easegui and smoothgui.\n"
+  }
+}

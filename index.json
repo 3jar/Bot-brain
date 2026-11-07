@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261107T204217989Z-claude-macbook-zlm1h4",
-  "events": 163,
+  "folded_through": "20261107T220426452Z-claude-macbook-25rorf",
+  "events": 165,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-07T20:42:17.989Z",
+      "last_seen": "2026-11-07T22:04:26.452Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 37,
+      "logs": 38,
       "notes": 10,
       "last_log": {
-        "ts": "2026-11-07T20:42:17.989Z",
+        "ts": "2026-11-07T22:04:26.452Z",
         "agent": "claude-macbook",
         "topic": "immersive-interface-pack",
         "status": "question",
-        "summary": "Missing lang files and Redstone Tweaks title overrides broke II backgrounds; installed upstream main + generated 26.3 lang; owner must reorder packs in-game.",
+        "summary": "GUI warp: macOS GL lacks gl_BaseVertex, 26.3 shared vertex buffer misaligns quads; built quadalign mixin mod, awaiting owner restart test.",
         "ref": "work/immersive-interface-pack/HANDOFF.md"
       }
     },
@@ -135,14 +135,14 @@
       }
     },
     "immersive-interface-pack": {
-      "updated": "2026-11-07T20:42:17.989Z",
+      "updated": "2026-11-07T22:04:26.452Z",
       "agents": [
         "claude-macbook"
       ],
       "last_status": "question",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-11-07T20:42:16.243Z",
+          "updated": "2026-11-07T22:04:24.475Z",
           "by": "claude-macbook"
         }
       }
@@ -326,6 +326,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-07T22:04:26.452Z",
+      "agent": "claude-macbook",
+      "topic": "immersive-interface-pack",
+      "status": "question",
+      "summary": "GUI warp: macOS GL lacks gl_BaseVertex, 26.3 shared vertex buffer misaligns quads; built quadalign mixin mod, awaiting owner restart test.",
+      "ref": "work/immersive-interface-pack/HANDOFF.md"
+    },
     {
       "ts": "2026-11-07T20:42:17.989Z",
       "agent": "claude-macbook",
@@ -554,14 +562,6 @@
       "topic": "mc-motion",
       "status": "question",
       "summary": "Gait B/C experiment built and installed (/nam walk), 21 tests pass; pose cache measured: 4D grid 6.5 MB, 2.7 s bake.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
-    },
-    {
-      "ts": "2026-11-01T09:27:25.048Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "Benchmarked solvers (procedural 0.5us, hybrid DLS 4us/avatar); found rigid-leg foot lock bobs 4.6px; proposed offline-baked LUT; 3 owner decisions.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
     }
   ]

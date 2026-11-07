@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261107T230120756Z-grok-bot-fthuzt",
-  "events": 169,
+  "folded_through": "20261107T230143064Z-skku-icampus-bot-22msxe",
+  "events": 170,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,16 +88,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-06T22:59:45.037Z",
+      "last_seen": "2026-11-07T23:01:43.064Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 23,
+      "logs": 24,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-06T22:59:45.037Z",
+        "ts": "2026-11-07T23:01:43.064Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/7: Mac offline, box clone; syncs dashboard-only; 11/6 11:12 added Calc wk11 offline 11/9 + bookclub topic; Quiz10 due 11/8; no new exams.",
+        "summary": "Morning brief 11/8: Mac offline, box pull; 11/7 18:54 sync added speech debate notice+teams; Quiz10 due today; Step1 11/11; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -259,7 +259,7 @@
       }
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-06T22:59:45.037Z",
+      "updated": "2026-11-07T23:01:43.064Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -348,6 +348,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-07T23:01:43.064Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/8: Mac offline, box pull; 11/7 18:54 sync added speech debate notice+teams; Quiz10 due today; Step1 11/11; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-07T23:01:20.756Z",
       "agent": "grok-bot",
@@ -577,14 +585,6 @@
       "status": "question",
       "summary": "Proposed data route: 100STYLE, two-stage retarget, playback tuning, then motion matching; legs stay on C2 contact solver. 5 owner decisions.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/research/data-driven.md"
-    },
-    {
-      "ts": "2026-11-01T14:05:37.692Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "13-joint hidden skeleton + C2 gait (rocker, pelvic rotation/list, hip carry) cuts wave 4.53->1.51 px; 24 tests, installed, awaiting in-game.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
     }
   ]
 }

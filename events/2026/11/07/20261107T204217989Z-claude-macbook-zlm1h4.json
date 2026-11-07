@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261107T204217989Z-claude-macbook-zlm1h4",
+  "ts": "2026-11-07T20:42:17.989Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "immersive-interface-pack",
+    "status": "question",
+    "summary": "Missing lang files and Redstone Tweaks title overrides broke II backgrounds; installed upstream main + generated 26.3 lang; owner must reorder packs in-game.",
+    "ref": "work/immersive-interface-pack/HANDOFF.md"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261108T221132316Z-claude-macbook-89e38j",
+  "ts": "2026-11-08T22:11:32.316Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "discord-mc-chat",
+    "status": "question",
+    "summary": "Drafted Discord-MC chat plan: Fabric server mod (JDA bridge) + client chat-tool screen + vanilla fallback; awaiting owner approval and target server/version.",
+    "ref": "work/discord-mc-chat/PLAN.md"
+  }
+}

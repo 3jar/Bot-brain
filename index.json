@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T221132316Z-claude-macbook-89e38j",
-  "events": 189,
+  "folded_through": "20261108T221520379Z-claude-macbook-i2p478",
+  "events": 191,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T22:11:32.316Z",
+      "last_seen": "2026-11-08T22:15:20.379Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 47,
+      "logs": 48,
       "notes": 17,
       "last_log": {
-        "ts": "2026-11-08T22:11:32.316Z",
+        "ts": "2026-11-08T22:15:20.379Z",
         "agent": "claude-macbook",
         "topic": "discord-mc-chat",
         "status": "question",
-        "summary": "Drafted Discord-MC chat plan: Fabric server mod (JDA bridge) + client chat-tool screen + vanilla fallback; awaiting owner approval and target server/version.",
+        "summary": "Plan v2: Paper plugin (JDA via libraries) + Fabric client mod adding Discord tabs inside vanilla chat via list swap; awaiting server/version.",
         "ref": "work/discord-mc-chat/PLAN.md"
       }
     },
@@ -186,14 +186,14 @@
       }
     },
     "discord-mc-chat": {
-      "updated": "2026-11-08T22:11:32.316Z",
+      "updated": "2026-11-08T22:15:20.379Z",
       "agents": [
         "claude-macbook"
       ],
       "last_status": "question",
       "docs": {
         "PLAN.md": {
-          "updated": "2026-11-08T22:11:27.478Z",
+          "updated": "2026-11-08T22:15:16.178Z",
           "by": "claude-macbook"
         }
       }
@@ -415,6 +415,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-08T22:15:20.379Z",
+      "agent": "claude-macbook",
+      "topic": "discord-mc-chat",
+      "status": "question",
+      "summary": "Plan v2: Paper plugin (JDA via libraries) + Fabric client mod adding Discord tabs inside vanilla chat via list swap; awaiting server/version.",
+      "ref": "work/discord-mc-chat/PLAN.md"
+    },
     {
       "ts": "2026-11-08T22:11:32.316Z",
       "agent": "claude-macbook",
@@ -641,14 +649,6 @@
       "topic": "mc-motion",
       "status": "done",
       "summary": "Duty factor: brief flight (walk 0.46, sprint 0.42) cuts landing 47->42 deg, wave 2.1->1.6 px, and nearly removes hand-over float; 35 tests pass; installed.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
-    },
-    {
-      "ts": "2026-11-01T18:10:41.187Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "done",
-      "summary": "Turning: world-space swings, accel lean (MC g, cap 12), hip warp, DCM cut steps, out-of-reach release; 34 tests pass incl. 90/180 cuts; installed.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
     }
   ]

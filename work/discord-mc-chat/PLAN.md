@@ -1,35 +1,29 @@
-# discord-mc-chat — PLAN (draft, awaiting owner approval)
+# discord-mc-chat — PLAN v2 (draft, awaiting owner approval)
 
-Owner request (2026-11-09): connect Discord server and Minecraft server; chat with Discord channels through our own in-game chat tool.
-Origin: brainstorm session 2026-11-05 (claude session cb371635, profile Fabulously Optimized (2)). Owner chose server-mod approach; any Discord channel the bot is allowed to see becomes selectable in MC. Open question then: how to display it in MC.
+Owner request (2026-11-09): connect Discord server and Minecraft server; chat with Discord channels from MC.
+Origin: brainstorm 2026-11-05 (claude session cb371635). Any Discord channel the bot can see becomes selectable in MC.
+v2 changes (owner, 2026-11-09): server is **Paper** -> server side must be a **plugin**; integrate Discord channels **into the vanilla chat window** (T).
 
 ## Architecture
-- Discord bot (owner creates): Message Content intent on; perms View Channels, Send Messages, Read Message History, Manage Webhooks. Channel selection = Discord channel permissions for the bot. No MC-side channel config.
-- Server mod (Fabric, server side, works on integrated server too): JDA via jar-in-jar on its own thread; token only in server config; channel registry auto-built from bot-visible text channels (category/order kept, refreshed on permission events); MC->Discord via per-channel webhook (player name + skin head avatar, @everyone/@here blocked); Discord->MC converts mentions/channels/emoji to text, basic markdown to styles, attachments to click links; ignores bot/webhook messages (loop guard); per-channel ring buffer (~200) + paged history from Discord API.
-- Client mod = own chat tool: separate screen on a keybind (left channel list with unread/mention badges, message pane, input). HUD shows only mentions/pinned channels. Vanilla chat untouched.
-- Vanilla fallback for players without the client mod: `/dc` commands + colored channel tags (2026-11-05 option 1).
+- Discord bot (owner creates): Message Content intent on; perms View Channels, Send Messages, Read Message History, Manage Webhooks. Channel selection = Discord permissions for the bot. No MC-side channel config.
+- Paper plugin: JDA via plugin.yml `libraries` (Paper downloads from Maven Central; no shading) on its own threads; token only in plugin config. Channel registry auto-built from bot-visible text channels. MC->Discord via per-channel webhook (name + skin head avatar, @everyone/@here blocked). Discord->MC: mentions/emoji/markdown -> Adventure Components, attachments -> click links; ignore bot/webhook messages. MC general chat mirrored to one chosen Discord channel via AsyncChatEvent. `/dc` commands via Paper Brigadier API. Per-channel ring buffer + paged history.
+- Plugin <-> client mod: Bukkit plugin messaging channel (e.g. `qiemc:dc`). Client mod presence detected from the player's registered channels (Fabric API sends minecraft:register). Messages chunked under C2S 32 KB limit.
+- Client mod (Fabric 26.3): tabs inside the vanilla chat screen: [All] [MC] [#ch...] with unread/mention badges. Implementation keeps vanilla chat rendering: per-tab message lists are swapped into ChatComponent (one accessor mixin) and re-trimmed; tab bar via Fabric ScreenEvents; send routing via ClientSendMessageEvents.ALLOW_CHAT (cancel + plugin message when tab is a Discord channel). HUD shows the selected tab. Input stays vanilla EditBox (KoreanPatch IME works).
+- Players without the client mod: colored clickable channel tags + `/dc` (2026-11-05 option 1).
+- Separate full-screen chat tool: dropped from MVP (tabs cover it); optional later.
 
-## Why a separate screen
-Profile has chat_heads, chatanimation, chattools, morechathistory, all mixing into ChatComponent/ChatScreen. Tabs inside vanilla chat would collide with them; a separate Screen has no shared surface.
+## Compat risk
+Profile has chat_heads, chatanimation, chattools, morechathistory mixing into ChatComponent/ChatScreen. List-swap approach leaves their render hooks alone; chatanimation may animate on tab switch, chattools may keep own state -> in-game test needed.
 
 ## Performance
-- Server sends full bodies only for focused + subscribed channels; others get unread counts.
-- History: 50 on open, paged on scroll-up.
-- Render: cache wrapped lines per (message, width); draw visible lines only.
-- Client cap ~500 msgs/channel.
-- All Discord I/O off main thread; results via server.execute; rate-limit queue.
-- Input uses vanilla EditBox so KoreanPatch IME hook applies.
+Bodies only for subscribed channels, others unread counts; history 50 on open, paged; per-tab client cap ~500; Discord I/O off main thread; rate-limit queue.
 
 ## Milestones
-- M0 owner: create/invite bot; confirm target server + MC version.
-- M1 server mod + vanilla fallback (works with no client mod).
-- M2 client chat tool + custom payloads (channel list, message, history req/resp, unread, send, focus; protocol version handshake).
-- M3 join/leave/death/advancement feed, reply/edit/delete sync, distribute client mod via AutoModpack, deploy.
+- M0 owner: create/invite bot; confirm Paper server address + MC/Paper version.
+- M1 Paper plugin + vanilla fallback (works for everyone, no client mod).
+- M2 client mod chat tabs + plugin messaging protocol (version handshake).
+- M3 join/leave/death/advancement feed, reply/edit/delete sync, publish client mod (no AutoModpack on Paper: manual install / Modrinth).
 
-## Tests
-Unit: markdown/mention conversion, escaping, routing with a fake Discord interface. Integration: dev server + dev client + test Discord guild.
-
-## Risks / open
-- Target server assumed Qie MC (uppaward3665.modrinth.gg); qiemc-anvil targets 26.1.2 while this client is 26.3 -> confirm version.
-- Modrinth-hosted server: confirm custom jar upload + outbound to Discord gateway.
-- Gradle builds were denied by auto-mode classifier before; JDA bundling needs Loom/Gradle, javac fallback won't do.
+## Open
+- Which Paper server (Qie MC on modrinth.gg seemed to use AutoModpack = Fabric, so maybe a different server) and its version vs client 26.3.
+- Gradle builds were denied by auto-mode classifier before; Paper plugin + Loom client mod both need Gradle.

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261108T230108037Z-claude-macbook-nt1uwu",
+  "ts": "2026-11-08T23:01:08.037Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mchardcore-payload-kick",
+    "status": "question",
+    "summary": "Paper kick = 131 play channels > Paper's 128-per-player limit; MapFrontiers(30)/weaponmaster(12) added 11/9. Asked owner which mod to disable.",
+    "ref": "profile logs/latest.log line 2285"
+  }
+}

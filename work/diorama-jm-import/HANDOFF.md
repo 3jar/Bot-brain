@@ -1,21 +1,17 @@
-# diorama-jm-import handoff — 2026-11-08
+# diorama-jm-import handoff — 2026-11-08 09:45
 
-Goal: move the owner's JourneyMap data for server "야생" (mchardcore.o-r.kr:25596) into the Diorama 0.7.0 map mod (MC 26.3, profile "Fabulously Optimized (2)"), waypoints included.
+Done: JourneyMap data for server "야생" (mchardcore.o-r.kr:25596) moved into Diorama 0.7.0 (MC 26.3, profile "Fabulously Optimized (2)").
 
-## Approach
-- JourneyMap 6 `chunk_cache/*.jmc` holds full chunk snapshots (block palettes, biomes, WORLD_SURFACE + MOTION_BLOCKING heightmaps; no light). Diorama cannot bake server maps offline, but in singleplayer its "Fill in from world save" (SavedChunkImport) bakes every `region/*.mca` chunk into tiles.
-- So: JM cache -> 26.3 Anvil chunks (DataVersion 5023, 26.x palette format: string or {id,properties}, mixed lists wrap strings as {"": name}) in a void import world; owner opens it, Diorama bakes; then copy tile folders into the server map folder.
+## Result
+- Waypoints: 14 JM waypoints appended to diorama/server-mchardcore.o-r.kr_25596-84d5ff54-world-5dee6aa60921803b/waypoints.json (owner confirmed visible in-game).
+- Map: JM chunk_cache -> 26.3 .mca (tool ~/dev/diorama-jm-import/JmToMca.java) in void world saves/diorama-import-yasaeng; Diorama saved-chunk import baked overworld 1286 / nether 140 / end 498 tiles; 2402 tile files (lod0 + overviews) copied into the server map folder (447 MB). Skipped 27 empty tiles near spawn 100000,100000 and saved-chunks.bin/seen.bin.
+- Store folder names: overworld/end `surface-50`, nether `under-roof-50` (pitch 50).
+- Backups: pack-backups/diorama-야생-before-journeymap-import-20261108/ (08:59 original + server-folder-at-0942).
 
-## Done
-- Converter: scratchpad tools/JmToMca.java (copy also needed next session; session scratchpad may vanish). Wrote saves/diorama-import-yasaeng/dimensions/minecraft/{overworld,the_nether,the_end}/region: 78554 / 7313 / 15829 chunks, 0 errors; heightmap/top-block check passed.
-- World meta: level.dat from "New World (4)" (spectator, cheats, peaceful, spawn 100000,100,100000); world_gen_settings.dat with flat void generators for all 3 dims.
-- Diorama folder pre-seeded: diorama/singleplayer-diorama-import-yasaeng-3ced858a (save-id.txt = saves/.../diorama-world-id.txt) with a copy of the server's existing overworld tiles so Diorama merges them.
-- Waypoints: 14 JM waypoints appended to server waypoints.json (colors kept, folder "", kind MANUAL, id = JM guid).
-- Backup of server map before changes: pack-backups/diorama-야생-before-journeymap-import-20261108/.
+## Gotchas
+- 26.3 chunk NBT palettes: plain string or {id, properties}; mixed lists wrap strings as {"": name}. Worlds live under dimensions/minecraft/<dim>/region; worldgen in data/minecraft/world_gen_settings.dat.
+- Diorama SavedChunkImport uses 1 worker unless map screen open or game paused; End took long until owner opened the map.
+- JM cache has no block light, so imported nether lacks warm lava glow until revisited live.
 
-## Next
-1. Owner: open world "야생 지도 변환 (Diorama)", press J (map open = full-speed baking), wait for log line `Saved chunks: drew N tiles`; then `/execute in minecraft:the_nether run tp @s 100000 100 100000`, J, wait; same for the_end; quit game.
-2. Then copy diorama/singleplayer-diorama-import-yasaeng-3ced858a/dim-*/ (surface-50 for overworld/end, "50" for nether; skip saved-chunks.bin and seen.bin) into diorama/server-mchardcore.o-r.kr_25596-84d5ff54-world-5dee6aa60921803b/ (game closed). Drop tiles far from real data (near 100000) if any.
-3. Optionally delete the import world + its diorama folder after owner confirms.
-
-Server does not send Diorama fair-play, so nether store name is "50" (pitch 50, no fog).
+## Open
+- Owner to confirm map shows on server; then optionally delete saves/diorama-import-yasaeng (~1.7 GB) and diorama/singleplayer-diorama-import-yasaeng-3ced858a (~450 MB) — ask before deleting.

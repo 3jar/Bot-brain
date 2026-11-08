@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T000030142Z-claude-macbook-25xrgq",
-  "events": 177,
+  "folded_through": "20261108T004425671Z-claude-macbook-s8ht4y",
+  "events": 179,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T00:00:30.142Z",
+      "last_seen": "2026-11-08T00:44:25.671Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 41,
+      "logs": 42,
       "notes": 15,
       "last_log": {
-        "ts": "2026-11-07T23:43:24.690Z",
+        "ts": "2026-11-08T00:44:25.671Z",
         "agent": "claude-macbook",
-        "topic": "immersive-interface-pack",
+        "topic": "diorama-jm-import",
         "status": "done",
-        "summary": "Owner confirmed Fresh Bow Compat works (Stylus bow shows in hand); Shadow Drop vs ImmediatelyFast fix applied; all pack issues resolved this session.",
-        "ref": "work/immersive-interface-pack/HANDOFF.md"
+        "summary": "JourneyMap 야생 server map+14 waypoints converted into Diorama via JM cache to .mca import world; 2402 tiles merged into server map folder.",
+        "ref": "work/diorama-jm-import/HANDOFF.md"
       }
     },
     "grok-bot": {
@@ -149,14 +149,14 @@
       }
     },
     "diorama-jm-import": {
-      "updated": "2026-11-08T00:00:30.142Z",
+      "updated": "2026-11-08T00:44:25.671Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": null,
+      "last_status": "done",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-11-08T00:00:30.142Z",
+          "updated": "2026-11-08T00:44:23.744Z",
           "by": "claude-macbook"
         }
       }
@@ -365,6 +365,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-08T00:44:25.671Z",
+      "agent": "claude-macbook",
+      "topic": "diorama-jm-import",
+      "status": "done",
+      "summary": "JourneyMap 야생 server map+14 waypoints converted into Diorama via JM cache to .mca import world; 2402 tiles merged into server map folder.",
+      "ref": "work/diorama-jm-import/HANDOFF.md"
+    },
     {
       "ts": "2026-11-07T23:43:24.690Z",
       "agent": "claude-macbook",
@@ -594,14 +602,6 @@
       "status": "question",
       "summary": "Walking = fall over a fixed pushable pillar; MC gravity 32 m/s2 makes MC walk a real walk (Fr 0.83). Pillar algorithm doc; fixed 6.25% foot-slide unit bug.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
-    },
-    {
-      "ts": "2026-11-01T14:26:08.224Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "Walking plausibility = rules + measured shapes + our exaggeration; proposed adding lean, start/stop, double support, variation to C2 alongside D1.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/data-driven.md"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261108T225514171Z-claude-macbook-5prt6m",
+  "ts": "2026-11-08T22:55:14.171Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-spotify",
+    "status": "question",
+    "summary": "Toast works, Options panel missing; Paper server kicks 'Invalid custom payload payload!' since 16 new mods. Diagnostic 1.0.1 installed, awaiting restart logs.",
+    "ref": "~/dev/mc-spotify"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261108T134406172Z-claude-macbook-anku81",
+  "ts": "2026-11-08T13:44:06.172Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "atmospherics-keybind",
+    "status": "done",
+    "summary": "Atmospherics menu key (key.atmospherics.open, default B) is a vanilla KeyMapping in MISC category; rebindable in Controls, stored in options.txt."
+  }
+}

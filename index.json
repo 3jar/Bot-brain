@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T230108037Z-claude-macbook-nt1uwu",
-  "events": 197,
+  "folded_through": "20261108T233211421Z-claude-macbook-1eowyd",
+  "events": 198,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T23:01:08.037Z",
+      "last_seen": "2026-11-08T23:32:11.421Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 51,
+      "logs": 52,
       "notes": 17,
       "last_log": {
-        "ts": "2026-11-08T23:01:08.037Z",
+        "ts": "2026-11-08T23:32:11.421Z",
         "agent": "claude-macbook",
-        "topic": "mchardcore-payload-kick",
-        "status": "question",
-        "summary": "Paper kick = 131 play channels > Paper's 128-per-player limit; MapFrontiers(30)/weaponmaster(12) added 11/9. Asked owner which mod to disable.",
-        "ref": "profile logs/latest.log line 2285"
+        "topic": "immersiveui-config",
+        "status": "done",
+        "summary": "ImmersiveUI 0.3.7 has no in-game config: shatterlib 0.7.0-beta.4 ModMenuImpl is empty, ConfigScreen never opened. Edit json5 + /shatterlib-client config reload all.",
+        "ref": "config/immersiveui-common.json5"
       }
     },
     "grok-bot": {
@@ -227,6 +227,14 @@
           "by": "claude-macbook"
         }
       }
+    },
+    "immersiveui-config": {
+      "updated": "2026-11-08T23:32:11.421Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "done",
+      "docs": {}
     },
     "kakao-send-to-me": {
       "updated": "2026-10-17T01:20:54.184Z",
@@ -440,6 +448,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-08T23:32:11.421Z",
+      "agent": "claude-macbook",
+      "topic": "immersiveui-config",
+      "status": "done",
+      "summary": "ImmersiveUI 0.3.7 has no in-game config: shatterlib 0.7.0-beta.4 ModMenuImpl is empty, ConfigScreen never opened. Edit json5 + /shatterlib-client config reload all.",
+      "ref": "config/immersiveui-common.json5"
+    },
     {
       "ts": "2026-11-08T23:01:08.037Z",
       "agent": "claude-macbook",
@@ -667,14 +683,6 @@
       "status": "done",
       "summary": "Morning brief 11/3: Mac offline, read box clone; syncs 11/2 10:27, 19:52, 11/3 07:17 dashboard only; prog API due 11/4, bookclub wk10 11/5; no new exams.",
       "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-11-02T09:44:08.597Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "done",
-      "summary": "Running base gait, L1 whole-body momentum answer (arms ±51°), visible leg boxes along hip-foot line; offline renderer added; 45 tests.",
-      "ref": "work/mc-motion/HANDOFF.md"
     }
   ]
 }

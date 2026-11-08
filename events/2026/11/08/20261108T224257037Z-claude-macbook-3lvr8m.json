@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261108T224257037Z-claude-macbook-3lvr8m",
+  "ts": "2026-11-08T22:42:57.037Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-spotify",
+    "status": "question",
+    "summary": "Built MC Spotify Control (Options side panel + now-playing toast via AppleScript); jar installed, tests pass; awaiting owner in-game check after restart.",
+    "ref": "work/mc-spotify/HANDOFF.md"
+  }
+}

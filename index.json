@@ -1,22 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T004425671Z-claude-macbook-s8ht4y",
-  "events": 179,
+  "folded_through": "20261108T122712241Z-claude-macbook-x99x5y",
+  "events": 181,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T00:44:25.671Z",
+      "last_seen": "2026-11-08T12:27:12.241Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 42,
-      "notes": 15,
+      "logs": 43,
+      "notes": 16,
       "last_log": {
-        "ts": "2026-11-08T00:44:25.671Z",
+        "ts": "2026-11-08T12:27:12.241Z",
         "agent": "claude-macbook",
-        "topic": "diorama-jm-import",
-        "status": "done",
-        "summary": "JourneyMap 야생 server map+14 waypoints converted into Diorama via JM cache to .mca import world; 2402 tiles merged into server map folder.",
-        "ref": "work/diorama-jm-import/HANDOFF.md"
+        "topic": "astoutline-26-3",
+        "status": "question",
+        "summary": "Outline N' Stuff can't be bumped to 26.3: 130 broken refs (renderpearl API move), ARR forbids modding; offered CC0 Glint Outline port instead."
       }
     },
     "grok-bot": {
@@ -131,6 +130,14 @@
     }
   },
   "topics": {
+    "astoutline-26-3": {
+      "updated": "2026-11-08T12:27:12.241Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
+    },
     "bot-brain-mcp": {
       "updated": "2026-10-16T23:22:58.931Z",
       "agents": [
@@ -366,6 +373,13 @@
   },
   "recent": [
     {
+      "ts": "2026-11-08T12:27:12.241Z",
+      "agent": "claude-macbook",
+      "topic": "astoutline-26-3",
+      "status": "question",
+      "summary": "Outline N' Stuff can't be bumped to 26.3: 130 broken refs (renderpearl API move), ARR forbids modding; offered CC0 Glint Outline port instead."
+    },
+    {
       "ts": "2026-11-08T00:44:25.671Z",
       "agent": "claude-macbook",
       "topic": "diorama-jm-import",
@@ -594,14 +608,6 @@
       "status": "question",
       "summary": "Proposed equation route: Gait root + baked harmonic coefficients per state + event-driven segment plans; runtime motion matching dropped for walking, data used offline.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
-    },
-    {
-      "ts": "2026-11-01T14:41:03.341Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "Walking = fall over a fixed pushable pillar; MC gravity 32 m/s2 makes MC walk a real walk (Fr 0.83). Pillar algorithm doc; fixed 6.25% foot-slide unit bug.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261108T222932422Z-claude-macbook-wiem0h",
+  "ts": "2026-11-08T22:29:32.422Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "mc-spotify",
+    "name": "SPEC.md",
+    "body": "# mc-spotify — spec (2026-11-09, owner-approved choices)\n\nClient-only Fabric mod for MC 26.3 (profile \"Fabulously Optimized (2)\") that controls the macOS Spotify desktop app from inside Minecraft.\n\n## Control backend\n- AppleScript via `osascript` (ProcessBuilder) on a single daemon worker thread. No OAuth, no Premium needed.\n- Guard every script with `if application id \"com.spotify.client\" is running` so the mod never launches Spotify.\n- State: player state, track name/artist/album, duration ms, position ms, volume, shuffling, repeating, artwork url, track id. Fields joined by char 31.\n- Commands: playpause, next/previous track, set player position, set sound volume, set shuffling, set repeating.\n- Errors: -1743 (Automation not authorized) -> panel shows hint (System Settings > Privacy & Security > Automation). Not running -> \"Spotify not running\".\n\n## UI (owner chose: side panel in Options screen)\n- On OptionsScreen: mini player panel in the empty right margin: album art, title/artist (scrolling), seekable progress bar, shuffle/prev/play-pause/next/repeat, volume slider.\n- If the right margin is too narrow: a small \"Spotify\" button instead, opening a dedicated SpotifyScreen with the same panel.\n- Local progress interpolation between polls. Poll 1 s while panel visible, 3 s otherwise.\n\n## Extra (owner chose): track-change toast\n- Custom toast with album art + title + artist when track id changes while playing.\n\n## Not in scope\n- Hotkeys, ESC-menu panel (owner did not pick them).\n"
+  }
+}

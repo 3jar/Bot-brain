@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261108T124629777Z-claude-macbook-44ke61",
+  "ts": "2026-11-08T12:46:29.777Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "glint-outline-26-3",
+    "status": "question",
+    "summary": "Ported CC0 Enchantment Glint Outline to 26.3 (renderpearl API, baked glint, new shaders); javac-built jar installed enabled; awaiting owner in-game test.",
+    "ref": "work/glint-outline-26-3/HANDOFF.md"
+  }
+}

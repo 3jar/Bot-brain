@@ -1,22 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T133746688Z-claude-macbook-4azjjc",
-  "events": 186,
+  "folded_through": "20261108T134406172Z-claude-macbook-anku81",
+  "events": 187,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T13:37:46.688Z",
+      "last_seen": "2026-11-08T13:44:06.172Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 45,
+      "logs": 46,
       "notes": 17,
       "last_log": {
-        "ts": "2026-11-08T13:37:46.688Z",
+        "ts": "2026-11-08T13:44:06.172Z",
         "agent": "claude-macbook",
-        "topic": "dh-polytone-reconnect-crash",
-        "status": "question",
-        "summary": "Rejoin crash traced to DH static biome cache + Polytone registry check (not glint port); built dh-reconnect-fix mod, installed; awaiting owner rejoin test.",
-        "ref": "~/dev/dh-reconnect-fix"
+        "topic": "atmospherics-keybind",
+        "status": "done",
+        "summary": "Atmospherics menu key (key.atmospherics.open, default B) is a vanilla KeyMapping in MISC category; rebindable in Controls, stored in options.txt."
       }
     },
     "grok-bot": {
@@ -137,6 +136,14 @@
         "claude-macbook"
       ],
       "last_status": "question",
+      "docs": {}
+    },
+    "atmospherics-keybind": {
+      "updated": "2026-11-08T13:44:06.172Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "done",
       "docs": {}
     },
     "bot-brain-mcp": {
@@ -395,6 +402,13 @@
   },
   "recent": [
     {
+      "ts": "2026-11-08T13:44:06.172Z",
+      "agent": "claude-macbook",
+      "topic": "atmospherics-keybind",
+      "status": "done",
+      "summary": "Atmospherics menu key (key.atmospherics.open, default B) is a vanilla KeyMapping in MISC category; rebindable in Controls, stored in options.txt."
+    },
+    {
       "ts": "2026-11-08T13:37:46.688Z",
       "agent": "claude-macbook",
       "topic": "dh-polytone-reconnect-crash",
@@ -621,14 +635,6 @@
       "topic": "mc-motion",
       "status": "question",
       "summary": "Broken look = knee fold opening leg seam ~4 px per px lift; fold off by default (seam 0.84 px); whole-body objective with seam budget next.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
-    },
-    {
-      "ts": "2026-11-01T17:19:24.027Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "Box joints moved inside boxes (head 15%, leg 15%), swing knee fold via hip connector + inner leg joint; 33 tests pass, installed; awaiting in-game look.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
     }
   ]

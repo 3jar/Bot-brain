@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T225947655Z-skku-icampus-bot-pzuunl",
-  "events": 196,
+  "folded_through": "20261108T230108037Z-claude-macbook-nt1uwu",
+  "events": 197,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T22:55:14.171Z",
+      "last_seen": "2026-11-08T23:01:08.037Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 50,
+      "logs": 51,
       "notes": 17,
       "last_log": {
-        "ts": "2026-11-08T22:55:14.171Z",
+        "ts": "2026-11-08T23:01:08.037Z",
         "agent": "claude-macbook",
-        "topic": "mc-spotify",
+        "topic": "mchardcore-payload-kick",
         "status": "question",
-        "summary": "Toast works, Options panel missing; Paper server kicks 'Invalid custom payload payload!' since 16 new mods. Diagnostic 1.0.1 installed, awaiting restart logs.",
-        "ref": "~/dev/mc-spotify"
+        "summary": "Paper kick = 131 play channels > Paper's 128-per-player limit; MapFrontiers(30)/weaponmaster(12) added 11/9. Asked owner which mod to disable.",
+        "ref": "profile logs/latest.log line 2285"
       }
     },
     "grok-bot": {
@@ -320,6 +320,14 @@
         }
       }
     },
+    "mchardcore-payload-kick": {
+      "updated": "2026-11-08T23:01:08.037Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
+    },
     "morning-briefing": {
       "updated": "2026-11-07T23:01:20.756Z",
       "agents": [
@@ -432,6 +440,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-08T23:01:08.037Z",
+      "agent": "claude-macbook",
+      "topic": "mchardcore-payload-kick",
+      "status": "question",
+      "summary": "Paper kick = 131 play channels > Paper's 128-per-player limit; MapFrontiers(30)/weaponmaster(12) added 11/9. Asked owner which mod to disable.",
+      "ref": "profile logs/latest.log line 2285"
+    },
     {
       "ts": "2026-11-08T22:59:47.655Z",
       "agent": "skku-icampus-bot",
@@ -659,14 +675,6 @@
       "status": "done",
       "summary": "Running base gait, L1 whole-body momentum answer (arms ±51°), visible leg boxes along hip-foot line; offline renderer added; 45 tests.",
       "ref": "work/mc-motion/HANDOFF.md"
-    },
-    {
-      "ts": "2026-11-01T22:57:37.238Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 11/2: Mac offline, read box clone; sync 11/2 03:23 added physics ch23 ppt, bookclub wk10 PDF; prog API due 11/4, bookclub wk10 11/5; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

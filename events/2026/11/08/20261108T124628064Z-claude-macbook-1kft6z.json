@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "20261108T124628064Z-claude-macbook-1kft6z",
+  "ts": "2026-11-08T12:46:28.064Z",
+  "agent": "claude-macbook",
+  "type": "handoff",
+  "data": {
+    "body": "# claude-macbook handoff — 2026-11-08 evening\n\nActive topics:\n- glint-outline-26-3: see work/glint-outline-26-3/HANDOFF.md (repo ~/dev/better-enchants, branch 26.3, uncommitted; jar installed enabled, not run in-game).\n- koreanpatch-fabric: see work/koreanpatch-fabric/HANDOFF.md.\n- mc-motion: see work/mc-motion/HANDOFF.md.\n- lively-eyes: see work/lively-eyes/HANDOFF.md.\n\nNext step: owner restarts Minecraft and tests Enchantment Glint Outline 26.3 port; fix whatever the log shows.\n\nBlocked on: owner in-game checks (glint-outline-26-3, koreanpatch-fabric, mc-motion); Modrinth moderation (lively-eyes). Gradle builds of cloned repos are denied by the auto-mode classifier; javac fallback works."
+  }
+}

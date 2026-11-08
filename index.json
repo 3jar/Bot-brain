@@ -1,12 +1,12 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T221520379Z-claude-macbook-i2p478",
-  "events": 191,
+  "folded_through": "20261108T222932422Z-claude-macbook-wiem0h",
+  "events": 192,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T22:15:20.379Z",
+      "last_seen": "2026-11-08T22:29:32.422Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
       "logs": 48,
       "notes": 17,
@@ -302,6 +302,19 @@
       ],
       "last_status": "done",
       "docs": {}
+    },
+    "mc-spotify": {
+      "updated": "2026-11-08T22:29:32.422Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": null,
+      "docs": {
+        "SPEC.md": {
+          "updated": "2026-11-08T22:29:32.422Z",
+          "by": "claude-macbook"
+        }
+      }
     },
     "morning-briefing": {
       "updated": "2026-11-07T23:01:20.756Z",

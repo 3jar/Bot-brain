@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261108T133744214Z-claude-macbook-2iahs0",
+  "ts": "2026-11-08T13:37:44.214Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Crash \"Distant Horizons gave Polytone a Biome that is not in the current client level registry\" (crash-reports 2026-11-08 18:17..22:32, 7x) = 2nd server connection in the same game run. DH 3.3.4 BiomeWrapper.WRAPPER_BY_BIOME / WRAPPER_BY_RESOURCE_LOCATION are static, never cleared; deserialize(string) returns cached wrapper holding the previous connection's Holder<Biome>. Polytone 6.8.6 DistantHorizonsCompat$LodTint checks registry and calls Minecraft.delayCrash. Not caused by the glint-outline port. Fix: local mod ~/dev/dh-reconnect-fix (jar in mods) clears both maps via reflection on ClientPlayConnectionEvents.INIT. No newer DH/Polytone 26.3 builds on Modrinth as of 2026-11-08; no Polytone config toggle.",
+    "topic": "dh-polytone-reconnect-crash"
+  }
+}

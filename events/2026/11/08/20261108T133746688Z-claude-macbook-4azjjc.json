@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261108T133746688Z-claude-macbook-4azjjc",
+  "ts": "2026-11-08T13:37:46.688Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "dh-polytone-reconnect-crash",
+    "status": "question",
+    "summary": "Rejoin crash traced to DH static biome cache + Polytone registry check (not glint port); built dh-reconnect-fix mod, installed; awaiting owner rejoin test.",
+    "ref": "~/dev/dh-reconnect-fix"
+  }
+}

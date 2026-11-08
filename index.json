@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T124629777Z-claude-macbook-44ke61",
-  "events": 184,
+  "folded_through": "20261108T133746688Z-claude-macbook-4azjjc",
+  "events": 186,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T12:46:29.777Z",
+      "last_seen": "2026-11-08T13:37:46.688Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 44,
-      "notes": 16,
+      "logs": 45,
+      "notes": 17,
       "last_log": {
-        "ts": "2026-11-08T12:46:29.777Z",
+        "ts": "2026-11-08T13:37:46.688Z",
         "agent": "claude-macbook",
-        "topic": "glint-outline-26-3",
+        "topic": "dh-polytone-reconnect-crash",
         "status": "question",
-        "summary": "Ported CC0 Enchantment Glint Outline to 26.3 (renderpearl API, baked glint, new shaders); javac-built jar installed enabled; awaiting owner in-game test.",
-        "ref": "work/glint-outline-26-3/HANDOFF.md"
+        "summary": "Rejoin crash traced to DH static biome cache + Polytone registry check (not glint port); built dh-reconnect-fix mod, installed; awaiting owner rejoin test.",
+        "ref": "~/dev/dh-reconnect-fix"
       }
     },
     "grok-bot": {
@@ -155,6 +155,14 @@
           "by": "claude-macbook"
         }
       }
+    },
+    "dh-polytone-reconnect-crash": {
+      "updated": "2026-11-08T13:37:46.688Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
     },
     "diorama-jm-import": {
       "updated": "2026-11-08T00:44:25.671Z",
@@ -387,6 +395,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-08T13:37:46.688Z",
+      "agent": "claude-macbook",
+      "topic": "dh-polytone-reconnect-crash",
+      "status": "question",
+      "summary": "Rejoin crash traced to DH static biome cache + Polytone registry check (not glint port); built dh-reconnect-fix mod, installed; awaiting owner rejoin test.",
+      "ref": "~/dev/dh-reconnect-fix"
+    },
+    {
       "ts": "2026-11-08T12:46:29.777Z",
       "agent": "claude-macbook",
       "topic": "glint-outline-26-3",
@@ -614,14 +630,6 @@
       "status": "question",
       "summary": "Box joints moved inside boxes (head 15%, leg 15%), swing knee fold via hip connector + inner leg joint; 33 tests pass, installed; awaiting in-game look.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/skeleton.md"
-    },
-    {
-      "ts": "2026-11-01T16:16:02.471Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "done",
-      "summary": "L0 world-fixed pillars and L2 stop/stand/start/turn-in-place/stairs implemented in Gait; 31 tests pass, installed; L1 split and objective next.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261108T004425671Z-claude-macbook-s8ht4y",
+  "ts": "2026-11-08T00:44:25.671Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "diorama-jm-import",
+    "status": "done",
+    "summary": "JourneyMap 야생 server map+14 waypoints converted into Diorama via JM cache to .mca import world; 2402 tiles merged into server map folder.",
+    "ref": "work/diorama-jm-import/HANDOFF.md"
+  }
+}

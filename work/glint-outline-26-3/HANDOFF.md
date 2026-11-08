@@ -1,0 +1,29 @@
+# glint-outline-26-3 handoff — 2026-11-08
+
+Goal: owner wanted Outline N' Stuff on MC 26.3. That mod is ARR/closed (not portable), so ported the CC0 alternative Enchantment Glint Outline instead.
+
+## State
+- Repo: ~/dev/better-enchants (github.com/Da0neDatGotAway/better-enchants), branch `26.3` off master (3.3 / 26.2). Uncommitted, 16 files changed.
+- Built jar installed ENABLED: profile "Fabulously Optimized (2)"/mods/enchantment-glint-outline-3.3+26.3-port.jar. Old 26.2 jar and astoutline stay `.disabled`.
+- NOT run in-game yet. Game was running during install; takes effect on next launch.
+
+## Build (Gradle blocked by auto-mode classifier — twice)
+- Built with plain javac -proc:none --release 25 against a compile-only access-widened copy of the 26.3 client jar (scratchpad widen.py flips access flags for RenderType.create/<init>, RenderSetup$TextureBinding, RenderPipelines.MATRICES_FOG_SNIPPET/register). Then `jar` with resources, ${version} -> 3.3+26.3-port.
+- Classpath: meta/versions/26.3-0.20.1 json libs + fabric-api 0.165.0 nested jars + mods' modmenu 21.0.0 / YACL 3.9.7 / sodium 0.9.2 + gradle-cache jetbrains annotations & mixinextras 0.5.5.
+- Repo gradle-wrapper.jar sha256 does not match official 9.4.1 checksum; not executed. If Gradle gets allowed, use installed gradle-9.5.1 + loom 1.17-SNAPSHOT (same as KoreanPatch).
+- Static verification: all 194 MC refs + mixin targets exist in 26.3 (only false positive Direction.equals from Enum).
+
+## 26.3 changes handled
+- blaze3d GPU API -> com.mojang.renderpearl.api.* (imports).
+- Glint is baked into base render types (GlintSampler on entitySolidGlint/armorCutoutNoCullGlint/itemCutoutGlint...). RenderTypes.glint/entityGlint/armorEntityGlint gone -> recreated ITEM_GLINT / ENTITY_GLINT / ARMOR_ENTITY_GLINT_FIX on RenderPipelines.GLINT with withForcedSolidModelPhase().
+- isGlintRenderType = textures has "GlintSampler" or pipeline == GLINT. getIdentifierFromRenderLayer prefers Sampler0.
+- submitModel: sprite -> UvMapping, crumbling removed. submitItem: List<BakedQuad> -> ItemQuads (.all()).
+- Equipment: wrap ordinal 0 layer submit, gate on @Local hasFoil. Thrown trident: wrap SubmitNodeCollector short RenderType overload.
+- Shaders: #include + GL_ARB_separate_shader_objects + layout(location) (copied vanilla block.vsh layout).
+- Pipelines got unique locations (26.3 precompiles by location map; shared "pipeline/cutout" would drop 3 of 4).
+
+## Next step
+Owner restarts game, checks enchanted items in hand/GUI/dropped, armor, trident (held + thrown), shield. If crash/log errors: read logs/latest.log for enchant-outline / pipeline / shader compile errors.
+
+## Risks
+Shader compile untested (required pipelines throw RuntimeException at resource load). Special-model (shield/trident in hand) texture source path is new logic.

@@ -1,21 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T122712241Z-claude-macbook-x99x5y",
-  "events": 181,
+  "folded_through": "20261108T124629777Z-claude-macbook-44ke61",
+  "events": 184,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T12:27:12.241Z",
-      "handoff_updated": "2026-11-05T13:43:26.350Z",
-      "logs": 43,
+      "last_seen": "2026-11-08T12:46:29.777Z",
+      "handoff_updated": "2026-11-08T12:46:28.064Z",
+      "logs": 44,
       "notes": 16,
       "last_log": {
-        "ts": "2026-11-08T12:27:12.241Z",
+        "ts": "2026-11-08T12:46:29.777Z",
         "agent": "claude-macbook",
-        "topic": "astoutline-26-3",
+        "topic": "glint-outline-26-3",
         "status": "question",
-        "summary": "Outline N' Stuff can't be bumped to 26.3: 130 broken refs (renderpearl API move), ARR forbids modding; offered CC0 Glint Outline port instead."
+        "summary": "Ported CC0 Enchantment Glint Outline to 26.3 (renderpearl API, baked glint, new shaders); javac-built jar installed enabled; awaiting owner in-game test.",
+        "ref": "work/glint-outline-26-3/HANDOFF.md"
       }
     },
     "grok-bot": {
@@ -164,6 +165,19 @@
       "docs": {
         "HANDOFF.md": {
           "updated": "2026-11-08T00:44:23.744Z",
+          "by": "claude-macbook"
+        }
+      }
+    },
+    "glint-outline-26-3": {
+      "updated": "2026-11-08T12:46:29.777Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {
+        "HANDOFF.md": {
+          "updated": "2026-11-08T12:46:26.245Z",
           "by": "claude-macbook"
         }
       }
@@ -372,6 +386,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-08T12:46:29.777Z",
+      "agent": "claude-macbook",
+      "topic": "glint-outline-26-3",
+      "status": "question",
+      "summary": "Ported CC0 Enchantment Glint Outline to 26.3 (renderpearl API, baked glint, new shaders); javac-built jar installed enabled; awaiting owner in-game test.",
+      "ref": "work/glint-outline-26-3/HANDOFF.md"
+    },
     {
       "ts": "2026-11-08T12:27:12.241Z",
       "agent": "claude-macbook",
@@ -600,14 +622,6 @@
       "status": "done",
       "summary": "L0 world-fixed pillars and L2 stop/stand/start/turn-in-place/stairs implemented in Gait; 31 tests pass, installed; L1 split and objective next.",
       "ref": "/Volumes/SangHun/dev/notamovie/docs/research/walking.md"
-    },
-    {
-      "ts": "2026-11-01T14:43:49.333Z",
-      "agent": "claude-macbook",
-      "topic": "mc-motion",
-      "status": "question",
-      "summary": "Proposed equation route: Gait root + baked harmonic coefficients per state + event-driven segment plans; runtime motion matching dropped for walking, data used offline.",
-      "ref": "/Volumes/SangHun/dev/notamovie/docs/research/realtime.md"
     }
   ]
 }

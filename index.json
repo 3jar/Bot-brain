@@ -1,12 +1,12 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261107T234324690Z-claude-macbook-qj1lcd",
-  "events": 176,
+  "folded_through": "20261108T000030142Z-claude-macbook-25xrgq",
+  "events": 177,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-07T23:43:24.690Z",
+      "last_seen": "2026-11-08T00:00:30.142Z",
       "handoff_updated": "2026-11-05T13:43:26.350Z",
       "logs": 41,
       "notes": 15,
@@ -144,6 +144,19 @@
         },
         "RESULT.md": {
           "updated": "2026-10-16T23:22:37.196Z",
+          "by": "claude-macbook"
+        }
+      }
+    },
+    "diorama-jm-import": {
+      "updated": "2026-11-08T00:00:30.142Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": null,
+      "docs": {
+        "HANDOFF.md": {
+          "updated": "2026-11-08T00:00:30.142Z",
           "by": "claude-macbook"
         }
       }

@@ -1,0 +1,21 @@
+# diorama-jm-import handoff — 2026-11-08
+
+Goal: move the owner's JourneyMap data for server "야생" (mchardcore.o-r.kr:25596) into the Diorama 0.7.0 map mod (MC 26.3, profile "Fabulously Optimized (2)"), waypoints included.
+
+## Approach
+- JourneyMap 6 `chunk_cache/*.jmc` holds full chunk snapshots (block palettes, biomes, WORLD_SURFACE + MOTION_BLOCKING heightmaps; no light). Diorama cannot bake server maps offline, but in singleplayer its "Fill in from world save" (SavedChunkImport) bakes every `region/*.mca` chunk into tiles.
+- So: JM cache -> 26.3 Anvil chunks (DataVersion 5023, 26.x palette format: string or {id,properties}, mixed lists wrap strings as {"": name}) in a void import world; owner opens it, Diorama bakes; then copy tile folders into the server map folder.
+
+## Done
+- Converter: scratchpad tools/JmToMca.java (copy also needed next session; session scratchpad may vanish). Wrote saves/diorama-import-yasaeng/dimensions/minecraft/{overworld,the_nether,the_end}/region: 78554 / 7313 / 15829 chunks, 0 errors; heightmap/top-block check passed.
+- World meta: level.dat from "New World (4)" (spectator, cheats, peaceful, spawn 100000,100,100000); world_gen_settings.dat with flat void generators for all 3 dims.
+- Diorama folder pre-seeded: diorama/singleplayer-diorama-import-yasaeng-3ced858a (save-id.txt = saves/.../diorama-world-id.txt) with a copy of the server's existing overworld tiles so Diorama merges them.
+- Waypoints: 14 JM waypoints appended to server waypoints.json (colors kept, folder "", kind MANUAL, id = JM guid).
+- Backup of server map before changes: pack-backups/diorama-야생-before-journeymap-import-20261108/.
+
+## Next
+1. Owner: open world "야생 지도 변환 (Diorama)", press J (map open = full-speed baking), wait for log line `Saved chunks: drew N tiles`; then `/execute in minecraft:the_nether run tp @s 100000 100 100000`, J, wait; same for the_end; quit game.
+2. Then copy diorama/singleplayer-diorama-import-yasaeng-3ced858a/dim-*/ (surface-50 for overworld/end, "50" for nether; skip saved-chunks.bin and seen.bin) into diorama/server-mchardcore.o-r.kr_25596-84d5ff54-world-5dee6aa60921803b/ (game closed). Drop tiles far from real data (near 100000) if any.
+3. Optionally delete the import world + its diorama folder after owner confirms.
+
+Server does not send Diorama fair-play, so nether store name is "50" (pitch 50, no fog).

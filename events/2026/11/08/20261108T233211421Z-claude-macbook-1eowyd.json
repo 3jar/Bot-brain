@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261108T233211421Z-claude-macbook-1eowyd",
+  "ts": "2026-11-08T23:32:11.421Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "immersiveui-config",
+    "status": "done",
+    "summary": "ImmersiveUI 0.3.7 has no in-game config: shatterlib 0.7.0-beta.4 ModMenuImpl is empty, ConfigScreen never opened. Edit json5 + /shatterlib-client config reload all.",
+    "ref": "config/immersiveui-common.json5"
+  }
+}

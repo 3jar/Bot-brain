@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T233211421Z-claude-macbook-1eowyd",
-  "events": 198,
+  "folded_through": "20261108T234710082Z-claude-macbook-nr6pwy",
+  "events": 199,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T23:32:11.421Z",
+      "last_seen": "2026-11-08T23:47:10.082Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 52,
+      "logs": 53,
       "notes": 17,
       "last_log": {
-        "ts": "2026-11-08T23:32:11.421Z",
+        "ts": "2026-11-08T23:47:10.082Z",
         "agent": "claude-macbook",
-        "topic": "immersiveui-config",
-        "status": "done",
-        "summary": "ImmersiveUI 0.3.7 has no in-game config: shatterlib 0.7.0-beta.4 ModMenuImpl is empty, ConfigScreen never opened. Edit json5 + /shatterlib-client config reload all.",
-        "ref": "config/immersiveui-common.json5"
+        "topic": "coordshud",
+        "status": "question",
+        "summary": "Coords HUD hid itself: showDebugScreen() true when any F3 entry alwaysOn (Sodium Extra FPS). Now checks debugEntries.isOverlayVisible(); 1.0.1 installed, awaiting restart test.",
+        "ref": "Fabulously Optimized (2)/coordshud-mod/src/main/java/com/jar3/coordshud/mixin/HudMixin.java"
       }
     },
     "grok-bot": {
@@ -163,6 +163,14 @@
           "by": "claude-macbook"
         }
       }
+    },
+    "coordshud": {
+      "updated": "2026-11-08T23:47:10.082Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
     },
     "dh-polytone-reconnect-crash": {
       "updated": "2026-11-08T13:37:46.688Z",
@@ -449,6 +457,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-08T23:47:10.082Z",
+      "agent": "claude-macbook",
+      "topic": "coordshud",
+      "status": "question",
+      "summary": "Coords HUD hid itself: showDebugScreen() true when any F3 entry alwaysOn (Sodium Extra FPS). Now checks debugEntries.isOverlayVisible(); 1.0.1 installed, awaiting restart test.",
+      "ref": "Fabulously Optimized (2)/coordshud-mod/src/main/java/com/jar3/coordshud/mixin/HudMixin.java"
+    },
+    {
       "ts": "2026-11-08T23:32:11.421Z",
       "agent": "claude-macbook",
       "topic": "immersiveui-config",
@@ -674,14 +690,6 @@
       "topic": "skku-canvas-sync",
       "status": "done",
       "summary": "Morning brief 11/4: Mac offline, read box clone; 11/3 19:44 sync added EE wk10 Launch PDF, prog midterm grades; 11/4 05:05 dashboard only; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-11-02T23:02:30.221Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 11/3: Mac offline, read box clone; syncs 11/2 10:27, 19:52, 11/3 07:17 dashboard only; prog API due 11/4, bookclub wk10 11/5; no new exams.",
       "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]

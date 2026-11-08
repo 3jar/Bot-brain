@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261108T221520379Z-claude-macbook-i2p478",
+  "ts": "2026-11-08T22:15:20.379Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "discord-mc-chat",
+    "status": "question",
+    "summary": "Plan v2: Paper plugin (JDA via libraries) + Fabric client mod adding Discord tabs inside vanilla chat via list swap; awaiting server/version.",
+    "ref": "work/discord-mc-chat/PLAN.md"
+  }
+}

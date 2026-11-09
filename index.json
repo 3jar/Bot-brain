@@ -1,21 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261109T103219440Z-claude-macbook-keldcc",
-  "events": 202,
+  "folded_through": "20261109T105733081Z-claude-macbook-os6y2y",
+  "events": 203,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-09T10:32:19.440Z",
+      "last_seen": "2026-11-09T10:57:33.081Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 56,
+      "logs": 57,
       "notes": 17,
       "last_log": {
-        "ts": "2026-11-09T10:32:19.440Z",
+        "ts": "2026-11-09T10:57:33.081Z",
         "agent": "claude-macbook",
         "topic": "locator-bar",
         "status": "question",
-        "summary": "XP-bar player dots are the vanilla Locator Bar; gave gamerule locator_bar false / waypoint_receive_range 0 fix; offered client-side mod if owner lacks op."
+        "summary": "Built No Locator Bar 1.0.0 (MixinExtras on Hud.nextContextualInfoState hasWaypoints→false), javac build, installed; awaiting owner restart test.",
+        "ref": "Fabulously Optimized (2)/nolocatorbar-mod/src/main/java/com/jar3/nolocatorbar/mixin/HudMixin.java"
       }
     },
     "grok-bot": {
@@ -298,7 +299,7 @@
       }
     },
     "locator-bar": {
-      "updated": "2026-11-09T10:32:19.440Z",
+      "updated": "2026-11-09T10:57:33.081Z",
       "agents": [
         "claude-macbook"
       ],
@@ -471,6 +472,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-09T10:57:33.081Z",
+      "agent": "claude-macbook",
+      "topic": "locator-bar",
+      "status": "question",
+      "summary": "Built No Locator Bar 1.0.0 (MixinExtras on Hud.nextContextualInfoState hasWaypoints→false), javac build, installed; awaiting owner restart test.",
+      "ref": "Fabulously Optimized (2)/nolocatorbar-mod/src/main/java/com/jar3/nolocatorbar/mixin/HudMixin.java"
+    },
     {
       "ts": "2026-11-09T10:32:19.440Z",
       "agent": "claude-macbook",
@@ -697,14 +706,6 @@
       "status": "done",
       "summary": "Morning brief 11/6: Mac offline, box clone; 11/5 19:42 sync added EE Launch PDF, prog final Step1 (due 11/11); Quiz10 due 11/8; cal +기획/기말발표.",
       "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-11-05T14:06:13.351Z",
-      "agent": "claude-macbook",
-      "topic": "koreanpatch-fabric",
-      "status": "question",
-      "summary": "Built unofficial release 1.9.6-unofficial.1+mc26.3 with source bundle for private sharing; untested in-game; Windows likely still broken.",
-      "ref": "~/Downloads/KoreanPatch-26.3-unofficial.zip"
     }
   ]
 }

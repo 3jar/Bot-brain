@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261108T234710082Z-claude-macbook-nr6pwy",
-  "events": 199,
+  "folded_through": "20261109T000548545Z-claude-macbook-l51pjb",
+  "events": 200,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-08T23:47:10.082Z",
+      "last_seen": "2026-11-09T00:05:48.545Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 53,
+      "logs": 54,
       "notes": 17,
       "last_log": {
-        "ts": "2026-11-08T23:47:10.082Z",
+        "ts": "2026-11-09T00:05:48.545Z",
         "agent": "claude-macbook",
-        "topic": "coordshud",
+        "topic": "journeymap-folder-split",
         "status": "question",
-        "summary": "Coords HUD hid itself: showDebugScreen() true when any F3 entry alwaysOn (Sodium Extra FPS). Now checks debugEntries.isOverlayVisible(); 1.0.1 installed, awaiting restart test.",
-        "ref": "Fabulously Optimized (2)/coordshud-mod/src/main/java/com/jar3/coordshud/mixin/HudMixin.java"
+        "summary": "JM switched to mp/Multi~Survival (server-list name) on 11/9 07:45; old 2.3G mchardcore~o~r~kr~25596 intact. Merge tool tested; awaiting owner to leave server.",
+        "ref": "scratchpad jm-merge/src/JmMerge.java"
       }
     },
     "grok-bot": {
@@ -244,6 +244,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "journeymap-folder-split": {
+      "updated": "2026-11-09T00:05:48.545Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
+    },
     "kakao-send-to-me": {
       "updated": "2026-10-17T01:20:54.184Z",
       "agents": [
@@ -456,6 +464,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-09T00:05:48.545Z",
+      "agent": "claude-macbook",
+      "topic": "journeymap-folder-split",
+      "status": "question",
+      "summary": "JM switched to mp/Multi~Survival (server-list name) on 11/9 07:45; old 2.3G mchardcore~o~r~kr~25596 intact. Merge tool tested; awaiting owner to leave server.",
+      "ref": "scratchpad jm-merge/src/JmMerge.java"
+    },
     {
       "ts": "2026-11-08T23:47:10.082Z",
       "agent": "claude-macbook",
@@ -682,14 +698,6 @@
       "topic": "skku-canvas-sync",
       "status": "done",
       "summary": "Morning brief 11/5: Mac offline, read box clone; 11/5 05:24 sync added Calc Quiz 10 (due 11/8), prog API submitted; bookclub wk10 due today; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-11-03T23:00:14.992Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 11/4: Mac offline, read box clone; 11/3 19:44 sync added EE wk10 Launch PDF, prog midterm grades; 11/4 05:05 dashboard only; no new exams.",
       "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]

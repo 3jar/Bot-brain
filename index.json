@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261109T131021364Z-claude-macbook-16d98f",
-  "events": 204,
+  "folded_through": "20261109T230639345Z-skku-icampus-bot-9th54q",
+  "events": 205,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,16 +88,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-08T22:59:47.655Z",
+      "last_seen": "2026-11-09T23:06:39.345Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 25,
+      "logs": 26,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-08T22:59:47.655Z",
+        "ts": "2026-11-09T23:06:39.345Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/9: Mac offline, GitHub; 03:20 added bookclub wk11 lecture; overnight speech wk11-12+poster; Step1 11/11; no new exams.",
+        "summary": "Morning brief 11/10: Mac offline, GitHub; today's 07:58 dashboard-only; overnight added bookclub wk11 due 11/12; Step1 11/11; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -391,7 +391,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-08T22:59:47.655Z",
+      "updated": "2026-11-09T23:06:39.345Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -480,6 +480,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-09T23:06:39.345Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/10: Mac offline, GitHub; today's 07:58 dashboard-only; overnight added bookclub wk11 due 11/12; Step1 11/11; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-09T13:10:21.364Z",
       "agent": "claude-macbook",
@@ -706,14 +714,6 @@
       "status": "question",
       "summary": "Litematica Printer 3.2.3 (26.3) is compatible with installed Litematica 0.29.1/MaLiLib 0.30.2; gave setup steps; not installed, awaiting owner.",
       "ref": "https://modrinth.com/mod/litematica-printer"
-    },
-    {
-      "ts": "2026-11-06T10:27:32.415Z",
-      "agent": "claude-macbook",
-      "topic": "mc-oneblock-leak",
-      "status": "done",
-      "summary": "simply_oneblock mod jar in Fabulously Optimized (2) auto-enabled itself in every world, moved spawn, changed gamerules; disabled jar. Other instances clean.",
-      "ref": "Fabulously Optimized (2)/mods/simply_oneblock_26.3.jar.disabled"
     }
   ]
 }

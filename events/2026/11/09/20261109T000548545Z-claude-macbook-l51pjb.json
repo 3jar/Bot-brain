@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261109T000548545Z-claude-macbook-l51pjb",
+  "ts": "2026-11-09T00:05:48.545Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "journeymap-folder-split",
+    "status": "question",
+    "summary": "JM switched to mp/Multi~Survival (server-list name) on 11/9 07:45; old 2.3G mchardcore~o~r~kr~25596 intact. Merge tool tested; awaiting owner to leave server.",
+    "ref": "scratchpad jm-merge/src/JmMerge.java"
+  }
+}

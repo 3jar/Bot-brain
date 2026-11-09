@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261109T105733081Z-claude-macbook-os6y2y",
-  "events": 203,
+  "folded_through": "20261109T131021364Z-claude-macbook-16d98f",
+  "events": 204,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-09T10:57:33.081Z",
+      "last_seen": "2026-11-09T13:10:21.364Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 57,
+      "logs": 58,
       "notes": 17,
       "last_log": {
-        "ts": "2026-11-09T10:57:33.081Z",
+        "ts": "2026-11-09T13:10:21.364Z",
         "agent": "claude-macbook",
-        "topic": "locator-bar",
+        "topic": "returntoslot",
         "status": "question",
-        "summary": "Built No Locator Bar 1.0.0 (MixinExtras on Hud.nextContextualInfoState hasWaypoints→false), javac build, installed; awaiting owner restart test.",
-        "ref": "Fabulously Optimized (2)/nolocatorbar-mod/src/main/java/com/jar3/nolocatorbar/mixin/HudMixin.java"
+        "summary": "Built Return To Slot 1.0.0: cursor item goes back to origin slot on container close via PICKUP click before close packet; tracker test 8/8; installed, awaiting restart.",
+        "ref": "Fabulously Optimized (2)/returntoslot-mod/src/main/java/com/jar3/returntoslot/ReturnToSlot.java"
       }
     },
     "grok-bot": {
@@ -382,6 +382,14 @@
         }
       }
     },
+    "returntoslot": {
+      "updated": "2026-11-09T13:10:21.364Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
+    },
     "skku-canvas-sync": {
       "updated": "2026-11-08T22:59:47.655Z",
       "agents": [
@@ -472,6 +480,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-09T13:10:21.364Z",
+      "agent": "claude-macbook",
+      "topic": "returntoslot",
+      "status": "question",
+      "summary": "Built Return To Slot 1.0.0: cursor item goes back to origin slot on container close via PICKUP click before close packet; tracker test 8/8; installed, awaiting restart.",
+      "ref": "Fabulously Optimized (2)/returntoslot-mod/src/main/java/com/jar3/returntoslot/ReturnToSlot.java"
+    },
     {
       "ts": "2026-11-09T10:57:33.081Z",
       "agent": "claude-macbook",
@@ -698,14 +714,6 @@
       "status": "done",
       "summary": "simply_oneblock mod jar in Fabulously Optimized (2) auto-enabled itself in every world, moved spawn, changed gamerules; disabled jar. Other instances clean.",
       "ref": "Fabulously Optimized (2)/mods/simply_oneblock_26.3.jar.disabled"
-    },
-    {
-      "ts": "2026-11-05T23:05:47.426Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 11/6: Mac offline, box clone; 11/5 19:42 sync added EE Launch PDF, prog final Step1 (due 11/11); Quiz10 due 11/8; cal +기획/기말발표.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

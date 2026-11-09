@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261109T105733081Z-claude-macbook-os6y2y",
+  "ts": "2026-11-09T10:57:33.081Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "locator-bar",
+    "status": "question",
+    "summary": "Built No Locator Bar 1.0.0 (MixinExtras on Hud.nextContextualInfoState hasWaypoints→false), javac build, installed; awaiting owner restart test.",
+    "ref": "Fabulously Optimized (2)/nolocatorbar-mod/src/main/java/com/jar3/nolocatorbar/mixin/HudMixin.java"
+  }
+}

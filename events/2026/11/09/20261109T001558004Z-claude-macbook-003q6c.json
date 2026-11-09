@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261109T001558004Z-claude-macbook-003q6c",
+  "ts": "2026-11-09T00:15:58.004Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "journeymap-folder-split",
+    "status": "question",
+    "summary": "Merged: old JM data cloned to mp/Multi~Survival, today's 79 tiles composited + 27 new copied, 0 failed; backups kept. Awaiting owner in-game check.",
+    "ref": "journeymap/data/mp/Multi~Survival"
+  }
+}

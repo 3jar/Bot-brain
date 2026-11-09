@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261109T000548545Z-claude-macbook-l51pjb",
-  "events": 200,
+  "folded_through": "20261109T001558004Z-claude-macbook-003q6c",
+  "events": 201,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-09T00:05:48.545Z",
+      "last_seen": "2026-11-09T00:15:58.004Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 54,
+      "logs": 55,
       "notes": 17,
       "last_log": {
-        "ts": "2026-11-09T00:05:48.545Z",
+        "ts": "2026-11-09T00:15:58.004Z",
         "agent": "claude-macbook",
         "topic": "journeymap-folder-split",
         "status": "question",
-        "summary": "JM switched to mp/Multi~Survival (server-list name) on 11/9 07:45; old 2.3G mchardcore~o~r~kr~25596 intact. Merge tool tested; awaiting owner to leave server.",
-        "ref": "scratchpad jm-merge/src/JmMerge.java"
+        "summary": "Merged: old JM data cloned to mp/Multi~Survival, today's 79 tiles composited + 27 new copied, 0 failed; backups kept. Awaiting owner in-game check.",
+        "ref": "journeymap/data/mp/Multi~Survival"
       }
     },
     "grok-bot": {
@@ -245,7 +245,7 @@
       "docs": {}
     },
     "journeymap-folder-split": {
-      "updated": "2026-11-09T00:05:48.545Z",
+      "updated": "2026-11-09T00:15:58.004Z",
       "agents": [
         "claude-macbook"
       ],
@@ -464,6 +464,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-09T00:15:58.004Z",
+      "agent": "claude-macbook",
+      "topic": "journeymap-folder-split",
+      "status": "question",
+      "summary": "Merged: old JM data cloned to mp/Multi~Survival, today's 79 tiles composited + 27 new copied, 0 failed; backups kept. Awaiting owner in-game check.",
+      "ref": "journeymap/data/mp/Multi~Survival"
+    },
     {
       "ts": "2026-11-09T00:05:48.545Z",
       "agent": "claude-macbook",
@@ -691,14 +699,6 @@
       "status": "question",
       "summary": "26.3 SDL3 breakage fixed: new macOS dylib hook, lang follows input source, GC-safe callbacks; jar installed, awaiting owner in-game test.",
       "ref": "work/koreanpatch-fabric/HANDOFF.md"
-    },
-    {
-      "ts": "2026-11-04T22:56:02.208Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 11/5: Mac offline, read box clone; 11/5 05:24 sync added Calc Quiz 10 (due 11/8), prog API submitted; bookclub wk10 due today; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

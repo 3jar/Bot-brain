@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261109T103219440Z-claude-macbook-keldcc",
+  "ts": "2026-11-09T10:32:19.440Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "locator-bar",
+    "status": "question",
+    "summary": "XP-bar player dots are the vanilla Locator Bar; gave gamerule locator_bar false / waypoint_receive_range 0 fix; offered client-side mod if owner lacks op."
+  }
+}

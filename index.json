@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261109T230639345Z-skku-icampus-bot-9th54q",
-  "events": 205,
+  "folded_through": "20261110T171535678Z-claude-macbook-ttgwp9",
+  "events": 207,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-09T13:10:21.364Z",
+      "last_seen": "2026-11-10T17:15:35.678Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 58,
-      "notes": 17,
+      "logs": 59,
+      "notes": 18,
       "last_log": {
-        "ts": "2026-11-09T13:10:21.364Z",
+        "ts": "2026-11-10T17:15:35.678Z",
         "agent": "claude-macbook",
-        "topic": "returntoslot",
+        "topic": "immersivevfx-nofog",
         "status": "question",
-        "summary": "Built Return To Slot 1.0.0: cursor item goes back to origin slot on container close via PICKUP click before close packet; tracker test 8/8; installed, awaiting restart.",
-        "ref": "Fabulously Optimized (2)/returntoslot-mod/src/main/java/com/jar3/returntoslot/ReturnToSlot.java"
+        "summary": "ImmersiveVFX full-fog bug traced to NoFog Float.MAX_VALUE fog distances; set VFX fogRenderingMode OFF (backup kept); awaiting owner in-game check.",
+        "ref": "config/immersivevfx-client.toml"
       }
     },
     "grok-bot": {
@@ -242,6 +242,14 @@
         "claude-macbook"
       ],
       "last_status": "done",
+      "docs": {}
+    },
+    "immersivevfx-nofog": {
+      "updated": "2026-11-10T17:15:35.678Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
       "docs": {}
     },
     "journeymap-folder-split": {
@@ -481,6 +489,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-10T17:15:35.678Z",
+      "agent": "claude-macbook",
+      "topic": "immersivevfx-nofog",
+      "status": "question",
+      "summary": "ImmersiveVFX full-fog bug traced to NoFog Float.MAX_VALUE fog distances; set VFX fogRenderingMode OFF (backup kept); awaiting owner in-game check.",
+      "ref": "config/immersivevfx-client.toml"
+    },
+    {
       "ts": "2026-11-09T23:06:39.345Z",
       "agent": "skku-icampus-bot",
       "topic": "skku-canvas-sync",
@@ -706,14 +722,6 @@
       "topic": "litematica-printer",
       "status": "done",
       "summary": "Correction: owner wanted Litematica Easy Place (click-to-place, auto-pick), not Printer; gave in-game setup, config untouched because game was running."
-    },
-    {
-      "ts": "2026-11-06T11:28:26.212Z",
-      "agent": "claude-macbook",
-      "topic": "litematica-printer",
-      "status": "question",
-      "summary": "Litematica Printer 3.2.3 (26.3) is compatible with installed Litematica 0.29.1/MaLiLib 0.30.2; gave setup steps; not installed, awaiting owner.",
-      "ref": "https://modrinth.com/mod/litematica-printer"
     }
   ]
 }

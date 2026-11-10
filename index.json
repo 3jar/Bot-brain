@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261110T171535678Z-claude-macbook-ttgwp9",
-  "events": 207,
+  "folded_through": "20261110T172626229Z-claude-macbook-tqu1do",
+  "events": 208,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-10T17:15:35.678Z",
+      "last_seen": "2026-11-10T17:26:26.229Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 59,
+      "logs": 60,
       "notes": 18,
       "last_log": {
-        "ts": "2026-11-10T17:15:35.678Z",
+        "ts": "2026-11-10T17:26:26.229Z",
         "agent": "claude-macbook",
         "topic": "immersivevfx-nofog",
-        "status": "question",
-        "summary": "ImmersiveVFX full-fog bug traced to NoFog Float.MAX_VALUE fog distances; set VFX fogRenderingMode OFF (backup kept); awaiting owner in-game check.",
-        "ref": "config/immersivevfx-client.toml"
+        "status": "done",
+        "summary": "Applied low-end ImmersiveVFX CUSTOM profile (shadows/reflections/rays/bloom/fog/mist off, particles REDUCED, clouds FLAT); fog fix confirmed in-game; backup kept.",
+        "ref": "config/immersivevfx-client.toml.bak-lowend-20261111"
       }
     },
     "grok-bot": {
@@ -245,11 +245,11 @@
       "docs": {}
     },
     "immersivevfx-nofog": {
-      "updated": "2026-11-10T17:15:35.678Z",
+      "updated": "2026-11-10T17:26:26.229Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "question",
+      "last_status": "done",
       "docs": {}
     },
     "journeymap-folder-split": {
@@ -489,6 +489,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-10T17:26:26.229Z",
+      "agent": "claude-macbook",
+      "topic": "immersivevfx-nofog",
+      "status": "done",
+      "summary": "Applied low-end ImmersiveVFX CUSTOM profile (shadows/reflections/rays/bloom/fog/mist off, particles REDUCED, clouds FLAT); fog fix confirmed in-game; backup kept.",
+      "ref": "config/immersivevfx-client.toml.bak-lowend-20261111"
+    },
+    {
       "ts": "2026-11-10T17:15:35.678Z",
       "agent": "claude-macbook",
       "topic": "immersivevfx-nofog",
@@ -715,13 +723,6 @@
       "topic": "litematica-printer",
       "status": "done",
       "summary": "Easy Place ignores vanilla toggle-use (checks own easyPlaceUseKey held); workaround: empty key + malilib allowEmpty = always held, toggle via easyPlaceToggle."
-    },
-    {
-      "ts": "2026-11-06T11:33:11.745Z",
-      "agent": "claude-macbook",
-      "topic": "litematica-printer",
-      "status": "done",
-      "summary": "Correction: owner wanted Litematica Easy Place (click-to-place, auto-pick), not Printer; gave in-game setup, config untouched because game was running."
     }
   ]
 }

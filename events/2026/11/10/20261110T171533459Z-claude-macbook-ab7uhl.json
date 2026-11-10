@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261110T171533459Z-claude-macbook-ab7uhl",
+  "ts": "2026-11-10T17:15:33.459Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "ImmersiveVFX 2.0.0 + NoFog (nofog-fabric-26.3) = world fully fogged, only silhouettes visible. NoFog sets FogData.environmentalStart/End = Float.MAX_VALUE; VfxClient.finishFog lerps `other + (wish - other) * airOpinion`, and with airOpinion = 1.0 (any vanilla biome) MAX + (x - MAX) = 0, so fog runs 0..1 block. Fix used: config/immersivevfx-client.toml fogRenderingMode = \"OFF\" (VFX adjustFog/finishFog then skip; shaders use vanilla linear_fog_value). Backup: immersivevfx-client.toml.bak-nofog-20261111. Alternative: disable NoFog and restore IMMERSIVE_EXTENDED. Mac GL is 4.1 Metal; unfocused MC window stops rendering (Dynamic FPS), so screencapture -l shows a stale frame.",
+    "topic": "immersivevfx-nofog"
+  }
+}

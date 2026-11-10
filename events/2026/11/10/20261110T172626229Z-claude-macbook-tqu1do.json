@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261110T172626229Z-claude-macbook-tqu1do",
+  "ts": "2026-11-10T17:26:26.229Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "immersivevfx-nofog",
+    "status": "done",
+    "summary": "Applied low-end ImmersiveVFX CUSTOM profile (shadows/reflections/rays/bloom/fog/mist off, particles REDUCED, clouds FLAT); fog fix confirmed in-game; backup kept.",
+    "ref": "config/immersivevfx-client.toml.bak-lowend-20261111"
+  }
+}

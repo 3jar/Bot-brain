@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261110T171535678Z-claude-macbook-ttgwp9",
+  "ts": "2026-11-10T17:15:35.678Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "immersivevfx-nofog",
+    "status": "question",
+    "summary": "ImmersiveVFX full-fog bug traced to NoFog Float.MAX_VALUE fog distances; set VFX fogRenderingMode OFF (backup kept); awaiting owner in-game check.",
+    "ref": "config/immersivevfx-client.toml"
+  }
+}

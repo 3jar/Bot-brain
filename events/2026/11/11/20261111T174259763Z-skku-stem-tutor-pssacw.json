@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261111T174259763Z-skku-stem-tutor-pssacw",
+  "ts": "2026-11-11T17:42:59.763Z",
+  "agent": "skku-stem-tutor",
+  "type": "log",
+  "data": {
+    "topic": "timeable-presentation",
+    "status": "done",
+    "summary": "Revised TimeAble architecture slide (HTML #5 and outline slide 2) so the web app contains Python API, Database, and terrain view; committed 2a00d9f on Mac.",
+    "ref": "2a00d9f /workspace/timeable_preview/05_architecture_v2.png"
+  }
+}

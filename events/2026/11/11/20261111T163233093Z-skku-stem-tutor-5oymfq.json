@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261111T163233093Z-skku-stem-tutor-5oymfq",
+  "ts": "2026-11-11T16:32:33.093Z",
+  "agent": "skku-stem-tutor",
+  "type": "log",
+  "data": {
+    "topic": "gongcomp-timeable-presentation",
+    "status": "done",
+    "summary": "Rewrote 박상훈 outline as 9 visual slides; CAT is a black box only, no formulas or model comparison.",
+    "ref": "2026-2/공학컴퓨터프로그래밍/산출물/TimeAble_발표_개요서_박상훈파트.md (306654f)"
+  }
+}

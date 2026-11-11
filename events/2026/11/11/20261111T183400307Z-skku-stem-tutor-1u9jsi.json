@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261111T183400307Z-skku-stem-tutor-1u9jsi",
+  "ts": "2026-11-11T18:34:00.307Z",
+  "agent": "skku-stem-tutor",
+  "type": "log",
+  "data": {
+    "topic": "timeable-presentation",
+    "status": "done",
+    "summary": "Reverted slide 5 design.md styling to the B/W wireframe in d0d7235, keeping the user's 2px gap, terrain copy, 지형 로딩, 요청, and shorter full-height Database card.",
+    "ref": "d0d7235 /workspace/timeable_preview/05_architecture_v7.png"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261111T181516576Z-skku-stem-tutor-o6v545",
+  "ts": "2026-11-11T18:15:16.576Z",
+  "agent": "skku-stem-tutor",
+  "type": "log",
+  "data": {
+    "topic": "timeable-presentation",
+    "status": "done",
+    "summary": "Enlarged the TimeAble architecture terrain card with a dashed demo-image placeholder, moved vertical arrow labels beside the arrows, and committed 3e566cc on Mac.",
+    "ref": "3e566cc /workspace/timeable_preview/05_architecture_v5.png"
+  }
+}

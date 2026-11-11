@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261111T175338290Z-skku-stem-tutor-0j0tav",
+  "ts": "2026-11-11T17:53:38.290Z",
+  "agent": "skku-stem-tutor",
+  "type": "log",
+  "data": {
+    "topic": "timeable-presentation",
+    "status": "done",
+    "summary": "Redrew TimeAble architecture slide as an inverted triangle of Python API, Database, and terrain view with connection meanings; committed 8ae11d9 on Mac.",
+    "ref": "8ae11d9 /workspace/timeable_preview/05_architecture_v3.png"
+  }
+}

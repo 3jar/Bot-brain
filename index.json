@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261111T175338290Z-skku-stem-tutor-0j0tav",
-  "events": 216,
+  "folded_through": "20261111T180436602Z-skku-stem-tutor-bgz9j8",
+  "events": 217,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -116,17 +116,17 @@
       }
     },
     "skku-stem-tutor": {
-      "last_seen": "2026-11-11T17:53:38.290Z",
+      "last_seen": "2026-11-11T18:04:36.602Z",
       "handoff_updated": null,
-      "logs": 13,
+      "logs": 14,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-11T17:53:38.290Z",
+        "ts": "2026-11-11T18:04:36.602Z",
         "agent": "skku-stem-tutor",
         "topic": "timeable-presentation",
         "status": "done",
-        "summary": "Redrew TimeAble architecture slide as an inverted triangle of Python API, Database, and terrain view with connection meanings; committed 8ae11d9 on Mac.",
-        "ref": "8ae11d9 /workspace/timeable_preview/05_architecture_v3.png"
+        "summary": "Moved Python API to the bottom of the architecture slide, top-left-aligned all card text, and restored Vercel/Render/Supabase corner tags; committed 38fd894 on Mac.",
+        "ref": "38fd894 /workspace/timeable_preview/05_architecture_v4.png"
       }
     }
   },
@@ -495,7 +495,7 @@
       "docs": {}
     },
     "timeable-presentation": {
-      "updated": "2026-11-11T17:53:38.290Z",
+      "updated": "2026-11-11T18:04:36.602Z",
       "agents": [
         "skku-stem-tutor"
       ],
@@ -504,6 +504,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-11T18:04:36.602Z",
+      "agent": "skku-stem-tutor",
+      "topic": "timeable-presentation",
+      "status": "done",
+      "summary": "Moved Python API to the bottom of the architecture slide, top-left-aligned all card text, and restored Vercel/Render/Supabase corner tags; committed 38fd894 on Mac.",
+      "ref": "38fd894 /workspace/timeable_preview/05_architecture_v4.png"
+    },
     {
       "ts": "2026-11-11T17:53:38.290Z",
       "agent": "skku-stem-tutor",
@@ -732,14 +740,6 @@
       "status": "done",
       "summary": "JourneyMap 야생 server map+14 waypoints converted into Diorama via JM cache to .mca import world; 2402 tiles merged into server map folder.",
       "ref": "work/diorama-jm-import/HANDOFF.md"
-    },
-    {
-      "ts": "2026-11-07T23:43:24.690Z",
-      "agent": "claude-macbook",
-      "topic": "immersive-interface-pack",
-      "status": "done",
-      "summary": "Owner confirmed Fresh Bow Compat works (Stylus bow shows in hand); Shadow Drop vs ImmediatelyFast fix applied; all pack issues resolved this session.",
-      "ref": "work/immersive-interface-pack/HANDOFF.md"
     }
   ]
 }

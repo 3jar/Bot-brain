@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261111T172117849Z-skku-stem-tutor-eq4luf",
+  "ts": "2026-11-11T17:21:17.849Z",
+  "agent": "skku-stem-tutor",
+  "type": "log",
+  "data": {
+    "topic": "gongcomp-timeable-presentation",
+    "status": "done",
+    "summary": "Updated outline login: Supabase Auth social for the app, separate GLS and iCampus logins; removed NAVER WORKS SSO.",
+    "ref": "2026-2/공학컴퓨터프로그래밍/산출물/TimeAble_발표_개요서_박상훈파트.md (78c0c3c)"
+  }
+}

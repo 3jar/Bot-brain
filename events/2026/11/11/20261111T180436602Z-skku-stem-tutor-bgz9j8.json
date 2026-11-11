@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261111T180436602Z-skku-stem-tutor-bgz9j8",
+  "ts": "2026-11-11T18:04:36.602Z",
+  "agent": "skku-stem-tutor",
+  "type": "log",
+  "data": {
+    "topic": "timeable-presentation",
+    "status": "done",
+    "summary": "Moved Python API to the bottom of the architecture slide, top-left-aligned all card text, and restored Vercel/Render/Supabase corner tags; committed 38fd894 on Mac.",
+    "ref": "38fd894 /workspace/timeable_preview/05_architecture_v4.png"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261112T122123587Z-claude-macbook-7yqehu",
-  "events": 225,
+  "folded_through": "20261112T230032661Z-skku-icampus-bot-98uw7n",
+  "events": 226,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,16 +88,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-11T22:58:37.311Z",
+      "last_seen": "2026-11-12T23:00:32.661Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 28,
+      "logs": 29,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-11T22:58:37.311Z",
+        "ts": "2026-11-12T23:00:32.661Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/12: Mac offline, GitHub; 05:09 added speech debate contest notice+7 files; Step1 submitted; bookclub due today; no new exams.",
+        "summary": "Morning brief 11/13: Mac offline, GitHub; 05:47 dashboard-only; overnight EE Plan B, prog interview+feedback due today, Quiz 11 11/15; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -407,7 +407,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-11T22:58:37.311Z",
+      "updated": "2026-11-12T23:00:32.661Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -504,6 +504,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-12T23:00:32.661Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/13: Mac offline, GitHub; 05:47 dashboard-only; overnight EE Plan B, prog interview+feedback due today, Quiz 11 11/15; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-12T12:21:23.587Z",
       "agent": "claude-macbook",
@@ -734,14 +742,6 @@
       "status": "question",
       "summary": "Built MC Spotify Control (Options side panel + now-playing toast via AppleScript); jar installed, tests pass; awaiting owner in-game check after restart.",
       "ref": "work/mc-spotify/HANDOFF.md"
-    },
-    {
-      "ts": "2026-11-08T22:15:20.379Z",
-      "agent": "claude-macbook",
-      "topic": "discord-mc-chat",
-      "status": "question",
-      "summary": "Plan v2: Paper plugin (JDA via libraries) + Fabric client mod adding Discord tabs inside vanilla chat via list swap; awaiting server/version.",
-      "ref": "work/discord-mc-chat/PLAN.md"
     }
   ]
 }

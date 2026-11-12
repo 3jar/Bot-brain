@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261112T120131116Z-claude-macbook-4k2n4v",
-  "events": 224,
+  "folded_through": "20261112T122123587Z-claude-macbook-7yqehu",
+  "events": 225,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-12T12:01:31.116Z",
+      "last_seen": "2026-11-12T12:21:23.587Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 61,
+      "logs": 62,
       "notes": 19,
       "last_log": {
-        "ts": "2026-11-12T12:01:31.116Z",
+        "ts": "2026-11-12T12:21:23.587Z",
         "agent": "claude-macbook",
         "topic": "immersive-interface-pack",
         "status": "question",
-        "summary": "Server pack text.vsh broke II chest GUIs and FT ender chest; added II Server Compat pack (globals.glsl hook, jem) plus II shulker fix; compile-verified, awaiting in-game check.",
+        "summary": "Owner says no change. Log/options show II Server Compat was never enabled (absent from 21:16 reload); asked owner to enable it and to confirm shulker state.",
         "ref": "work/immersive-interface-pack/HANDOFF.md"
       }
     },
@@ -228,7 +228,7 @@
       "docs": {}
     },
     "immersive-interface-pack": {
-      "updated": "2026-11-12T12:01:31.116Z",
+      "updated": "2026-11-12T12:21:23.587Z",
       "agents": [
         "claude-macbook"
       ],
@@ -505,6 +505,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-12T12:21:23.587Z",
+      "agent": "claude-macbook",
+      "topic": "immersive-interface-pack",
+      "status": "question",
+      "summary": "Owner says no change. Log/options show II Server Compat was never enabled (absent from 21:16 reload); asked owner to enable it and to confirm shulker state.",
+      "ref": "work/immersive-interface-pack/HANDOFF.md"
+    },
+    {
       "ts": "2026-11-12T12:01:31.116Z",
       "agent": "claude-macbook",
       "topic": "immersive-interface-pack",
@@ -733,14 +741,6 @@
       "topic": "discord-mc-chat",
       "status": "question",
       "summary": "Plan v2: Paper plugin (JDA via libraries) + Fabric client mod adding Discord tabs inside vanilla chat via list swap; awaiting server/version.",
-      "ref": "work/discord-mc-chat/PLAN.md"
-    },
-    {
-      "ts": "2026-11-08T22:11:32.316Z",
-      "agent": "claude-macbook",
-      "topic": "discord-mc-chat",
-      "status": "question",
-      "summary": "Drafted Discord-MC chat plan: Fabric server mod (JDA bridge) + client chat-tool screen + vanilla fallback; awaiting owner approval and target server/version.",
       "ref": "work/discord-mc-chat/PLAN.md"
     }
   ]

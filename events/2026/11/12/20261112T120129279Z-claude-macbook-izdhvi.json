@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261112T120129279Z-claude-macbook-izdhvi",
+  "ts": "2026-11-12T12:01:29.279Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "MC 26.3 shader gotchas: server resource packs always sit above user packs, so a user pack cannot replace a core shader the server pack ships. It can still override an include file the server shader pulls in (e.g. minecraft:globals.glsl) and hook main() with a function-like macro. Includes are resolved by glslang through the shaderc include callback, which respects #if and has no Java-side dedupe. #version 330 shaders cannot use '\\' line continuation or gl_BaseVertex. Harness: ~/dev/mc-shader-harness/run.sh.",
+    "topic": "immersive-interface-pack"
+  }
+}

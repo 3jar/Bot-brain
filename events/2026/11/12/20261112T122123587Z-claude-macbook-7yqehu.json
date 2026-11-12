@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261112T122123587Z-claude-macbook-7yqehu",
+  "ts": "2026-11-12T12:21:23.587Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "immersive-interface-pack",
+    "status": "question",
+    "summary": "Owner says no change. Log/options show II Server Compat was never enabled (absent from 21:16 reload); asked owner to enable it and to confirm shulker state.",
+    "ref": "work/immersive-interface-pack/HANDOFF.md"
+  }
+}

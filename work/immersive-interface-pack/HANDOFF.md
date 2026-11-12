@@ -1,23 +1,24 @@
-# immersive-interface-pack — HANDOFF (2026-11-08, round 2)
+# immersive-interface-pack: HANDOFF (2026-11-12, round 3: server pack compat)
 
-Profile: ModrinthApp/profiles/Fabulously Optimized (2), MC 26.3, Apple M2, OpenGL 4.1 Metal backend.
+Profile: ModrinthApp/profiles/Fabulously Optimized (2), MC 26.3. Server: multi survival. Its server pack is crescentlune default.zip (Stellarity + extras), loaded at the top of the pack stack.
 
-## State after round 1
-II (GitHub main as of 11-07, plus generated lang files) is installed. The owner reports the hotbar is fixed, but every other GUI is still warped.
+## Symptoms (owner) and root causes
+1. With the server pack, chest and ender chest II GUIs move right and turn dark. Cause: the server pack ships overlay_assets_26_3 core/text.vsh (Stellarity animated text), which replaces II's text.vsh, so interfaces_text() never runs. Without it, II marker glyphs are not centred (pos.x) and keep the 0x404040 title tint instead of vec4(1).
+2. With the server pack, the closed ender chest lid sides do not render. Cause: Fresh Textures optifine/cem/ender_chest.jem (EMF) draws the closed chest as one 14px-tall lod_base box with UVs v33..47, built for FT's custom texture. Stellarity's vanilla-layout ender.png has rows 43..46 transparent (56 of 196 px per side).
+3. Long-standing: shulker box items 2 and 4 in rows 1 and 3 are warped. Cause: in II interfaces(), the mount-preview rule posCheck(-62,-65, size 52) moves vertices. In 26.x, GUI items are blitted from the item atlas through position_tex_color, with transparent corner texels, and those four slots share one quad corner with the rule.
 
-## Root cause (round 2)
-- The II shaders get the quad corner from `(gl_VertexIndex - gl_BaseVertex) % 4`.
-- MC 26.3 (renderpearl) compiles shaders to SPIR-V, then uses SPIRV-Cross to emit GLSL 330 for OpenGL. macOS GL 4.1 has no GL_ARB_shader_draw_parameters, and MC never sets the SPIRV_Cross_BaseVertex uniform, so gl_BaseVertex is 0.
-- GuiRenderer puts every vertex format into one StagedVertexBuffer, with baseVertex = Mth.roundToward(byteOffset, stride) / stride, so it is often not a multiple of 4. The corners rotate and the GUI warps. The HUD hotbar happens to land aligned.
-- Upstream issue #96 has the same symptom, caused by batching mods.
-- The owner's new zip, resourcepacks/§6Immersive§8_§6Interfaces§8.zip, is official 0.8.2 (max_format 84). It is not 26.3-compatible; do not use it.
+## Fixes applied (compile-verified, not yet tested in game)
+- New folder pack resourcepacks/II Server Compat. Owner must enable it in-game, anywhere above Fresh Textures.
+  - _26.3/assets/minecraft/shaders/include/globals.glsl is vanilla globals.glsl plus a hook. The hook is active only when DT and projection were included before globals and IMMERSIVE_INTERFACES_GLSL is undefined, which happens only in Stellarity's text.vsh. It does `#define main() main(){ iitx_original_main(); ...II glyph transform... } void iitx_original_main()`. It must stay on a single line, because #version 330 has no line continuation. vertID is gl_VertexIndex % 4, since 330 has no gl_BaseVertex; quadalign keeps this equivalent.
+  - assets/minecraft/optifine/cem/ender_chest.jem is FT's jem with lod_base and the FT-only inner boxes removed and the visibility toggles dropped. Inner faces are remapped to the vanilla regions (base down 28..42,19..33; lid up 14..28,0..14).
+- II edits in assets/minecraft/shaders/include/interfaces.glsl. Backup: pack-backups/ii-20261112/interfaces.glsl.orig.
+  - Include guard IMMERSIVE_INTERFACES_GLSL. The compat hook uses it to stay off under II's own text.vsh.
+  - The mount-preview rule now also requires textureSize(Sampler0) % 52 == 0. PiP size is 52*guiScale; the item atlas is a power of two of at least 512.
 
-## Fix applied (untested in game)
-- Built the local mod mods/quadalign-1.0.0+26.3.jar. Source is in ~/dev/quadalign.
-- It is one @ModifyArg on StagedVertexBuffer.upload, at the first Mth.roundToward call: vertexSize -> vertexSize*4. Every draw then gets baseVertex % 4 == 0.
-- Sodium's StagedVertexBufferMixin only wraps decodeSortingPoints, so no conflict.
+## Verification
+- ~/dev/mc-shader-harness (ShaderHarness.java + run.sh) compiles shaders like renderpearl GlslCompiler: shaderc, Vulkan 1.2, auto-bind, debug info, includes resolved by glslang.
+- Server stack: text.vsh compiles with the hook in all define variants. Local stack, and the compat pack below II: hook off. 133 vanilla and mod shaders compile the same with vanilla and compat globals, with no hook activation. FT, Weskerson and totem pack shaders compile OK.
 
 ## Pending (owner)
-- Restart the game.
-- Keep II above Redstone Tweaks; it is still below (II is #11, RT is #18).
-- If the GUI is still warped after the restart, the alternative is Video Settings > Graphics API > Prefer Vulkan (Experimental), which loses Iris shaders. Next suspects after that: easegui and smoothgui.
+- Enable II Server Compat, then check: chest/ender chest GUI on the server, closed ender chest lid sides, shulker items, and horse inventory preview (should still be enlarged).
+- If a GUI still breaks, check latest.log for shader compile errors on core/text.

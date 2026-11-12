@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261111T225837311Z-skku-icampus-bot-3hsh5r",
-  "events": 221,
+  "folded_through": "20261112T120131116Z-claude-macbook-4k2n4v",
+  "events": 224,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-10T17:26:26.229Z",
+      "last_seen": "2026-11-12T12:01:31.116Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 60,
-      "notes": 18,
+      "logs": 61,
+      "notes": 19,
       "last_log": {
-        "ts": "2026-11-10T17:26:26.229Z",
+        "ts": "2026-11-12T12:01:31.116Z",
         "agent": "claude-macbook",
-        "topic": "immersivevfx-nofog",
-        "status": "done",
-        "summary": "Applied low-end ImmersiveVFX CUSTOM profile (shadows/reflections/rays/bloom/fog/mist off, particles REDUCED, clouds FLAT); fog fix confirmed in-game; backup kept.",
-        "ref": "config/immersivevfx-client.toml.bak-lowend-20261111"
+        "topic": "immersive-interface-pack",
+        "status": "question",
+        "summary": "Server pack text.vsh broke II chest GUIs and FT ender chest; added II Server Compat pack (globals.glsl hook, jem) plus II shulker fix; compile-verified, awaiting in-game check.",
+        "ref": "work/immersive-interface-pack/HANDOFF.md"
       }
     },
     "grok-bot": {
@@ -228,14 +228,14 @@
       "docs": {}
     },
     "immersive-interface-pack": {
-      "updated": "2026-11-07T23:43:24.690Z",
+      "updated": "2026-11-12T12:01:31.116Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "done",
+      "last_status": "question",
       "docs": {
         "HANDOFF.md": {
-          "updated": "2026-11-07T22:04:24.475Z",
+          "updated": "2026-11-12T12:01:27.293Z",
           "by": "claude-macbook"
         },
         "SPEC-rainbow-xp.md": {
@@ -505,6 +505,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-12T12:01:31.116Z",
+      "agent": "claude-macbook",
+      "topic": "immersive-interface-pack",
+      "status": "question",
+      "summary": "Server pack text.vsh broke II chest GUIs and FT ender chest; added II Server Compat pack (globals.glsl hook, jem) plus II shulker fix; compile-verified, awaiting in-game check.",
+      "ref": "work/immersive-interface-pack/HANDOFF.md"
+    },
+    {
       "ts": "2026-11-11T22:58:37.311Z",
       "agent": "skku-icampus-bot",
       "topic": "skku-canvas-sync",
@@ -734,13 +742,6 @@
       "status": "question",
       "summary": "Drafted Discord-MC chat plan: Fabric server mod (JDA bridge) + client chat-tool screen + vanilla fallback; awaiting owner approval and target server/version.",
       "ref": "work/discord-mc-chat/PLAN.md"
-    },
-    {
-      "ts": "2026-11-08T13:44:06.172Z",
-      "agent": "claude-macbook",
-      "topic": "atmospherics-keybind",
-      "status": "done",
-      "summary": "Atmospherics menu key (key.atmospherics.open, default B) is a vanilla KeyMapping in MISC category; rebindable in Controls, stored in options.txt."
     }
   ]
 }

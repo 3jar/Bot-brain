@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261112T120131116Z-claude-macbook-4k2n4v",
+  "ts": "2026-11-12T12:01:31.116Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "immersive-interface-pack",
+    "status": "question",
+    "summary": "Server pack text.vsh broke II chest GUIs and FT ender chest; added II Server Compat pack (globals.glsl hook, jem) plus II shulker fix; compile-verified, awaiting in-game check.",
+    "ref": "work/immersive-interface-pack/HANDOFF.md"
+  }
+}

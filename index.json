@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261112T230032661Z-skku-icampus-bot-98uw7n",
-  "events": 226,
+  "folded_through": "20261113T225808369Z-skku-icampus-bot-osax8h",
+  "events": 227,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,16 +88,16 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-12T23:00:32.661Z",
+      "last_seen": "2026-11-13T22:58:08.369Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 29,
+      "logs": 30,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-12T23:00:32.661Z",
+        "ts": "2026-11-13T22:58:08.369Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/13: Mac offline, GitHub; 05:47 dashboard-only; overnight EE Plan B, prog interview+feedback due today, Quiz 11 11/15; no new exams.",
+        "summary": "Morning brief 11/14: Mac offline, GitHub; 05:27 dashboard-only; overnight bookclub topic+speech teams; Quiz 11 11/15; no new exams.",
         "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
@@ -407,7 +407,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-12T23:00:32.661Z",
+      "updated": "2026-11-13T22:58:08.369Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -504,6 +504,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-13T22:58:08.369Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/14: Mac offline, GitHub; 05:27 dashboard-only; overnight bookclub topic+speech teams; Quiz 11 11/15; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-12T23:00:32.661Z",
       "agent": "skku-icampus-bot",
@@ -734,14 +742,6 @@
       "status": "question",
       "summary": "Toast works, Options panel missing; Paper server kicks 'Invalid custom payload payload!' since 16 new mods. Diagnostic 1.0.1 installed, awaiting restart logs.",
       "ref": "~/dev/mc-spotify"
-    },
-    {
-      "ts": "2026-11-08T22:42:57.037Z",
-      "agent": "claude-macbook",
-      "topic": "mc-spotify",
-      "status": "question",
-      "summary": "Built MC Spotify Control (Options side panel + now-playing toast via AppleScript); jar installed, tests pass; awaiting owner in-game check after restart.",
-      "ref": "work/mc-spotify/HANDOFF.md"
     }
   ]
 }

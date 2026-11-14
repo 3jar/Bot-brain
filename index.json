@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261114T085459634Z-claude-macbook-2hakhj",
-  "events": 228,
+  "folded_through": "20261114T232249823Z-skku-icampus-bot-b0kq53",
+  "events": 229,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,17 +88,17 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-13T22:58:08.369Z",
+      "last_seen": "2026-11-14T23:22:49.823Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 30,
+      "logs": 31,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-13T22:58:08.369Z",
+        "ts": "2026-11-14T23:22:49.823Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/14: Mac offline, GitHub; 05:27 dashboard-only; overnight bookclub topic+speech teams; Quiz 11 11/15; no new exams.",
-        "ref": "https://github.com/3jar/SKKU/actions"
+        "summary": "Morning brief 11/15: Mac offline, GitHub; 03:44 added physics session-3 PPT; overnight Calc wk12 offline 11/16; Quiz 11 due today; no new exams.",
+        "ref": "https://github.com/3jar/SKKU/commit/cfdc947bd8f29ab534e0319b449d88f4f5e36cb3"
       }
     },
     "skku-reviewer": {
@@ -415,7 +415,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-13T22:58:08.369Z",
+      "updated": "2026-11-14T23:22:49.823Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -512,6 +512,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-14T23:22:49.823Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/15: Mac offline, GitHub; 03:44 added physics session-3 PPT; overnight Calc wk12 offline 11/16; Quiz 11 due today; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/commit/cfdc947bd8f29ab534e0319b449d88f4f5e36cb3"
+    },
     {
       "ts": "2026-11-14T08:54:59.634Z",
       "agent": "claude-macbook",
@@ -742,14 +750,6 @@
       "status": "question",
       "summary": "Paper kick = 131 play channels > Paper's 128-per-player limit; MapFrontiers(30)/weaponmaster(12) added 11/9. Asked owner which mod to disable.",
       "ref": "profile logs/latest.log line 2285"
-    },
-    {
-      "ts": "2026-11-08T22:59:47.655Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 11/9: Mac offline, GitHub; 03:20 added bookclub wk11 lecture; overnight speech wk11-12+poster; Step1 11/11; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261114T085459634Z-claude-macbook-2hakhj",
+  "ts": "2026-11-14T08:54:59.634Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-instance-export",
+    "status": "done",
+    "summary": "Exported 26.3 instance mods/packs/shaders/pack order/keybinds to ~/Desktop/MC-26.3-export with tested apply.py merge script.",
+    "ref": "~/Desktop/MC-26.3-export"
+  }
+}

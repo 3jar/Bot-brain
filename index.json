@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261113T225808369Z-skku-icampus-bot-osax8h",
-  "events": 227,
+  "folded_through": "20261114T085459634Z-claude-macbook-2hakhj",
+  "events": 228,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-12T12:21:23.587Z",
+      "last_seen": "2026-11-14T08:54:59.634Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 62,
+      "logs": 63,
       "notes": 19,
       "last_log": {
-        "ts": "2026-11-12T12:21:23.587Z",
+        "ts": "2026-11-14T08:54:59.634Z",
         "agent": "claude-macbook",
-        "topic": "immersive-interface-pack",
-        "status": "question",
-        "summary": "Owner says no change. Log/options show II Server Compat was never enabled (absent from 21:16 reload); asked owner to enable it and to confirm shulker state.",
-        "ref": "work/immersive-interface-pack/HANDOFF.md"
+        "topic": "mc-instance-export",
+        "status": "done",
+        "summary": "Exported 26.3 instance mods/packs/shaders/pack order/keybinds to ~/Desktop/MC-26.3-export with tested apply.py merge script.",
+        "ref": "~/Desktop/MC-26.3-export"
       }
     },
     "grok-bot": {
@@ -330,6 +330,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "mc-instance-export": {
+      "updated": "2026-11-14T08:54:59.634Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "done",
+      "docs": {}
+    },
     "mc-motion": {
       "updated": "2026-11-02T09:44:08.597Z",
       "agents": [
@@ -504,6 +512,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-14T08:54:59.634Z",
+      "agent": "claude-macbook",
+      "topic": "mc-instance-export",
+      "status": "done",
+      "summary": "Exported 26.3 instance mods/packs/shaders/pack order/keybinds to ~/Desktop/MC-26.3-export with tested apply.py merge script.",
+      "ref": "~/Desktop/MC-26.3-export"
+    },
     {
       "ts": "2026-11-13T22:58:08.369Z",
       "agent": "skku-icampus-bot",
@@ -734,14 +750,6 @@
       "status": "done",
       "summary": "Morning brief 11/9: Mac offline, GitHub; 03:20 added bookclub wk11 lecture; overnight speech wk11-12+poster; Step1 11/11; no new exams.",
       "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-11-08T22:55:14.171Z",
-      "agent": "claude-macbook",
-      "topic": "mc-spotify",
-      "status": "question",
-      "summary": "Toast works, Options panel missing; Paper server kicks 'Invalid custom payload payload!' since 16 new mods. Diagnostic 1.0.1 installed, awaiting restart logs.",
-      "ref": "~/dev/mc-spotify"
     }
   ]
 }

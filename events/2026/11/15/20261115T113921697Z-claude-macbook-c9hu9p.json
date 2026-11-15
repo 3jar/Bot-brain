@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261115T113921697Z-claude-macbook-c9hu9p",
+  "ts": "2026-11-15T11:39:21.697Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "smooth-toasts-mod",
+    "status": "question",
+    "summary": "Prior-art research: no Fabric 26.3 mod restyles+centers all toasts; Fancy Toasts (advancements only) and Fancy Notify (26.2, corners) closest.",
+    "ref": "work/smooth-toasts-mod/RESEARCH.md"
+  }
+}

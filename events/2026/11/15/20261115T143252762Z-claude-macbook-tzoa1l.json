@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261115T143252762Z-claude-macbook-tzoa1l",
+  "ts": "2026-11-15T14:32:52.762Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "smooth-toasts-mod",
+    "status": "done",
+    "summary": "Built Smooth Toasts (top-center toast deck, vanilla look + shadow); verified in isolated client, installed jar; awaiting owner in-game check in full pack.",
+    "ref": "work/smooth-toasts-mod/HANDOFF.md"
+  }
+}

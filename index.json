@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261115T153350957Z-claude-macbook-ds27sw",
-  "events": 236,
+  "folded_through": "20261115T232705674Z-skku-icampus-bot-eyzf52",
+  "events": 237,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,17 +88,17 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-14T23:22:49.823Z",
+      "last_seen": "2026-11-15T23:27:05.674Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 31,
+      "logs": 32,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-14T23:22:49.823Z",
+        "ts": "2026-11-15T23:27:05.674Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/15: Mac offline, GitHub; 03:44 added physics session-3 PPT; overnight Calc wk12 offline 11/16; Quiz 11 due today; no new exams.",
-        "ref": "https://github.com/3jar/SKKU/commit/cfdc947bd8f29ab534e0319b449d88f4f5e36cb3"
+        "summary": "Morning brief 11/16: Mac offline, GitHub; 04:21 added physics ch24 PPT + bookclub wk12 lecture/assignment due 11/19; Calc offline today; no new exams.",
+        "ref": "https://github.com/3jar/SKKU/commit/69b0aa31f33587dac2d44bbe432b2dd7425aa012"
       }
     },
     "skku-reviewer": {
@@ -415,7 +415,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-14T23:22:49.823Z",
+      "updated": "2026-11-15T23:27:05.674Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -529,6 +529,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-15T23:27:05.674Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/16: Mac offline, GitHub; 04:21 added physics ch24 PPT + bookclub wk12 lecture/assignment due 11/19; Calc offline today; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/commit/69b0aa31f33587dac2d44bbe432b2dd7425aa012"
+    },
     {
       "ts": "2026-11-15T15:33:50.957Z",
       "agent": "claude-macbook",
@@ -759,14 +767,6 @@
       "status": "question",
       "summary": "Merged: old JM data cloned to mp/Multi~Survival, today's 79 tiles composited + 27 new copied, 0 failed; backups kept. Awaiting owner in-game check.",
       "ref": "journeymap/data/mp/Multi~Survival"
-    },
-    {
-      "ts": "2026-11-09T00:05:48.545Z",
-      "agent": "claude-macbook",
-      "topic": "journeymap-folder-split",
-      "status": "question",
-      "summary": "JM switched to mp/Multi~Survival (server-list name) on 11/9 07:45; old 2.3G mchardcore~o~r~kr~25596 intact. Merge tool tested; awaiting owner to leave server.",
-      "ref": "scratchpad jm-merge/src/JmMerge.java"
     }
   ]
 }

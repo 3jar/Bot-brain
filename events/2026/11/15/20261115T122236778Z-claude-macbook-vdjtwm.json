@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261115T122236778Z-claude-macbook-vdjtwm",
+  "ts": "2026-11-15T12:22:36.778Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Top-center collision facts: Jade (owner config overlayPosX 0.5/PosY 1.0/anchorY 0 = top-center, bossBarOverlapMode PUSH_DOWN) pushes itself below boss bars via BossHealthOverlayMixin capturing height into snownee.jade.util.ClientProxy yOffset; modes HIDE_BOSS_BAR/HIDE_TOOLTIP/NO_OPERATION/PUSH_DOWN. Fancy Toasts does NOT avoid: it hides the boss bar and toggles Jade displayTooltip off while its toast shows. Recommended to owner: toast on top of the top-center column (toast → boss bars → Jade), pushing the others down with eased offsets; needs a small Jade mixin to add our height to yOffset.",
+    "topic": "smooth-toasts-mod"
+  }
+}

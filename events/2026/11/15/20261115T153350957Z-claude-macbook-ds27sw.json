@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261115T153350957Z-claude-macbook-ds27sw",
+  "ts": "2026-11-15T15:33:50.957Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "smooth-toasts-mod",
+    "status": "done",
+    "summary": "mc-spotify 1.0.2: vanilla music toast now merged into Spotify TrackToast, so it joins the centered deck; verified isolated, installed.",
+    "ref": "work/smooth-toasts-mod/HANDOFF.md"
+  }
+}

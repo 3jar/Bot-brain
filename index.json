@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261115T122236778Z-claude-macbook-vdjtwm",
-  "events": 232,
+  "folded_through": "20261115T143252762Z-claude-macbook-tzoa1l",
+  "events": 234,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-15T12:22:36.778Z",
+      "last_seen": "2026-11-15T14:32:52.762Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 64,
+      "logs": 65,
       "notes": 20,
       "last_log": {
-        "ts": "2026-11-15T11:39:21.697Z",
+        "ts": "2026-11-15T14:32:52.762Z",
         "agent": "claude-macbook",
         "topic": "smooth-toasts-mod",
-        "status": "question",
-        "summary": "Prior-art research: no Fabric 26.3 mod restyles+centers all toasts; Fancy Toasts (advancements only) and Fancy Notify (26.2, corners) closest.",
-        "ref": "work/smooth-toasts-mod/RESEARCH.md"
+        "status": "done",
+        "summary": "Built Smooth Toasts (top-center toast deck, vanilla look + shadow); verified in isolated client, installed jar; awaiting owner in-game check in full pack.",
+        "ref": "work/smooth-toasts-mod/HANDOFF.md"
       }
     },
     "grok-bot": {
@@ -463,12 +463,16 @@
       "docs": {}
     },
     "smooth-toasts-mod": {
-      "updated": "2026-11-15T12:22:36.778Z",
+      "updated": "2026-11-15T14:32:52.762Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "question",
+      "last_status": "done",
       "docs": {
+        "HANDOFF.md": {
+          "updated": "2026-11-15T14:32:50.568Z",
+          "by": "claude-macbook"
+        },
         "RESEARCH.md": {
           "updated": "2026-11-15T11:39:19.820Z",
           "by": "claude-macbook"
@@ -525,6 +529,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-15T14:32:52.762Z",
+      "agent": "claude-macbook",
+      "topic": "smooth-toasts-mod",
+      "status": "done",
+      "summary": "Built Smooth Toasts (top-center toast deck, vanilla look + shadow); verified in isolated client, installed jar; awaiting owner in-game check in full pack.",
+      "ref": "work/smooth-toasts-mod/HANDOFF.md"
+    },
     {
       "ts": "2026-11-15T11:39:21.697Z",
       "agent": "claude-macbook",
@@ -755,14 +767,6 @@
       "status": "question",
       "summary": "Coords HUD hid itself: showDebugScreen() true when any F3 entry alwaysOn (Sodium Extra FPS). Now checks debugEntries.isOverlayVisible(); 1.0.1 installed, awaiting restart test.",
       "ref": "Fabulously Optimized (2)/coordshud-mod/src/main/java/com/jar3/coordshud/mixin/HudMixin.java"
-    },
-    {
-      "ts": "2026-11-08T23:32:11.421Z",
-      "agent": "claude-macbook",
-      "topic": "immersiveui-config",
-      "status": "done",
-      "summary": "ImmersiveUI 0.3.7 has no in-game config: shatterlib 0.7.0-beta.4 ModMenuImpl is empty, ConfigScreen never opened. Edit json5 + /shatterlib-client config reload all.",
-      "ref": "config/immersiveui-common.json5"
     }
   ]
 }

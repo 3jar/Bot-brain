@@ -1,15 +1,15 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261115T113921697Z-claude-macbook-c9hu9p",
-  "events": 231,
+  "folded_through": "20261115T122236778Z-claude-macbook-vdjtwm",
+  "events": 232,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-15T11:39:21.697Z",
+      "last_seen": "2026-11-15T12:22:36.778Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
       "logs": 64,
-      "notes": 19,
+      "notes": 20,
       "last_log": {
         "ts": "2026-11-15T11:39:21.697Z",
         "agent": "claude-macbook",
@@ -463,7 +463,7 @@
       "docs": {}
     },
     "smooth-toasts-mod": {
-      "updated": "2026-11-15T11:39:21.697Z",
+      "updated": "2026-11-15T12:22:36.778Z",
       "agents": [
         "claude-macbook"
       ],

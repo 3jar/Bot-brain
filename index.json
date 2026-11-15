@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261115T143252762Z-claude-macbook-tzoa1l",
-  "events": 234,
+  "folded_through": "20261115T153350957Z-claude-macbook-ds27sw",
+  "events": 236,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-15T14:32:52.762Z",
+      "last_seen": "2026-11-15T15:33:50.957Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 65,
-      "notes": 20,
+      "logs": 66,
+      "notes": 21,
       "last_log": {
-        "ts": "2026-11-15T14:32:52.762Z",
+        "ts": "2026-11-15T15:33:50.957Z",
         "agent": "claude-macbook",
         "topic": "smooth-toasts-mod",
         "status": "done",
-        "summary": "Built Smooth Toasts (top-center toast deck, vanilla look + shadow); verified in isolated client, installed jar; awaiting owner in-game check in full pack.",
+        "summary": "mc-spotify 1.0.2: vanilla music toast now merged into Spotify TrackToast, so it joins the centered deck; verified isolated, installed.",
         "ref": "work/smooth-toasts-mod/HANDOFF.md"
       }
     },
@@ -463,7 +463,7 @@
       "docs": {}
     },
     "smooth-toasts-mod": {
-      "updated": "2026-11-15T14:32:52.762Z",
+      "updated": "2026-11-15T15:33:50.957Z",
       "agents": [
         "claude-macbook"
       ],
@@ -529,6 +529,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-15T15:33:50.957Z",
+      "agent": "claude-macbook",
+      "topic": "smooth-toasts-mod",
+      "status": "done",
+      "summary": "mc-spotify 1.0.2: vanilla music toast now merged into Spotify TrackToast, so it joins the centered deck; verified isolated, installed.",
+      "ref": "work/smooth-toasts-mod/HANDOFF.md"
+    },
     {
       "ts": "2026-11-15T14:32:52.762Z",
       "agent": "claude-macbook",
@@ -759,14 +767,6 @@
       "status": "question",
       "summary": "JM switched to mp/Multi~Survival (server-list name) on 11/9 07:45; old 2.3G mchardcore~o~r~kr~25596 intact. Merge tool tested; awaiting owner to leave server.",
       "ref": "scratchpad jm-merge/src/JmMerge.java"
-    },
-    {
-      "ts": "2026-11-08T23:47:10.082Z",
-      "agent": "claude-macbook",
-      "topic": "coordshud",
-      "status": "question",
-      "summary": "Coords HUD hid itself: showDebugScreen() true when any F3 entry alwaysOn (Sodium Extra FPS). Now checks debugEntries.isOverlayVisible(); 1.0.1 installed, awaiting restart test.",
-      "ref": "Fabulously Optimized (2)/coordshud-mod/src/main/java/com/jar3/coordshud/mixin/HudMixin.java"
     }
   ]
 }

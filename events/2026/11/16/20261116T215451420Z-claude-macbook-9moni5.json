@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261116T215451420Z-claude-macbook-9moni5",
+  "ts": "2026-11-16T21:54:51.420Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "memento-title-screen",
+    "status": "question",
+    "summary": "Memento phase 1 built and installed (cinematic title + DepthFlow parallax), verified in isolated client only; awaiting owner check in full pack.",
+    "ref": "work/memento-title-screen/HANDOFF.md"
+  }
+}

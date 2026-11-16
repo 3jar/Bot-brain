@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261116T220836567Z-claude-macbook-uwvbhu",
+  "ts": "2026-11-16T22:08:36.567Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "2026-11-17: owner confirmed phase 1 works in the real pack (background shows, likes layout). Added since: shot behind sub-screens (ScreenPanoramaMixin on Screen.extractPanorama + nextStratum before blur), single highlight (mouse moves focus; entries highlight on focus only), sliding SelectionBar, selection band, logo halo/shadow/drop. Installed jar = phase1 HEAD 62f27f9. Owner wants: later live shader motion (noted in spec), then restyle other screens next. Harness window opens larger than --width/--height (macOS restores size); the real cursor over the window moves focus in harness shots.",
+    "topic": "memento-title-screen"
+  }
+}

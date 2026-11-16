@@ -1,21 +1,28 @@
-# memento-title-screen handoff — 2026-11-17
+# memento-title-screen handoff — 2026-11-17 (phase 1 built, awaiting owner in-game check)
 
-Goal: Fabric 26.3 client mod "Memento". On world exit, shoot a good moment (third-person, Iris shaders temporarily on), save color+disparity. Title screen = left cinematic layout + DepthFlow parallax background + Continue.
+Goal: Fabric 26.3 client mod "Memento". Phase 1 = cinematic left-aligned title screen over depth-parallax shots + Continue. Phase 2 = exit shoot (Iris on, third person). Phase 3 = moment algorithm.
 
 ## State
-- Repo ~/dev/memento (local git, main). Commits: spec 0743412, spec amendments 7cc69a6, phase 1 plan f2b5cbd.
-- Spec: docs/superpowers/specs/2026-11-17-memento-design.md (owner approved).
-- Plan: docs/superpowers/plans/2026-11-17-memento-phase1.md (12 tasks, full code). No code written yet.
-- Waiting: owner picks execution mode (subagent-driven vs inline).
+- Repo ~/dev/memento (local git, no remote). Branch `phase1` (HEAD 359ccc2), not merged to main. Spec docs/superpowers/specs/2026-11-17-memento-design.md, plan docs/superpowers/plans/2026-11-17-memento-phase1.md (see "Execution notes" at the end for every deviation).
+- Build: `./build.sh` (plain javac, 9 main-based test suites pass). Jar build/libs/memento-0.1.0+26.3.jar.
+- INSTALLED in profile "Fabulously Optimized (2)": mods/memento-0.1.0+26.3.jar (sha256 568c0a61…) + memento/ with 2 placeholder shots (Cherry Blossom panorama faces + synthetic depth, worldId "New World"). Not yet launched in the real pack.
 
-## Key verified 26.3 facts (details in plan "API facts")
-- Screens open via minecraft.gui.setScreen (Gui), not Minecraft.setScreen.
-- GUI renderer accepts custom GuiElementRenderState via GuiGraphicsExtractor.guiRenderState (private, accessor). TextureSetup.doubleTexture + BindGroupLayouts.SAMPLER0_SAMPLER1 → two-sampler custom pipeline.
-- Params via vertex data: camera offset packed 16-bit/axis in vertex color, fade in vertex z.
-- NativeImage can't read 16-bit PNG → depth stored as 8-bit disparity (255 near).
-- Mod Menu / Main Menu Credits / Reimagined Intro hook TitleScreen.init/extractRenderState by mixin; our subclass overrides without super, so they are bypassed.
-- Shader compile check: ~/dev/mc-shader-harness/run.sh (shaderc like renderpearl).
-- Isolated client: harness/run.sh in plan launches KnotClient directly from Modrinth meta (classpath via tools/classpath.py), -Dmemento.harness=1 makes title screen screenshot + quit.
+## Verified (isolated client: vanilla 26.3 + Fabric API + Memento, `harness/run.sh`)
+- Custom two-sampler GUI pipeline (DepthFlow) draws; near band shifts 16 px vs 2 px far between frames; gallery crossfade + caption; layout, footer, Continue subtitle, focus bar.
+- Both title-screen paths are swapped: explicit TitleScreen and setScreen(null) → internal `new TitleScreen()`.
+
+## Not verified (needs owner launch in the real pack)
+- Reimagined Intro flow: intro plays (hook on TitleScreen.init HEAD, reached via our super.init()), then onIntroFinished → TitleScreen(true) → cinematic screen with fade.
+- Mods entry (Mod Menu by reflection), Main Menu Credits text gone, EaseGUI double animation, Blur, Controlify navigation, Continue → "New World".
+
+## Gotchas
+- With RRLS the first title screen is created inside Gui.setScreen(null) during Minecraft.<init>; a HEAD-only swap misses it.
+- Launch harness clients with cwd = game dir (log4j + several mods write cwd-relative logs/ and config/).
+- `harness/run-pack.sh` (clones of pack mods) is NOT a usable gate: never leaves Reimagined Intro's IntroScreen (frames not rendered while the window is covered), EuphoriaPatcher overwrites the clipboard with a download link, window opens full-screen size. Do not rerun as is.
+- A built-in safety check blocks `rm` with relative globs after `cd`; harness scripts delete nothing.
 
 ## Next step
-Execute plan Task 1..12. Task 7 is the risk checkpoint (custom pipeline renders in real client); stop and report if it fails.
+Owner launches the pack and runs the Task 12 checklist. Then: read `logs/latest.log` (grep -iE "memento|mixin apply failed|InvalidInjection"), fix reports, merge `phase1`, write the phase 2 plan (exit shoot).
+
+## Leftovers the owner may delete
+~/dev/memento/harness/run (small) and ~/dev/memento/harness/run-pack (~320 MB of APFS-cloned jars).

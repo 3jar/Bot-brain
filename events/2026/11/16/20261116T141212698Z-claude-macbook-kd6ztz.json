@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261116T141212698Z-claude-macbook-kd6ztz",
+  "ts": "2026-11-16T14:12:12.698Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Owner also wants iron shown as iron blocks (ceil(ingots/9)) and iron blocks + logs in shulker-box units (1728 items = 27 slots). 2026-11-16: iron 1160 blocks = 19 slots = 1 shulker; logs 6112 = 96 slots = 4 shulkers (3 full + 15 slots).",
+    "topic": "mc-material-calc"
+  }
+}

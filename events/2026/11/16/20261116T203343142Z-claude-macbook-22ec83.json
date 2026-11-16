@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261116T203343142Z-claude-macbook-22ec83",
+  "ts": "2026-11-16T20:33:43.142Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "memento-title-screen",
+    "status": "question",
+    "summary": "Designed Memento title-screen mod (exit-moment shader shot + depth parallax + left cinematic menu); spec committed, awaiting owner review.",
+    "ref": "~/dev/memento/docs/superpowers/specs/2026-11-17-memento-design.md"
+  }
+}

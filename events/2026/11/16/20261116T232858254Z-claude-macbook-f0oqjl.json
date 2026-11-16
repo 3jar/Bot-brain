@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261116T232858254Z-claude-macbook-f0oqjl",
+  "ts": "2026-11-16T23:28:58.254Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "2026-11-17 phase 2 (exit shoot) built on branch phase2 (HEAD 32fb159), verified in isolated client incl. Sodium+Iris+Complementary: pause disconnect -> ShootingScreen -> portrait camera -> base depth+color -> Iris on -> shaded color -> save -> disconnect -> Iris off on title. NOT installed (owner's game was running). Gotchas: 26.3 is reverse-Z (depth cleared to 0, near=1); render3dHud clears depth before the hand -> cancel it during the shoot; 26.3 GL backend bug: depth copyTextureToBuffer sets readFbo glReadBuffer(GL_NONE) and never restores -> next color copy GL_INVALID_OPERATION (fixed by GlReadBufferFixMixin, targets package-private GlCommandEncoder by name); Util.getMillis is time since start, so 'now - 60000' can be negative (broke entrance sentinel). Harness: HARNESS_MODE=shoot (copies 'New World', auto-skips backup/confirm prompts), HARNESS_IRIS=1. Shader compile ~8 s -> default maxShootSeconds 25.",
+    "topic": "memento-title-screen"
+  }
+}

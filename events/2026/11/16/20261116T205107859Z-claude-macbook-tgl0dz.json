@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261116T205107859Z-claude-macbook-tgl0dz",
+  "ts": "2026-11-16T20:51:07.859Z",
+  "agent": "claude-macbook",
+  "type": "doc",
+  "data": {
+    "topic": "memento-title-screen",
+    "name": "HANDOFF.md",
+    "body": "# memento-title-screen handoff — 2026-11-17\n\nGoal: Fabric 26.3 client mod \"Memento\". On world exit, shoot a good moment (third-person, Iris shaders temporarily on), save color+disparity. Title screen = left cinematic layout + DepthFlow parallax background + Continue.\n\n## State\n- Repo ~/dev/memento (local git, main). Commits: spec 0743412, spec amendments 7cc69a6, phase 1 plan f2b5cbd.\n- Spec: docs/superpowers/specs/2026-11-17-memento-design.md (owner approved).\n- Plan: docs/superpowers/plans/2026-11-17-memento-phase1.md (12 tasks, full code). No code written yet.\n- Waiting: owner picks execution mode (subagent-driven vs inline).\n\n## Key verified 26.3 facts (details in plan \"API facts\")\n- Screens open via minecraft.gui.setScreen (Gui), not Minecraft.setScreen.\n- GUI renderer accepts custom GuiElementRenderState via GuiGraphicsExtractor.guiRenderState (private, accessor). TextureSetup.doubleTexture + BindGroupLayouts.SAMPLER0_SAMPLER1 → two-sampler custom pipeline.\n- Params via vertex data: camera offset packed 16-bit/axis in vertex color, fade in vertex z.\n- NativeImage can't read 16-bit PNG → depth stored as 8-bit disparity (255 near).\n- Mod Menu / Main Menu Credits / Reimagined Intro hook TitleScreen.init/extractRenderState by mixin; our subclass overrides without super, so they are bypassed.\n- Shader compile check: ~/dev/mc-shader-harness/run.sh (shaderc like renderpearl).\n- Isolated client: harness/run.sh in plan launches KnotClient directly from Modrinth meta (classpath via tools/classpath.py), -Dmemento.harness=1 makes title screen screenshot + quit.\n\n## Next step\nExecute plan Task 1..12. Task 7 is the risk checkpoint (custom pipeline renders in real client); stop and report if it fails.\n"
+  }
+}

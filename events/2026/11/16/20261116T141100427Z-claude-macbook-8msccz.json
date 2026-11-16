@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261116T141100427Z-claude-macbook-8msccz",
+  "ts": "2026-11-16T14:11:00.427Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-material-calc",
+    "status": "done",
+    "summary": "Converted 440-furnace material list to raw: iron 10437, redstone 577, cobble 3729, glass 1134, logs 6112; saved standing workflow note."
+  }
+}

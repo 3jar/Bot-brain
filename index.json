@@ -1,15 +1,15 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261117T194249420Z-claude-macbook-mcqkv0",
-  "events": 251,
+  "folded_through": "20261117T195111361Z-claude-macbook-w86h49",
+  "events": 252,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-17T19:42:49.420Z",
+      "last_seen": "2026-11-17T19:51:11.361Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
       "logs": 72,
-      "notes": 25,
+      "notes": 26,
       "last_log": {
         "ts": "2026-11-17T19:42:49.420Z",
         "agent": "claude-macbook",
@@ -403,6 +403,14 @@
         "claude-macbook"
       ],
       "last_status": "question",
+      "docs": {}
+    },
+    "memento": {
+      "updated": "2026-11-17T19:51:11.361Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": null,
       "docs": {}
     },
     "memento-title-screen": {

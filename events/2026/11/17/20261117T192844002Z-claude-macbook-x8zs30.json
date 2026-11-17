@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261117T192844002Z-claude-macbook-x8zs30",
+  "ts": "2026-11-17T19:28:44.002Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-load-perf",
+    "status": "question",
+    "summary": "Log analysis: startup ~44s, each reload ~25s; server pack causes 2 reloads per visit; Rechiseled doubled atlas; AirPods OpenAL 7-min hang."
+  }
+}

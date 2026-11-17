@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261117T195219486Z-claude-macbook-xc8xon",
+  "ts": "2026-11-17T19:52:19.486Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-load-perf",
+    "status": "done",
+    "summary": "Punchy attack path: HEAD/RETURN flag-only hooks, no packet gating; visual swing throttled to 5.71 ticks (~286ms) via AttackStateMachine, explains late-feeling hits."
+  }
+}

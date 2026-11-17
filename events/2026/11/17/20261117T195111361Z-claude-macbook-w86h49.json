@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261117T195111361Z-claude-macbook-w86h49",
+  "ts": "2026-11-17T19:51:11.361Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Time-sweep spike (branch time-sweep-spike, uncommitted, config motionSweep=false by default): owner wants the title background to be a frozen moment that \"breathes\" +-1 s around itself (FA mobs, shader waving), baked at exit, ping-pong played. Spike WORKS in the harness (Iris+Complementary defaults, EMF+FreshAnimations): 136 frames drawn in ~4 s, 61 kept, all hooks hit (entity age 3808, walk 3808, EMF 5984, Iris 136 = once/frame).\nHook points (26.3): EntityRenderer.createRenderState(Entity,F) RETURN -> ageInTicks += offset (new state per call). WalkAnimationState.position(F)F RETURN += speed*positionScale*offset (EMF limb_swing reads it too; guard render thread). EMF EMFMath.getAge/getTime RETURN += offset, getFrameTime HEAD -> step (EMF returns 1e-9 while paused); EMFLODHandler.isLODSkippingThisFrame -> false. Iris SystemTimeUniforms$Timer.getFrameTimeCounter/getLastFrameTime (wall-clock based, keeps running while paused, so waving alone proves nothing; check hook counter). @Pseudo + require=0 works; @Inject handlers with only the CallbackInfoReturnable arg are accepted.\nGotchas: Iris loadExternalShaderpack merges the option queue and REWRITES shaderpacks/<pack>.txt -> a photo-quality profile must suppress tryUpdateConfigPropertiesFile. Owner's pack .txt has WAVING_* false and SHADOW_QUALITY=-1 (no waving/shadows in real shots). Owner's FreshAnimations main pack is NOT enabled (only Fresh Textures + Fox Refreshed). PNG sweep frames = 193 MB/shot at 1470x898 -> needs smaller res + JPEG or similar. FA uses frame_time integrators gated by frame_counter, never is_paused.",
+    "topic": "memento"
+  }
+}

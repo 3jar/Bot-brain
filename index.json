@@ -1,21 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261117T192844002Z-claude-macbook-x8zs30",
-  "events": 249,
+  "folded_through": "20261117T194249420Z-claude-macbook-mcqkv0",
+  "events": 251,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-17T19:28:44.002Z",
+      "last_seen": "2026-11-17T19:42:49.420Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 71,
+      "logs": 72,
       "notes": 25,
       "last_log": {
-        "ts": "2026-11-17T19:28:44.002Z",
+        "ts": "2026-11-17T19:42:49.420Z",
         "agent": "claude-macbook",
         "topic": "mc-load-perf",
         "status": "question",
-        "summary": "Log analysis: startup ~44s, each reload ~25s; server pack causes 2 reloads per visit; Rechiseled doubled atlas; AirPods OpenAL 7-min hang."
+        "summary": "JFR startup profile: Punchy config loader ~12s on render thread (3 runs), fonts rebuilt twice via ImmediatelyFast; apply phase CPU only 20-35%.",
+        "ref": "work/mc-load-perf/RESULT.md"
       }
     },
     "grok-bot": {
@@ -338,12 +339,17 @@
       "docs": {}
     },
     "mc-load-perf": {
-      "updated": "2026-11-17T19:28:44.002Z",
+      "updated": "2026-11-17T19:42:49.420Z",
       "agents": [
         "claude-macbook"
       ],
       "last_status": "question",
-      "docs": {}
+      "docs": {
+        "RESULT.md": {
+          "updated": "2026-11-17T19:42:46.954Z",
+          "by": "claude-macbook"
+        }
+      }
     },
     "mc-material-calc": {
       "updated": "2026-11-16T14:12:12.698Z",
@@ -557,6 +563,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-17T19:42:49.420Z",
+      "agent": "claude-macbook",
+      "topic": "mc-load-perf",
+      "status": "question",
+      "summary": "JFR startup profile: Punchy config loader ~12s on render thread (3 runs), fonts rebuilt twice via ImmediatelyFast; apply phase CPU only 20-35%.",
+      "ref": "work/mc-load-perf/RESULT.md"
+    },
     {
       "ts": "2026-11-17T19:28:44.002Z",
       "agent": "claude-macbook",
@@ -786,14 +800,6 @@
       "status": "done",
       "summary": "Applied low-end ImmersiveVFX CUSTOM profile (shadows/reflections/rays/bloom/fog/mist off, particles REDUCED, clouds FLAT); fog fix confirmed in-game; backup kept.",
       "ref": "config/immersivevfx-client.toml.bak-lowend-20261111"
-    },
-    {
-      "ts": "2026-11-10T17:15:35.678Z",
-      "agent": "claude-macbook",
-      "topic": "immersivevfx-nofog",
-      "status": "question",
-      "summary": "ImmersiveVFX full-fog bug traced to NoFog Float.MAX_VALUE fog distances; set VFX fogRenderingMode OFF (backup kept); awaiting owner in-game check.",
-      "ref": "config/immersivevfx-client.toml"
     }
   ]
 }

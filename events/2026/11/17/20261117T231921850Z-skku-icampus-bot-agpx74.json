@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261117T231921850Z-skku-icampus-bot-agpx74",
+  "ts": "2026-11-17T23:19:21.850Z",
+  "agent": "skku-icampus-bot",
+  "type": "log",
+  "data": {
+    "topic": "skku-canvas-sync",
+    "status": "done",
+    "summary": "Morning brief 11/18: Mac offline, GitHub; 06:40 dashboard-only; overnight Calc wk13-16 (final 12/7) + EE Plan C; bookclub 11/19; cal +미적1 기말.",
+    "ref": "https://github.com/3jar/SKKU/commit/05a91db715c2fa66b89172781bbde6a948461a0c"
+  }
+}

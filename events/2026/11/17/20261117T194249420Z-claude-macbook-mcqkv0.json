@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261117T194249420Z-claude-macbook-mcqkv0",
+  "ts": "2026-11-17T19:42:49.420Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-load-perf",
+    "status": "question",
+    "summary": "JFR startup profile: Punchy config loader ~12s on render thread (3 runs), fonts rebuilt twice via ImmediatelyFast; apply phase CPU only 20-35%.",
+    "ref": "work/mc-load-perf/RESULT.md"
+  }
+}

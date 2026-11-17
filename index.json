@@ -1,22 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261116T232858254Z-claude-macbook-f0oqjl",
-  "events": 248,
+  "folded_through": "20261117T192844002Z-claude-macbook-x8zs30",
+  "events": 249,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-16T23:28:58.254Z",
+      "last_seen": "2026-11-17T19:28:44.002Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 70,
+      "logs": 71,
       "notes": 25,
       "last_log": {
-        "ts": "2026-11-16T21:54:51.420Z",
+        "ts": "2026-11-17T19:28:44.002Z",
         "agent": "claude-macbook",
-        "topic": "memento-title-screen",
+        "topic": "mc-load-perf",
         "status": "question",
-        "summary": "Memento phase 1 built and installed (cinematic title + DepthFlow parallax), verified in isolated client only; awaiting owner check in full pack.",
-        "ref": "work/memento-title-screen/HANDOFF.md"
+        "summary": "Log analysis: startup ~44s, each reload ~25s; server pack causes 2 reloads per visit; Rechiseled doubled atlas; AirPods OpenAL 7-min hang."
       }
     },
     "grok-bot": {
@@ -338,6 +337,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "mc-load-perf": {
+      "updated": "2026-11-17T19:28:44.002Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
+    },
     "mc-material-calc": {
       "updated": "2026-11-16T14:12:12.698Z",
       "agents": [
@@ -550,6 +557,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-17T19:28:44.002Z",
+      "agent": "claude-macbook",
+      "topic": "mc-load-perf",
+      "status": "question",
+      "summary": "Log analysis: startup ~44s, each reload ~25s; server pack causes 2 reloads per visit; Rechiseled doubled atlas; AirPods OpenAL 7-min hang."
+    },
     {
       "ts": "2026-11-16T21:54:51.420Z",
       "agent": "claude-macbook",
@@ -780,14 +794,6 @@
       "status": "question",
       "summary": "ImmersiveVFX full-fog bug traced to NoFog Float.MAX_VALUE fog distances; set VFX fogRenderingMode OFF (backup kept); awaiting owner in-game check.",
       "ref": "config/immersivevfx-client.toml"
-    },
-    {
-      "ts": "2026-11-09T23:06:39.345Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 11/10: Mac offline, GitHub; today's 07:58 dashboard-only; overnight added bookclub wk11 due 11/12; Step1 11/11; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261119T050718472Z-claude-macbook-he7c40",
-  "events": 263,
+  "folded_through": "20261119T055404752Z-claude-macbook-ve0gpu",
+  "events": 265,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-19T05:07:18.472Z",
+      "last_seen": "2026-11-19T05:54:04.752Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 76,
-      "notes": 32,
+      "logs": 77,
+      "notes": 33,
       "last_log": {
-        "ts": "2026-11-19T02:31:05.781Z",
+        "ts": "2026-11-19T05:54:04.752Z",
         "agent": "claude-macbook",
-        "topic": "mc-resourcepacks",
+        "topic": "memento",
         "status": "question",
-        "summary": "Just 3d armors failed: old GLSL core/entity shaders break 26.3 reload, wiping pack list; made shader-free copy, pack list restore queued for game exit."
+        "summary": "Selection revision done and installed (view-first auto scout, sunset/sunrise, activity map, F7 removed); owner to pick default framing from 3 samples."
       }
     },
     "grok-bot": {
@@ -413,7 +413,7 @@
       "docs": {}
     },
     "memento": {
-      "updated": "2026-11-19T05:07:18.472Z",
+      "updated": "2026-11-19T05:54:04.752Z",
       "agents": [
         "claude-macbook"
       ],
@@ -586,6 +586,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-19T05:54:04.752Z",
+      "agent": "claude-macbook",
+      "topic": "memento",
+      "status": "question",
+      "summary": "Selection revision done and installed (view-first auto scout, sunset/sunrise, activity map, F7 removed); owner to pick default framing from 3 samples."
+    },
     {
       "ts": "2026-11-19T02:31:05.781Z",
       "agent": "claude-macbook",
@@ -812,14 +819,6 @@
       "status": "done",
       "summary": "Added a 13-slide undecorated 16:9 HTML skeleton from outline 78c0c3c, with notes toggle and wireframe diagrams.",
       "ref": "2026-2/공학컴퓨터프로그래밍/산출물/TimeAble_발표_뼈대.html (207a696)"
-    },
-    {
-      "ts": "2026-11-11T17:21:17.849Z",
-      "agent": "skku-stem-tutor",
-      "topic": "gongcomp-timeable-presentation",
-      "status": "done",
-      "summary": "Updated outline login: Supabase Auth social for the app, separate GLS and iCampus logins; removed NAVER WORKS SSO.",
-      "ref": "2026-2/공학컴퓨터프로그래밍/산출물/TimeAble_발표_개요서_박상훈파트.md (78c0c3c)"
     }
   ]
 }

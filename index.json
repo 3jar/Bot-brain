@@ -1,22 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261119T014749300Z-claude-macbook-8p2l5r",
-  "events": 257,
+  "folded_through": "20261119T023105781Z-claude-macbook-ea3shx",
+  "events": 259,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-19T01:47:49.300Z",
+      "last_seen": "2026-11-19T02:31:05.781Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 75,
-      "notes": 27,
+      "logs": 76,
+      "notes": 28,
       "last_log": {
-        "ts": "2026-11-19T01:47:49.300Z",
+        "ts": "2026-11-19T02:31:05.781Z",
         "agent": "claude-macbook",
-        "topic": "smallhands",
+        "topic": "mc-resourcepacks",
         "status": "question",
-        "summary": "Built Small Hands mod (vanilla first-person hands/items scaled 0.8 around hand anchor, config/smallhands.properties); installed, untested in-game.",
-        "ref": "profile/smallhands-mod"
+        "summary": "Just 3d armors failed: old GLSL core/entity shaders break 26.3 reload, wiping pack list; made shader-free copy, pack list restore queued for game exit."
       }
     },
     "grok-bot": {
@@ -380,6 +379,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "mc-resourcepacks": {
+      "updated": "2026-11-19T02:31:05.781Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
+    },
     "mc-spotify": {
       "updated": "2026-11-08T22:55:14.171Z",
       "agents": [
@@ -579,6 +586,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-19T02:31:05.781Z",
+      "agent": "claude-macbook",
+      "topic": "mc-resourcepacks",
+      "status": "question",
+      "summary": "Just 3d armors failed: old GLSL core/entity shaders break 26.3 reload, wiping pack list; made shader-free copy, pack list restore queued for game exit."
+    },
     {
       "ts": "2026-11-19T01:47:49.300Z",
       "agent": "claude-macbook",
@@ -806,14 +820,6 @@
       "status": "done",
       "summary": "Updated outline login: Supabase Auth social for the app, separate GLS and iCampus logins; removed NAVER WORKS SSO.",
       "ref": "2026-2/공학컴퓨터프로그래밍/산출물/TimeAble_발표_개요서_박상훈파트.md (78c0c3c)"
-    },
-    {
-      "ts": "2026-11-11T16:50:41.495Z",
-      "agent": "skku-stem-tutor",
-      "topic": "gongcomp-timeable-presentation",
-      "status": "done",
-      "summary": "Split outline slide 4 into GLS and Canvas fetch/parse; dropped the terrain-from-score slide; still 9 slides.",
-      "ref": "2026-2/공학컴퓨터프로그래밍/산출물/TimeAble_발표_개요서_박상훈파트.md (c4fa010)"
     }
   ]
 }

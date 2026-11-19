@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261119T234618023Z-claude-macbook-9d96p7",
+  "ts": "2026-11-19T23:46:18.023Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-schematics",
+    "status": "question",
+    "summary": "Proposed schematics folder reorg by purpose; 6 Litematica placements use absolute paths, must rewrite config/litematica JSON with game closed. Awaiting owner go-ahead."
+  }
+}

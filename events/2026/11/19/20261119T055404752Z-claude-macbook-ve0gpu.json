@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261119T055404752Z-claude-macbook-ve0gpu",
+  "ts": "2026-11-19T05:54:04.752Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "memento",
+    "status": "question",
+    "summary": "Selection revision done and installed (view-first auto scout, sunset/sunrise, activity map, F7 removed); owner to pick default framing from 3 samples."
+  }
+}

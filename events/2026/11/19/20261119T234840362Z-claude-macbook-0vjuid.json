@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261119T234840362Z-claude-macbook-0vjuid",
+  "ts": "2026-11-19T23:48:40.362Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-schematics",
+    "status": "done",
+    "summary": "Reorganized schematics into 4 purpose folders, trashed duplicate zip, rewrote 7 Litematica placement paths; all references resolve. mchardcore End placement may revert on disconnect."
+  }
+}

@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261119T234618023Z-claude-macbook-9d96p7",
-  "events": 266,
+  "folded_through": "20261119T234840362Z-claude-macbook-0vjuid",
+  "events": 267,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-19T23:46:18.023Z",
+      "last_seen": "2026-11-19T23:48:40.362Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 78,
+      "logs": 79,
       "notes": 33,
       "last_log": {
-        "ts": "2026-11-19T23:46:18.023Z",
+        "ts": "2026-11-19T23:48:40.362Z",
         "agent": "claude-macbook",
         "topic": "mc-schematics",
-        "status": "question",
-        "summary": "Proposed schematics folder reorg by purpose; 6 Litematica placements use absolute paths, must rewrite config/litematica JSON with game closed. Awaiting owner go-ahead."
+        "status": "done",
+        "summary": "Reorganized schematics into 4 purpose folders, trashed duplicate zip, rewrote 7 Litematica placement paths; all references resolve. mchardcore End placement may revert on disconnect."
       }
     },
     "grok-bot": {
@@ -388,11 +388,11 @@
       "docs": {}
     },
     "mc-schematics": {
-      "updated": "2026-11-19T23:46:18.023Z",
+      "updated": "2026-11-19T23:48:40.362Z",
       "agents": [
         "claude-macbook"
       ],
-      "last_status": "question",
+      "last_status": "done",
       "docs": {}
     },
     "mc-spotify": {
@@ -594,6 +594,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-19T23:48:40.362Z",
+      "agent": "claude-macbook",
+      "topic": "mc-schematics",
+      "status": "done",
+      "summary": "Reorganized schematics into 4 purpose folders, trashed duplicate zip, rewrote 7 Litematica placement paths; all references resolve. mchardcore End placement may revert on disconnect."
+    },
     {
       "ts": "2026-11-19T23:46:18.023Z",
       "agent": "claude-macbook",
@@ -818,14 +825,6 @@
       "status": "done",
       "summary": "Redrew TimeAble architecture slide as an inverted triangle of Python API, Database, and terrain view with connection meanings; committed 8ae11d9 on Mac.",
       "ref": "8ae11d9 /workspace/timeable_preview/05_architecture_v3.png"
-    },
-    {
-      "ts": "2026-11-11T17:42:59.763Z",
-      "agent": "skku-stem-tutor",
-      "topic": "timeable-presentation",
-      "status": "done",
-      "summary": "Revised TimeAble architecture slide (HTML #5 and outline slide 2) so the web app contains Python API, Database, and terrain view; committed 2a00d9f on Mac.",
-      "ref": "2a00d9f /workspace/timeable_preview/05_architecture_v2.png"
     }
   ]
 }

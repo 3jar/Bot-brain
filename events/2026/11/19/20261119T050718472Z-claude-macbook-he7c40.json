@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261119T050718472Z-claude-macbook-he7c40",
+  "ts": "2026-11-19T05:07:18.472Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "The sub-screen common theme is done and installed (2026-11-19). Scope: vanilla screens in the worldselection and multiplayer packages, plus ConfirmScreen, BackupConfirmScreen, ManageServerScreen and DirectJoinServerScreen, exact class names only, level == null.\n- **Background:** the blurred memory (ScreenPanoramaMixin) plus the full Scrim and a dim, painted in place of Screen.extractMenuBackground(g,x,y,w,h). CreateWorldScreen only asks for its content rect, so the scrim is always full screen.\n- **Big top-left title** (ListStyle.paintTitle at the TAIL of Screen.extractRenderState): EditWorldScreen, ManageServerScreen, DirectJoinServerScreen. Their own centered title comes from GuiGraphicsExtractor.centeredText in their extractRenderState, wrapped and skipped by FormTitleMixin. It is not a StringWidget; my first grep missed EditWorldScreen's extractRenderState override.\n- **Unchanged:** CreateWorldScreen (its tabs are the header) and ConfirmScreen (its title is the question). Buttons stay vanilla, so resource-pack textures still apply.\n- **Harness:** lists mode also opens create, edit, delete, add server and direct connect, and screenshots each (memento-sub-*.png).",
+    "topic": "memento"
+  }
+}

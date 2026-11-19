@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261119T023100627Z-claude-macbook-l4uree",
+  "ts": "2026-11-19T02:31:00.627Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "26.3 (Vulkan/SPIR-V shaders, resource format 97.1): any pack overriding assets/minecraft/shaders/core/*.fsh|vsh with old GLSL (#version <140, moj_import) fails the reload and vanilla wipes resourcePacks in options.txt. Fix = strip shaders/ from the pack. Just 3d armors 1.4 → patched copy \"Just 3d armors 1.4 (26.3).zip\".",
+    "topic": "mc-resourcepacks"
+  }
+}

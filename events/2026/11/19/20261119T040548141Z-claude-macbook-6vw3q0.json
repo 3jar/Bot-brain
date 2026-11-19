@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261119T040548141Z-claude-macbook-6vw3q0",
+  "ts": "2026-11-19T04:05:48.141Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "2026-11-19: M4 and M5 done and installed in the owner's pack (branch time-sweep-spike, still uncommitted).\n- **M4 photo packs:** the darkroom session temporarily adds available-but-disabled Fresh Animations packs (and config photoResourcePacks) just below the player's file/ packs via PackRepository.setSelected plus reloadResourcePacks, then restores. options.txt is never touched. Chosen over a namespace \"FA wrapper\": FA jems reference no textures and FA overwrites vanilla textures, so hiding it would leave eyeless mobs.\n- **Ghosting fix:** per-frame disparity maps (NN.d.png, half resolution) captured during the sweep. Iris-on depth readback works. A single depth map made the spot an entity left parallax as near, which showed as a ghost.\n- **Sweep plan:** now ±0.5 s at 1/30 s.\n- **Actors:** those blocking the camera→player line, or within 2.5 blocks of the lens, are left out.\n- **M5 MomentScout:** every 2 s; raycasts only after the player has stood still for 3 s. Recipes: vista, golden_hour (camera faces the sun), portrait (max 0.85), event (advancement toast). Automatic scores are capped at 0.95, manual F7 = 1. Cooldown 180 s overall and 10 min per recipe. Queue and develop order sort by score.\n- **Harness gotcha:** never press a confirm button twice. A double BackupConfirm press opened the world twice (\"Lock is no longer valid\").\n- **Not done:** the home recipe (needs build tracking), multiplayer, commit.",
+    "topic": "memento"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261119T055402723Z-claude-macbook-8a1gfj",
+  "ts": "2026-11-19T05:54:02.723Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Selection revision (2026-11-19), built and installed in the owner's pack (mods/memento-0.1.0+26.3.jar, 14:53). Uncommitted on branch time-sweep-spike.\n- MomentScout: after 3 s standing still outdoors, casts 16 azimuths x 3 elevations (-6/0/+10 deg) rays, reach 160, 12 rays per tick.\n- MomentScoring picks one of:\n  - panorama: best 90 deg window, 0.45 depth + 0.25 open + 0.2 elevation + 0.1 relief; +40% for activity in view, +10% if the player faces it.\n  - sunset: yaw 90, time 12500.\n  - sunrise: yaw 270, time 23600.\n- ActivityMap: block place/break per 16x16 column, 7-day half-life, saved to memento/activity/<kind>-<id>.json. No home detection.\n- Dedupe: within 48 blocks and 45 deg, the higher score wins.\n- F7 manual record removed; every background is automatic.\n- Darkroom: scenic moments (cameraFov > 0) turn the player to face cameraYaw, back to the camera (pitch -6 at sun spots, +6 over views). Sun spots are developed at that time with clear weather.\n- OPEN: the owner has not picked a framing yet (SMALL / THIRD / SHOULDER). Default is MementoConfig.framing = \"third\". Harness darkroom mode records all three at worldTicks 190; remove that once the owner chooses.\n- Gotcha: framings recorded in the same millisecond collided on id; fixed with MomentRecorder.nextId().",
+    "topic": "memento"
+  }
+}

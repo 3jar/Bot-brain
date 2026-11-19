@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261119T023105781Z-claude-macbook-ea3shx",
+  "ts": "2026-11-19T02:31:05.781Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-resourcepacks",
+    "status": "question",
+    "summary": "Just 3d armors failed: old GLSL core/entity shaders break 26.3 reload, wiping pack list; made shader-free copy, pack list restore queued for game exit."
+  }
+}

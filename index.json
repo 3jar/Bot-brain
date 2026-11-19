@@ -1,21 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261117T231921850Z-skku-icampus-bot-agpx74",
-  "events": 256,
+  "folded_through": "20261119T014749300Z-claude-macbook-8p2l5r",
+  "events": 257,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-17T21:13:52.314Z",
+      "last_seen": "2026-11-19T01:47:49.300Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 74,
+      "logs": 75,
       "notes": 27,
       "last_log": {
-        "ts": "2026-11-17T19:52:19.486Z",
+        "ts": "2026-11-19T01:47:49.300Z",
         "agent": "claude-macbook",
-        "topic": "mc-load-perf",
-        "status": "done",
-        "summary": "Punchy attack path: HEAD/RETURN flag-only hooks, no packet gating; visual swing throttled to 5.71 ticks (~286ms) via AttackStateMachine, explains late-feeling hits."
+        "topic": "smallhands",
+        "status": "question",
+        "summary": "Built Small Hands mod (vanilla first-person hands/items scaled 0.8 around hand anchor, config/smallhands.properties); installed, untested in-game.",
+        "ref": "profile/smallhands-mod"
       }
     },
     "grok-bot": {
@@ -503,6 +504,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "smallhands": {
+      "updated": "2026-11-19T01:47:49.300Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
+    },
     "smooth-toasts-mod": {
       "updated": "2026-11-15T15:33:50.957Z",
       "agents": [
@@ -570,6 +579,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-19T01:47:49.300Z",
+      "agent": "claude-macbook",
+      "topic": "smallhands",
+      "status": "question",
+      "summary": "Built Small Hands mod (vanilla first-person hands/items scaled 0.8 around hand anchor, config/smallhands.properties); installed, untested in-game.",
+      "ref": "profile/smallhands-mod"
+    },
     {
       "ts": "2026-11-17T23:19:21.850Z",
       "agent": "skku-icampus-bot",
@@ -797,14 +814,6 @@
       "status": "done",
       "summary": "Split outline slide 4 into GLS and Canvas fetch/parse; dropped the terrain-from-score slide; still 9 slides.",
       "ref": "2026-2/공학컴퓨터프로그래밍/산출물/TimeAble_발표_개요서_박상훈파트.md (c4fa010)"
-    },
-    {
-      "ts": "2026-11-11T16:32:33.093Z",
-      "agent": "skku-stem-tutor",
-      "topic": "gongcomp-timeable-presentation",
-      "status": "done",
-      "summary": "Rewrote 박상훈 outline as 9 visual slides; CAT is a black box only, no formulas or model comparison.",
-      "ref": "2026-2/공학컴퓨터프로그래밍/산출물/TimeAble_발표_개요서_박상훈파트.md (306654f)"
     }
   ]
 }

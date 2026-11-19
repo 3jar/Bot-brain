@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261119T045528422Z-claude-macbook-qukppb",
+  "ts": "2026-11-19T04:55:28.422Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "UI phase (2026-11-19): the world and server lists are restyled in place and installed. Owner choices: scope = these two lists, depth = common theme + core redesign, layout = memory background + left list.\n- **How:** mixins at TAIL of SelectWorldScreen/JoinMultiplayerScreen init and repositionElements.\n  - Hide the vanilla footer Buttons and the header StringWidget.\n  - Add TextAction mirrors (press -> vanilla button).\n  - Move the list to a left column (updateSizeAndPosition(w, h, x, y)); search box unbordered, top right.\n  - TitleBackground.focus(shot) shows the selected world's/server's newest shot, crossfading 0.6 s.\n  - Screen.extractBackground HEAD paints shot + scrim + 1.5x title for these screens.\n  - AbstractSelectionList list background, separators and selection are cancelled for these lists; getRowWidth = list width - 14.\n  - Entry extractContent is redrawn. Server entries keep vanilla extractContent running but translated off-screen, because it starts the ping and uploads the favicon.\n- **Gotchas:**\n  - AbstractSelectionList.Entry is protected: cast to ObjectSelectionList.Entry and use a string-targeted accessor.\n  - LevelSummary uses \"selectWorld.commands\"; \"selectWorld.cheats\" rendered as a raw key at runtime.\n  - Wrapping subtitles left a dangling \"·\", so ellipsize instead.\n- **Harness:** HARNESS_MODE=lists makes the worlds, servers and shots.\n- **Not done:** sub-screen common theme (create world etc. only have the blurred shot); owner check with Cherished Worlds, Controlify, Immersive Interfaces.",
+    "topic": "memento"
+  }
+}

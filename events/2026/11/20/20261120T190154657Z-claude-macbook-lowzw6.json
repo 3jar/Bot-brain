@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261120T190154657Z-claude-macbook-lowzw6",
+  "ts": "2026-11-20T19:01:54.657Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-crash-rechiseled",
+    "status": "done",
+    "summary": "mchardcore crashes: Rechiseled block registry mismatch broke global-palette chunk decode, Polytone crashed on disconnect; disabled Rechiseled, needs in-game confirm after restart."
+  }
+}

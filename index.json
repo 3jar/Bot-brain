@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261120T173138027Z-claude-macbook-zgpe6t",
-  "events": 269,
+  "folded_through": "20261120T190154657Z-claude-macbook-lowzw6",
+  "events": 271,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-20T17:31:38.027Z",
+      "last_seen": "2026-11-20T19:01:54.657Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 81,
-      "notes": 33,
+      "logs": 82,
+      "notes": 34,
       "last_log": {
-        "ts": "2026-11-20T17:31:38.027Z",
+        "ts": "2026-11-20T19:01:54.657Z",
         "agent": "claude-macbook",
-        "topic": "mc-schematics",
+        "topic": "mc-crash-rechiseled",
         "status": "done",
-        "summary": "Owner unloaded a Litematica placement on mchardcore; recovered old origins from on-disk JSON (overworld -1284 69 -1436), backed up to scratchpad."
+        "summary": "mchardcore crashes: Rechiseled block registry mismatch broke global-palette chunk decode, Polytone crashed on disconnect; disabled Rechiseled, needs in-game confirm after restart."
       }
     },
     "grok-bot": {
@@ -329,6 +329,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "mc-crash-rechiseled": {
+      "updated": "2026-11-20T19:01:54.657Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "done",
+      "docs": {}
+    },
     "mc-fullbody-motion": {
       "updated": "2026-10-23T23:31:25.163Z",
       "agents": [
@@ -603,6 +611,13 @@
   },
   "recent": [
     {
+      "ts": "2026-11-20T19:01:54.657Z",
+      "agent": "claude-macbook",
+      "topic": "mc-crash-rechiseled",
+      "status": "done",
+      "summary": "mchardcore crashes: Rechiseled block registry mismatch broke global-palette chunk decode, Polytone crashed on disconnect; disabled Rechiseled, needs in-game confirm after restart."
+    },
+    {
       "ts": "2026-11-20T17:31:38.027Z",
       "agent": "claude-macbook",
       "topic": "mc-schematics",
@@ -823,14 +838,6 @@
       "status": "done",
       "summary": "Styled the TimeAble architecture slide with design.md ribbon-card chrome and official platform header colors; committed 091f80d on Mac, left design.md untracked.",
       "ref": "091f80d /workspace/timeable_preview/05_architecture_v6.png"
-    },
-    {
-      "ts": "2026-11-11T18:15:16.576Z",
-      "agent": "skku-stem-tutor",
-      "topic": "timeable-presentation",
-      "status": "done",
-      "summary": "Enlarged the TimeAble architecture terrain card with a dashed demo-image placeholder, moved vertical arrow labels beside the arrows, and committed 3e566cc on Mac.",
-      "ref": "3e566cc /workspace/timeable_preview/05_architecture_v5.png"
     }
   ]
 }

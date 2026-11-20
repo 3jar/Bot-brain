@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261120T171314662Z-claude-macbook-0zhnu9",
-  "events": 268,
+  "folded_through": "20261120T173138027Z-claude-macbook-zgpe6t",
+  "events": 269,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-20T17:13:14.662Z",
+      "last_seen": "2026-11-20T17:31:38.027Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 80,
+      "logs": 81,
       "notes": 33,
       "last_log": {
-        "ts": "2026-11-20T17:13:14.662Z",
+        "ts": "2026-11-20T17:31:38.027Z",
         "agent": "claude-macbook",
-        "topic": "mc-areascanner",
+        "topic": "mc-schematics",
         "status": "done",
-        "summary": "Explained AreaScanner 6.1.0 usage from jar inspection: Alt+] GUI, whitelists, Task tab corners, /scan commands; malilib present."
+        "summary": "Owner unloaded a Litematica placement on mchardcore; recovered old origins from on-disk JSON (overworld -1284 69 -1436), backed up to scratchpad."
       }
     },
     "grok-bot": {
@@ -396,7 +396,7 @@
       "docs": {}
     },
     "mc-schematics": {
-      "updated": "2026-11-19T23:48:40.362Z",
+      "updated": "2026-11-20T17:31:38.027Z",
       "agents": [
         "claude-macbook"
       ],
@@ -602,6 +602,13 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-20T17:31:38.027Z",
+      "agent": "claude-macbook",
+      "topic": "mc-schematics",
+      "status": "done",
+      "summary": "Owner unloaded a Litematica placement on mchardcore; recovered old origins from on-disk JSON (overworld -1284 69 -1436), backed up to scratchpad."
+    },
     {
       "ts": "2026-11-20T17:13:14.662Z",
       "agent": "claude-macbook",
@@ -824,14 +831,6 @@
       "status": "done",
       "summary": "Enlarged the TimeAble architecture terrain card with a dashed demo-image placeholder, moved vertical arrow labels beside the arrows, and committed 3e566cc on Mac.",
       "ref": "3e566cc /workspace/timeable_preview/05_architecture_v5.png"
-    },
-    {
-      "ts": "2026-11-11T18:04:36.602Z",
-      "agent": "skku-stem-tutor",
-      "topic": "timeable-presentation",
-      "status": "done",
-      "summary": "Moved Python API to the bottom of the architecture slide, top-left-aligned all card text, and restored Vercel/Render/Supabase corner tags; committed 38fd894 on Mac.",
-      "ref": "38fd894 /workspace/timeable_preview/05_architecture_v4.png"
     }
   ]
 }

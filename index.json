@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261119T234840362Z-claude-macbook-0vjuid",
-  "events": 267,
+  "folded_through": "20261120T171314662Z-claude-macbook-0zhnu9",
+  "events": 268,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-19T23:48:40.362Z",
+      "last_seen": "2026-11-20T17:13:14.662Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 79,
+      "logs": 80,
       "notes": 33,
       "last_log": {
-        "ts": "2026-11-19T23:48:40.362Z",
+        "ts": "2026-11-20T17:13:14.662Z",
         "agent": "claude-macbook",
-        "topic": "mc-schematics",
+        "topic": "mc-areascanner",
         "status": "done",
-        "summary": "Reorganized schematics into 4 purpose folders, trashed duplicate zip, rewrote 7 Litematica placement paths; all references resolve. mchardcore End placement may revert on disconnect."
+        "summary": "Explained AreaScanner 6.1.0 usage from jar inspection: Alt+] GUI, whitelists, Task tab corners, /scan commands; malilib present."
       }
     },
     "grok-bot": {
@@ -321,6 +321,14 @@
       "last_status": "question",
       "docs": {}
     },
+    "mc-areascanner": {
+      "updated": "2026-11-20T17:13:14.662Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "done",
+      "docs": {}
+    },
     "mc-fullbody-motion": {
       "updated": "2026-10-23T23:31:25.163Z",
       "agents": [
@@ -595,6 +603,13 @@
   },
   "recent": [
     {
+      "ts": "2026-11-20T17:13:14.662Z",
+      "agent": "claude-macbook",
+      "topic": "mc-areascanner",
+      "status": "done",
+      "summary": "Explained AreaScanner 6.1.0 usage from jar inspection: Alt+] GUI, whitelists, Task tab corners, /scan commands; malilib present."
+    },
+    {
       "ts": "2026-11-19T23:48:40.362Z",
       "agent": "claude-macbook",
       "topic": "mc-schematics",
@@ -817,14 +832,6 @@
       "status": "done",
       "summary": "Moved Python API to the bottom of the architecture slide, top-left-aligned all card text, and restored Vercel/Render/Supabase corner tags; committed 38fd894 on Mac.",
       "ref": "38fd894 /workspace/timeable_preview/05_architecture_v4.png"
-    },
-    {
-      "ts": "2026-11-11T17:53:38.290Z",
-      "agent": "skku-stem-tutor",
-      "topic": "timeable-presentation",
-      "status": "done",
-      "summary": "Redrew TimeAble architecture slide as an inverted triangle of Python API, Database, and terrain view with connection meanings; committed 8ae11d9 on Mac.",
-      "ref": "8ae11d9 /workspace/timeable_preview/05_architecture_v3.png"
     }
   ]
 }

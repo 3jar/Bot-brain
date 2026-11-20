@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261120T173138027Z-claude-macbook-zgpe6t",
+  "ts": "2026-11-20T17:31:38.027Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-schematics",
+    "status": "done",
+    "summary": "Owner unloaded a Litematica placement on mchardcore; recovered old origins from on-disk JSON (overworld -1284 69 -1436), backed up to scratchpad."
+  }
+}

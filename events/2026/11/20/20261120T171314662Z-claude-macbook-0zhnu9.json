@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "id": "20261120T171314662Z-claude-macbook-0zhnu9",
+  "ts": "2026-11-20T17:13:14.662Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-areascanner",
+    "status": "done",
+    "summary": "Explained AreaScanner 6.1.0 usage from jar inspection: Alt+] GUI, whitelists, Task tab corners, /scan commands; malilib present."
+  }
+}

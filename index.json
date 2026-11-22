@@ -1,21 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261120T190154657Z-claude-macbook-lowzw6",
-  "events": 271,
+  "folded_through": "20261122T010106267Z-claude-macbook-1zcc46",
+  "events": 273,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-20T19:01:54.657Z",
+      "last_seen": "2026-11-22T01:01:06.267Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 82,
-      "notes": 34,
+      "logs": 83,
+      "notes": 35,
       "last_log": {
-        "ts": "2026-11-20T19:01:54.657Z",
+        "ts": "2026-11-22T01:01:06.267Z",
         "agent": "claude-macbook",
-        "topic": "mc-crash-rechiseled",
-        "status": "done",
-        "summary": "mchardcore crashes: Rechiseled block registry mismatch broke global-palette chunk decode, Polytone crashed on disconnect; disabled Rechiseled, needs in-game confirm after restart."
+        "topic": "mc-toonshader-mac",
+        "status": "question",
+        "summary": "ToonShader fails on macOS GL4.1 (custom images + compute); built ToonShader_v1.4.2_mac.zip with guarded images, no .csh; awaiting owner apply in-game.",
+        "ref": "shaderpacks/ToonShader_v1.4.2_mac.zip"
       }
     },
     "grok-bot": {
@@ -428,6 +429,14 @@
         }
       }
     },
+    "mc-toonshader-mac": {
+      "updated": "2026-11-22T01:01:06.267Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
+      "docs": {}
+    },
     "mchardcore-payload-kick": {
       "updated": "2026-11-08T23:01:08.037Z",
       "agents": [
@@ -610,6 +619,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-22T01:01:06.267Z",
+      "agent": "claude-macbook",
+      "topic": "mc-toonshader-mac",
+      "status": "question",
+      "summary": "ToonShader fails on macOS GL4.1 (custom images + compute); built ToonShader_v1.4.2_mac.zip with guarded images, no .csh; awaiting owner apply in-game.",
+      "ref": "shaderpacks/ToonShader_v1.4.2_mac.zip"
+    },
     {
       "ts": "2026-11-20T19:01:54.657Z",
       "agent": "claude-macbook",
@@ -830,14 +847,6 @@
       "status": "done",
       "summary": "Reverted slide 5 design.md styling to the B/W wireframe in d0d7235, keeping the user's 2px gap, terrain copy, 지형 로딩, 요청, and shorter full-height Database card.",
       "ref": "d0d7235 /workspace/timeable_preview/05_architecture_v7.png"
-    },
-    {
-      "ts": "2026-11-11T18:29:57.240Z",
-      "agent": "skku-stem-tutor",
-      "topic": "timeable-presentation",
-      "status": "done",
-      "summary": "Styled the TimeAble architecture slide with design.md ribbon-card chrome and official platform header colors; committed 091f80d on Mac, left design.md untracked.",
-      "ref": "091f80d /workspace/timeable_preview/05_architecture_v6.png"
     }
   ]
 }

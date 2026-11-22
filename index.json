@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261122T010106267Z-claude-macbook-1zcc46",
-  "events": 273,
+  "folded_through": "20261122T011505465Z-claude-macbook-of78k8",
+  "events": 274,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-22T01:01:06.267Z",
+      "last_seen": "2026-11-22T01:15:05.465Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 83,
+      "logs": 84,
       "notes": 35,
       "last_log": {
-        "ts": "2026-11-22T01:01:06.267Z",
+        "ts": "2026-11-22T01:15:05.465Z",
         "agent": "claude-macbook",
         "topic": "mc-toonshader-mac",
         "status": "question",
-        "summary": "ToonShader fails on macOS GL4.1 (custom images + compute); built ToonShader_v1.4.2_mac.zip with guarded images, no .csh; awaiting owner apply in-game.",
+        "summary": "Mac pack loads (LOW, 49fps night). Near-dark/far-bright traced to 64-block shadow cutoff, cloud shadows, banded fog; sky shimmer source unconfirmed, owner to toggle.",
         "ref": "shaderpacks/ToonShader_v1.4.2_mac.zip"
       }
     },
@@ -430,7 +430,7 @@
       }
     },
     "mc-toonshader-mac": {
-      "updated": "2026-11-22T01:01:06.267Z",
+      "updated": "2026-11-22T01:15:05.465Z",
       "agents": [
         "claude-macbook"
       ],
@@ -619,6 +619,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-22T01:15:05.465Z",
+      "agent": "claude-macbook",
+      "topic": "mc-toonshader-mac",
+      "status": "question",
+      "summary": "Mac pack loads (LOW, 49fps night). Near-dark/far-bright traced to 64-block shadow cutoff, cloud shadows, banded fog; sky shimmer source unconfirmed, owner to toggle.",
+      "ref": "shaderpacks/ToonShader_v1.4.2_mac.zip"
+    },
     {
       "ts": "2026-11-22T01:01:06.267Z",
       "agent": "claude-macbook",
@@ -839,14 +847,6 @@
       "status": "done",
       "summary": "Morning brief 11/12: Mac offline, GitHub; 05:09 added speech debate contest notice+7 files; Step1 submitted; bookclub due today; no new exams.",
       "ref": "https://github.com/3jar/SKKU/actions"
-    },
-    {
-      "ts": "2026-11-11T18:34:00.307Z",
-      "agent": "skku-stem-tutor",
-      "topic": "timeable-presentation",
-      "status": "done",
-      "summary": "Reverted slide 5 design.md styling to the B/W wireframe in d0d7235, keeping the user's 2px gap, terrain copy, 지형 로딩, 요청, and shorter full-height Database card.",
-      "ref": "d0d7235 /workspace/timeable_preview/05_architecture_v7.png"
     }
   ]
 }

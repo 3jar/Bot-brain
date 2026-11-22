@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261122T055222396Z-claude-macbook-ib4110",
+  "ts": "2026-11-22T05:52:22.396Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Litematica 0.29.1 / MaLiLib 0.30.2 (26.3) + Iris 1.11.7: both IrisCompat.registerPipelines() run from the RenderPipelines <clinit> mixin before IrisCompat.register() sets isIrisLoaded, so assignPipeline is skipped -> Iris \"Missing program litematica:pipeline/legacy/translucent\" etc.; ghost blocks drawn with Iris-extended vertex data via vanilla pipeline = stretched dark garbage, overlays invisible. Fix: ~/dev/masa-iris-bridge (javac build.sh, test passes) re-calls register()+registerPipelines() at CLIENT_STARTED; jar installed in mods. Gotcha: running tests with MC jar on classpath from the profile cwd makes log4j write/roll profile logs/latest.log (build.sh now cds into build/). Gamma Utils: Iris screenBrightness = options.gamma (15.0 at 1500%); Toon mac pack v3 adds GAMMA_LIFT = clamp((sb-1)/4,0,1)*0.8 as light floor in lighting/gear/water.",
+    "topic": "mc-toonshader-mac"
+  }
+}

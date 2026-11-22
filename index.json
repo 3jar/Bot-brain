@@ -1,21 +1,21 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261122T093426637Z-claude-macbook-82m3rr",
-  "events": 285,
+  "folded_through": "20261122T093741858Z-claude-macbook-vdwvlb",
+  "events": 286,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-22T09:34:26.637Z",
+      "last_seen": "2026-11-22T09:37:41.858Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 89,
+      "logs": 90,
       "notes": 40,
       "last_log": {
-        "ts": "2026-11-22T09:34:26.637Z",
+        "ts": "2026-11-22T09:37:41.858Z",
         "agent": "claude-macbook",
         "topic": "mc-lantern-totem",
         "status": "done",
-        "summary": "Built Lantern Totem.zip: totem_of_undying uses Luminous Lanterns 3D lantern model + textures (GUI 2D icon); not enabled or tested in-game yet.",
+        "summary": "Added LambDynamicLights item light (luminance = lantern block) for totem_of_undying to Lantern Totem.zip; client-only, untested in-game.",
         "ref": "resourcepacks/Lantern Totem.zip"
       }
     },
@@ -355,7 +355,7 @@
       "docs": {}
     },
     "mc-lantern-totem": {
-      "updated": "2026-11-22T09:34:26.637Z",
+      "updated": "2026-11-22T09:37:41.858Z",
       "agents": [
         "claude-macbook"
       ],
@@ -641,6 +641,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-22T09:37:41.858Z",
+      "agent": "claude-macbook",
+      "topic": "mc-lantern-totem",
+      "status": "done",
+      "summary": "Added LambDynamicLights item light (luminance = lantern block) for totem_of_undying to Lantern Totem.zip; client-only, untested in-game.",
+      "ref": "resourcepacks/Lantern Totem.zip"
+    },
+    {
       "ts": "2026-11-22T09:34:26.637Z",
       "agent": "claude-macbook",
       "topic": "mc-lantern-totem",
@@ -860,14 +868,6 @@
       "status": "done",
       "summary": "Morning brief 11/15: Mac offline, GitHub; 03:44 added physics session-3 PPT; overnight Calc wk12 offline 11/16; Quiz 11 due today; no new exams.",
       "ref": "https://github.com/3jar/SKKU/commit/cfdc947bd8f29ab534e0319b449d88f4f5e36cb3"
-    },
-    {
-      "ts": "2026-11-14T08:54:59.634Z",
-      "agent": "claude-macbook",
-      "topic": "mc-instance-export",
-      "status": "done",
-      "summary": "Exported 26.3 instance mods/packs/shaders/pack order/keybinds to ~/Desktop/MC-26.3-export with tested apply.py merge script.",
-      "ref": "~/Desktop/MC-26.3-export"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261122T010106267Z-claude-macbook-1zcc46",
+  "ts": "2026-11-22T01:01:06.267Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-toonshader-mac",
+    "status": "question",
+    "summary": "ToonShader fails on macOS GL4.1 (custom images + compute); built ToonShader_v1.4.2_mac.zip with guarded images, no .csh; awaiting owner apply in-game.",
+    "ref": "shaderpacks/ToonShader_v1.4.2_mac.zip"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261122T062133106Z-claude-macbook-ad39ay",
+  "ts": "2026-11-22T06:21:33.106Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Gotcha: replacing the active shaderpack zip while Iris has it loaded left the Shader Pack Settings button not opening (15:19, no log output); owner pressed R (reload) at 15:20:41 and new pack loaded clean. After installing a pack update, tell owner to reload (R or Apply) before opening settings. Root cause not fully proven.",
+    "topic": "mc-toonshader-mac"
+  }
+}

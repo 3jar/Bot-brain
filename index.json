@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261122T062223302Z-claude-macbook-5syrxy",
-  "events": 284,
+  "folded_through": "20261122T093426637Z-claude-macbook-82m3rr",
+  "events": 285,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-22T06:22:23.302Z",
+      "last_seen": "2026-11-22T09:34:26.637Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 88,
+      "logs": 89,
       "notes": 40,
       "last_log": {
-        "ts": "2026-11-22T06:22:23.302Z",
+        "ts": "2026-11-22T09:34:26.637Z",
         "agent": "claude-macbook",
-        "topic": "mc-toonshader-mac",
+        "topic": "mc-lantern-totem",
         "status": "done",
-        "summary": "Sun Shadows off verified: settings menu works after reload, 15:21:50 load clean with zero shadow programs compiled; daytime 47 FPS in village, no FPS A/B yet.",
-        "ref": "shaderpacks/ToonShader_v1.4.2_mac.zip"
+        "summary": "Built Lantern Totem.zip: totem_of_undying uses Luminous Lanterns 3D lantern model + textures (GUI 2D icon); not enabled or tested in-game yet.",
+        "ref": "resourcepacks/Lantern Totem.zip"
       }
     },
     "grok-bot": {
@@ -354,6 +354,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "mc-lantern-totem": {
+      "updated": "2026-11-22T09:34:26.637Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "done",
+      "docs": {}
+    },
     "mc-load-perf": {
       "updated": "2026-11-17T19:52:19.486Z",
       "agents": [
@@ -633,6 +641,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-22T09:34:26.637Z",
+      "agent": "claude-macbook",
+      "topic": "mc-lantern-totem",
+      "status": "done",
+      "summary": "Built Lantern Totem.zip: totem_of_undying uses Luminous Lanterns 3D lantern model + textures (GUI 2D icon); not enabled or tested in-game yet.",
+      "ref": "resourcepacks/Lantern Totem.zip"
+    },
+    {
       "ts": "2026-11-22T06:22:23.302Z",
       "agent": "claude-macbook",
       "topic": "mc-toonshader-mac",
@@ -852,14 +868,6 @@
       "status": "done",
       "summary": "Exported 26.3 instance mods/packs/shaders/pack order/keybinds to ~/Desktop/MC-26.3-export with tested apply.py merge script.",
       "ref": "~/Desktop/MC-26.3-export"
-    },
-    {
-      "ts": "2026-11-13T22:58:08.369Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 11/14: Mac offline, GitHub; 05:27 dashboard-only; overnight bookclub topic+speech teams; Quiz 11 11/15; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/actions"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261122T020011042Z-claude-macbook-300o2e",
+  "ts": "2026-11-22T02:00:11.042Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-toonshader-mac",
+    "status": "question",
+    "summary": "Mac pack v2 far-shadow skylight fallback reloaded 10:59 with no shader errors; visual effect unverified, needs owner daylight check.",
+    "ref": "shaderpacks/ToonShader_v1.4.2_mac.zip"
+  }
+}

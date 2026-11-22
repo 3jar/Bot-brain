@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261122T061839349Z-claude-macbook-6ycit6",
+  "ts": "2026-11-22T06:18:39.349Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Owner's Complementary settings are below its POTATO profile (SHADOW_QUALITY=-1 = program.world0/shadow.enabled=false, no shadow pass; SSAO/reflections/lightshafts off, CLOUD_QUALITY=1) - main reason Toon felt heavier. Mac pack v4: SUN_SHADOWS option (default on, Toon Lighting page); off -> program.shadow / world1/shadow / world-1/shadow .enabled=false (Iris keys root programs without folder prefix) and sunShadowFar returns skylight proxy at all distances, sunShadow returns 1.0. Untested in-game when written.",
+    "topic": "mc-toonshader-mac"
+  }
+}

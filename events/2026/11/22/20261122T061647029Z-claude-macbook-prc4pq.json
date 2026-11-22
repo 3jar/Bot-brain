@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "id": "20261122T061647029Z-claude-macbook-prc4pq",
+  "ts": "2026-11-22T06:16:47.029Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Owner preference (2026-11-22): write ALL user-visible text in Korean, including short progress updates between tool calls, not just final reports. Keep code, file names, commands, error messages in English."
+  }
+}

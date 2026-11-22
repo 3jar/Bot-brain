@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261122T093426637Z-claude-macbook-82m3rr",
+  "ts": "2026-11-22T09:34:26.637Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-lantern-totem",
+    "status": "done",
+    "summary": "Built Lantern Totem.zip: totem_of_undying uses Luminous Lanterns 3D lantern model + textures (GUI 2D icon); not enabled or tested in-game yet.",
+    "ref": "resourcepacks/Lantern Totem.zip"
+  }
+}

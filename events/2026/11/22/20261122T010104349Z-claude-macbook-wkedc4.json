@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261122T010104349Z-claude-macbook-wkedc4",
+  "ts": "2026-11-22T01:01:04.349Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "ToonShader v1.4.2 fails on Apple M2 (GL 4.1): shaders.properties declares image.* (Colored Toon Light) gated only on IS_IRIS+COLORED_LIGHT, so Iris 1.11.7 GlImage.clear -> glClearTexImage (GL4.4) null fn ptr -> NPE in IrisRenderingPipeline:259. Also ProgramBuilder.beginCompute throws on any .csh when !supportsCompute, so option toggles can't fix it. Iris defines IRIS_FEATURE_<flag> (only if isUsable) BEFORE preprocessing shaders.properties, so #ifdef IRIS_FEATURE_CUSTOM_IMAGES works there. Built shaderpacks/ToonShader_v1.4.2_mac.zip: images gated on IRIS_FEATURE_CUSTOM_IMAGES+COMPUTE_SHADERS, 3 composite.csh removed; original untouched; owner options copied to _mac.zip.txt.",
+    "topic": "mc-toonshader-mac"
+  }
+}

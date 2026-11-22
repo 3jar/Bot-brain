@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261122T055408228Z-claude-macbook-umhx8e",
+  "ts": "2026-11-22T05:54:08.228Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-toonshader-mac",
+    "status": "done",
+    "summary": "masa-iris-bridge verified in-game: MaLiLib+Litematica pipelines assigned, no Missing program errors, ghost blocks and overlays render under Toon mac pack; Gamma lift unverified.",
+    "ref": "~/dev/masa-iris-bridge"
+  }
+}

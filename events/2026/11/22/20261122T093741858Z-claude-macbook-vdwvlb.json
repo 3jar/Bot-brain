@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261122T093741858Z-claude-macbook-vdwvlb",
+  "ts": "2026-11-22T09:37:41.858Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-lantern-totem",
+    "status": "done",
+    "summary": "Added LambDynamicLights item light (luminance = lantern block) for totem_of_undying to Lantern Totem.zip; client-only, untested in-game.",
+    "ref": "resourcepacks/Lantern Totem.zip"
+  }
+}

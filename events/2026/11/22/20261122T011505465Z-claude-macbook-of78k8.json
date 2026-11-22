@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261122T011505465Z-claude-macbook-of78k8",
+  "ts": "2026-11-22T01:15:05.465Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-toonshader-mac",
+    "status": "question",
+    "summary": "Mac pack loads (LOW, 49fps night). Near-dark/far-bright traced to 64-block shadow cutoff, cloud shadows, banded fog; sky shimmer source unconfirmed, owner to toggle.",
+    "ref": "shaderpacks/ToonShader_v1.4.2_mac.zip"
+  }
+}

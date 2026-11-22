@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261122T062223302Z-claude-macbook-5syrxy",
+  "ts": "2026-11-22T06:22:23.302Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-toonshader-mac",
+    "status": "done",
+    "summary": "Sun Shadows off verified: settings menu works after reload, 15:21:50 load clean with zero shadow programs compiled; daytime 47 FPS in village, no FPS A/B yet.",
+    "ref": "shaderpacks/ToonShader_v1.4.2_mac.zip"
+  }
+}

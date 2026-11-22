@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261122T055444754Z-claude-macbook-16h24c",
+  "ts": "2026-11-22T05:54:44.754Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "minecraft-perf",
+    "status": "question",
+    "summary": "Ranked non-shader resource hogs from JFR + pack scan: BetterGrassify snow, punchy-moves, glint outline; sun/moon pack 512MB VRAM. Awaiting owner pick of fixes.",
+    "ref": "work/minecraft-perf/RESULT.md"
+  }
+}

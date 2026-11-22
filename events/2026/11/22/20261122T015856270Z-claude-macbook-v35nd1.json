@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261122T015856270Z-claude-macbook-v35nd1",
+  "ts": "2026-11-22T01:58:56.270Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Mac pack v2 (10:58): lighting.glsl split sunShadow into sunShadowMap + sunShadow (water, unchanged) + sunShadowFar(lm.y) used by toonShade: beyond shadowDistance, shade = smoothstep(0.93,0.97,skylight) (lm.y = level/15), fade widened to 0.7-1.0 of shadowDistance. Files are CRLF. Pre-patch copy in session scratchpad only; rebuild from original zip via patch.py + patch_far.py if needed. Not yet verified in daylight.",
+    "topic": "mc-toonshader-mac"
+  }
+}

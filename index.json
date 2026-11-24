@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261124T155016171Z-claude-macbook-eiw1lg",
-  "events": 288,
+  "folded_through": "20261124T232720111Z-skku-icampus-bot-wioj1n",
+  "events": 289,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,17 +88,17 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-22T23:23:26.071Z",
+      "last_seen": "2026-11-24T23:27:20.111Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 34,
+      "logs": 35,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-22T23:23:26.071Z",
+        "ts": "2026-11-24T23:27:20.111Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/23: Mac offline, GitHub; 05:17 bookclub wk13 prompt; overnight physics ch25-27 PPT; Numpy 11/25; no new exams.",
-        "ref": "https://github.com/3jar/SKKU/commit/6aecce113025c7df212759224af6bafbb8729349"
+        "summary": "Morning brief 11/25: Mac offline; no today canvas-sync (07:00 missing); Numpy due today; bookclub 11/26; no new exams.",
+        "ref": "https://github.com/3jar/SKKU/actions"
       }
     },
     "skku-reviewer": {
@@ -526,7 +526,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-22T23:23:26.071Z",
+      "updated": "2026-11-24T23:27:20.111Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -648,6 +648,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-24T23:27:20.111Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/25: Mac offline; no today canvas-sync (07:00 missing); Numpy due today; bookclub 11/26; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/actions"
+    },
     {
       "ts": "2026-11-24T15:50:16.171Z",
       "agent": "claude-macbook",
@@ -867,14 +875,6 @@
       "topic": "smooth-toasts-mod",
       "status": "done",
       "summary": "mc-spotify 1.0.2: vanilla music toast now merged into Spotify TrackToast, so it joins the centered deck; verified isolated, installed.",
-      "ref": "work/smooth-toasts-mod/HANDOFF.md"
-    },
-    {
-      "ts": "2026-11-15T14:32:52.762Z",
-      "agent": "claude-macbook",
-      "topic": "smooth-toasts-mod",
-      "status": "done",
-      "summary": "Built Smooth Toasts (top-center toast deck, vanilla look + shadow); verified in isolated client, installed jar; awaiting owner in-game check in full pack.",
       "ref": "work/smooth-toasts-mod/HANDOFF.md"
     }
   ]

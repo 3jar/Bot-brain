@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261122T232326071Z-skku-icampus-bot-fp56ud",
-  "events": 287,
+  "folded_through": "20261124T155016171Z-claude-macbook-eiw1lg",
+  "events": 288,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-22T09:37:41.858Z",
+      "last_seen": "2026-11-24T15:50:16.171Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 90,
+      "logs": 91,
       "notes": 40,
       "last_log": {
-        "ts": "2026-11-22T09:37:41.858Z",
+        "ts": "2026-11-24T15:50:16.171Z",
         "agent": "claude-macbook",
-        "topic": "mc-lantern-totem",
+        "topic": "mc-timed-shutdown",
         "status": "done",
-        "summary": "Added LambDynamicLights item light (luminance = lantern block) for totem_of_undying to Lantern Totem.zip; client-only, untested in-game.",
-        "ref": "resourcepacks/Lantern Totem.zip"
+        "summary": "Detached timer (pid 98277) SIGTERMs Minecraft at 01:49:59 KST 2026-11-25, then shuts down Mac via System Events; caffeinate holds idle sleep.",
+        "ref": "scratchpad/mc_then_shutdown.sh"
       }
     },
     "grok-bot": {
@@ -437,6 +437,14 @@
         }
       }
     },
+    "mc-timed-shutdown": {
+      "updated": "2026-11-24T15:50:16.171Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "done",
+      "docs": {}
+    },
     "mc-toonshader-mac": {
       "updated": "2026-11-22T06:22:23.302Z",
       "agents": [
@@ -640,6 +648,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-24T15:50:16.171Z",
+      "agent": "claude-macbook",
+      "topic": "mc-timed-shutdown",
+      "status": "done",
+      "summary": "Detached timer (pid 98277) SIGTERMs Minecraft at 01:49:59 KST 2026-11-25, then shuts down Mac via System Events; caffeinate holds idle sleep.",
+      "ref": "scratchpad/mc_then_shutdown.sh"
+    },
     {
       "ts": "2026-11-22T23:23:26.071Z",
       "agent": "skku-icampus-bot",
@@ -860,14 +876,6 @@
       "status": "done",
       "summary": "Built Smooth Toasts (top-center toast deck, vanilla look + shadow); verified in isolated client, installed jar; awaiting owner in-game check in full pack.",
       "ref": "work/smooth-toasts-mod/HANDOFF.md"
-    },
-    {
-      "ts": "2026-11-15T11:39:21.697Z",
-      "agent": "claude-macbook",
-      "topic": "smooth-toasts-mod",
-      "status": "question",
-      "summary": "Prior-art research: no Fabric 26.3 mod restyles+centers all toasts; Fancy Toasts (advancements only) and Fancy Notify (26.2, corners) closest.",
-      "ref": "work/smooth-toasts-mod/RESEARCH.md"
     }
   ]
 }

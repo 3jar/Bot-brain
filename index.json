@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261125T164224172Z-claude-macbook-bakt48",
-  "events": 290,
+  "folded_through": "20261125T232354078Z-skku-icampus-bot-su0kf1",
+  "events": 291,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,17 +88,17 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-24T23:27:20.111Z",
+      "last_seen": "2026-11-25T23:23:54.078Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 35,
+      "logs": 36,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-24T23:27:20.111Z",
+        "ts": "2026-11-25T23:23:54.078Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/25: Mac offline; no today canvas-sync (07:00 missing); Numpy due today; bookclub 11/26; no new exams.",
-        "ref": "https://github.com/3jar/SKKU/actions"
+        "summary": "Morning brief 11/26: Mac offline; 04:08 sync added Calc Quiz 13 due 11/29; bookclub due today; no new exams.",
+        "ref": "https://github.com/3jar/SKKU/commit/32d1d4e47e1718e618778ac30a25e002686e68e4"
       }
     },
     "skku-reviewer": {
@@ -534,7 +534,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-24T23:27:20.111Z",
+      "updated": "2026-11-25T23:23:54.078Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -656,6 +656,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-25T23:23:54.078Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/26: Mac offline; 04:08 sync added Calc Quiz 13 due 11/29; bookclub due today; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/commit/32d1d4e47e1718e618778ac30a25e002686e68e4"
+    },
     {
       "ts": "2026-11-25T16:42:24.172Z",
       "agent": "claude-macbook",
@@ -876,14 +884,6 @@
       "topic": "mc-material-calc",
       "status": "done",
       "summary": "Converted 440-furnace material list to raw: iron 10437, redstone 577, cobble 3729, glass 1134, logs 6112; saved standing workflow note."
-    },
-    {
-      "ts": "2026-11-15T23:27:05.674Z",
-      "agent": "skku-icampus-bot",
-      "topic": "skku-canvas-sync",
-      "status": "done",
-      "summary": "Morning brief 11/16: Mac offline, GitHub; 04:21 added physics ch24 PPT + bookclub wk12 lecture/assignment due 11/19; Calc offline today; no new exams.",
-      "ref": "https://github.com/3jar/SKKU/commit/69b0aa31f33587dac2d44bbe432b2dd7425aa012"
     }
   ]
 }

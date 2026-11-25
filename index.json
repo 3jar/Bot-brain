@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261124T232720111Z-skku-icampus-bot-wioj1n",
-  "events": 289,
+  "folded_through": "20261125T164224172Z-claude-macbook-bakt48",
+  "events": 290,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-24T15:50:16.171Z",
+      "last_seen": "2026-11-25T16:42:24.172Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 91,
+      "logs": 92,
       "notes": 40,
       "last_log": {
-        "ts": "2026-11-24T15:50:16.171Z",
+        "ts": "2026-11-25T16:42:24.172Z",
         "agent": "claude-macbook",
-        "topic": "mc-timed-shutdown",
+        "topic": "mc-fine-armoury-trims",
         "status": "done",
-        "summary": "Detached timer (pid 98277) SIGTERMs Minecraft at 01:49:59 KST 2026-11-25, then shuts down Mac via System Events; caffeinate holds idle sleep.",
-        "ref": "scratchpad/mc_then_shutdown.sh"
+        "summary": "Fine Armoury v1.8 trims lacked 26.3 palette mcmeta (base_palette trim_base); added 17 mcmeta files in place, backup .zip.bak; in-game unverified.",
+        "ref": "resourcepacks/Fine Armoury v1.8.zip"
       }
     },
     "grok-bot": {
@@ -338,6 +338,14 @@
       "last_status": "done",
       "docs": {}
     },
+    "mc-fine-armoury-trims": {
+      "updated": "2026-11-25T16:42:24.172Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "done",
+      "docs": {}
+    },
     "mc-fullbody-motion": {
       "updated": "2026-10-23T23:31:25.163Z",
       "agents": [
@@ -649,6 +657,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-25T16:42:24.172Z",
+      "agent": "claude-macbook",
+      "topic": "mc-fine-armoury-trims",
+      "status": "done",
+      "summary": "Fine Armoury v1.8 trims lacked 26.3 palette mcmeta (base_palette trim_base); added 17 mcmeta files in place, backup .zip.bak; in-game unverified.",
+      "ref": "resourcepacks/Fine Armoury v1.8.zip"
+    },
+    {
       "ts": "2026-11-24T23:27:20.111Z",
       "agent": "skku-icampus-bot",
       "topic": "skku-canvas-sync",
@@ -868,14 +884,6 @@
       "status": "done",
       "summary": "Morning brief 11/16: Mac offline, GitHub; 04:21 added physics ch24 PPT + bookclub wk12 lecture/assignment due 11/19; Calc offline today; no new exams.",
       "ref": "https://github.com/3jar/SKKU/commit/69b0aa31f33587dac2d44bbe432b2dd7425aa012"
-    },
-    {
-      "ts": "2026-11-15T15:33:50.957Z",
-      "agent": "claude-macbook",
-      "topic": "smooth-toasts-mod",
-      "status": "done",
-      "summary": "mc-spotify 1.0.2: vanilla music toast now merged into Spotify TrackToast, so it joins the centered deck; verified isolated, installed.",
-      "ref": "work/smooth-toasts-mod/HANDOFF.md"
     }
   ]
 }

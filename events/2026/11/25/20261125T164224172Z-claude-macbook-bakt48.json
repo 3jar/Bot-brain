@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261125T164224172Z-claude-macbook-bakt48",
+  "ts": "2026-11-25T16:42:24.172Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-fine-armoury-trims",
+    "status": "done",
+    "summary": "Fine Armoury v1.8 trims lacked 26.3 palette mcmeta (base_palette trim_base); added 17 mcmeta files in place, backup .zip.bak; in-game unverified.",
+    "ref": "resourcepacks/Fine Armoury v1.8.zip"
+  }
+}

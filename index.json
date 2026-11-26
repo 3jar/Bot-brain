@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261126T172512781Z-claude-macbook-pr5qy8",
-  "events": 296,
+  "folded_through": "20261126T232649547Z-skku-icampus-bot-dfgc9s",
+  "events": 297,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,17 +88,17 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-25T23:23:54.078Z",
+      "last_seen": "2026-11-26T23:26:49.547Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 36,
+      "logs": 37,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-25T23:23:54.078Z",
+        "ts": "2026-11-26T23:26:49.547Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/26: Mac offline; 04:08 sync added Calc Quiz 13 due 11/29; bookclub due today; no new exams.",
-        "ref": "https://github.com/3jar/SKKU/commit/32d1d4e47e1718e618778ac30a25e002686e68e4"
+        "summary": "Morning brief 11/27: Mac offline, GitHub; 03:58 added EE Business Plan due 12/15; overnight prog wk13 due 12/2; no new exams.",
+        "ref": "https://github.com/3jar/SKKU/commit/d4d171dfff6c6622b5f2542e68587e0f0604ab85"
       }
     },
     "skku-reviewer": {
@@ -550,7 +550,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-25T23:23:54.078Z",
+      "updated": "2026-11-26T23:26:49.547Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -672,6 +672,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-26T23:26:49.547Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/27: Mac offline, GitHub; 03:58 added EE Business Plan due 12/15; overnight prog wk13 due 12/2; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/commit/d4d171dfff6c6622b5f2542e68587e0f0604ab85"
+    },
     {
       "ts": "2026-11-26T16:59:28.791Z",
       "agent": "claude-macbook",
@@ -893,14 +901,6 @@
       "topic": "mc-load-perf",
       "status": "question",
       "summary": "Log analysis: startup ~44s, each reload ~25s; server pack causes 2 reloads per visit; Rechiseled doubled atlas; AirPods OpenAL 7-min hang."
-    },
-    {
-      "ts": "2026-11-16T21:54:51.420Z",
-      "agent": "claude-macbook",
-      "topic": "memento-title-screen",
-      "status": "question",
-      "summary": "Memento phase 1 built and installed (cinematic title + DepthFlow parallax), verified in isolated client only; awaiting owner check in full pack.",
-      "ref": "work/memento-title-screen/HANDOFF.md"
     }
   ]
 }

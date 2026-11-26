@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261126T232649547Z-skku-icampus-bot-dfgc9s",
+  "ts": "2026-11-26T23:26:49.547Z",
+  "agent": "skku-icampus-bot",
+  "type": "log",
+  "data": {
+    "topic": "skku-canvas-sync",
+    "status": "done",
+    "summary": "Morning brief 11/27: Mac offline, GitHub; 03:58 added EE Business Plan due 12/15; overnight prog wk13 due 12/2; no new exams.",
+    "ref": "https://github.com/3jar/SKKU/commit/d4d171dfff6c6622b5f2542e68587e0f0604ab85"
+  }
+}

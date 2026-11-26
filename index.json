@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261125T232354078Z-skku-icampus-bot-su0kf1",
-  "events": 291,
+  "folded_through": "20261126T050503424Z-claude-macbook-4zl4bd",
+  "events": 293,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-25T16:42:24.172Z",
+      "last_seen": "2026-11-26T05:05:03.424Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 92,
-      "notes": 40,
+      "logs": 93,
+      "notes": 41,
       "last_log": {
-        "ts": "2026-11-25T16:42:24.172Z",
+        "ts": "2026-11-26T05:04:54.567Z",
         "agent": "claude-macbook",
-        "topic": "mc-fine-armoury-trims",
+        "topic": "mc-afk-instance",
         "status": "done",
-        "summary": "Fine Armoury v1.8 trims lacked 26.3 palette mcmeta (base_palette trim_base); added 17 mcmeta files in place, backup .zip.bak; in-game unverified.",
-        "ref": "resourcepacks/Fine Armoury v1.8.zip"
+        "summary": "AFK instance: added JourneyMap+Coords HUD, copied keybinds, disabled 15 visual mods, minimized non-synced visuals; untested in-game.",
+        "ref": "profiles/Fabulously Optimized"
       }
     },
     "grok-bot": {
@@ -320,6 +320,14 @@
         "claude-macbook"
       ],
       "last_status": "question",
+      "docs": {}
+    },
+    "mc-afk-instance": {
+      "updated": "2026-11-26T05:05:03.424Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "done",
       "docs": {}
     },
     "mc-areascanner": {
@@ -657,6 +665,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-26T05:04:54.567Z",
+      "agent": "claude-macbook",
+      "topic": "mc-afk-instance",
+      "status": "done",
+      "summary": "AFK instance: added JourneyMap+Coords HUD, copied keybinds, disabled 15 visual mods, minimized non-synced visuals; untested in-game.",
+      "ref": "profiles/Fabulously Optimized"
+    },
+    {
       "ts": "2026-11-25T23:23:54.078Z",
       "agent": "skku-icampus-bot",
       "topic": "skku-canvas-sync",
@@ -877,13 +893,6 @@
       "status": "question",
       "summary": "Designed Memento title-screen mod (exit-moment shader shot + depth parallax + left cinematic menu); spec committed, awaiting owner review.",
       "ref": "~/dev/memento/docs/superpowers/specs/2026-11-17-memento-design.md"
-    },
-    {
-      "ts": "2026-11-16T14:11:00.427Z",
-      "agent": "claude-macbook",
-      "topic": "mc-material-calc",
-      "status": "done",
-      "summary": "Converted 440-furnace material list to raw: iron 10437, redstone 577, cobble 3729, glass 1134, logs 6112; saved standing workflow note."
     }
   ]
 }

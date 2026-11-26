@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261126T050503424Z-claude-macbook-4zl4bd",
-  "events": 293,
+  "folded_through": "20261126T164957194Z-claude-macbook-h1e4ep",
+  "events": 294,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-26T05:05:03.424Z",
+      "last_seen": "2026-11-26T16:49:57.194Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 93,
+      "logs": 94,
       "notes": 41,
       "last_log": {
-        "ts": "2026-11-26T05:04:54.567Z",
+        "ts": "2026-11-26T16:49:57.194Z",
         "agent": "claude-macbook",
-        "topic": "mc-afk-instance",
-        "status": "done",
-        "summary": "AFK instance: added JourneyMap+Coords HUD, copied keybinds, disabled 15 visual mods, minimized non-synced visuals; untested in-game.",
-        "ref": "profiles/Fabulously Optimized"
+        "topic": "mc-crash-elytratrails",
+        "status": "question",
+        "summary": "01:35 and 22:32 crashes: Elytra Contrails 1.6.9 stopTrail runs on netty thread (HEAD inject handleRemoveEntities), corrupts fastutil map. Not server kick. 1.6.10 same.",
+        "ref": "crash-reports/crash-2026-11-27_01.35.08-client.txt"
       }
     },
     "grok-bot": {
@@ -336,6 +336,14 @@
         "claude-macbook"
       ],
       "last_status": "done",
+      "docs": {}
+    },
+    "mc-crash-elytratrails": {
+      "updated": "2026-11-26T16:49:57.194Z",
+      "agents": [
+        "claude-macbook"
+      ],
+      "last_status": "question",
       "docs": {}
     },
     "mc-crash-rechiseled": {
@@ -665,6 +673,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-26T16:49:57.194Z",
+      "agent": "claude-macbook",
+      "topic": "mc-crash-elytratrails",
+      "status": "question",
+      "summary": "01:35 and 22:32 crashes: Elytra Contrails 1.6.9 stopTrail runs on netty thread (HEAD inject handleRemoveEntities), corrupts fastutil map. Not server kick. 1.6.10 same.",
+      "ref": "crash-reports/crash-2026-11-27_01.35.08-client.txt"
+    },
+    {
       "ts": "2026-11-26T05:04:54.567Z",
       "agent": "claude-macbook",
       "topic": "mc-afk-instance",
@@ -885,14 +901,6 @@
       "status": "question",
       "summary": "Wrote Memento phase 1 plan (12 tasks, verified 26.3 APIs, custom DepthFlow GUI pipeline); awaiting owner's execution-mode choice.",
       "ref": "~/dev/memento/docs/superpowers/plans/2026-11-17-memento-phase1.md"
-    },
-    {
-      "ts": "2026-11-16T20:33:43.142Z",
-      "agent": "claude-macbook",
-      "topic": "memento-title-screen",
-      "status": "question",
-      "summary": "Designed Memento title-screen mod (exit-moment shader shot + depth parallax + left cinematic menu); spec committed, awaiting owner review.",
-      "ref": "~/dev/memento/docs/superpowers/specs/2026-11-17-memento-design.md"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261126T050454567Z-claude-macbook-y1yyz6",
+  "ts": "2026-11-26T05:04:54.567Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-afk-instance",
+    "status": "done",
+    "summary": "AFK instance: added JourneyMap+Coords HUD, copied keybinds, disabled 15 visual mods, minimized non-synced visuals; untested in-game.",
+    "ref": "profiles/Fabulously Optimized"
+  }
+}

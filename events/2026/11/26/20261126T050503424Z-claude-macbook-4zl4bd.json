@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "id": "20261126T050503424Z-claude-macbook-4zl4bd",
+  "ts": "2026-11-26T05:05:03.424Z",
+  "agent": "claude-macbook",
+  "type": "note",
+  "data": {
+    "text": "Gotchas (2026-11-26):\n- Modrinth App syncs game_options across all 3 instances (graphics, particles, clouds, maxFps, volumes, gui_scale, fov, most key_ binds). NOT synced: render/simulation/entity distance, mipmap, cloud_range, weather_radius, texture filtering, anisotropy. Never lower synced options in the AFK instance (profiles/Fabulously Optimized) or they leak into main (Fabulously Optimized (2)). AFK visuals were minimized via Sodium Extra, Dynamic FPS, and the non-synced options instead.\n- Server mchardcore.o-r.kr:25596 runs JourneyMap server with serverManagedWP=true: waypoints live server-side per player, no local WaypointData.dat. Move waypoints between accounts with Waypoint Manager -> Share Selected.\n- AFK instance: 15 visual/unneeded mods renamed to .jar.disabled; backups *.pre-afk next to options.txt and the 3 edited configs.\n- pgrep -f \"gameDir <AFK path> \" also matches the main instance path (it is a prefix); match \"--gameDir <path> --assetsDir\".",
+    "topic": "mc-afk-instance"
+  }
+}

@@ -1,22 +1,22 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261126T164957194Z-claude-macbook-h1e4ep",
-  "events": 294,
+  "folded_through": "20261126T165928791Z-claude-macbook-p96wg7",
+  "events": 295,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-26T16:49:57.194Z",
+      "last_seen": "2026-11-26T16:59:28.791Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
-      "logs": 94,
+      "logs": 95,
       "notes": 41,
       "last_log": {
-        "ts": "2026-11-26T16:49:57.194Z",
+        "ts": "2026-11-26T16:59:28.791Z",
         "agent": "claude-macbook",
         "topic": "mc-crash-elytratrails",
         "status": "question",
-        "summary": "01:35 and 22:32 crashes: Elytra Contrails 1.6.9 stopTrail runs on netty thread (HEAD inject handleRemoveEntities), corrupts fastutil map. Not server kick. 1.6.10 same.",
-        "ref": "crash-reports/crash-2026-11-27_01.35.08-client.txt"
+        "summary": "Built Farm Mode (Hide XP Orbs).zip (transparent orb, muted pickup). Jar patch (drop ClientPacketListenerRemoveEntitiesMixin) denied by classifier; awaiting owner OK.",
+        "ref": "resourcepacks/Farm Mode (Hide XP Orbs).zip"
       }
     },
     "grok-bot": {
@@ -339,7 +339,7 @@
       "docs": {}
     },
     "mc-crash-elytratrails": {
-      "updated": "2026-11-26T16:49:57.194Z",
+      "updated": "2026-11-26T16:59:28.791Z",
       "agents": [
         "claude-macbook"
       ],
@@ -673,6 +673,14 @@
   },
   "recent": [
     {
+      "ts": "2026-11-26T16:59:28.791Z",
+      "agent": "claude-macbook",
+      "topic": "mc-crash-elytratrails",
+      "status": "question",
+      "summary": "Built Farm Mode (Hide XP Orbs).zip (transparent orb, muted pickup). Jar patch (drop ClientPacketListenerRemoveEntitiesMixin) denied by classifier; awaiting owner OK.",
+      "ref": "resourcepacks/Farm Mode (Hide XP Orbs).zip"
+    },
+    {
       "ts": "2026-11-26T16:49:57.194Z",
       "agent": "claude-macbook",
       "topic": "mc-crash-elytratrails",
@@ -893,14 +901,6 @@
       "status": "question",
       "summary": "Memento phase 1 built and installed (cinematic title + DepthFlow parallax), verified in isolated client only; awaiting owner check in full pack.",
       "ref": "work/memento-title-screen/HANDOFF.md"
-    },
-    {
-      "ts": "2026-11-16T20:51:09.907Z",
-      "agent": "claude-macbook",
-      "topic": "memento-title-screen",
-      "status": "question",
-      "summary": "Wrote Memento phase 1 plan (12 tasks, verified 26.3 APIs, custom DepthFlow GUI pipeline); awaiting owner's execution-mode choice.",
-      "ref": "~/dev/memento/docs/superpowers/plans/2026-11-17-memento-phase1.md"
     }
   ]
 }

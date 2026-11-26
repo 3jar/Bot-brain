@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261126T165928791Z-claude-macbook-p96wg7",
+  "ts": "2026-11-26T16:59:28.791Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-crash-elytratrails",
+    "status": "question",
+    "summary": "Built Farm Mode (Hide XP Orbs).zip (transparent orb, muted pickup). Jar patch (drop ClientPacketListenerRemoveEntitiesMixin) denied by classifier; awaiting owner OK.",
+    "ref": "resourcepacks/Farm Mode (Hide XP Orbs).zip"
+  }
+}

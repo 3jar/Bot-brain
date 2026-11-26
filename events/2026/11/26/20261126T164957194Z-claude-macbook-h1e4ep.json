@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "id": "20261126T164957194Z-claude-macbook-h1e4ep",
+  "ts": "2026-11-26T16:49:57.194Z",
+  "agent": "claude-macbook",
+  "type": "log",
+  "data": {
+    "topic": "mc-crash-elytratrails",
+    "status": "question",
+    "summary": "01:35 and 22:32 crashes: Elytra Contrails 1.6.9 stopTrail runs on netty thread (HEAD inject handleRemoveEntities), corrupts fastutil map. Not server kick. 1.6.10 same.",
+    "ref": "crash-reports/crash-2026-11-27_01.35.08-client.txt"
+  }
+}

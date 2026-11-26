@@ -1,15 +1,15 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261126T165928791Z-claude-macbook-p96wg7",
-  "events": 295,
+  "folded_through": "20261126T172512781Z-claude-macbook-pr5qy8",
+  "events": 296,
   "rejected": [],
   "agents": {
     "claude-macbook": {
-      "last_seen": "2026-11-26T16:59:28.791Z",
+      "last_seen": "2026-11-26T17:25:12.781Z",
       "handoff_updated": "2026-11-08T12:46:28.064Z",
       "logs": 95,
-      "notes": 41,
+      "notes": 42,
       "last_log": {
         "ts": "2026-11-26T16:59:28.791Z",
         "agent": "claude-macbook",
@@ -339,7 +339,7 @@
       "docs": {}
     },
     "mc-crash-elytratrails": {
-      "updated": "2026-11-26T16:59:28.791Z",
+      "updated": "2026-11-26T17:25:12.781Z",
       "agents": [
         "claude-macbook"
       ],

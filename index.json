@@ -1,8 +1,8 @@
 {
   "v": 1,
   "timezone": "Asia/Seoul",
-  "folded_through": "20261126T232649547Z-skku-icampus-bot-dfgc9s",
-  "events": 297,
+  "folded_through": "20261127T232051639Z-skku-icampus-bot-is22ov",
+  "events": 298,
   "rejected": [],
   "agents": {
     "claude-macbook": {
@@ -88,17 +88,17 @@
       }
     },
     "skku-icampus-bot": {
-      "last_seen": "2026-11-26T23:26:49.547Z",
+      "last_seen": "2026-11-27T23:20:51.639Z",
       "handoff_updated": "2026-10-16T23:20:50.321Z",
-      "logs": 37,
+      "logs": 38,
       "notes": 0,
       "last_log": {
-        "ts": "2026-11-26T23:26:49.547Z",
+        "ts": "2026-11-27T23:20:51.639Z",
         "agent": "skku-icampus-bot",
         "topic": "skku-canvas-sync",
         "status": "done",
-        "summary": "Morning brief 11/27: Mac offline, GitHub; 03:58 added EE Business Plan due 12/15; overnight prog wk13 due 12/2; no new exams.",
-        "ref": "https://github.com/3jar/SKKU/commit/d4d171dfff6c6622b5f2542e68587e0f0604ab85"
+        "summary": "Morning brief 11/28: Mac offline, GitHub; 03:50 dashboard-only; overnight bookclub 2조 topic + wk13 submitted; Quiz 13 11/29; no new exams.",
+        "ref": "https://github.com/3jar/SKKU/commit/75671293326774e2722a3a5a26aef55a0579a1dd"
       }
     },
     "skku-reviewer": {
@@ -550,7 +550,7 @@
       "docs": {}
     },
     "skku-canvas-sync": {
-      "updated": "2026-11-26T23:26:49.547Z",
+      "updated": "2026-11-27T23:20:51.639Z",
       "agents": [
         "skku-icampus-bot"
       ],
@@ -672,6 +672,14 @@
     }
   },
   "recent": [
+    {
+      "ts": "2026-11-27T23:20:51.639Z",
+      "agent": "skku-icampus-bot",
+      "topic": "skku-canvas-sync",
+      "status": "done",
+      "summary": "Morning brief 11/28: Mac offline, GitHub; 03:50 dashboard-only; overnight bookclub 2조 topic + wk13 submitted; Quiz 13 11/29; no new exams.",
+      "ref": "https://github.com/3jar/SKKU/commit/75671293326774e2722a3a5a26aef55a0579a1dd"
+    },
     {
       "ts": "2026-11-26T23:26:49.547Z",
       "agent": "skku-icampus-bot",
@@ -894,13 +902,6 @@
       "status": "question",
       "summary": "JFR startup profile: Punchy config loader ~12s on render thread (3 runs), fonts rebuilt twice via ImmediatelyFast; apply phase CPU only 20-35%.",
       "ref": "work/mc-load-perf/RESULT.md"
-    },
-    {
-      "ts": "2026-11-17T19:28:44.002Z",
-      "agent": "claude-macbook",
-      "topic": "mc-load-perf",
-      "status": "question",
-      "summary": "Log analysis: startup ~44s, each reload ~25s; server pack causes 2 reloads per visit; Rechiseled doubled atlas; AirPods OpenAL 7-min hang."
     }
   ]
 }
